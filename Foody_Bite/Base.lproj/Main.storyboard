@@ -1,24 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="JosefinSans-Bold.ttf">
+            <string>JosefinSans-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--StartVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartVC" customModule="Foody_Bite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-Splash-Screen1" translatesAutoresizingMaskIntoConstraints="NO" id="cTe-7x-KVC">
+                                <rect key="frame" x="-181.5" y="-14.5" width="672" height="1033.5000000000002"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foodybite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69R-QL-9Iw">
+                                <rect key="frame" x="94.5" y="424" width="225" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="MTu-YL-avz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="UB7-5k-swh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="45.299999237060547"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cTe-7x-KVC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-181.59999999999999" id="4Af-cr-9dy"/>
+                            <constraint firstItem="69R-QL-9Iw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G0r-dQ-cmz"/>
+                            <constraint firstItem="69R-QL-9Iw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HVd-0y-CNd"/>
+                            <constraint firstAttribute="bottom" secondItem="cTe-7x-KVC" secondAttribute="bottom" constant="-123.09999999999999" id="NU7-oz-DkS"/>
+                            <constraint firstItem="cTe-7x-KVC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-14.300000000000001" id="QTn-dE-ZjW"/>
+                            <constraint firstItem="cTe-7x-KVC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="76.599999999999994" id="Rki-7S-hJM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="appTitle" destination="69R-QL-9Iw" id="fej-xg-LHI"/>
+                        <outlet property="bgImage" destination="cTe-7x-KVC" id="MTx-bB-hAt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BG-Splash-Screen1" width="633.5" height="949.5"/>
+    </resources>
 </document>

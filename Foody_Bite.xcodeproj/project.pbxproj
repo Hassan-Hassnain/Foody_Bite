@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3C89AD34240992DE00CF970C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89AD33240992DE00CF970C /* AppDelegate.swift */; };
 		3C89AD36240992DE00CF970C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89AD35240992DE00CF970C /* SceneDelegate.swift */; };
-		3C89AD38240992DE00CF970C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89AD37240992DE00CF970C /* ViewController.swift */; };
 		3C89AD3B240992DF00CF970C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD39240992DF00CF970C /* Main.storyboard */; };
 		3C89AD3D240992E400CF970C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD3C240992E400CF970C /* Assets.xcassets */; };
 		3C89AD40240992E400CF970C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD3E240992E400CF970C /* LaunchScreen.storyboard */; };
+		3C89AD4C2409966D00CF970C /* Josefin_Sans_Font in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */; };
+		3C89AD4E24099E2C00CF970C /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89AD4D24099E2C00CF970C /* StartVC.swift */; };
+		CD81B79FB16AADDA26B965F0 /* Pods_Foody_Bite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F07655E5232ACD127942DC3 /* Pods_Foody_Bite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C89AD30240992DE00CF970C /* Foody_Bite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foody_Bite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C89AD33240992DE00CF970C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C89AD35240992DE00CF970C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C89AD37240992DE00CF970C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3C89AD3A240992DF00CF970C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C89AD3C240992E400CF970C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C89AD3F240992E400CF970C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C89AD41240992E400CF970C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Josefin_Sans_Font; sourceTree = "<group>"; };
+		3C89AD4D24099E2C00CF970C /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		4F07655E5232ACD127942DC3 /* Pods_Foody_Bite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foody_Bite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9D49BA28E51D9C590F466A /* Pods-Foody_Bite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foody_Bite.debug.xcconfig"; path = "Target Support Files/Pods-Foody_Bite/Pods-Foody_Bite.debug.xcconfig"; sourceTree = "<group>"; };
+		AD2E9738C28AAF457E4718F3 /* Pods-Foody_Bite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foody_Bite.release.xcconfig"; path = "Target Support Files/Pods-Foody_Bite/Pods-Foody_Bite.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD81B79FB16AADDA26B965F0 /* Pods_Foody_Bite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				3C89AD32240992DE00CF970C /* Foody_Bite */,
 				3C89AD31240992DE00CF970C /* Products */,
+				E2064032AD58F391FADE9D55 /* Pods */,
+				ACA558A41044F2A8F6D40D0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +65,58 @@
 		3C89AD32240992DE00CF970C /* Foody_Bite */ = {
 			isa = PBXGroup;
 			children = (
+				3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */,
+				3C89AD492409934C00CF970C /* Model */,
+				3C89AD482409933F00CF970C /* View */,
+				3C89AD472409932B00CF970C /* Controller */,
 				3C89AD33240992DE00CF970C /* AppDelegate.swift */,
 				3C89AD35240992DE00CF970C /* SceneDelegate.swift */,
-				3C89AD37240992DE00CF970C /* ViewController.swift */,
 				3C89AD39240992DF00CF970C /* Main.storyboard */,
 				3C89AD3C240992E400CF970C /* Assets.xcassets */,
 				3C89AD3E240992E400CF970C /* LaunchScreen.storyboard */,
 				3C89AD41240992E400CF970C /* Info.plist */,
 			);
 			path = Foody_Bite;
+			sourceTree = "<group>";
+		};
+		3C89AD472409932B00CF970C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C89AD4D24099E2C00CF970C /* StartVC.swift */,
+			);
+			name = Controller;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3C89AD482409933F00CF970C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C89AD492409934C00CF970C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACA558A41044F2A8F6D40D0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F07655E5232ACD127942DC3 /* Pods_Foody_Bite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2064032AD58F391FADE9D55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E9D49BA28E51D9C590F466A /* Pods-Foody_Bite.debug.xcconfig */,
+				AD2E9738C28AAF457E4718F3 /* Pods-Foody_Bite.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C89AD44240992E400CF970C /* Build configuration list for PBXNativeTarget "Foody_Bite" */;
 			buildPhases = (
+				ECC385E4B588906F3168AB57 /* [CP] Check Pods Manifest.lock */,
 				3C89AD2C240992DE00CF970C /* Sources */,
 				3C89AD2D240992DE00CF970C /* Frameworks */,
 				3C89AD2E240992DE00CF970C /* Resources */,
+				AA151F1BF97EE5288270F305 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C89AD40240992E400CF970C /* LaunchScreen.storyboard in Resources */,
+				3C89AD4C2409966D00CF970C /* Josefin_Sans_Font in Resources */,
 				3C89AD3D240992E400CF970C /* Assets.xcassets in Resources */,
 				3C89AD3B240992DF00CF970C /* Main.storyboard in Resources */,
 			);
@@ -133,14 +188,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AA151F1BF97EE5288270F305 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foody_Bite/Pods-Foody_Bite-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foody_Bite/Pods-Foody_Bite-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Foody_Bite/Pods-Foody_Bite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECC385E4B588906F3168AB57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Foody_Bite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3C89AD2C240992DE00CF970C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C89AD38240992DE00CF970C /* ViewController.swift in Sources */,
 				3C89AD34240992DE00CF970C /* AppDelegate.swift in Sources */,
 				3C89AD36240992DE00CF970C /* SceneDelegate.swift in Sources */,
+				3C89AD4E24099E2C00CF970C /* StartVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +379,7 @@
 		};
 		3C89AD45240992E400CF970C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9D49BA28E51D9C590F466A /* Pods-Foody_Bite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +398,7 @@
 		};
 		3C89AD46240992E400CF970C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD2E9738C28AAF457E4718F3 /* Pods-Foody_Bite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
