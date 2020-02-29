@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C6F19EE240A500B00CA095A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F19ED240A500B00CA095A /* LoginVC.swift */; };
+		3C6F19F2240A5B7100CA095A /* DesignableTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */; };
 		3C89AD34240992DE00CF970C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89AD33240992DE00CF970C /* AppDelegate.swift */; };
 		3C89AD36240992DE00CF970C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89AD35240992DE00CF970C /* SceneDelegate.swift */; };
 		3C89AD3B240992DF00CF970C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD39240992DF00CF970C /* Main.storyboard */; };
@@ -14,10 +16,14 @@
 		3C89AD40240992E400CF970C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD3E240992E400CF970C /* LaunchScreen.storyboard */; };
 		3C89AD4C2409966D00CF970C /* Josefin_Sans_Font in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */; };
 		3C89AD4E24099E2C00CF970C /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89AD4D24099E2C00CF970C /* StartVC.swift */; };
+		3CDFCBD4240AFE4900571F8B /* UIView_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */; };
+		3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */; };
 		CD81B79FB16AADDA26B965F0 /* Pods_Foody_Bite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F07655E5232ACD127942DC3 /* Pods_Foody_Bite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C6F19ED240A500B00CA095A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextFiled.swift; sourceTree = "<group>"; };
 		3C89AD30240992DE00CF970C /* Foody_Bite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foody_Bite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C89AD33240992DE00CF970C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C89AD35240992DE00CF970C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +33,8 @@
 		3C89AD41240992E400CF970C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Josefin_Sans_Font; sourceTree = "<group>"; };
 		3C89AD4D24099E2C00CF970C /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Ext.swift; sourceTree = "<group>"; };
+		3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		4F07655E5232ACD127942DC3 /* Pods_Foody_Bite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foody_Bite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9D49BA28E51D9C590F466A /* Pods-Foody_Bite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foody_Bite.debug.xcconfig"; path = "Target Support Files/Pods-Foody_Bite/Pods-Foody_Bite.debug.xcconfig"; sourceTree = "<group>"; };
 		AD2E9738C28AAF457E4718F3 /* Pods-Foody_Bite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foody_Bite.release.xcconfig"; path = "Target Support Files/Pods-Foody_Bite/Pods-Foody_Bite.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +73,7 @@
 		3C89AD32240992DE00CF970C /* Foody_Bite */ = {
 			isa = PBXGroup;
 			children = (
+				3CDFCBD2240AFE1000571F8B /* Extensions */,
 				3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */,
 				3C89AD492409934C00CF970C /* Model */,
 				3C89AD482409933F00CF970C /* View */,
@@ -83,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				3C89AD4D24099E2C00CF970C /* StartVC.swift */,
+				3C6F19ED240A500B00CA095A /* LoginVC.swift */,
+				3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */,
 			);
 			name = Controller;
 			path = "New Group";
@@ -91,6 +102,7 @@
 		3C89AD482409933F00CF970C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +112,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3CDFCBD2240AFE1000571F8B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		ACA558A41044F2A8F6D40D0D /* Frameworks */ = {
@@ -235,9 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CDFCBD4240AFE4900571F8B /* UIView_Ext.swift in Sources */,
+				3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */,
 				3C89AD34240992DE00CF970C /* AppDelegate.swift in Sources */,
 				3C89AD36240992DE00CF970C /* SceneDelegate.swift in Sources */,
+				3C6F19EE240A500B00CA095A /* LoginVC.swift in Sources */,
 				3C89AD4E24099E2C00CF970C /* StartVC.swift in Sources */,
+				3C6F19F2240A5B7100CA095A /* DesignableTextFiled.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
