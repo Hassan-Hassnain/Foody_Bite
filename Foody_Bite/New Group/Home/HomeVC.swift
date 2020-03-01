@@ -29,7 +29,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TrendingRestaurantsCell", for: indexPath) as? TrendingRestaurantsCell else {return TrendingRestaurantsCell()}
-//        cell.configure(openingStatus: <#T##String#>, restaurantRating: <#T##String#>, resturantImage: <#T##UIImage#>, restaurantName: <#T##String#>, foodType: <#T##String#>, restaurantDistance: <#T##String#>, restaurantAddress: <#T##String#>, visitorsImage: <#T##[UIImage]#>)
+
         return cell
     }
     
