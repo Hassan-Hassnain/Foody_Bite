@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C56C173240C51CD00A56AAB /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C172240C51CD00A56AAB /* CreateAccountVC.swift */; };
+		3C56C175240C520700A56AAB /* GPS_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C174240C520700A56AAB /* GPS_VC.swift */; };
+		3C56C178240C57B300A56AAB /* UIViewControllerEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C177240C57B300A56AAB /* UIViewControllerEXT.swift */; };
+		3C56C17A240C5F8F00A56AAB /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C179240C5F8F00A56AAB /* UITextFieldX.swift */; };
+		3C56C17C240C70E000A56AAB /* TrendingRestaurantsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C17B240C70E000A56AAB /* TrendingRestaurantsCell.swift */; };
+		3C56C17F240C78ED00A56AAB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C17E240C78ED00A56AAB /* HomeVC.swift */; };
 		3C6F19EE240A500B00CA095A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F19ED240A500B00CA095A /* LoginVC.swift */; };
 		3C6F19F2240A5B7100CA095A /* DesignableTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */; };
 		3C89AD34240992DE00CF970C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89AD33240992DE00CF970C /* AppDelegate.swift */; };
@@ -22,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C56C172240C51CD00A56AAB /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		3C56C174240C520700A56AAB /* GPS_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPS_VC.swift; sourceTree = "<group>"; };
+		3C56C177240C57B300A56AAB /* UIViewControllerEXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerEXT.swift; sourceTree = "<group>"; };
+		3C56C179240C5F8F00A56AAB /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
+		3C56C17B240C70E000A56AAB /* TrendingRestaurantsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRestaurantsCell.swift; sourceTree = "<group>"; };
+		3C56C17E240C78ED00A56AAB /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		3C6F19ED240A500B00CA095A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextFiled.swift; sourceTree = "<group>"; };
 		3C89AD30240992DE00CF970C /* Foody_Bite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foody_Bite.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +64,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C56C176240C54EB00A56AAB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3C89AD4D24099E2C00CF970C /* StartVC.swift */,
+				3C6F19ED240A500B00CA095A /* LoginVC.swift */,
+				3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */,
+				3C56C172240C51CD00A56AAB /* CreateAccountVC.swift */,
+				3C56C174240C520700A56AAB /* GPS_VC.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		3C56C17D240C78CC00A56AAB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3C56C17E240C78ED00A56AAB /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		3C89AD27240992DE00CF970C = {
 			isa = PBXGroup;
 			children = (
@@ -91,9 +123,8 @@
 		3C89AD472409932B00CF970C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3C89AD4D24099E2C00CF970C /* StartVC.swift */,
-				3C6F19ED240A500B00CA095A /* LoginVC.swift */,
-				3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */,
+				3C56C176240C54EB00A56AAB /* Authentication */,
+				3C56C17D240C78CC00A56AAB /* Home */,
 			);
 			name = Controller;
 			path = "New Group";
@@ -103,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */,
+				3C56C179240C5F8F00A56AAB /* UITextFieldX.swift */,
+				3C56C17B240C70E000A56AAB /* TrendingRestaurantsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,6 +150,7 @@
 		3CDFCBD2240AFE1000571F8B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3C56C177240C57B300A56AAB /* UIViewControllerEXT.swift */,
 				3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */,
 			);
 			path = Extensions;
@@ -257,11 +291,17 @@
 			files = (
 				3CDFCBD4240AFE4900571F8B /* UIView_Ext.swift in Sources */,
 				3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */,
+				3C56C173240C51CD00A56AAB /* CreateAccountVC.swift in Sources */,
+				3C56C175240C520700A56AAB /* GPS_VC.swift in Sources */,
+				3C56C17F240C78ED00A56AAB /* HomeVC.swift in Sources */,
 				3C89AD34240992DE00CF970C /* AppDelegate.swift in Sources */,
 				3C89AD36240992DE00CF970C /* SceneDelegate.swift in Sources */,
+				3C56C178240C57B300A56AAB /* UIViewControllerEXT.swift in Sources */,
 				3C6F19EE240A500B00CA095A /* LoginVC.swift in Sources */,
+				3C56C17A240C5F8F00A56AAB /* UITextFieldX.swift in Sources */,
 				3C89AD4E24099E2C00CF970C /* StartVC.swift in Sources */,
 				3C6F19F2240A5B7100CA095A /* DesignableTextFiled.swift in Sources */,
+				3C56C17C240C70E000A56AAB /* TrendingRestaurantsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
