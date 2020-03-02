@@ -9,6 +9,8 @@
 import UIKit
 import Dezignables
 
+// Trending Restaurand Collection view cell at home view controller
+
 class TrendingRestaurantsCell: UICollectionViewCell {
     
     @IBOutlet weak var openingStatusLabel: UILabel!
