@@ -86,7 +86,7 @@ class HomeVC: UIViewController {
         searchField.rightView = view
     }
     @objc func filterButtonAction() {
-        guard let filter = storyboard?.instantiateViewController(identifier: "Filter") as? Filter else {return}
+        guard let filter = storyboard?.instantiateViewController(identifier: "Filter") as? FilterVC else {return}
         filter.modalPresentationStyle = .fullScreen
         presentDetail(filter)
     }
