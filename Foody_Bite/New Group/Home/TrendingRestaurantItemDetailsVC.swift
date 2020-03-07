@@ -26,9 +26,10 @@ class TrendingRestaurantItemDetailsVC: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "TrendingRestaurantsVC") as? TrendingRestaurantsVC else {return}
-               vc.modalPresentationStyle = .fullScreen
-               presentDetail(vc)
+//        guard let vc = storyboard?.instantiateViewController(identifier: "TrendingRestaurantsVC") as? TrendingRestaurantsVC else {return}
+//               vc.modalPresentationStyle = .fullScreen
+//               presentDetail(vc)
+        dismissDetail()
     }
     @IBAction func rateYourExpierience(_ sender: Any) {
         guard let vc = storyboard?.instantiateViewController(identifier: "RatingAndReviewVC") as? RatingAndReviewVC else {return}

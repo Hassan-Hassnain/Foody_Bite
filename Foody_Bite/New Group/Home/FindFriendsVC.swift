@@ -42,15 +42,19 @@ extension FindFriendsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == contactsTableView {
-                    guard let cell = tableView.dequeueReusableCell(withIdentifier: "FindFriendCell_Contacts") as? FindFriendCell_Contacts else {return FindFriendCell_Contacts()}
-                    
-                    return cell
-                } else {
-                    guard let cell = tableView.dequeueReusableCell(withIdentifier: "FindFriendCell_Suggestions") as? FindFriendCell_Suggestions else {return FindFriendCell_Suggestions()}
-                    
-                    return cell
-                }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "FindFriendCell_Contacts") as? FindFriendCell_Contacts else {return FindFriendCell_Contacts()}
+            
+            return cell
+        } else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "FindFriendCell_Suggestions") as? FindFriendCell_Suggestions else {return FindFriendCell_Suggestions()}
+            
+            return cell
+        }
     }
-  
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "OtherUserProfileVC") as? OtherUserProfileVC else {return}
+        vc.modalPresentationStyle = .fullScreen
+        presentDetail(vc)
+    }
     
 }
