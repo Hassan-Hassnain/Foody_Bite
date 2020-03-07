@@ -20,9 +20,6 @@ class HomeVC: UIViewController {
     
     @IBOutlet weak var searchField: UITextFieldX!
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,8 +34,9 @@ class HomeVC: UIViewController {
         
         searchField.delegate = self
         
-        addGestures()
         setSearchFieldRightButton()
+        
+        
         
     }
     
@@ -56,17 +54,27 @@ class HomeVC: UIViewController {
     
     @IBAction func profileButtonWasTapped(_ sender: Any) {
     }
-//MARK: - LABEL GESTURES
-    func addGestures() {
-        totalRestaurantLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(opentotalRestaurants)))
-    }
     
-    @objc func opentotalRestaurants() {
+    //MARK: - LABEL GESTURES
+    
+    @IBAction func seeAllRestaurantsButtonTapped(_ sender: Any) {
         guard let trendingRestaurentsVC = storyboard?.instantiateViewController(identifier: "TrendingRestaurantsVC") else {return}
         trendingRestaurentsVC.modalPresentationStyle = .fullScreen
         self.presentDetail(trendingRestaurentsVC)
     }
-//MARK: - SEARCH FIELD RIGHT BUTTON
+    @IBAction func seeAllCatagoriesButtonTapped(_ sender: Any) {
+        
+        guard let trendingRestaurentsVC = storyboard?.instantiateViewController(identifier: "CategoriesVC") as? CategoriesVC else {return}
+        trendingRestaurentsVC.modalPresentationStyle = .fullScreen
+        self.presentDetail(trendingRestaurentsVC)
+    }
+    @IBAction func seeAllFriendsButtonTapped(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "FindFriendsVC") else {return}
+        vc.modalPresentationStyle = .fullScreen
+        self.presentDetail(vc)
+    }
+    
+    //MARK: - SEARCH FIELD RIGHT BUTTON
     func setSearchFieldRightButton() {
         
         var view: UIView
@@ -86,7 +94,7 @@ class HomeVC: UIViewController {
         searchField.rightView = view
     }
     @objc func filterButtonAction() {
-        guard let filter = storyboard?.instantiateViewController(identifier: "Filter") as? FilterVC else {return}
+        guard let filter = storyboard?.instantiateViewController(identifier: "FilterResultsVC") as? FilterResultsVC else {return}
         filter.modalPresentationStyle = .fullScreen
         presentDetail(filter)
     }
@@ -116,6 +124,20 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
         } else {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VisitorsCell", for: indexPath) as? VisitorsCell else {return VisitorsCell()}
             return cell
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        if collectionView == restaurantCollectionView {
+            guard let vc = storyboard?.instantiateViewController(identifier: "TrendingRestaurantItemDetailsVC") as? TrendingRestaurantItemDetailsVC else {return}
+            vc.modalPresentationStyle = .fullScreen
+            presentDetail(vc)
+        } else if collectionView == categoryCollectionView {
+            guard let trendingRestaurentsVC = storyboard?.instantiateViewController(identifier: "CategoresVC") as? FilterVC else {return}
+            trendingRestaurentsVC.modalPresentationStyle = .fullScreen
+            self.presentDetail(trendingRestaurentsVC)
+        } else {
+            
         }
     }
     

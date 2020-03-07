@@ -9,19 +9,24 @@
 import UIKit
 
 class TrendingRestaurantsVC: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UITextFieldX!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.delegate = self
         tableView.dataSource = self
         setSearchFieldRightButton()
     }
     
-//MARK: - SEARCH FIELD RIGHT BUTTON
+    @IBAction func closeButtonTapped(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC else {return}
+        vc.modalPresentationStyle = .fullScreen
+        presentDetail(vc)
+    }
+    //MARK: - SEARCH FIELD RIGHT BUTTON
     func setSearchFieldRightButton() {
         
         var view: UIView
@@ -41,12 +46,12 @@ class TrendingRestaurantsVC: UIViewController {
         searchBar.rightView = view
     }
     @objc func filterButtonAction() {
-        guard let filter = storyboard?.instantiateViewController(identifier: "Filter") as? FilterVC else {return}
+        guard let filter = storyboard?.instantiateViewController(identifier: "FilterResultsVC") as? FilterResultsVC else {return}
         filter.modalPresentationStyle = .fullScreen
         presentDetail(filter)
     }
- 
-
+    
+    
 }
 
 extension TrendingRestaurantsVC: UITableViewDataSource, UITableViewDelegate {
@@ -60,5 +65,11 @@ extension TrendingRestaurantsVC: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        guard let vc = storyboard?.instantiateViewController(identifier: "TrendingRestaurantItemDetailsVC") as? TrendingRestaurantItemDetailsVC else {return}
+        vc.modalPresentationStyle = .fullScreen
+        presentDetail(vc)
+    }
     
 }

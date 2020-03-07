@@ -30,7 +30,10 @@ class FilterVC: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismissDetail()
+        
+        guard let vc = storyboard?.instantiateViewController(identifier: "TrendingRestaurantsVC") as? TrendingRestaurantsVC else {return}
+        vc.modalPresentationStyle = .fullScreen
+        presentDetail(vc)
     }
     @IBAction func categoryButtonTappped(_ sender: DezignableButton ) {
         print(sender.titleLabel!)

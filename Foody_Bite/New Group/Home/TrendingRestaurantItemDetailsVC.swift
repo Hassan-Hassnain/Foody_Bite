@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Dezignables
 
 class TrendingRestaurantItemDetailsVC: UIViewController {
 
@@ -25,7 +26,14 @@ class TrendingRestaurantItemDetailsVC: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.dismissDetail()
+        guard let vc = storyboard?.instantiateViewController(identifier: "TrendingRestaurantsVC") as? TrendingRestaurantsVC else {return}
+               vc.modalPresentationStyle = .fullScreen
+               presentDetail(vc)
+    }
+    @IBAction func rateYourExpierience(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "RatingAndReviewVC") as? RatingAndReviewVC else {return}
+               vc.modalPresentationStyle = .fullScreen
+               presentDetail(vc)
     }
     
 

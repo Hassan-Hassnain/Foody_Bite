@@ -17,6 +17,13 @@
 		3C56C17A240C5F8F00A56AAB /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C179240C5F8F00A56AAB /* UITextFieldX.swift */; };
 		3C56C17C240C70E000A56AAB /* TrendingRestaurantsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C17B240C70E000A56AAB /* TrendingRestaurantsCell.swift */; };
 		3C56C17F240C78ED00A56AAB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C17E240C78ED00A56AAB /* HomeVC.swift */; };
+		3C584B9A2413952F0003CB9E /* FindFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584B992413952F0003CB9E /* FindFriendsVC.swift */; };
+		3C584B9E24139EE40003CB9E /* FindFriendCell_Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584B9D24139EE40003CB9E /* FindFriendCell_Contacts.swift */; };
+		3C584BA024139EF90003CB9E /* FindFriendCell_Suggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584B9F24139EF90003CB9E /* FindFriendCell_Suggestions.swift */; };
+		3C584BA22413AA2B0003CB9E /* FilterResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584BA12413AA2B0003CB9E /* FilterResultsVC.swift */; };
+		3C584BA42413B6660003CB9E /* CategorVCTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584BA32413B6660003CB9E /* CategorVCTableCell.swift */; };
+		3C584BA62413B7E30003CB9E /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584BA52413B7E30003CB9E /* CategoriesVC.swift */; };
+		3C584BA82413D1C60003CB9E /* CategoryDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584BA72413D1C60003CB9E /* CategoryDetailsVC.swift */; };
 		3C6F19EE240A500B00CA095A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F19ED240A500B00CA095A /* LoginVC.swift */; };
 		3C6F19F2240A5B7100CA095A /* DesignableTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */; };
 		3C769A73240D152900E041FB /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C769A72240D152900E041FB /* CategoryCell.swift */; };
@@ -30,6 +37,7 @@
 		3C89AD40240992E400CF970C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD3E240992E400CF970C /* LaunchScreen.storyboard */; };
 		3C89AD4C2409966D00CF970C /* Josefin_Sans_Font in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */; };
 		3C89AD4E24099E2C00CF970C /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89AD4D24099E2C00CF970C /* StartVC.swift */; };
+		3CB173642413881700C7159F /* RatingAndReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB173632413881700C7159F /* RatingAndReviewVC.swift */; };
 		3CDFCBD4240AFE4900571F8B /* UIView_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */; };
 		3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */; };
 		CD81B79FB16AADDA26B965F0 /* Pods_Foody_Bite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F07655E5232ACD127942DC3 /* Pods_Foody_Bite.framework */; };
@@ -46,6 +54,13 @@
 		3C56C179240C5F8F00A56AAB /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
 		3C56C17B240C70E000A56AAB /* TrendingRestaurantsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRestaurantsCell.swift; sourceTree = "<group>"; };
 		3C56C17E240C78ED00A56AAB /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		3C584B992413952F0003CB9E /* FindFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsVC.swift; sourceTree = "<group>"; };
+		3C584B9D24139EE40003CB9E /* FindFriendCell_Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendCell_Contacts.swift; sourceTree = "<group>"; };
+		3C584B9F24139EF90003CB9E /* FindFriendCell_Suggestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendCell_Suggestions.swift; sourceTree = "<group>"; };
+		3C584BA12413AA2B0003CB9E /* FilterResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterResultsVC.swift; sourceTree = "<group>"; };
+		3C584BA32413B6660003CB9E /* CategorVCTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorVCTableCell.swift; sourceTree = "<group>"; };
+		3C584BA52413B7E30003CB9E /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
+		3C584BA72413D1C60003CB9E /* CategoryDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsVC.swift; sourceTree = "<group>"; };
 		3C6F19ED240A500B00CA095A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextFiled.swift; sourceTree = "<group>"; };
 		3C769A72240D152900E041FB /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
@@ -61,6 +76,7 @@
 		3C89AD41240992E400CF970C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Josefin_Sans_Font; sourceTree = "<group>"; };
 		3C89AD4D24099E2C00CF970C /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		3CB173632413881700C7159F /* RatingAndReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingAndReviewVC.swift; sourceTree = "<group>"; };
 		3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Ext.swift; sourceTree = "<group>"; };
 		3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		4F07655E5232ACD127942DC3 /* Pods_Foody_Bite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foody_Bite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +115,11 @@
 				3C769A7A240D37B800E041FB /* TrendingRestaurantsVC.swift */,
 				3C201B6D24129EA600C5927C /* FilterVC.swift */,
 				3C201B6F2412C3B300C5927C /* TrendingRestaurantItemDetailsVC.swift */,
+				3CB173632413881700C7159F /* RatingAndReviewVC.swift */,
+				3C584B992413952F0003CB9E /* FindFriendsVC.swift */,
+				3C584BA12413AA2B0003CB9E /* FilterResultsVC.swift */,
+				3C584BA52413B7E30003CB9E /* CategoriesVC.swift */,
+				3C584BA72413D1C60003CB9E /* CategoryDetailsVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -160,6 +181,9 @@
 				3C769A78240D377600E041FB /* TrendingRestaurantsTabelCell.swift */,
 				3C201B712412C55400C5927C /* FriendsRatingTableCell.swift */,
 				3C201B732412C58900C5927C /* FoodtypeCollectionCell.swift */,
+				3C584B9D24139EE40003CB9E /* FindFriendCell_Contacts.swift */,
+				3C584B9F24139EF90003CB9E /* FindFriendCell_Suggestions.swift */,
+				3C584BA32413B6660003CB9E /* CategorVCTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,22 +340,30 @@
 				3CDFCBD4240AFE4900571F8B /* UIView_Ext.swift in Sources */,
 				3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */,
 				3C56C173240C51CD00A56AAB /* CreateAccountVC.swift in Sources */,
+				3C584BA42413B6660003CB9E /* CategorVCTableCell.swift in Sources */,
+				3C584BA22413AA2B0003CB9E /* FilterResultsVC.swift in Sources */,
 				3C769A73240D152900E041FB /* CategoryCell.swift in Sources */,
 				3C56C175240C520700A56AAB /* GPS_VC.swift in Sources */,
+				3C584B9A2413952F0003CB9E /* FindFriendsVC.swift in Sources */,
 				3C56C17F240C78ED00A56AAB /* HomeVC.swift in Sources */,
 				3C769A77240D19CB00E041FB /* VisitorsCell.swift in Sources */,
+				3C584BA024139EF90003CB9E /* FindFriendCell_Suggestions.swift in Sources */,
 				3C89AD34240992DE00CF970C /* AppDelegate.swift in Sources */,
 				3C89AD36240992DE00CF970C /* SceneDelegate.swift in Sources */,
+				3CB173642413881700C7159F /* RatingAndReviewVC.swift in Sources */,
 				3C56C178240C57B300A56AAB /* UIViewControllerEXT.swift in Sources */,
 				3C6F19EE240A500B00CA095A /* LoginVC.swift in Sources */,
 				3C201B6E24129EA600C5927C /* FilterVC.swift in Sources */,
+				3C584BA82413D1C60003CB9E /* CategoryDetailsVC.swift in Sources */,
 				3C56C17A240C5F8F00A56AAB /* UITextFieldX.swift in Sources */,
 				3C201B742412C58900C5927C /* FoodtypeCollectionCell.swift in Sources */,
 				3C769A79240D377600E041FB /* TrendingRestaurantsTabelCell.swift in Sources */,
+				3C584BA62413B7E30003CB9E /* CategoriesVC.swift in Sources */,
 				3C769A7B240D37B800E041FB /* TrendingRestaurantsVC.swift in Sources */,
 				3C89AD4E24099E2C00CF970C /* StartVC.swift in Sources */,
 				3C201B702412C3B300C5927C /* TrendingRestaurantItemDetailsVC.swift in Sources */,
 				3C6F19F2240A5B7100CA095A /* DesignableTextFiled.swift in Sources */,
+				3C584B9E24139EE40003CB9E /* FindFriendCell_Contacts.swift in Sources */,
 				3C56C17C240C70E000A56AAB /* TrendingRestaurantsCell.swift in Sources */,
 				3C201B722412C55400C5927C /* FriendsRatingTableCell.swift in Sources */,
 			);
