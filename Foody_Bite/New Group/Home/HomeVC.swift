@@ -41,18 +41,29 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func addButtonWasTapped(_ sender: Any) {
+        guard let trendingRestaurentsVC = storyboard?.instantiateViewController(identifier: "NewReviewVC") as? NewReviewVC else {return}
+        trendingRestaurentsVC.modalPresentationStyle = .fullScreen
+        self.presentDetail(trendingRestaurentsVC)
     }
     
     @IBAction func homeButtonWasTapped(_ sender: Any) {
     }
     
     @IBAction func favoriteButtonWasTapped(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "MyFavoriteVC") as? MyFavoriteVC else {return}
+        vc.modalPresentationStyle = .fullScreen
+        self.presentDetail(vc)
     }
-    
-    @IBAction func notificationButtonWasTapped(_ sender: Any) {
+    @IBAction func notificationButtonTapped(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "NotificationVC") as? NotificationVC else {return}
+        vc.modalPresentationStyle = .fullScreen
+        self.presentDetail(vc)
     }
     
     @IBAction func profileButtonWasTapped(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "ProfileVC") as? ProfileVC else {return}
+        vc.modalPresentationStyle = .fullScreen
+        self.presentDetail(vc)
     }
     
     //MARK: - LABEL GESTURES

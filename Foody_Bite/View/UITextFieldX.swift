@@ -65,7 +65,7 @@ class UITextFieldX: UITextField {
         // Placeholder text color
         attributedPlaceholder = NSAttributedString(string: placeholder != nil ?
             placeholder! :
-            "", attributes:[NSAttributedString.Key.foregroundColor: tintColor])
+            "", attributes:[NSAttributedString.Key.foregroundColor: tintColor as Any])
     }
     
     func setLeftImage() {
