@@ -21,6 +21,9 @@ class CategoriesVC: UIViewController {
         
     }
     
+    @IBAction func backButtonTapped(_ sender: Any) {
+        dismissDetail()
+    }
     
     
 }

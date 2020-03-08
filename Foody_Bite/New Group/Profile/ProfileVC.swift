@@ -21,6 +21,9 @@ class ProfileVC: UIViewController {
         tableView.delegate = self
     }
 
+    @IBAction func backButtonTapped(_ sender: Any) {
+        dismissDetail()
+    }
     @IBAction func homeButtonTapped(_ sender: Any) {
         guard let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC else {return}
         vc.modalPresentationStyle = .fullScreen
@@ -45,6 +48,29 @@ class ProfileVC: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         presentDetail(vc)
     }
+    @IBAction func reviewsButtonTapped(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "ReviewsVC") as? ReviewsVC else {return}
+        vc.modalPresentationStyle = .fullScreen
+        presentDetail(vc)
+    }
+    @IBAction func followersButtonTapped(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "FollowersVC") as? FollowersVC else {print("returned from FollowersVC"); return}
+        vc.modalPresentationStyle = .fullScreen
+        presentDetail(vc)
+    }
+    @IBAction func followingButtonTapped(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "FollowingVC") as? FollowingVC else {return}
+        vc.modalPresentationStyle = .fullScreen
+        presentDetail(vc)
+    }
+    @IBAction func settingsButtonTapped(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "SettingsVC") as? SettingsVC else {return}
+        vc.modalPresentationStyle = .fullScreen
+        presentDetail(vc)
+    }
+    
+    
+    
     
 }
 
