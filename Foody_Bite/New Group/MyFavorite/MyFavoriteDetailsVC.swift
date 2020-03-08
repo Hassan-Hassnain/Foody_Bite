@@ -9,12 +9,12 @@
 import UIKit
 
 class MyFavoriteDetailsVC: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         tableView.dataSource = self
@@ -25,8 +25,8 @@ class MyFavoriteDetailsVC: UIViewController {
         dismissDetail()
     }
     
-
-
+    
+    
 }
 
 extension MyFavoriteDetailsVC: UITableViewDelegate, UITableViewDataSource {
@@ -40,12 +40,12 @@ extension MyFavoriteDetailsVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//        guard let vc = storyboard?.instantiateViewController(identifier: "TrendingRestaurantItemDetailsVC") as? TrendingRestaurantItemDetailsVC else {return}
-//        vc.modalPresentationStyle = .fullScreen
-//        presentDetail(vc)
-//    }
+    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //
+    //        guard let vc = storyboard?.instantiateViewController(identifier: "TrendingRestaurantItemDetailsVC") as? TrendingRestaurantItemDetailsVC else {return}
+    //        vc.modalPresentationStyle = .fullScreen
+    //        presentDetail(vc)
+    //    }
     
     
 }
