@@ -47,6 +47,9 @@
 		3C89AD40240992E400CF970C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD3E240992E400CF970C /* LaunchScreen.storyboard */; };
 		3C89AD4C2409966D00CF970C /* Josefin_Sans_Font in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */; };
 		3C89AD4E24099E2C00CF970C /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89AD4D24099E2C00CF970C /* StartVC.swift */; };
+		3C9D2D682416842B00CD5120 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D2D672416842B00CD5120 /* ChangePasswordVC.swift */; };
+		3C9D2D6A2416984800CD5120 /* ChangeLanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D2D692416984800CD5120 /* ChangeLanguageVC.swift */; };
+		3C9D2D6C24169A2500CD5120 /* ChangeLanguageVCTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D2D6B24169A2500CD5120 /* ChangeLanguageVCTableCell.swift */; };
 		3CB173642413881700C7159F /* RatingAndReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB173632413881700C7159F /* RatingAndReviewVC.swift */; };
 		3CBD6C452414C94B00CC501D /* MyFavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD6C442414C94B00CC501D /* MyFavoriteVC.swift */; };
 		3CBD6C472414CC9500CC501D /* MyFavoriteDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD6C462414CC9500CC501D /* MyFavoriteDetailsVC.swift */; };
@@ -104,6 +107,9 @@
 		3C89AD41240992E400CF970C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Josefin_Sans_Font; sourceTree = "<group>"; };
 		3C89AD4D24099E2C00CF970C /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		3C9D2D672416842B00CD5120 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		3C9D2D692416984800CD5120 /* ChangeLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageVC.swift; sourceTree = "<group>"; };
+		3C9D2D6B24169A2500CD5120 /* ChangeLanguageVCTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageVCTableCell.swift; sourceTree = "<group>"; };
 		3CB173632413881700C7159F /* RatingAndReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingAndReviewVC.swift; sourceTree = "<group>"; };
 		3CBD6C442414C94B00CC501D /* MyFavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteVC.swift; sourceTree = "<group>"; };
 		3CBD6C462414CC9500CC501D /* MyFavoriteDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteDetailsVC.swift; sourceTree = "<group>"; };
@@ -239,6 +245,7 @@
 				3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */,
 				3C6327192413E395007C4F29 /* Home */,
 				3CBD6C502414FDCB00CC501D /* NotificationVCTableViewCell.swift */,
+				3C9D2D6B24169A2500CD5120 /* ChangeLanguageVCTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,6 +300,8 @@
 				3C4CEAAC241545A4000B20FF /* FollowingVC.swift */,
 				3C4CEAAE24154751000B20FF /* ReviewsVC.swift */,
 				3C4CEAB024155337000B20FF /* SettingsVC.swift */,
+				3C9D2D672416842B00CD5120 /* ChangePasswordVC.swift */,
+				3C9D2D692416984800CD5120 /* ChangeLanguageVC.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -454,6 +463,7 @@
 				3C7F1484241421740027BBF2 /* PreviewVC.swift in Sources */,
 				3C6F19EE240A500B00CA095A /* LoginVC.swift in Sources */,
 				3C201B6E24129EA600C5927C /* FilterVC.swift in Sources */,
+				3C9D2D682416842B00CD5120 /* ChangePasswordVC.swift in Sources */,
 				3C7F1480241408D80027BBF2 /* MenuAndPhotosVC.swift in Sources */,
 				3C4CEAAB24154424000B20FF /* FollowersVC.swift in Sources */,
 				3C584BA82413D1C60003CB9E /* CategoryDetailsVC.swift in Sources */,
@@ -465,6 +475,7 @@
 				3CE951D9241531D9007139A6 /* ProfileVC.swift in Sources */,
 				3CBD6C472414CC9500CC501D /* MyFavoriteDetailsVC.swift in Sources */,
 				3CBD6C4A2414CEE500CC501D /* NewReviewVC.swift in Sources */,
+				3C9D2D6A2416984800CD5120 /* ChangeLanguageVC.swift in Sources */,
 				3CBD6C4E2414FD2E00CC501D /* NotificationVC.swift in Sources */,
 				3C769A7B240D37B800E041FB /* TrendingRestaurantsVC.swift in Sources */,
 				3C89AD4E24099E2C00CF970C /* StartVC.swift in Sources */,
@@ -472,6 +483,7 @@
 				3C6F19F2240A5B7100CA095A /* DesignableTextFiled.swift in Sources */,
 				3C584B9E24139EE40003CB9E /* FindFriendCell_Contacts.swift in Sources */,
 				3C4CEAAF24154751000B20FF /* ReviewsVC.swift in Sources */,
+				3C9D2D6C24169A2500CD5120 /* ChangeLanguageVCTableCell.swift in Sources */,
 				3C56C17C240C70E000A56AAB /* TrendingRestaurantsCell.swift in Sources */,
 				3C4CEAB124155337000B20FF /* SettingsVC.swift in Sources */,
 				3C6327182413DBDD007C4F29 /* OtherUserProfileVC.swift in Sources */,

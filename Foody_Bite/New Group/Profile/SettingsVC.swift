@@ -13,14 +13,20 @@ class SettingsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     @IBAction func backButtonTapped(_ sender: Any) {
         dismissDetail()
     }
     @IBAction func changePasswordButtonTaped(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "ChangePasswordVC") as? ChangePasswordVC else {return}
+        vc.modalPresentationStyle = .fullScreen
+        presentDetail(vc)
     }
     @IBAction func ChangeLanguageButtonTapped(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "ChangeLanguageVC") as? ChangeLanguageVC else {return}
+               vc.modalPresentationStyle = .fullScreen
+               presentDetail(vc)
     }
     
     @IBAction func privacyAndPolicyButtonTapped(_ sender: Any) {
