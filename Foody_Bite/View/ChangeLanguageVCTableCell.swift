@@ -10,7 +10,8 @@ import UIKit
 
 class ChangeLanguageVCTableCell: UITableViewCell {
 
-    @IBOutlet weak var languageButton: UIButton!
+   
+    @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var selectionImage: UIImageView!
     
     override func awakeFromNib() {
@@ -25,11 +26,14 @@ class ChangeLanguageVCTableCell: UITableViewCell {
     }
     
     @IBAction func languageButtonTapped(_ sender: Any) {
+        print("Button pressed")
     }
     
-    func configure(languageTitle title: String, buttonImage image: UIImage) {
-        self.languageButton.setTitle(title, for: .normal)
-        self.selectionImage.image = image
+    func configure(languageTitle title: String, buttonImage image: UIImage?) {
+        languageLabel.text = title
+        if let image = image {
+            self.selectionImage.image = image
+        }
     }
     
 }

@@ -9,18 +9,18 @@
 import UIKit
 
 class ProfileVC: UIViewController {
-
+    
     
     @IBOutlet weak var tableView: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.dataSource = self
         tableView.delegate = self
     }
-
+    
     @IBAction func backButtonTapped(_ sender: Any) {
         dismissDetail()
     }
@@ -37,8 +37,8 @@ class ProfileVC: UIViewController {
     @IBAction func notificationButtonTapped(_ sender: Any) {
         print("Notification button tapped")
         guard let vc = storyboard?.instantiateViewController(identifier: "NotificationVC") as? NotificationVC else {return}
-                     vc.modalPresentationStyle = .fullScreen
-                     presentDetail(vc)
+        vc.modalPresentationStyle = .fullScreen
+        presentDetail(vc)
     }
     @IBAction func profileButtonTapped(_ sender: Any) {
     }
@@ -80,11 +80,37 @@ extension ProfileVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TrendingRestaurantsTabelCell") as? TrendingRestaurantsTabelCell else {return TrendingRestaurantsTabelCell()}
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileVC_TableCell") as? ProfileVC_TableCell else {return TrendingRestaurantsTabelCell()}
+        cell.optionButtonDelegate = self
         return cell
     }
     
+    
+    
+}
 
+extension ProfileVC: OptionButtonDelegate {
+    func didTappedOptionButton() {
+        optionButtonWasTapped()
+    }
+    
+    func optionButtonWasTapped() {
+        // create the alert
+        let alert = UIAlertController(title: "", message: "", preferredStyle: UIAlertController.Style.alert)
+        let color: UIColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
+        let messageAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 25)!, NSAttributedString.Key.foregroundColor: color]
+        let messageString = NSAttributedString(string: "Are you sure you want to logout?", attributes: messageAttributes)
+        alert.setValue(messageString, forKey: "attributedMessage")
+        // add the actions (buttons)
+        
+        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "edit", style: UIAlertAction.Style.default, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+        
+        print("ProfileVC")
+    }
     
 }

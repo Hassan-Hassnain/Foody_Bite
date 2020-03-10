@@ -12,7 +12,8 @@ class ChangeLanguageVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var languages = ["English", ]
+    var currentIndex = 0
+    var languages = ["English", "Chinese", "Spanish","Urdu", "Hindu", "Arabic","Portuguese","Russian","Japanese","French","German"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +31,7 @@ class ChangeLanguageVC: UIViewController {
 }
 
 extension ChangeLanguageVC: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return languages.count
     }
@@ -37,7 +39,18 @@ extension ChangeLanguageVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ChangeLanguageVCTableCell") as? ChangeLanguageVCTableCell else {return ChangeLanguageVCTableCell()}
         
+        if currentIndex == indexPath.row {
+            cell.configure(languageTitle: languages[indexPath.row], buttonImage: UIImage(named: "Icon_Ok_Blue.png"))
+        } else {
+            cell.configure(languageTitle: languages[indexPath.row], buttonImage: UIImage(named: "Icon_Circle_White.png"))
+        }
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        currentIndex = indexPath.row
+        tableView.reloadData()
     }
     
     

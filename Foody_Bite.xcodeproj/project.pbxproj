@@ -57,6 +57,7 @@
 		3CBD6C4C2414D6D700CC501D /* NewReview_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD6C4B2414D6D700CC501D /* NewReview_2.swift */; };
 		3CBD6C4E2414FD2E00CC501D /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD6C4D2414FD2E00CC501D /* NotificationVC.swift */; };
 		3CBD6C512414FDCB00CC501D /* NotificationVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD6C502414FDCB00CC501D /* NotificationVCTableViewCell.swift */; };
+		3CD7B18D24181A2400028284 /* ProfileVC_TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD7B18C24181A2400028284 /* ProfileVC_TableCell.swift */; };
 		3CDFCBD4240AFE4900571F8B /* UIView_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */; };
 		3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */; };
 		3CE951D9241531D9007139A6 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE951D8241531D9007139A6 /* ProfileVC.swift */; };
@@ -117,6 +118,7 @@
 		3CBD6C4B2414D6D700CC501D /* NewReview_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReview_2.swift; sourceTree = "<group>"; };
 		3CBD6C4D2414FD2E00CC501D /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		3CBD6C502414FDCB00CC501D /* NotificationVCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVCTableViewCell.swift; sourceTree = "<group>"; };
+		3CD7B18C24181A2400028284 /* ProfileVC_TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC_TableCell.swift; sourceTree = "<group>"; };
 		3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Ext.swift; sourceTree = "<group>"; };
 		3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		3CE951D8241531D9007139A6 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				3C6327192413E395007C4F29 /* Home */,
 				3CBD6C502414FDCB00CC501D /* NotificationVCTableViewCell.swift */,
 				3C9D2D6B24169A2500CD5120 /* ChangeLanguageVCTableCell.swift */,
+				3CD7B18C24181A2400028284 /* ProfileVC_TableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				3C89AD34240992DE00CF970C /* AppDelegate.swift in Sources */,
 				3C7F1486241425510027BBF2 /* AllReviewAndRatingVC.swift in Sources */,
 				3CBD6C4C2414D6D700CC501D /* NewReview_2.swift in Sources */,
+				3CD7B18D24181A2400028284 /* ProfileVC_TableCell.swift in Sources */,
 				3C89AD36240992DE00CF970C /* SceneDelegate.swift in Sources */,
 				3C4CEAAD241545A4000B20FF /* FollowingVC.swift in Sources */,
 				3CB173642413881700C7159F /* RatingAndReviewVC.swift in Sources */,
