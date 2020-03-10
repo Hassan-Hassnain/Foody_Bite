@@ -8,6 +8,7 @@
 
 import UIKit
 import Dezignables
+import IQKeyboardManagerSwift
 
 class CreateAccountVC: UIViewController {
     
@@ -18,13 +19,19 @@ class CreateAccountVC: UIViewController {
     @IBOutlet weak var emailTextField: DesignableUITextField!
     @IBOutlet weak var passwordTextField: DesignableUITextField!
     @IBOutlet weak var confirmPasswordTextField: DesignableUITextField!
+    @IBOutlet weak var registerButton: DezignableButton!
     
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        confirmPasswordTextField.delegate = self
         
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 200
         
     }
     
@@ -37,5 +44,9 @@ class CreateAccountVC: UIViewController {
         loginVC.modalPresentationStyle = .fullScreen
         self.dismissDetail()  }
     
+    
+}
+
+extension CreateAccountVC : UITextFieldDelegate {
     
 }
