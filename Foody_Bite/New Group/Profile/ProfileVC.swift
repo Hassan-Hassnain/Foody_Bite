@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import Dezignables
 
 class ProfileVC: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var alertBG: UIView!
+    @IBOutlet weak var alertOptions: DezignableView!
+    @IBOutlet weak var alertOptions_2: DezignableView!
     
     
     override func viewDidLoad() {
@@ -19,6 +23,9 @@ class ProfileVC: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
+        
+       hideAlert1()
+        hideAlert2()
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
@@ -68,8 +75,51 @@ class ProfileVC: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         presentDetail(vc)
     }
+//MARK: - Alert functions
+  
+    @IBAction func editButtonTapped(_ sender: Any) {
+        print("Edit Button Clicked")
+        hideAlert1()
+    }
+    @IBAction func deletButtonTapped(_ sender: Any) {
+        print("Delete Button Clicked")
+        hideAlert1()
+        showAlert2()
+    }
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        print("Cancel Button Clicked")
+        hideAlert1()
+    }
     
     
+      func hideAlert1() {
+          alertBG.isHidden = true
+          alertOptions.isHidden = true
+      }
+      func showAlert1() {
+          alertBG.isHidden = false
+          alertOptions.isHidden = false
+      }
+    
+    
+    @IBAction func noButtonTapped(_ sender: Any) {
+        print("No Button Clicked")
+        hideAlert2()
+    }
+    @IBAction func yesButtonTapped(_ sender: Any) {
+        print("Yes Button Clicked")
+        hideAlert2()
+    }
+    
+    func hideAlert2() {
+        alertBG.isHidden = true
+        alertOptions_2.isHidden = true
+    }
+    
+    func showAlert2() {
+        alertBG.isHidden = false
+        alertOptions_2.isHidden = false
+    }
     
     
 }
@@ -84,9 +134,7 @@ extension ProfileVC: UITableViewDataSource, UITableViewDelegate {
         cell.optionButtonDelegate = self
         return cell
     }
-    
-    
-    
+  
 }
 
 extension ProfileVC: OptionButtonDelegate {
@@ -95,22 +143,12 @@ extension ProfileVC: OptionButtonDelegate {
     }
     
     func optionButtonWasTapped() {
-        // create the alert
-        let alert = UIAlertController(title: "", message: "", preferredStyle: UIAlertController.Style.alert)
-        let color: UIColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
-        let messageAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 25)!, NSAttributedString.Key.foregroundColor: color]
-        let messageString = NSAttributedString(string: "Are you sure you want to logout?", attributes: messageAttributes)
-        alert.setValue(messageString, forKey: "attributedMessage")
-        // add the actions (buttons)
+//        print("Option Will show")
+//        CustomAlertOptions.instance.showAlert()
+//        print("Option did show")
         
-        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
-        alert.addAction(UIAlertAction(title: "edit", style: UIAlertAction.Style.default, handler: nil))
         
-        // show the alert
-        self.present(alert, animated: true, completion: nil)
-        
-        print("ProfileVC")
+        showAlert1()
     }
     
 }

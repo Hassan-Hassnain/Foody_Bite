@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="JosefinSans-SemiBold.ttf">
+            <string>JosefinSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertView" customModule="Foody_Bite" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLabel" destination="anr-cV-Cow" id="q7l-oW-6yx"/>
+                <outlet property="parentView" destination="iN0-l3-epB" id="xrE-wf-a2j"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="735"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLP-5q-QJy">
+                    <rect key="frame" x="0.0" y="0.0" width="368" height="735"/>
+                    <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azi-2a-TsS" customClass="DezignableView" customModule="Dezignables">
+                    <rect key="frame" x="23" y="259" width="322" height="217"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Xnp-cR-sh2">
+                            <rect key="frame" x="0.0" y="157" width="322" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbD-qS-LkS">
+                                    <rect key="frame" x="0.0" y="0.0" width="160.5" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
+                                    <state key="normal" title="NO">
+                                        <color key="titleColor" red="0.58502644299999995" green="0.63388937710000004" blue="0.7572997212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="noButtonTapped:" destination="-1" eventType="touchUpInside" id="LR0-sw-CCy"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtY-XI-ggA">
+                                    <rect key="frame" x="161.5" y="0.0" width="160.5" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
+                                    <state key="normal" title="Yes"/>
+                                    <connections>
+                                        <action selector="yesButtonTapped:" destination="-1" eventType="touchUpInside" id="Pkg-rX-gsJ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="2OX-5m-z1g"/>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmV-Yq-QJW">
+                            <rect key="frame" x="0.0" y="0.0" width="322" height="156"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to logout?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anr-cV-Cow">
+                                    <rect key="frame" x="21" y="56" width="281" height="44"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="anr-cV-Cow" secondAttribute="trailing" constant="20" id="3Gk-cs-Xad"/>
+                                <constraint firstItem="anr-cV-Cow" firstAttribute="top" secondItem="xmV-Yq-QJW" secondAttribute="top" constant="56" id="9DH-Iw-ji3"/>
+                                <constraint firstItem="anr-cV-Cow" firstAttribute="leading" secondItem="xmV-Yq-QJW" secondAttribute="leading" constant="21" id="E66-MI-rdh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.69411764705882351" green="0.75686274509803919" blue="0.90588235294117647" alpha="0.2909621147260274" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Xnp-cR-sh2" secondAttribute="bottom" id="L2T-MT-jqf"/>
+                        <constraint firstItem="xmV-Yq-QJW" firstAttribute="leading" secondItem="azi-2a-TsS" secondAttribute="leading" id="WOk-W6-E7G"/>
+                        <constraint firstAttribute="trailing" secondItem="Xnp-cR-sh2" secondAttribute="trailing" id="Ypc-Kc-1fm"/>
+                        <constraint firstItem="Xnp-cR-sh2" firstAttribute="top" secondItem="xmV-Yq-QJW" secondAttribute="bottom" constant="1" id="a2c-g5-UXG"/>
+                        <constraint firstItem="Xnp-cR-sh2" firstAttribute="leading" secondItem="azi-2a-TsS" secondAttribute="leading" id="geF-Ey-GUL"/>
+                        <constraint firstAttribute="height" constant="217" id="nTn-B5-QzT"/>
+                        <constraint firstAttribute="trailing" secondItem="xmV-Yq-QJW" secondAttribute="trailing" id="rXZ-1a-ZXW"/>
+                        <constraint firstItem="xmV-Yq-QJW" firstAttribute="top" secondItem="azi-2a-TsS" secondAttribute="top" id="s3B-9E-QIL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="azi-2a-TsS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Cgf-Ak-eA6"/>
+                <constraint firstItem="rLP-5q-QJy" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="IZ2-3l-H3Y"/>
+                <constraint firstItem="rLP-5q-QJy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UC0-IE-GaY"/>
+                <constraint firstItem="rLP-5q-QJy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fwG-Lj-5bw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="azi-2a-TsS" secondAttribute="trailing" constant="23" id="mqD-iH-MWC"/>
+                <constraint firstItem="azi-2a-TsS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="ths-us-26G"/>
+                <constraint firstItem="rLP-5q-QJy" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="zvO-Ff-yNk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="22" y="-30"/>
+        </view>
+    </objects>
+</document>

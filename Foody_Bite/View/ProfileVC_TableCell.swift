@@ -9,9 +9,7 @@
 import UIKit
 import Dezignables
 
-protocol OptionButtonDelegate {
-    func didTappedOptionButton()
-}
+
 
 class ProfileVC_TableCell: UITableViewCell {
     

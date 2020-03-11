@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="JosefinSans-SemiBold.ttf">
+            <string>JosefinSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertOptions" customModule="Foody_Bite" customModuleProvider="target">
+            <connections>
+                <outlet property="parentView" destination="iN0-l3-epB" id="aRO-iG-sAK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="596" height="451"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEE-92-Pps">
+                    <rect key="frame" x="0.0" y="0.0" width="596" height="451"/>
+                    <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZeK-7C-5td" customClass="DezignableView" customModule="Dezignables">
+                    <rect key="frame" x="23" y="119" width="550" height="213"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="UCk-Sh-e6y">
+                            <rect key="frame" x="0.0" y="0.0" width="550" height="213"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxa-Vp-Hzt">
+                                    <rect key="frame" x="0.0" y="0.0" width="550" height="70.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70.329999999999998" id="llz-Es-kQk"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="22"/>
+                                    <state key="normal" title="Edit">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="editButton:" destination="-1" eventType="touchUpInside" id="pac-b5-dWs"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oV-HP-ojg">
+                                    <rect key="frame" x="0.0" y="71.5" width="550" height="70"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70.329999999999998" id="1pp-go-8RA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="22"/>
+                                    <state key="normal" title="Delete">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="deleteButtonTapped:" destination="-1" eventType="touchUpInside" id="uvq-2B-8wP"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzR-OC-Faw">
+                                    <rect key="frame" x="0.0" y="142.5" width="550" height="70.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70.329999999999998" id="5hL-cH-hD0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="22"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" red="0.69411764710000001" green="0.75686274509999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="EiO-7A-1pj"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.69411764705882351" green="0.75686274509803919" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="UCk-Sh-e6y" firstAttribute="top" secondItem="ZeK-7C-5td" secondAttribute="top" id="Kz3-Ls-h3c"/>
+                        <constraint firstAttribute="bottom" secondItem="UCk-Sh-e6y" secondAttribute="bottom" id="SuT-4t-rs8"/>
+                        <constraint firstAttribute="trailing" secondItem="UCk-Sh-e6y" secondAttribute="trailing" id="aHK-xM-5fm"/>
+                        <constraint firstItem="UCk-Sh-e6y" firstAttribute="leading" secondItem="ZeK-7C-5td" secondAttribute="leading" id="jE3-og-WJf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZeK-7C-5td" secondAttribute="trailing" constant="23" id="A2m-kd-Epk"/>
+                <constraint firstItem="aEE-92-Pps" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="AED-Kt-I6p"/>
+                <constraint firstItem="ZeK-7C-5td" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aym-LQ-vkx"/>
+                <constraint firstItem="aEE-92-Pps" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bA0-LA-FJS"/>
+                <constraint firstAttribute="bottom" secondItem="aEE-92-Pps" secondAttribute="bottom" id="mtf-eu-5Z8"/>
+                <constraint firstItem="ZeK-7C-5td" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="yNU-sM-mme"/>
+                <constraint firstItem="aEE-92-Pps" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zCU-wq-1g1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="92.753623188405811" y="-63.28125"/>
+        </view>
+    </objects>
+</document>
