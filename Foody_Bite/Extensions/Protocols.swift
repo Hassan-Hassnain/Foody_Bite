@@ -11,10 +11,6 @@ protocol OptionButtonDelegate {
     func didTappedOptionButton()
 }
 
-protocol TXRXDelegate {
-    func update()
-}
-
 //For ProfileVC CustionAlertOptions
 protocol CustomAlertOptionsDelegate {
     func editButtonClicked()

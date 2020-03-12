@@ -13,6 +13,7 @@ class SettingsVC: UIViewController {
 
     @IBOutlet weak var alertBG: UIView!
     @IBOutlet weak var alertOptions: DezignableView!
+    @IBOutlet weak var alertOption2CenterYConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,9 +51,11 @@ class SettingsVC: UIViewController {
     func hideAlert() {
         alertBG.isHidden = true
         alertOptions.isHidden = true
+        alertOption2CenterYConstraint.constant = 600
     }
     
     func showAlert() {
+        alertOption2CenterYConstraint.constant = 0
         alertBG.isHidden = false
         alertOptions.isHidden = false
     }

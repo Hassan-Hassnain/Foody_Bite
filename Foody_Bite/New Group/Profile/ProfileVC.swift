@@ -15,6 +15,10 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var alertBG: UIView!
     @IBOutlet weak var alertOptions: DezignableView!
     @IBOutlet weak var alertOptions_2: DezignableView!
+    @IBOutlet weak var editButton: UIButton!
+    @IBOutlet weak var alertOption1CenterYConstraint: NSLayoutConstraint!
+    @IBOutlet weak var alertOption2CenterYConstraint: NSLayoutConstraint!
+    @IBOutlet weak var alertBGTopConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +28,6 @@ class ProfileVC: UIViewController {
         
         hideAlert1()
         hideAlert2()
-        
-        if let editReview = storyboard?.instantiateViewController(identifier: "ProfileVC") as? EditReviewVC {
-            editReview.txrxDelegate = self
-        }
         
     }
     @IBAction func backButtonTapped(_ sender: Any) {
@@ -44,7 +44,7 @@ class ProfileVC: UIViewController {
         goTo(toVC: "NotificationVC", animate: false)
     }
     @IBAction func profileButtonTapped(_ sender: Any) {
-        goTo(toVC: "ProfileVC", animate: false)
+//        goTo(toVC: "ProfileVC", animate: false)
     }
     @IBAction func addButtonTapped(_ sender: Any) {
         goTo(toVC: "NewReviewVC", animate: true)
@@ -58,6 +58,9 @@ class ProfileVC: UIViewController {
     @IBAction func followingButtonTapped(_ sender: Any) {
         goTo(toVC: "FollowingVC", animate: true)
     }
+    @IBAction func EditProfileButtonTapped(_ sender: Any) {
+        goTo(toVC: "EditProfileVC", animate: true)
+    }
     @IBAction func settingsButtonTapped(_ sender: Any) {
         goTo(toVC: "SettingsVC", animate: true)
     }
@@ -68,17 +71,14 @@ class ProfileVC: UIViewController {
         goTo(toVC: "EditReviewVC", animate: true)
     }
     @IBAction func deletButtonTapped(_ sender: Any) {
-        print("Delete Button Clicked")
         hideAlert1()
         showAlert2()
     }
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        print("Cancel Button Clicked")
         hideAlert1()
     }
     
-    @IBAction func noButtonTapped(_ sender: Any) {
-        print("No Button Clicked")
+    @IBAction func noButtonTapped(_ sender: Any) {       
         hideAlert2()
     }
     @IBAction func yesButtonTapped(_ sender: Any) {
@@ -90,9 +90,13 @@ class ProfileVC: UIViewController {
     func hideAlert1() {
         alertBG.isHidden = true
         alertOptions.isHidden = true
+        alertOption1CenterYConstraint.constant = 600
+         alertBGTopConstraint.constant = UIScreen.main.bounds.height
     }
     
     func showAlert1() {
+        alertOption1CenterYConstraint.constant = 0
+        alertBGTopConstraint.constant = 0
         alertBG.isHidden = false
         alertOptions.isHidden = false
     }
@@ -100,12 +104,18 @@ class ProfileVC: UIViewController {
     func hideAlert2() {
         alertBG.isHidden = true
         alertOptions_2.isHidden = true
+        alertOption2CenterYConstraint.constant = 600
+        alertBGTopConstraint.constant = UIScreen.main.bounds.height
     }
     
     func showAlert2() {
+        alertOption2CenterYConstraint.constant = 0
+        alertBGTopConstraint.constant = 0
         alertBG.isHidden = false
         alertOptions_2.isHidden = false
     }
+    
+    
     
     
     
@@ -129,18 +139,5 @@ extension ProfileVC: OptionButtonDelegate {
         //        CustomAlertOptions.instance.showAlert()
         showAlert1()
     }
-    
-}
-extension ProfileVC: TXRXDelegate {
-    func vuController() -> UIViewController {
-     guard let vc = storyboard?.instantiateViewController(identifier: "ProfileVC") as? EditReviewVC else {return UIViewController()}
-        
-        return vc
-    }
-    
-    func update() {
-        showAlert1()
-    }
-    
     
 }

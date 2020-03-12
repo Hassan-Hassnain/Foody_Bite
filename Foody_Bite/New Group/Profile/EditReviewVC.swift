@@ -9,8 +9,6 @@
 import UIKit
 
 class EditReviewVC: UIViewController {
-
-    var txrxDelegate: TXRXDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +18,6 @@ class EditReviewVC: UIViewController {
     
 
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        txrxDelegate?.update()
         dismissDetail()
     }
     @IBAction func backButtonTapped(_ sender: Any) {
