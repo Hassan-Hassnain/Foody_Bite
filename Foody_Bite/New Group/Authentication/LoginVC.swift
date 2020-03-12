@@ -25,19 +25,13 @@ class LoginVC: UIViewController {
         
     }
     @IBAction func forgorPasswordButtonTapped(_ sender: Any) {
-        guard let forgotPasswordVC = storyboard?.instantiateViewController(identifier: "ForgotPasswordVC") else {return}
-        forgotPasswordVC.modalPresentationStyle = .fullScreen
-        self.presentDetail(forgotPasswordVC)
+        goTo(toVC: "ForgotPasswordVC", animate: true)
     }
     @IBAction func createNewAccoundButtonTapped(_ sender: Any) {
-        guard let createAccountVC = storyboard?.instantiateViewController(identifier: "CreateAccountVC") else {return}
-        createAccountVC.modalPresentationStyle = .fullScreen
-         self.presentDetail(createAccountVC)
+        goTo(toVC: "CreateAccountVC", animate: true)
     }
     @IBAction func loginButtonTapped(_ sender: Any) {
-        guard let createAccountVC = storyboard?.instantiateViewController(identifier: "HomeVC") else {return}
-                createAccountVC.modalPresentationStyle = .fullScreen
-                 self.presentDetail(createAccountVC)
+        goTo(toVC: "HomeVC", animate: false)
     }
     
 

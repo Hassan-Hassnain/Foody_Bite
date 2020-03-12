@@ -40,11 +40,8 @@ class CreateAccountVC: UIViewController {
     @IBAction func registerButtonTapped(_ sender: Any) {
     }
     @IBAction func loginButtonTapped(_ sender: Any) {
-        guard let  loginVC = (self.storyboard?.instantiateViewController(identifier: "LoginVC") as? LoginVC) else {return}
-        loginVC.modalPresentationStyle = .fullScreen
-        self.dismissDetail()  }
-    
-    
+        self.dismissDetail()
+    }
 }
 
 extension CreateAccountVC : UITextFieldDelegate {

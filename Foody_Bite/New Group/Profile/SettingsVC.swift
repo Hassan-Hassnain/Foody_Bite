@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Dezignables
 
 class SettingsVC: UIViewController {
 
+    @IBOutlet weak var alertBG: UIView!
+    @IBOutlet weak var alertOptions: DezignableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,14 +23,10 @@ class SettingsVC: UIViewController {
         dismissDetail()
     }
     @IBAction func changePasswordButtonTaped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "ChangePasswordVC") as? ChangePasswordVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "ChangePasswordVC", animate: true)
     }
     @IBAction func ChangeLanguageButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "ChangeLanguageVC") as? ChangeLanguageVC else {return}
-               vc.modalPresentationStyle = .fullScreen
-               presentDetail(vc)
+        goTo(toVC: "ChangeLanguageVC", animate: true)
     }
     
     @IBAction func privacyAndPolicyButtonTapped(_ sender: Any) {
@@ -35,11 +35,26 @@ class SettingsVC: UIViewController {
     }
     
     @IBAction func logoutButtonTapped(_ sender: Any) {
-        
-        CustomAlertView.instance.showAlert(alertMessage: "Are you sure you want to logout?")
-        
-        
+        showAlert()
     }
- 
+ @IBAction func noButtonTapped(_ sender: Any) {
+        hideAlert()
+        dismissDetail()
+    }
+    @IBAction func yesButtonTapped(_ sender: Any) {
+        hideAlert()
+        goTo(toVC: "LoginVC", animate: true)
+    }
+    //MARK: - Alert functions
+    
+    func hideAlert() {
+        alertBG.isHidden = true
+        alertOptions.isHidden = true
+    }
+    
+    func showAlert() {
+        alertBG.isHidden = false
+        alertOptions.isHidden = false
+    }
   
 }

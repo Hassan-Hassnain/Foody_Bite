@@ -24,27 +24,18 @@ class MyFavoriteVC: UIViewController {
         
     }
     @IBAction func homeButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        self.goTo(toVC: "HomeVC", animate: false)
     }
     @IBAction func favoriteButtonTapped(_ sender: Any) {
     }
     @IBAction func notificationButtonTapped(_ sender: Any) {
-        print("Notification button tapped")
-        guard let vc = storyboard?.instantiateViewController(identifier: "NotificationVC") as? NotificationVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "NotificationVC", animate: false)
     }
     @IBAction func profileButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "ProfileVC") as? ProfileVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        self.presentDetail(vc)
+        goTo(toVC: "ProfileVC", animate: false)
     }
     @IBAction func addButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "NewReviewVC") as? NewReviewVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "NewReviewVC", animate: true)
     }
 }
 extension MyFavoriteVC: UITableViewDataSource, UITableViewDelegate {
@@ -59,10 +50,7 @@ extension MyFavoriteVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        guard let vc = storyboard?.instantiateViewController(identifier: "MyFavoriteDetailsVC") as? MyFavoriteDetailsVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "MyFavoriteDetailsVC", animate: true)
     }
     
 }

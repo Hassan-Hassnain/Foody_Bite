@@ -27,29 +27,19 @@ class NewReview_2: UIViewController {
     @IBAction func postButtonTapped(_ sender: Any) {
     }
     @IBAction func homeButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "HomeVC", animate: false)
     }
     @IBAction func favoriteButtonTapped(_ sender: Any) {
-        guard let trendingRestaurentsVC = storyboard?.instantiateViewController(identifier: "MyFavoriteVC") as? MyFavoriteVC else {return}
-        trendingRestaurentsVC.modalPresentationStyle = .fullScreen
-        self.presentDetail(trendingRestaurentsVC)
+        goTo(toVC: "MyFavoriteVC", animate: false)
     }
     @IBAction func notificationButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "NotificationVC") as? NotificationVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "NotificationVC", animate: false)
     }
     @IBAction func profileButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "ProfileVC") as? ProfileVC else {return}
-               vc.modalPresentationStyle = .fullScreen
-               self.presentDetail(vc)
+        goTo(toVC: "ProfileVC", animate: false)
     }
     @IBAction func closeButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "HomeVC", animate: false)
     }
     
     //MARK: - SEARCH FIELD RIGHT BUTTON

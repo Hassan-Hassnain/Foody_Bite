@@ -42,4 +42,17 @@ extension UIViewController {
         
         dismiss(animated: false, completion: nil)
     }
+    
+    
+    func goTo( toVC to: String, animate: Bool) {
+        guard let vc = storyboard?.instantiateViewController(identifier: to) else {return}
+        vc.modalPresentationStyle = .fullScreen
+        if animate {
+            presentDetail(vc)
+        } else {
+            self.present(vc, animated: false, completion: nil)
+        }
+    }
+    
+    
 }

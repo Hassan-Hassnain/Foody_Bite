@@ -34,9 +34,7 @@ class ChangePasswordVC: UIViewController {
         dismissDetail()
     }
     @IBAction func updateButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "LoginVC") as? LoginVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "LoginVC", animate: true)
         
     }
     

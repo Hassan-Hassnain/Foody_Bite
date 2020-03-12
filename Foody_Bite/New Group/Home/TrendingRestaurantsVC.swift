@@ -22,9 +22,7 @@ class TrendingRestaurantsVC: UIViewController {
     }
     
     @IBAction func closeButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        self.goTo(toVC:"HomeVC", animate: true)
     }
     //MARK: - SEARCH FIELD RIGHT BUTTON
     func setSearchFieldRightButton() {

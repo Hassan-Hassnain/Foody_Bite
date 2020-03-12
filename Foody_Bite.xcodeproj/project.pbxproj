@@ -33,7 +33,6 @@
 		3C61120524193EA600E7FF76 /* CustomAlertOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C61120424193EA600E7FF76 /* CustomAlertOptions.xib */; };
 		3C61120724193EC200E7FF76 /* CustomAlertOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C61120624193EC200E7FF76 /* CustomAlertOptions.swift */; };
 		3C6112092419450900E7FF76 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6112082419450900E7FF76 /* Protocols.swift */; };
-		3C61120B24195CDB00E7FF76 /* OptionsAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C61120A24195CDB00E7FF76 /* OptionsAlertVC.swift */; };
 		3C6327182413DBDD007C4F29 /* OtherUserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6327172413DBDD007C4F29 /* OtherUserProfileVC.swift */; };
 		3C6F19EE240A500B00CA095A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F19ED240A500B00CA095A /* LoginVC.swift */; };
 		3C6F19F2240A5B7100CA095A /* DesignableTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */; };
@@ -67,6 +66,8 @@
 		3CDFCBD4240AFE4900571F8B /* UIView_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */; };
 		3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */; };
 		3CE951D9241531D9007139A6 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE951D8241531D9007139A6 /* ProfileVC.swift */; };
+		3CFC8A65241AA0A200B75EB9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC8A64241AA0A200B75EB9 /* Helper.swift */; };
+		3CFC8A67241AB8FF00B75EB9 /* EditReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC8A66241AB8FF00B75EB9 /* EditReviewVC.swift */; };
 		CD81B79FB16AADDA26B965F0 /* Pods_Foody_Bite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F07655E5232ACD127942DC3 /* Pods_Foody_Bite.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,7 +98,6 @@
 		3C61120424193EA600E7FF76 /* CustomAlertOptions.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertOptions.xib; sourceTree = "<group>"; };
 		3C61120624193EC200E7FF76 /* CustomAlertOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertOptions.swift; sourceTree = "<group>"; };
 		3C6112082419450900E7FF76 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		3C61120A24195CDB00E7FF76 /* OptionsAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsAlertVC.swift; sourceTree = "<group>"; };
 		3C6327172413DBDD007C4F29 /* OtherUserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserProfileVC.swift; sourceTree = "<group>"; };
 		3C6F19ED240A500B00CA095A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextFiled.swift; sourceTree = "<group>"; };
@@ -134,6 +134,8 @@
 		3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Ext.swift; sourceTree = "<group>"; };
 		3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		3CE951D8241531D9007139A6 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		3CFC8A64241AA0A200B75EB9 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		3CFC8A66241AB8FF00B75EB9 /* EditReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReviewVC.swift; sourceTree = "<group>"; };
 		4F07655E5232ACD127942DC3 /* Pods_Foody_Bite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foody_Bite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9D49BA28E51D9C590F466A /* Pods-Foody_Bite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foody_Bite.debug.xcconfig"; path = "Target Support Files/Pods-Foody_Bite/Pods-Foody_Bite.debug.xcconfig"; sourceTree = "<group>"; };
 		AD2E9738C28AAF457E4718F3 /* Pods-Foody_Bite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foody_Bite.release.xcconfig"; path = "Target Support Files/Pods-Foody_Bite/Pods-Foody_Bite.release.xcconfig"; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				3C56C177240C57B300A56AAB /* UIViewControllerEXT.swift */,
 				3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */,
 				3C6112082419450900E7FF76 /* Protocols.swift */,
+				3CFC8A64241AA0A200B75EB9 /* Helper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -324,13 +327,13 @@
 			isa = PBXGroup;
 			children = (
 				3CE951D8241531D9007139A6 /* ProfileVC.swift */,
+				3CFC8A66241AB8FF00B75EB9 /* EditReviewVC.swift */,
 				3C4CEAAA24154424000B20FF /* FollowersVC.swift */,
 				3C4CEAAC241545A4000B20FF /* FollowingVC.swift */,
 				3C4CEAAE24154751000B20FF /* ReviewsVC.swift */,
 				3C4CEAB024155337000B20FF /* SettingsVC.swift */,
 				3C9D2D672416842B00CD5120 /* ChangePasswordVC.swift */,
 				3C9D2D692416984800CD5120 /* ChangeLanguageVC.swift */,
-				3C61120A24195CDB00E7FF76 /* OptionsAlertVC.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -475,8 +478,10 @@
 				3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */,
 				3C56C173240C51CD00A56AAB /* CreateAccountVC.swift in Sources */,
 				3C584BA42413B6660003CB9E /* CategorVCTableCell.swift in Sources */,
+				3CFC8A65241AA0A200B75EB9 /* Helper.swift in Sources */,
 				3C584BA22413AA2B0003CB9E /* FilterResultsVC.swift in Sources */,
 				3C6112092419450900E7FF76 /* Protocols.swift in Sources */,
+				3CFC8A67241AB8FF00B75EB9 /* EditReviewVC.swift in Sources */,
 				3C769A73240D152900E041FB /* CategoryCell.swift in Sources */,
 				3C56C175240C520700A56AAB /* GPS_VC.swift in Sources */,
 				3C584B9A2413952F0003CB9E /* FindFriendsVC.swift in Sources */,
@@ -494,7 +499,6 @@
 				3C89AD36240992DE00CF970C /* SceneDelegate.swift in Sources */,
 				3C4CEAAD241545A4000B20FF /* FollowingVC.swift in Sources */,
 				3CB173642413881700C7159F /* RatingAndReviewVC.swift in Sources */,
-				3C61120B24195CDB00E7FF76 /* OptionsAlertVC.swift in Sources */,
 				3C56C178240C57B300A56AAB /* UIViewControllerEXT.swift in Sources */,
 				3C7F1484241421740027BBF2 /* PreviewVC.swift in Sources */,
 				3C6F19EE240A500B00CA095A /* LoginVC.swift in Sources */,

@@ -11,12 +11,10 @@ import Dezignables
 
 class ProfileVC: UIViewController {
     
-    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var alertBG: UIView!
     @IBOutlet weak var alertOptions: DezignableView!
     @IBOutlet weak var alertOptions_2: DezignableView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,62 +22,50 @@ class ProfileVC: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-       hideAlert1()
+        hideAlert1()
         hideAlert2()
+        
+        if let editReview = storyboard?.instantiateViewController(identifier: "ProfileVC") as? EditReviewVC {
+            editReview.txrxDelegate = self
+        }
+        
     }
-    
     @IBAction func backButtonTapped(_ sender: Any) {
         dismissDetail()
+        
     }
     @IBAction func homeButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "HomeVC", animate: false)
     }
     @IBAction func favoriteButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "MyFavoriteVC") as? MyFavoriteVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "MyFavoriteVC", animate: false)
     }
     @IBAction func notificationButtonTapped(_ sender: Any) {
-        print("Notification button tapped")
-        guard let vc = storyboard?.instantiateViewController(identifier: "NotificationVC") as? NotificationVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "NotificationVC", animate: false)
     }
     @IBAction func profileButtonTapped(_ sender: Any) {
+        goTo(toVC: "ProfileVC", animate: false)
     }
-    
     @IBAction func addButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "NewReviewVC") as? NewReviewVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "NewReviewVC", animate: true)
     }
     @IBAction func reviewsButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "ReviewsVC") as? ReviewsVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "ReviewsVC", animate: true)
     }
     @IBAction func followersButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "FollowersVC") as? FollowersVC else {print("returned from FollowersVC"); return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "FollowersVC", animate: true)
     }
     @IBAction func followingButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "FollowingVC") as? FollowingVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "FollowingVC", animate: true)
     }
     @IBAction func settingsButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "SettingsVC") as? SettingsVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "SettingsVC", animate: true)
     }
-//MARK: - Alert functions
-  
+    
+    //MARK: - Alert functions and Actions
     @IBAction func editButtonTapped(_ sender: Any) {
-        print("Edit Button Clicked")
-        hideAlert1()
+//        hideAlert1()
+        goTo(toVC: "EditReviewVC", animate: true)
     }
     @IBAction func deletButtonTapped(_ sender: Any) {
         print("Delete Button Clicked")
@@ -91,17 +77,6 @@ class ProfileVC: UIViewController {
         hideAlert1()
     }
     
-    
-      func hideAlert1() {
-          alertBG.isHidden = true
-          alertOptions.isHidden = true
-      }
-      func showAlert1() {
-          alertBG.isHidden = false
-          alertOptions.isHidden = false
-      }
-    
-    
     @IBAction func noButtonTapped(_ sender: Any) {
         print("No Button Clicked")
         hideAlert2()
@@ -109,6 +84,17 @@ class ProfileVC: UIViewController {
     @IBAction func yesButtonTapped(_ sender: Any) {
         print("Yes Button Clicked")
         hideAlert2()
+    }
+
+    
+    func hideAlert1() {
+        alertBG.isHidden = true
+        alertOptions.isHidden = true
+    }
+    
+    func showAlert1() {
+        alertBG.isHidden = false
+        alertOptions.isHidden = false
     }
     
     func hideAlert2() {
@@ -120,6 +106,7 @@ class ProfileVC: UIViewController {
         alertBG.isHidden = false
         alertOptions_2.isHidden = false
     }
+    
     
     
 }
@@ -134,21 +121,26 @@ extension ProfileVC: UITableViewDataSource, UITableViewDelegate {
         cell.optionButtonDelegate = self
         return cell
     }
-  
+    
 }
 
 extension ProfileVC: OptionButtonDelegate {
     func didTappedOptionButton() {
-        optionButtonWasTapped()
-    }
-    
-    func optionButtonWasTapped() {
-//        print("Option Will show")
-//        CustomAlertOptions.instance.showAlert()
-//        print("Option did show")
-        
-        
+        //        CustomAlertOptions.instance.showAlert()
         showAlert1()
     }
+    
+}
+extension ProfileVC: TXRXDelegate {
+    func vuController() -> UIViewController {
+     guard let vc = storyboard?.instantiateViewController(identifier: "ProfileVC") as? EditReviewVC else {return UIViewController()}
+        
+        return vc
+    }
+    
+    func update() {
+        showAlert1()
+    }
+    
     
 }

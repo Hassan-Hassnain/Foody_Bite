@@ -19,21 +19,15 @@ class NotificationVC: UIViewController {
         tableView.delegate = self
     }
     @IBAction func homeButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "HomeVC", animate: false)
     }
     @IBAction func favoriteButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "MyFavoriteVC") as? MyFavoriteVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(toVC: "MyFavoriteVC", animate: false)
     }
     @IBAction func notificationButtonTapped(_ sender: Any) {
     }
     @IBAction func profileButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "ProfileVC") as? ProfileVC else {return}
-               vc.modalPresentationStyle = .fullScreen
-               self.presentDetail(vc)
+        goTo(toVC: "ProfileVC", animate: false)
     }
 
 
