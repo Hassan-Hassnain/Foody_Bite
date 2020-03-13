@@ -35,7 +35,7 @@ class MyFavoriteVC: UIViewController {
         goTo(toVC: "ProfileVC", animate: false)
     }
     @IBAction func addButtonTapped(_ sender: Any) {
-        goTo(toVC: "NewReviewVC", animate: true)
+        goTo(toVC: "NewReviewVC", animate: false)
     }
 }
 extension MyFavoriteVC: UITableViewDataSource, UITableViewDelegate {

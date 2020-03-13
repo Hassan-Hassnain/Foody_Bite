@@ -38,9 +38,7 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func addButtonWasTapped(_ sender: Any) {
-        guard let trendingRestaurentsVC = storyboard?.instantiateViewController(identifier: "NewReviewVC") as? NewReviewVC else {return}
-        trendingRestaurentsVC.modalPresentationStyle = .fullScreen
-        self.presentDetail(trendingRestaurentsVC)
+        goTo(toVC: "NewReviewVC", animate: false)
     }
     
     @IBAction func homeButtonWasTapped(_ sender: Any) {

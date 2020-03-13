@@ -47,7 +47,7 @@ class ProfileVC: UIViewController {
 //        goTo(toVC: "ProfileVC", animate: false)
     }
     @IBAction func addButtonTapped(_ sender: Any) {
-        goTo(toVC: "NewReviewVC", animate: true)
+        goTo(toVC: "NewReviewVC", animate: false)
     }
     @IBAction func reviewsButtonTapped(_ sender: Any) {
         goTo(toVC: "ReviewsVC", animate: true)
