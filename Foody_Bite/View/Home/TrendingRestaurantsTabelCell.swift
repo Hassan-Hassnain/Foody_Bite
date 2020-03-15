@@ -58,8 +58,4 @@ class TrendingRestaurantsTabelCell: UITableViewCell {
         print("TrendingRestaurantTableCell button tapped")
     }
     
-    
-    
-    
-    
 }

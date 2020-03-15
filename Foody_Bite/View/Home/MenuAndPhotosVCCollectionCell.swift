@@ -11,16 +11,10 @@ import UIKit
 class MenuAndPhotosVCCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var foodImageView: UIImageView!
-    
-    // mainView is my custom parent view, that contains every other component of the cell
         
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        // Add width constraint if you want dynamic height
-        
-//        foodImageView.translatesAutoresizingMaskIntoConstraints = true
-//        foodImageView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width / 3).isActive = true
+
     }
     
     func configure(foodImage image: UIImage) {
