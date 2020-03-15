@@ -29,6 +29,7 @@
 		3C584BA62413B7E30003CB9E /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584BA52413B7E30003CB9E /* CategoriesVC.swift */; };
 		3C584BA82413D1C60003CB9E /* CategoryDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584BA72413D1C60003CB9E /* CategoryDetailsVC.swift */; };
 		3C5F540D241E9997001C46E0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F540C241E9996001C46E0 /* DataService.swift */; };
+		3C5F540F241EA208001C46E0 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F540E241EA208001C46E0 /* Restaurant.swift */; };
 		3C6112002419281900E7FF76 /* CustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6111FF2419281900E7FF76 /* CustomAlertView.xib */; };
 		3C6112032419312600E7FF76 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6112022419312600E7FF76 /* CustomAlertView.swift */; };
 		3C61120524193EA600E7FF76 /* CustomAlertOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C61120424193EA600E7FF76 /* CustomAlertOptions.xib */; };
@@ -96,6 +97,7 @@
 		3C584BA52413B7E30003CB9E /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		3C584BA72413D1C60003CB9E /* CategoryDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsVC.swift; sourceTree = "<group>"; };
 		3C5F540C241E9996001C46E0 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		3C5F540E241EA208001C46E0 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		3C6111FF2419281900E7FF76 /* CustomAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertView.xib; sourceTree = "<group>"; };
 		3C6112022419312600E7FF76 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		3C61120424193EA600E7FF76 /* CustomAlertOptions.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertOptions.xib; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 		3C89AD492409934C00CF970C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3C5F540E241EA208001C46E0 /* Restaurant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5F540F241EA208001C46E0 /* Restaurant.swift in Sources */,
 				3C6112032419312600E7FF76 /* CustomAlertView.swift in Sources */,
 				3CDFCBD4240AFE4900571F8B /* UIView_Ext.swift in Sources */,
 				3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */,

@@ -48,12 +48,27 @@ class TrendingRestaurantsTabelCell: UITableViewCell {
         self.restaurantsImageView.image = image
         self.restaurantName.text = name
         self.foodTypeLabel.text = type
-        self.distanceLabel.text = distance
+        self.distanceLabel.text = "\(distance) km"
         self.addressLabel.text = address
         visitors = visitorsArray
         setImages()
     }
-    
+    func configure(restaurant: Restaurant) {
+        self.openingStatusLabel.text = restaurant.openingStatus
+        self.ratingLabel.text = restaurant.rating
+        self.restaurantName.text = restaurant.restaurantName
+        self.foodTypeLabel.text = restaurant.foodType
+        self.distanceLabel.text = "\(restaurant.distance) km"
+        self.addressLabel.text = restaurant.address
+        if let images = restaurant.visitorImages {
+            visitors = images
+            setImages()
+        }
+        
+        if let image = restaurant.restaurantsImage {
+            self.restaurantsImageView.image = image
+        }
+    }
     @IBAction func optionsButtonTapped(_ sender: Any) {
         print("TrendingRestaurantTableCell button tapped")
     }
