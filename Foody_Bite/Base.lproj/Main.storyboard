@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mAN-DR-s9H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Czw-g7-wWf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -31,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-Splash-Screen1" translatesAutoresizingMaskIntoConstraints="NO" id="cTe-7x-KVC">
-                                <rect key="frame" x="-181.5" y="-14.5" width="672" height="1033.5000000000002"/>
+                                <rect key="frame" x="-181.5" y="-14.5" width="672" height="1033.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foodybite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69R-QL-9Iw">
                                 <rect key="frame" x="94.5" y="424" width="225" height="48"/>
@@ -1650,7 +1650,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qU-hG-fzB" customClass="DezignableButton" customModule="Dezignables">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
-                                                        <state key="normal" title="Italian"/>
+                                                        <state key="normal" title="Italian">
+                                                            <color key="titleColor" red="0.69411764710000001" green="0.75686274509999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="2"/>
@@ -1663,6 +1665,9 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="categoryButtonTappped:" destination="klT-GH-6w2" eventType="touchUpInside" id="OCt-DY-GMY"/>
@@ -1710,7 +1715,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLX-HT-Wly" customClass="DezignableButton" customModule="Dezignables">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
-                                                        <state key="normal" title="Chines"/>
+                                                        <state key="normal" title="Chines">
+                                                            <color key="titleColor" red="0.69411764710000001" green="0.75686274509999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="2"/>
@@ -1723,6 +1730,9 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="categoryButtonTappped:" destination="klT-GH-6w2" eventType="touchUpInside" id="xTc-Hv-JK7"/>
@@ -1770,7 +1780,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFf-KH-1Ac" customClass="DezignableButton" customModule="Dezignables">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
-                                                        <state key="normal" title="Maxican"/>
+                                                        <state key="normal" title="Maxican">
+                                                            <color key="titleColor" red="0.69411764710000001" green="0.75686274509999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="2"/>
@@ -1783,6 +1795,9 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="categoryButtonTappped:" destination="klT-GH-6w2" eventType="touchUpInside" id="FdR-YX-t7Z"/>
@@ -1835,7 +1850,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i81-6V-cfz" customClass="DezignableButton" customModule="Dezignables">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
-                                                        <state key="normal" title="Thai"/>
+                                                        <state key="normal" title="Thai">
+                                                            <color key="titleColor" red="0.69411764710000001" green="0.75686274509999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="2"/>
@@ -1848,6 +1865,9 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="categoryButtonTappped:" destination="klT-GH-6w2" eventType="touchUpInside" id="GlR-NM-laI"/>
@@ -1895,7 +1915,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zp1-b4-DhG" customClass="DezignableButton" customModule="Dezignables">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
-                                                        <state key="normal" title="Arabian"/>
+                                                        <state key="normal" title="Arabian">
+                                                            <color key="titleColor" red="0.69411764710000001" green="0.75686274509999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="2"/>
@@ -1908,6 +1930,9 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="categoryButtonTappped:" destination="klT-GH-6w2" eventType="touchUpInside" id="zPf-Rz-Lg8"/>
@@ -1955,7 +1980,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ou-lk-RhE" customClass="DezignableButton" customModule="Dezignables">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
-                                                        <state key="normal" title="Indian"/>
+                                                        <state key="normal" title="Indian">
+                                                            <color key="titleColor" red="0.69411764710000001" green="0.75686274509999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="2"/>
@@ -1968,6 +1995,9 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="categoryButtonTappped:" destination="klT-GH-6w2" eventType="touchUpInside" id="Wjd-2Z-8Jw"/>
@@ -2020,7 +2050,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqG-EF-iH4" customClass="DezignableButton" customModule="Dezignables">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
-                                                        <state key="normal" title="American"/>
+                                                        <state key="normal" title="American">
+                                                            <color key="titleColor" red="0.69411764710000001" green="0.75686274509999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="2"/>
@@ -2033,6 +2065,9 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="categoryButtonTappped:" destination="klT-GH-6w2" eventType="touchUpInside" id="N8d-8i-uFw"/>
@@ -2080,7 +2115,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABt-ax-DJm" customClass="DezignableButton" customModule="Dezignables">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
-                                                        <state key="normal" title="Korean"/>
+                                                        <state key="normal" title="Korean">
+                                                            <color key="titleColor" red="0.69411764710000001" green="0.75686274509999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="2"/>
@@ -2093,6 +2130,9 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="categoryButtonTappped:" destination="klT-GH-6w2" eventType="touchUpInside" id="5SV-8k-dsR"/>
@@ -2140,7 +2180,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUv-mo-M0X" customClass="DezignableButton" customModule="Dezignables">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
-                                                        <state key="normal" title="European"/>
+                                                        <state key="normal" title="European">
+                                                            <color key="titleColor" red="0.69411764710000001" green="0.75686274509999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="2"/>
@@ -2153,6 +2195,9 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="categoryButtonTappped:" destination="klT-GH-6w2" eventType="touchUpInside" id="t9y-HQ-0ss"/>
@@ -2211,27 +2256,42 @@
                                 <rect key="frame" x="58" y="564.5" width="298" height="69"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Awv-1J-dp9">
-                                        <rect key="frame" x="0.0" y="16" width="298" height="36.5"/>
+                                        <rect key="frame" x="0.0" y="-2" width="298" height="73"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fl-X2-gFt">
-                                                <rect key="frame" x="0.0" y="0.0" width="47" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="73"/>
                                                 <state key="normal" image="Icon_Star_Yellow"/>
+                                                <connections>
+                                                    <action selector="ratingStarTapped:" destination="klT-GH-6w2" eventType="touchUpInside" id="mFq-Jo-GNO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALc-Sa-O8A">
-                                                <rect key="frame" x="63" y="0.0" width="46.5" height="36.5"/>
+                                                <rect key="frame" x="63" y="0.0" width="46.5" height="73"/>
                                                 <state key="normal" image="Icon_Star_Yellow"/>
+                                                <connections>
+                                                    <action selector="ratingStarTapped:" destination="klT-GH-6w2" eventType="touchUpInside" id="MYN-aS-O61"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoJ-ix-C17">
-                                                <rect key="frame" x="125.5" y="0.0" width="47" height="36.5"/>
+                                                <rect key="frame" x="125.5" y="0.0" width="47" height="73"/>
                                                 <state key="normal" image="Icon_Star_Yellow"/>
+                                                <connections>
+                                                    <action selector="ratingStarTapped:" destination="klT-GH-6w2" eventType="touchUpInside" id="UCR-z0-hbB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqf-UR-iPs">
-                                                <rect key="frame" x="188.5" y="0.0" width="46.5" height="36.5"/>
+                                                <rect key="frame" x="188.5" y="0.0" width="46.5" height="73"/>
                                                 <state key="normal" image="Icon_Star_Yellow"/>
+                                                <connections>
+                                                    <action selector="ratingStarTapped:" destination="klT-GH-6w2" eventType="touchUpInside" id="z4O-bq-3yM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQx-52-Bfw">
-                                                <rect key="frame" x="251" y="0.0" width="47" height="36.5"/>
+                                                <rect key="frame" x="251" y="0.0" width="47" height="73"/>
                                                 <state key="normal" image="Icon_Star_Grey"/>
+                                                <connections>
+                                                    <action selector="ratingStarTapped:" destination="klT-GH-6w2" eventType="touchUpInside" id="972-LG-aN6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -2319,7 +2379,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSI-Fg-VkI">
-                                <rect key="frame" x="362.5" y="49" width="29.5" height="29"/>
+                                <rect key="frame" x="333" y="34.5" width="59" height="58"/>
                                 <state key="normal" image="Icon_Close"/>
                                 <connections>
                                     <action selector="backButtonTapped:" destination="klT-GH-6w2" eventType="touchUpInside" id="XKW-H8-sUl"/>
@@ -2363,23 +2423,20 @@
                     </view>
                     <connections>
                         <outlet property="americanButton" destination="IqG-EF-iH4" id="cqz-63-7ux"/>
-                        <outlet property="americanView" destination="VjN-M7-OXP" id="ioP-z2-iq1"/>
                         <outlet property="arabianButton" destination="Zp1-b4-DhG" id="wiF-Tc-Zhn"/>
-                        <outlet property="arabianView" destination="hmf-bZ-Iy6" id="j83-gp-faB"/>
-                        <outlet property="chinesView" destination="ZvX-aB-pXC" id="1j1-6E-2Ce"/>
                         <outlet property="chineseButton" destination="vLX-HT-Wly" id="upL-c7-7yE"/>
-                        <outlet property="european" destination="qBa-2k-L4K" id="Egv-Cq-pAF"/>
                         <outlet property="europeaonButton" destination="MUv-mo-M0X" id="fIC-XV-axp"/>
                         <outlet property="indianButton" destination="4Ou-lk-RhE" id="FNR-qw-iuW"/>
-                        <outlet property="indianView" destination="Vf0-40-v0n" id="biW-LF-jtS"/>
                         <outlet property="italianButton" destination="4qU-hG-fzB" id="ABd-fY-x1u"/>
-                        <outlet property="italianView" destination="vh9-gC-Znw" id="iNb-Ut-VDY"/>
                         <outlet property="koreanButton" destination="ABt-ax-DJm" id="I5c-Y1-yPB"/>
-                        <outlet property="koreanView" destination="ZhI-pk-YAi" id="Ihy-E5-Afz"/>
                         <outlet property="maxicanButton" destination="kFf-KH-1Ac" id="gU2-SI-QcW"/>
-                        <outlet property="maxicanView" destination="qCc-f7-Ulo" id="l9Z-dj-IPk"/>
+                        <outlet property="progressBar" destination="1Y3-xz-f2X" id="zGp-Rv-0Ua"/>
+                        <outlet property="ratingStar1" destination="5fl-X2-gFt" id="8Ra-98-JOt"/>
+                        <outlet property="ratingStar2" destination="ALc-Sa-O8A" id="kws-aR-0fN"/>
+                        <outlet property="ratingStar3" destination="zoJ-ix-C17" id="f0S-az-NB2"/>
+                        <outlet property="ratingStar4" destination="Uqf-UR-iPs" id="Olf-2S-yD3"/>
+                        <outlet property="ratingStar5" destination="eQx-52-Bfw" id="woc-06-vXD"/>
                         <outlet property="thaiButton" destination="i81-6V-cfz" id="t6v-Go-3wR"/>
-                        <outlet property="thaiView" destination="NhY-Fs-9Qk" id="gGf-VO-Z5h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPK-Pz-vWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2651,7 +2708,7 @@
                                     <constraint firstAttribute="height" constant="113" id="0vy-XW-K8E"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OzV-3K-b0T">
-                                    <size key="itemSize" width="150" height="112"/>
+                                    <size key="itemSize" width="153" height="112"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -4347,7 +4404,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfN-JB-twl">
-                                <rect key="frame" x="372" y="52.5" width="21.5" height="22"/>
+                                <rect key="frame" x="350.5" y="42" width="43" height="43"/>
                                 <state key="normal" image="Icon_Search_Black"/>
                                 <connections>
                                     <action selector="escapeButtonTapped:" destination="hQY-PG-lx6" eventType="touchUpInside" id="NwL-f2-2gl"/>
@@ -6693,30 +6750,35 @@ c3Rpb25zC25lYXIgeW91Lg
                                     <action selector="backButtonWasTapped:" destination="Czw-g7-wWf" eventType="touchUpInside" id="Udb-OM-i23"/>
                                 </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e7a-bt-p7H">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="always" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e7a-bt-p7H">
                                 <rect key="frame" x="20" y="104" width="374" height="758"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kza-Yl-bu4">
-                                    <size key="itemSize" width="146" height="155"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="5" minimumInteritemSpacing="2" id="Kza-Yl-bu4">
+                                    <size key="itemSize" width="133" height="116"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuAndPhotosVCCollectionCell" id="tJe-b9-cw0" customClass="MenuAndPhotosVCCollectionCell" customModule="Foody_Bite" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="146" height="155"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="116"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JSw-ME-bqn">
-                                            <rect key="frame" x="0.0" y="0.0" width="146" height="155"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="133" height="116"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG_Category" translatesAutoresizingMaskIntoConstraints="NO" id="15r-lq-z4G">
-                                                    <rect key="frame" x="0.0" y="0.0" width="146" height="155"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="15r-lq-z4G">
+                                                    <rect key="frame" x="0.0" y="0.0" width="133" height="116"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="15r-lq-z4G" secondAttribute="bottom" id="0FW-Er-XEn"/>
+                                                <constraint firstItem="15r-lq-z4G" firstAttribute="top" secondItem="JSw-ME-bqn" secondAttribute="top" id="3eH-eu-kiT"/>
+                                                <constraint firstAttribute="trailing" secondItem="15r-lq-z4G" secondAttribute="trailing" id="NgL-yH-iU7"/>
+                                                <constraint firstItem="15r-lq-z4G" firstAttribute="leading" secondItem="JSw-ME-bqn" secondAttribute="leading" id="ib8-Jb-uDw"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="146" height="155"/>
+                                        <size key="customSize" width="133" height="116"/>
                                         <connections>
                                             <outlet property="foodImageView" destination="15r-lq-z4G" id="tra-Yn-8Fc"/>
                                         </connections>
@@ -6774,7 +6836,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                     <action selector="backButtonWasTapped:" destination="Czw-g7-wWf" eventType="touchUpInside" id="EfP-16-zNR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Food_Image" translatesAutoresizingMaskIntoConstraints="NO" id="WAQ-ah-Y0H">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Food_Image" translatesAutoresizingMaskIntoConstraints="NO" id="WAQ-ah-Y0H">
                                 <rect key="frame" x="0.0" y="194" width="414" height="432"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="WAQ-ah-Y0H" secondAttribute="height" multiplier="208:217" id="J7n-Uy-4XX"/>
@@ -6961,6 +7023,9 @@ c3Rpb25zC25lYXIgeW91Lg
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="WAQ-ah-Y0H" id="T1g-j6-lFn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmY-0m-aTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -9978,6 +10043,7 @@ c3Rpb25zC25lYXIgeW91Lg
         </scene>
     </scenes>
     <resources>
+        <image name="10" width="225" height="225"/>
         <image name="BG-Create-Account" width="587.5" height="881"/>
         <image name="BG-Dark-Layer" width="375" height="812"/>
         <image name="BG-Login" width="578.5" height="819.5"/>

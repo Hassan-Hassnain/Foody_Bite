@@ -35,7 +35,9 @@ extension FollowersVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "FindFriendCell_Suggestions") as? FindFriendCell_Suggestions else {return FindFriendCell_Suggestions()}
-        
+        cell.friendName.text = "Muhammad Hassan"
+        cell.buttonColorView.backgroundFillColor = UIColor.red
+       
         return cell
     }
     //        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -20,20 +20,19 @@ class FilterVC: UIViewController {
     @IBOutlet weak var americanButton: DezignableButton!
     @IBOutlet weak var koreanButton: DezignableButton!
     @IBOutlet weak var europeaonButton: DezignableButton!
-    //Dezignable Views for background
-    @IBOutlet weak var italianView: DezignableView!
-    @IBOutlet weak var chinesView: DezignableView!
-    @IBOutlet weak var maxicanView: DezignableView!
-    @IBOutlet weak var thaiView: DezignableView!
-    @IBOutlet weak var arabianView: DezignableView!
-    @IBOutlet weak var indianView: DezignableView!
-    @IBOutlet weak var americanView: DezignableView!
-    @IBOutlet weak var koreanView: DezignableView!
-    @IBOutlet weak var european: DezignableView!
+    
+    @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var ratingStar1: UIButton!
+    @IBOutlet weak var ratingStar2: UIButton!
+    @IBOutlet weak var ratingStar3: UIButton!
+    @IBOutlet weak var ratingStar4: UIButton!
+    @IBOutlet weak var ratingStar5: UIButton!
+    
+    var selected: [Bool] = [false, false, false, false, false]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
@@ -43,27 +42,94 @@ class FilterVC: UIViewController {
         presentDetail(vc)
         
     }
-    @IBAction func categoryButtonTappped(_ sender: DezignableButton ) {
-            update(sender: sender)
+    @IBAction func categoryButtonTappped(_ sender: UIButton ) {
+        updateButtonAppearance(sender: sender)
     }
     
-    func update(sender: DezignableButton) {
-        italianButton.backgroundFillColor = UIColor.white; italianButton.setupBackground()
-        chineseButton.backgroundFillColor = UIColor.white; chineseButton.setupBackground()
-        maxicanButton.backgroundFillColor = UIColor.white; maxicanButton.setupBackground()
-        thaiButton.backgroundFillColor = UIColor.white; thaiButton.setupBackground()
-        arabianButton.backgroundFillColor = UIColor.white; arabianButton.setupBackground()
-        indianButton.backgroundFillColor = UIColor.white; indianButton.setupBackground()
-        americanButton.backgroundFillColor = UIColor.white; americanButton.setupBackground()
-        koreanButton.backgroundFillColor = UIColor.white; koreanButton.setupBackground()
-        europeaonButton.backgroundFillColor = UIColor.white; europeaonButton.setupBackground()
+    
+    @IBAction func ratingStarTapped(_ sender: UIButton) {
         
-        sender.backgroundFillColor = nil
-        sender.applyGradient(startColor: #colorLiteral(red: 1, green: 0.5490196078, blue: 0.2823529412, alpha: 1), stopColor: #colorLiteral(red: 1, green: 0.337254902, blue: 0.4509803922, alpha: 1))
+        if sender == ratingStar1 {
+            if !selected[0] {
+                ratingStar1.imageView?.image = #imageLiteral(resourceName: "Icon_Star_Yellow")
+                selected[0] = true
+            } else {
+                ratingStar1.imageView?.image = #imageLiteral(resourceName: "Icon_Star_Grey")
+                selected[0] = false
+            }
+        }
+        
+        if sender == ratingStar2 {
+            if !selected[1] {
+                ratingStar2.imageView?.image = #imageLiteral(resourceName: "Icon_Star_Yellow")
+                selected[1] = true
+            } else {
+                ratingStar2.imageView?.image = #imageLiteral(resourceName: "Icon_Star_Grey")
+                selected[1] = false
+            }
+        }
+        
+        if sender == ratingStar3 {
+            if !selected[2] {
+                ratingStar3.imageView?.image = #imageLiteral(resourceName: "Icon_Star_Yellow")
+                selected[2] = true
+            } else {
+                ratingStar3.imageView?.image = #imageLiteral(resourceName: "Icon_Star_Grey")
+                selected[2] = false
+            }
+        }
+        
+        if sender == ratingStar4 {
+            if !selected[3] {
+                ratingStar4.imageView?.image = #imageLiteral(resourceName: "Icon_Star_Yellow")
+                selected[3] = true
+            } else {
+                ratingStar4.imageView?.image = #imageLiteral(resourceName: "Icon_Star_Grey")
+                selected[3] = false
+            }
+        }
+        
+        if sender == ratingStar5 {
+            if !selected[4] {
+                ratingStar3.imageView?.image = #imageLiteral(resourceName: "Icon_Star_Yellow")
+                selected[4] = true
+            } else {
+                ratingStar3.imageView?.image = #imageLiteral(resourceName: "Icon_Star_Grey")
+                selected[4] = false
+            }
+        }
+        
+        
+    }
+    
+    
+    
+    func updateButtonAppearance(sender: UIButton) {
+        
+        italianButton.removeGradientLayer()
+        chineseButton.removeGradientLayer()
+        maxicanButton.removeGradientLayer()
+        thaiButton.removeGradientLayer()
+        arabianButton.removeGradientLayer()
+        indianButton.removeGradientLayer()
+        americanButton.removeGradientLayer()
+        koreanButton.removeGradientLayer()
+        europeaonButton.removeGradientLayer()
+        
+        italianButton.titleLabel?.textColor = #colorLiteral(red: 0.6941176471, green: 0.7568627451, blue: 0.9058823529, alpha: 1)
+        chineseButton.titleLabel?.textColor = #colorLiteral(red: 0.6941176471, green: 0.7568627451, blue: 0.9058823529, alpha: 1)
+        maxicanButton.titleLabel?.textColor = #colorLiteral(red: 0.6941176471, green: 0.7568627451, blue: 0.9058823529, alpha: 1)
+        thaiButton.titleLabel?.textColor = #colorLiteral(red: 0.6941176471, green: 0.7568627451, blue: 0.9058823529, alpha: 1)
+        arabianButton.titleLabel?.textColor = #colorLiteral(red: 0.6941176471, green: 0.7568627451, blue: 0.9058823529, alpha: 1)
+        indianButton.titleLabel?.textColor = #colorLiteral(red: 0.6941176471, green: 0.7568627451, blue: 0.9058823529, alpha: 1)
+        americanButton.titleLabel?.textColor = #colorLiteral(red: 0.6941176471, green: 0.7568627451, blue: 0.9058823529, alpha: 1)
+        koreanButton.titleLabel?.textColor = #colorLiteral(red: 0.6941176471, green: 0.7568627451, blue: 0.9058823529, alpha: 1)
+        europeaonButton.titleLabel?.textColor = #colorLiteral(red: 0.6941176471, green: 0.7568627451, blue: 0.9058823529, alpha: 1)
+        
+        sender.applyGradientLayer(topColor: #colorLiteral(red: 1, green: 0.5490196078, blue: 0.2823529412, alpha: 1), bottomColor: #colorLiteral(red: 1, green: 0.337254902, blue: 0.4509803922, alpha: 1))
         sender.applyCornerRadius(cornerRadius: 5)
         sender.applyBorder(borderWidth: 2, borderColor: #colorLiteral(red: 0.6941176471, green: 0.7568627451, blue: 0.9058823529, alpha: 1))
-        sender.setupBackground()
+        sender.titleLabel?.textColor = UIColor.white
+        
     }
-
-  
 }

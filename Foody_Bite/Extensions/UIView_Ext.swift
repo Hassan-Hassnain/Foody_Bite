@@ -28,34 +28,6 @@ extension UIView {
     
     }
     
-    
-    func applyGradient(startColor: UIColor, stopColor: UIColor)  {
-        let gradient = CAGradientLayer()
-        gradient.colors = [startColor.cgColor, stopColor.cgColor]
-        gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
-        gradient.endPoint = CGPoint(x: 1.0, y: 0.0)
-        gradient.frame = self.bounds
-        gradient.name = "gradientLayer"
-        
-        layer.removeFromSuperlayer()
-        
-        self.layer.insertSublayer(gradient, at: 0)
-    }
-    func applyWhiteBackground() {
-        let whiteLayer = CAGradientLayer()
-        whiteLayer.colors = [UIColor.white.cgColor, UIColor.white.cgColor]
-        whiteLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-        whiteLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
-        whiteLayer.frame = self.bounds
-        whiteLayer.name = "whiteLayer"
-        
-        layer.removeFromSuperlayer()
-        
-        self.layer.insertSublayer(whiteLayer, at: 0)
-    }
-    
-    
-    
     func applyBorder(borderWidth: CGFloat, borderColor: UIColor) {
         self.layer.borderColor = borderColor.cgColor
         self.layer.borderWidth = borderWidth
@@ -65,6 +37,51 @@ extension UIView {
         self.layer.cornerRadius = cornerRadius
     }
     
+    func applyGradientLayer (topColor: UIColor, bottomColor: UIColor) {
+        
+        // Manage gradient colors in an array
+        let gradientColors: [CGColor] = [topColor.cgColor, bottomColor.cgColor]
+        let gradientLayer: CAGradientLayer = CAGradientLayer ()
+        gradientLayer.colors = gradientColors
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 0)
+        gradientLayer.frame = self.bounds
+        gradientLayer.name = "grad"
+        
+        var present: Bool = false
+        
+        if let layers = self.layer.sublayers {
+                  if layers.count > 1 {
+                      for layer in layers {
+                          if layer.name == "grad" {
+                              present = true
+                          }
+                      }
+                      
+                  }
+              }
+        if !present {
+                  self.layer.insertSublayer (gradientLayer, at: 0)
+        }
+        
+        print(gradientLayer.name!)
+        print("One's Layer \(String(describing: self.layer.sublayers?.count))")
+    }
+    
+    
+    func removeGradientLayer () {
+        if let layers = self.layer.sublayers {
+            if layers.count > 1 {
+                for layer in layers {
+                    if layer.name == "grad" {
+                        layer.removeFromSuperlayer()
+                    }
+                }
+                
+                print("One's Layer \(layers.count)")
+            }
+        }
+    }
     
     
 }
