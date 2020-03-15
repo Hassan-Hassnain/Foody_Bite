@@ -249,7 +249,6 @@
 				3C89AD35240992DE00CF970C /* SceneDelegate.swift */,
 				3C89AD39240992DF00CF970C /* Main.storyboard */,
 				3C89AD3C240992E400CF970C /* Assets.xcassets */,
-				3C89CBA7241E4610002AF6FD /* New Group1 */,
 				3C89AD3E240992E400CF970C /* LaunchScreen.storyboard */,
 				3C89AD41240992E400CF970C /* Info.plist */,
 			);
@@ -289,13 +288,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		3C89CBA7241E4610002AF6FD /* New Group1 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group1";
 			sourceTree = "<group>";
 		};
 		3CBD6C432414C91F00CC501D /* MyFavorite */ = {

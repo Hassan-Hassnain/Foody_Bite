@@ -19,8 +19,8 @@ class MenuAndPhotosVCCollectionCell: UICollectionViewCell {
         
         // Add width constraint if you want dynamic height
         
-        foodImageView.translatesAutoresizingMaskIntoConstraints = true
-        foodImageView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width / 3).isActive = true
+//        foodImageView.translatesAutoresizingMaskIntoConstraints = true
+//        foodImageView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width / 3).isActive = true
     }
     
     func configure(foodImage image: UIImage) {
