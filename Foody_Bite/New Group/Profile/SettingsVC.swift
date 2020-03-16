@@ -8,6 +8,7 @@
 
 import UIKit
 import Dezignables
+import Firebase
 
 class SettingsVC: UIViewController {
 
@@ -43,6 +44,7 @@ class SettingsVC: UIViewController {
         dismissDetail()
     }
     @IBAction func yesButtonTapped(_ sender: Any) {
+        try! Auth.auth().signOut()
         hideAlert()
         goTo(toVC: "LoginVC", animate: true)
     }

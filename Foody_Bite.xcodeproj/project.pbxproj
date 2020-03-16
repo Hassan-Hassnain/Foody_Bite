@@ -54,6 +54,8 @@
 		3C89AD40240992E400CF970C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD3E240992E400CF970C /* LaunchScreen.storyboard */; };
 		3C89AD4C2409966D00CF970C /* Josefin_Sans_Font in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */; };
 		3C89AD4E24099E2C00CF970C /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89AD4D24099E2C00CF970C /* StartVC.swift */; };
+		3C9B7B23241FEF0C00646A92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C9B7B22241FEF0C00646A92 /* GoogleService-Info.plist */; };
+		3C9B7B25241FF1B600646A92 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B7B24241FF1B600646A92 /* AuthService.swift */; };
 		3C9D2D682416842B00CD5120 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D2D672416842B00CD5120 /* ChangePasswordVC.swift */; };
 		3C9D2D6A2416984800CD5120 /* ChangeLanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D2D692416984800CD5120 /* ChangeLanguageVC.swift */; };
 		3C9D2D6C24169A2500CD5120 /* ChangeLanguageVCTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D2D6B24169A2500CD5120 /* ChangeLanguageVCTableCell.swift */; };
@@ -125,6 +127,8 @@
 		3C89AD41240992E400CF970C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Josefin_Sans_Font; sourceTree = "<group>"; };
 		3C89AD4D24099E2C00CF970C /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		3C9B7B22241FEF0C00646A92 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3C9B7B24241FF1B600646A92 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		3C9D2D672416842B00CD5120 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
 		3C9D2D692416984800CD5120 /* ChangeLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageVC.swift; sourceTree = "<group>"; };
 		3C9D2D6B24169A2500CD5120 /* ChangeLanguageVCTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageVCTableCell.swift; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				3C5F540C241E9996001C46E0 /* DataService.swift */,
+				3C9B7B24241FF1B600646A92 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -250,6 +255,8 @@
 		3C89AD32240992DE00CF970C /* Foody_Bite */ = {
 			isa = PBXGroup;
 			children = (
+				3C89AD33240992DE00CF970C /* AppDelegate.swift */,
+				3C89AD35240992DE00CF970C /* SceneDelegate.swift */,
 				3CDD9230241ACE1C00187D2A /* Foody_Bite.entitlements */,
 				3C7F148924142D1D0027BBF2 /* README.md */,
 				3C5F540B241E9978001C46E0 /* Services */,
@@ -258,12 +265,11 @@
 				3C89AD492409934C00CF970C /* Model */,
 				3C89AD482409933F00CF970C /* View */,
 				3C89AD472409932B00CF970C /* Controller */,
-				3C89AD33240992DE00CF970C /* AppDelegate.swift */,
-				3C89AD35240992DE00CF970C /* SceneDelegate.swift */,
 				3C89AD39240992DF00CF970C /* Main.storyboard */,
 				3C89AD3C240992E400CF970C /* Assets.xcassets */,
 				3C89AD3E240992E400CF970C /* LaunchScreen.storyboard */,
 				3C89AD41240992E400CF970C /* Info.plist */,
+				3C9B7B22241FEF0C00646A92 /* GoogleService-Info.plist */,
 			);
 			path = Foody_Bite;
 			sourceTree = "<group>";
@@ -440,6 +446,7 @@
 				3C89AD4C2409966D00CF970C /* Josefin_Sans_Font in Resources */,
 				3C89AD3D240992E400CF970C /* Assets.xcassets in Resources */,
 				3C89AD3B240992DF00CF970C /* Main.storyboard in Resources */,
+				3C9B7B23241FEF0C00646A92 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +512,7 @@
 				3CFC8A67241AB8FF00B75EB9 /* EditReviewVC.swift in Sources */,
 				3C769A73240D152900E041FB /* CategoryCell.swift in Sources */,
 				3C56C175240C520700A56AAB /* GPS_VC.swift in Sources */,
+				3C9B7B25241FF1B600646A92 /* AuthService.swift in Sources */,
 				3C584B9A2413952F0003CB9E /* FindFriendsVC.swift in Sources */,
 				3C7F148224140BC60027BBF2 /* MenuAndPhotosVCCollectionCell.swift in Sources */,
 				3C61120724193EC200E7FF76 /* CustomAlertOptions.swift in Sources */,

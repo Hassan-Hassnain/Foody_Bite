@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mAN-DR-s9H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -80,7 +80,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkL-5M-1Xa" customClass="DezignableButton" customModule="Dezignables">
-                                <rect key="frame" x="59" y="706.5" width="296" height="58.5"/>
+                                <rect key="frame" x="59" y="709.5" width="296" height="58.5"/>
                                 <color key="backgroundColor" red="0.39724946020000002" green="0.44666510819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58.670000000000002" id="0oP-VU-Njv"/>
@@ -110,7 +110,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLc-KF-0Qq">
-                                <rect key="frame" x="128" y="827" width="158" height="32"/>
+                                <rect key="frame" x="134" y="830" width="146" height="29"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Light" family="Josefin Sans" pointSize="17"/>
                                 <state key="normal" title="Create New Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -131,7 +131,7 @@
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="11"/>
@@ -163,7 +163,7 @@
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="11"/>
@@ -186,7 +186,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeM-uy-WGu">
-                                <rect key="frame" x="236" y="570" width="139" height="32"/>
+                                <rect key="frame" x="256" y="570" width="119" height="29"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="17"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -243,7 +243,7 @@
                                 <rect key="frame" x="-102" y="0.0" width="617" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYk-wT-3FB" customClass="DezignableButton" customModule="Dezignables">
-                                <rect key="frame" x="59" y="503" width="296" height="59"/>
+                                <rect key="frame" x="59" y="501.5" width="296" height="58.5"/>
                                 <color key="backgroundColor" red="0.39724946020000002" green="0.44666510819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58.670000000000002" id="KJt-YA-fv8"/>
@@ -264,7 +264,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7El-0h-GcD" customClass="DesignableUITextField" customModule="Foody_Bite" customModuleProvider="target">
-                                <rect key="frame" x="59" y="249" width="296" height="58.5"/>
+                                <rect key="frame" x="59" y="247" width="296" height="59"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.3046607449" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -272,7 +272,7 @@
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="11"/>
@@ -296,7 +296,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffk-0X-I1s">
-                                <rect key="frame" x="131" y="47" width="152.5" height="23.5"/>
+                                <rect key="frame" x="141.5" y="48.5" width="131" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -314,7 +314,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email and will send you instructions on how to reset it" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnJ-nS-pPX">
-                                <rect key="frame" x="57" y="144.5" width="300" height="51"/>
+                                <rect key="frame" x="57" y="143" width="300" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="96k-Ss-ukR"/>
                                     <constraint firstAttribute="height" constant="51" id="bfN-T1-lnh"/>
@@ -380,7 +380,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vho-nj-9B6" customClass="DezignableButton" customModule="Dezignables">
-                                <rect key="frame" x="59" y="638" width="296" height="58.5"/>
+                                <rect key="frame" x="59" y="641" width="296" height="58.5"/>
                                 <color key="backgroundColor" red="0.39724946020000002" green="0.44666510819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58.670000000000002" id="m4m-Hd-ly1"/>
@@ -452,7 +452,7 @@
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="11"/>
@@ -484,7 +484,7 @@
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="11"/>
@@ -516,7 +516,7 @@
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="11"/>
@@ -545,10 +545,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oCo-Q6-qsP">
-                                <rect key="frame" x="86.5" y="825" width="241" height="32"/>
+                                <rect key="frame" x="93" y="828" width="228" height="29"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opa-i0-lLD">
-                                        <rect key="frame" x="0.0" y="6" width="197" height="20"/>
+                                        <rect key="frame" x="0.0" y="6" width="184" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="184" id="81y-Or-Qh4"/>
                                         </constraints>
@@ -557,7 +557,7 @@
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iY0-hY-mdP">
-                                        <rect key="frame" x="197" y="0.0" width="44" height="32"/>
+                                        <rect key="frame" x="184" y="0.0" width="44" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="p61-5b-B1h"/>
                                         </constraints>
@@ -843,7 +843,7 @@
                                                             <rect key="frame" x="252" y="176" width="60" height="20"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="cAb-6h-gED" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="61" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="40.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -851,7 +851,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="aZb-sR-BGM" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="7" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="27.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -859,7 +859,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="ExF-8e-rDk" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="16" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="16" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -867,7 +867,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="RML-ei-TQD" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="-38" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="3" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -875,7 +875,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" +2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvX-e4-o9V">
-                                                                    <rect key="frame" x="77" y="6" width="9.5" height="8"/>
+                                                                    <rect key="frame" x="46" y="6" width="9.5" height="8"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="6.5999999046325684"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -1480,7 +1480,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="2Vc-bF-rZb" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="24" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="24" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -1488,7 +1488,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="FqR-lp-aVX" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="-10.5" y="-10.5" width="41" height="41"/>
+                                                                    <rect key="frame" x="10" y="0.0" width="20.5" height="20.5"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -1496,7 +1496,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="itZ-jm-Fgo" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="-23.5" y="-10.5" width="41" height="41"/>
+                                                                    <rect key="frame" x="-3" y="0.0" width="20.5" height="20.5"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -2379,7 +2379,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSI-Fg-VkI">
-                                <rect key="frame" x="333" y="34.5" width="59" height="58"/>
+                                <rect key="frame" x="362.5" y="49" width="29.5" height="29"/>
                                 <state key="normal" image="Icon_Close"/>
                                 <connections>
                                     <action selector="backButtonTapped:" destination="klT-GH-6w2" eventType="touchUpInside" id="XKW-H8-sUl"/>
@@ -2495,14 +2495,14 @@
                                 <rect key="frame" x="50" y="240" width="314" height="47"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jDc-OZ-nKP">
-                                        <rect key="frame" x="20.5" y="11" width="161.5" height="50"/>
+                                        <rect key="frame" x="20.5" y="11" width="136.5" height="25"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSw-z9-Zqy">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                 <state key="normal" image="Icon_Call_Button"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rV1-Qo-Ghj">
-                                                <rect key="frame" x="66" y="0.0" width="95.5" height="50"/>
+                                                <rect key="frame" x="41" y="0.0" width="95.5" height="25"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="13.300000190734863"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -2510,14 +2510,14 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="OdT-oN-jGq">
-                                        <rect key="frame" x="174.5" y="11" width="119" height="25"/>
+                                        <rect key="frame" x="199.5" y="11" width="94" height="25"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMg-I9-Mvw">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                 <state key="normal" image="Icon_Direction"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNG-8M-TeJ">
-                                                <rect key="frame" x="66" y="0.0" width="53" height="25"/>
+                                                <rect key="frame" x="41" y="0.0" width="53" height="25"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="13.300000190734863"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -2659,7 +2659,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="j4S-u9-fmT">
-                                <rect key="frame" x="20" y="373" width="234.5" height="22"/>
+                                <rect key="frame" x="20" y="373" width="227" height="22"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H46-gK-Nax">
                                         <rect key="frame" x="0.0" y="0.0" width="57.5" height="22"/>
@@ -2680,7 +2680,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr5-7O-aJk">
-                                        <rect key="frame" x="219.5" y="0.0" width="15" height="22"/>
+                                        <rect key="frame" x="219.5" y="0.0" width="7.5" height="22"/>
                                         <state key="normal" image="Icon_Expand-Collapse"/>
                                     </button>
                                 </subviews>
@@ -2961,7 +2961,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review &amp; Ratings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noC-fR-dQO">
-                                <rect key="frame" x="138" y="53.5" width="138" height="20"/>
+                                <rect key="frame" x="129" y="51.5" width="156.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2977,38 +2977,38 @@
                                 <rect key="frame" x="58" y="127.5" width="298" height="69"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eem-q3-Mwy">
-                                        <rect key="frame" x="0.0" y="16" width="298" height="36.5"/>
+                                        <rect key="frame" x="0.0" y="-2" width="298" height="73"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeW-wv-OmY">
-                                                <rect key="frame" x="0.0" y="0.0" width="47" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="73"/>
                                                 <state key="normal" image="Icon_Star_Yellow"/>
                                                 <connections>
                                                     <action selector="ratingStarTapped1:" destination="hQY-PG-lx6" eventType="touchUpInside" id="b9L-Rl-OoW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56D-gC-Of9">
-                                                <rect key="frame" x="63" y="0.0" width="46.5" height="36.5"/>
+                                                <rect key="frame" x="63" y="0.0" width="46.5" height="73"/>
                                                 <state key="normal" image="Icon_Star_Yellow"/>
                                                 <connections>
                                                     <action selector="ratingStarTapped1:" destination="hQY-PG-lx6" eventType="touchUpInside" id="1Tc-ef-Bcn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oaa-X7-Umm">
-                                                <rect key="frame" x="125.5" y="0.0" width="47" height="36.5"/>
+                                                <rect key="frame" x="125.5" y="0.0" width="47" height="73"/>
                                                 <state key="normal" image="Icon_Star_Yellow"/>
                                                 <connections>
                                                     <action selector="ratingStarTapped1:" destination="hQY-PG-lx6" eventType="touchUpInside" id="rJe-z7-NJr"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7k-Oh-WN1">
-                                                <rect key="frame" x="188.5" y="0.0" width="46.5" height="36.5"/>
+                                                <rect key="frame" x="188.5" y="0.0" width="46.5" height="73"/>
                                                 <state key="normal" image="Icon_Star_Yellow"/>
                                                 <connections>
                                                     <action selector="ratingStarTapped1:" destination="hQY-PG-lx6" eventType="touchUpInside" id="amX-Kj-fb0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Up7-dQ-cGD">
-                                                <rect key="frame" x="251" y="0.0" width="47" height="36.5"/>
+                                                <rect key="frame" x="251" y="0.0" width="47" height="73"/>
                                                 <state key="normal" image="Icon_Star_Grey"/>
                                                 <connections>
                                                     <action selector="ratingStarTapped1:" destination="hQY-PG-lx6" eventType="touchUpInside" id="xNk-kD-nEo"/>
@@ -3033,13 +3033,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate Your Experience" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aS9-qh-bV2">
-                                <rect key="frame" x="143" y="212.5" width="128" height="15"/>
+                                <rect key="frame" x="135" y="212.5" width="144.5" height="17.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="15"/>
                                 <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXm-YX-eFq" customClass="DezignableView" customModule="Dezignables">
-                                <rect key="frame" x="50" y="278.5" width="315" height="193"/>
+                                <rect key="frame" x="50" y="281" width="315" height="193"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Rate your experience" translatesAutoresizingMaskIntoConstraints="NO" id="fGB-Zt-Xxa">
                                         <rect key="frame" x="8" y="8" width="298" height="177.5"/>
@@ -3178,13 +3178,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Review" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2c-Ht-uJE">
-                                <rect key="frame" x="155.5" y="50" width="103" height="20"/>
+                                <rect key="frame" x="151.5" y="48" width="111" height="23.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEo-oh-Iru">
-                                <rect key="frame" x="343.5" y="44" width="50" height="30"/>
+                                <rect key="frame" x="343.5" y="42.5" width="50" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="GqO-AF-MaU"/>
                                 </constraints>
@@ -3194,7 +3194,7 @@
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoq-SL-8Nb" customClass="DezignableView" customModule="Dezignables">
-                                <rect key="frame" x="58" y="232.5" width="298" height="69"/>
+                                <rect key="frame" x="58" y="236" width="298" height="69"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="j8g-Tk-DfC">
                                         <rect key="frame" x="0.0" y="16.5" width="298" height="36.5"/>
@@ -3253,7 +3253,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate Your Experience" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emA-1W-EfQ">
-                                <rect key="frame" x="143" y="317.5" width="128" height="15"/>
+                                <rect key="frame" x="135" y="321" width="144.5" height="17.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="15"/>
                                 <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -3291,13 +3291,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDv-co-sMI">
-                                <rect key="frame" x="182.5" y="185.5" width="49" height="20"/>
+                                <rect key="frame" x="178" y="185.5" width="58" height="23.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cc5-om-Ikx" customClass="DezignableView" customModule="Dezignables">
-                                <rect key="frame" x="49.5" y="358" width="315" height="193"/>
+                                <rect key="frame" x="49.5" y="364" width="315" height="193"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Rate your experience" translatesAutoresizingMaskIntoConstraints="NO" id="KZV-vD-r5t">
                                         <rect key="frame" x="8" y="8" width="298" height="177.5"/>
@@ -3474,7 +3474,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbR-xq-tsL">
-                                <rect key="frame" x="19" y="48.5" width="48" height="30"/>
+                                <rect key="frame" x="19" y="48.5" width="56" height="30"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="18"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3484,13 +3484,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Review" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gr-Gj-Psg">
-                                <rect key="frame" x="155.5" y="53.5" width="103" height="20"/>
+                                <rect key="frame" x="151.5" y="52" width="111" height="23.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygD-Km-dRD">
-                                <rect key="frame" x="363.5" y="48.5" width="30" height="30"/>
+                                <rect key="frame" x="356.5" y="47" width="37" height="33"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="18"/>
                                 <state key="normal" title="Post">
                                     <color key="titleColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3500,7 +3500,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFM-ts-XRj" customClass="DezignableView" customModule="Dezignables">
-                                <rect key="frame" x="58" y="521.5" width="298" height="69"/>
+                                <rect key="frame" x="58" y="525" width="298" height="69"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ncz-L5-9VW">
                                         <rect key="frame" x="0.0" y="16.5" width="298" height="36.5"/>
@@ -3559,13 +3559,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate Your Experience" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sai-sL-DJl">
-                                <rect key="frame" x="143" y="606.5" width="128" height="15"/>
+                                <rect key="frame" x="135" y="610" width="144.5" height="17.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="15"/>
                                 <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsp-uM-tFw" customClass="DezignableView" customModule="Dezignables">
-                                <rect key="frame" x="50" y="672.5" width="315" height="193"/>
+                                <rect key="frame" x="50" y="678.5" width="315" height="193"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Rate your experience" translatesAutoresizingMaskIntoConstraints="NO" id="1Lr-MD-Dy0">
                                         <rect key="frame" x="8" y="8" width="298" height="177.5"/>
@@ -3634,7 +3634,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kub-yo-J5K">
-                                <rect key="frame" x="182.5" y="486" width="49" height="20"/>
+                                <rect key="frame" x="178" y="486" width="58" height="23.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -3651,19 +3651,19 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="okF-8O-k61">
-                                        <rect key="frame" x="13" y="204" width="178" height="14"/>
+                                        <rect key="frame" x="13" y="204" width="191.5" height="14"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Bones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXg-zb-rfx">
-                                                <rect key="frame" x="0.0" y="0.0" width="90" height="14"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="14"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mkq-1Q-s8H" customClass="DezignableView" customModule="Dezignables">
-                                                <rect key="frame" x="97" y="0.0" width="37" height="14"/>
+                                                <rect key="frame" x="110.5" y="0.0" width="37" height="14"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rz-QY-fn1">
-                                                        <rect key="frame" x="10" y="3.5" width="17.5" height="7.5"/>
+                                                        <rect key="frame" x="9" y="2.5" width="19.5" height="9"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="7.3000001907348633"/>
                                                         <color key="textColor" red="0.51764705879999995" green="0.55294117649999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -3692,10 +3692,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjv-f7-VVO" customClass="DezignableView" customModule="Dezignables">
-                                                <rect key="frame" x="141" y="0.0" width="37" height="14"/>
+                                                <rect key="frame" x="154.5" y="0.0" width="37" height="14"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.2 km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRE-aT-0YD">
-                                                        <rect key="frame" x="9.5" y="3.5" width="18.5" height="7.5"/>
+                                                        <rect key="frame" x="7.5" y="2.5" width="22.5" height="9"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="7.3000001907348633"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -3729,7 +3729,7 @@
                                         <rect key="frame" x="12" y="12" width="44" height="19.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OPEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQg-As-xbA">
-                                                <rect key="frame" x="11" y="6" width="22" height="8"/>
+                                                <rect key="frame" x="11" y="5" width="22" height="9.5"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="8"/>
                                                 <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -3754,7 +3754,7 @@
                                         <rect key="frame" x="315" y="12" width="39" height="19.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="NvL-j9-zoC">
-                                                <rect key="frame" x="7.5" y="5.5" width="24.5" height="9"/>
+                                                <rect key="frame" x="6.5" y="5.5" width="26" height="9"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Star_Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="HPl-OY-4hJ">
                                                         <rect key="frame" x="0.0" y="0.0" width="9" height="9"/>
@@ -3764,7 +3764,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mW-2R-XPP">
-                                                        <rect key="frame" x="12" y="0.0" width="12.5" height="9"/>
+                                                        <rect key="frame" x="12" y="0.0" width="14" height="9"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="10"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -3788,7 +3788,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="394 Broome St, New York, NY 10013, USA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIS-DY-zf4">
-                                        <rect key="frame" x="13" y="228" width="213.5" height="12"/>
+                                        <rect key="frame" x="13" y="228" width="229.5" height="14"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -3961,7 +3961,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph9-He-Wzb">
-                                <rect key="frame" x="19" y="48.5" width="28" height="30"/>
+                                <rect key="frame" x="19" y="48.5" width="14" height="30"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="18"/>
                                 <state key="normal" image="Icon_Back_Large">
                                     <color key="titleColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3990,38 +3990,38 @@
                                 <rect key="frame" x="58" y="525" width="298" height="69"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yF2-rr-zpH">
-                                        <rect key="frame" x="-75.5" y="-2" width="449" height="73"/>
+                                        <rect key="frame" x="21" y="16.5" width="256.5" height="36.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8r3-zK-tlV">
-                                                <rect key="frame" x="0.0" y="0.0" width="77" height="73"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="38.5" height="36.5"/>
                                                 <state key="normal" image="Icon_Star_Grey"/>
                                                 <connections>
                                                     <action selector="ratingStarTapped1:" destination="4wF-hx-i3E" eventType="touchUpInside" id="k3y-3C-dzO"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8k-DV-C7S">
-                                                <rect key="frame" x="93" y="0.0" width="77" height="73"/>
+                                                <rect key="frame" x="54.5" y="0.0" width="38.5" height="36.5"/>
                                                 <state key="normal" image="Icon_Star_Grey"/>
                                                 <connections>
                                                     <action selector="ratingStarTapped1:" destination="4wF-hx-i3E" eventType="touchUpInside" id="03s-XH-Vih"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAB-wM-3kC">
-                                                <rect key="frame" x="186" y="0.0" width="77" height="73"/>
+                                                <rect key="frame" x="109" y="0.0" width="38.5" height="36.5"/>
                                                 <state key="normal" image="Icon_Star_Grey"/>
                                                 <connections>
                                                     <action selector="ratingStarTapped1:" destination="4wF-hx-i3E" eventType="touchUpInside" id="q69-73-D3o"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEk-jl-XGJ">
-                                                <rect key="frame" x="279" y="0.0" width="77" height="73"/>
+                                                <rect key="frame" x="163.5" y="0.0" width="38.5" height="36.5"/>
                                                 <state key="normal" image="Icon_Star_Grey"/>
                                                 <connections>
                                                     <action selector="ratingStarTapped1:" destination="4wF-hx-i3E" eventType="touchUpInside" id="Ikw-9B-bsZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OK1-yp-08y">
-                                                <rect key="frame" x="372" y="0.0" width="77" height="73"/>
+                                                <rect key="frame" x="218" y="0.0" width="38.5" height="36.5"/>
                                                 <state key="normal" image="Icon_Star_Grey"/>
                                                 <connections>
                                                     <action selector="ratingStarTapped1:" destination="4wF-hx-i3E" eventType="touchUpInside" id="DYl-Vd-y3q"/>
@@ -4236,7 +4236,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5n2-oh-xZ2" customClass="DezignableView" customModule="Dezignables">
-                                        <rect key="frame" x="341" y="12" width="39" height="19.5"/>
+                                        <rect key="frame" x="315" y="12" width="39" height="19.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="i0S-Ps-Raa">
                                                 <rect key="frame" x="6.5" y="5.5" width="26" height="9"/>
@@ -4279,7 +4279,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmH-u8-U0o">
-                                        <rect key="frame" x="322" y="185" width="52" height="52"/>
+                                        <rect key="frame" x="322" y="198" width="26" height="26"/>
                                         <state key="normal" image="Icon_Add_Blue"/>
                                     </button>
                                 </subviews>
@@ -4494,7 +4494,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfN-JB-twl">
-                                <rect key="frame" x="350.5" y="42" width="43" height="43"/>
+                                <rect key="frame" x="372" y="52.5" width="21.5" height="22"/>
                                 <state key="normal" image="Icon_Search_Black"/>
                                 <connections>
                                     <action selector="escapeButtonTapped:" destination="hQY-PG-lx6" eventType="touchUpInside" id="NwL-f2-2gl"/>
@@ -5240,7 +5240,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                             <rect key="frame" x="293" y="201" width="60" height="20"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="o4a-Du-yei" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="61" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="40.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -5248,7 +5248,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="mWC-HE-PuW" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="7" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="27.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -5256,7 +5256,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="gzp-gY-B3K" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="16" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="16" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -5264,7 +5264,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="xZQ-Ah-i7d" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="-38" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="3" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -5272,7 +5272,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" +2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCD-V4-3cl">
-                                                                    <rect key="frame" x="77" y="6" width="9.5" height="8"/>
+                                                                    <rect key="frame" x="46" y="6" width="9.5" height="8"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="6.5999999046325684"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -5372,7 +5372,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hO-QG-KK6">
-                                <rect key="frame" x="349" y="57.5" width="43" height="43"/>
+                                <rect key="frame" x="370.5" y="68" width="21.5" height="22"/>
                                 <state key="normal" image="Icon_Search_Black"/>
                                 <connections>
                                     <action selector="escapeButtonTapped:" destination="hQY-PG-lx6" eventType="touchUpInside" id="22F-Xu-rFq"/>
@@ -5895,7 +5895,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                             <rect key="frame" x="300" y="201" width="60" height="20"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="hyj-At-a7a" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="61" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="40.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -5903,7 +5903,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="WTK-YO-7fy" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="7" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="27.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -5911,7 +5911,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="JJa-eM-sX4" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="16" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="16" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -5919,7 +5919,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="QwO-zE-9M1" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="-38" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="3" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -5927,7 +5927,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" +2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHC-Ww-WSA">
-                                                                    <rect key="frame" x="77" y="6" width="9.5" height="8"/>
+                                                                    <rect key="frame" x="46" y="6" width="9.5" height="8"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="6.5999999046325684"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -6721,7 +6721,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                             <rect key="frame" x="295" y="201" width="60" height="20"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="Wh1-0c-Udc" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="61" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="40.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -6729,7 +6729,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="mIF-UD-dyZ" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="7" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="27.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -6737,7 +6737,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="KG1-6z-oXn" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="16" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="16" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -6745,7 +6745,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="sfj-Tz-8Xc" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="-38" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="3" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -6753,7 +6753,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" +2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSo-Z9-bEe">
-                                                                    <rect key="frame" x="77" y="6" width="9.5" height="8"/>
+                                                                    <rect key="frame" x="46" y="6" width="9.5" height="8"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="6.5999999046325684"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -7450,13 +7450,13 @@ c3Rpb25zC25lYXIgeW91Lg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-4m-skC">
-                                <rect key="frame" x="170.5" y="61.5" width="73.5" height="23.5"/>
+                                <rect key="frame" x="170.5" y="56.5" width="73.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPJ-Df-llB">
-                                <rect key="frame" x="20" y="48.5" width="40" height="50"/>
+                                <rect key="frame" x="20" y="48.5" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="0Zh-ds-qit"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="J0l-FW-ce2"/>
@@ -7471,7 +7471,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xpe-9C-jaf">
-                                <rect key="frame" x="0.0" y="124.5" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="114.5" width="414" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vuv-2H-Brf">
                                         <rect key="frame" x="22" y="12.5" width="74.5" height="23.5"/>
@@ -7489,7 +7489,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4N9-ym-MGe">
-                                <rect key="frame" x="0.0" y="293" width="414" height="49.5"/>
+                                <rect key="frame" x="0.0" y="283" width="414" height="49.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Others" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofs-1w-wag">
                                         <rect key="frame" x="22" y="13" width="60.5" height="23.5"/>
@@ -7507,7 +7507,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dg6-IU-ySq">
-                                <rect key="frame" x="0.0" y="176.5" width="414" height="49.5"/>
+                                <rect key="frame" x="0.0" y="166.5" width="414" height="49.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL9-JA-CY0">
                                         <rect key="frame" x="22" y="13" width="164" height="23.5"/>
@@ -7538,14 +7538,14 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VjL-iO-SfH">
-                                <rect key="frame" x="0.0" y="234" width="414" height="2"/>
+                                <rect key="frame" x="0.0" y="224" width="414" height="2"/>
                                 <color key="backgroundColor" red="0.58879971499999995" green="0.63760620359999998" blue="0.76088166239999999" alpha="0.059610445205479451" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="GGi-VF-uaR"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3J6-Il-eAw">
-                                <rect key="frame" x="0.0" y="244" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="234" width="414" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsb-VJ-0hW">
                                         <rect key="frame" x="22" y="13" width="164" height="23.5"/>
@@ -7576,7 +7576,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8AF-Ax-qhU">
-                                <rect key="frame" x="0.0" y="342.5" width="414" height="49.5"/>
+                                <rect key="frame" x="0.0" y="332.5" width="414" height="49.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8o-h3-acg">
                                         <rect key="frame" x="22" y="13" width="125.5" height="23.5"/>
@@ -7607,14 +7607,14 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3VH-dO-jQi">
-                                <rect key="frame" x="0.0" y="400" width="414" height="2"/>
+                                <rect key="frame" x="0.0" y="390" width="414" height="2"/>
                                 <color key="backgroundColor" red="0.58879971499999995" green="0.63760620359999998" blue="0.76088166239999999" alpha="0.059610445210000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="txc-NL-swo"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWd-3n-t3e">
-                                <rect key="frame" x="0.0" y="402" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="392" width="414" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLQ-Wy-AAv">
                                         <rect key="frame" x="22" y="12.5" width="174.5" height="23.5"/>
@@ -7645,14 +7645,14 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jqu-Bg-Q3V">
-                                <rect key="frame" x="0.0" y="459" width="414" height="2"/>
+                                <rect key="frame" x="0.0" y="449" width="414" height="2"/>
                                 <color key="backgroundColor" red="0.58879971499999995" green="0.63760620359999998" blue="0.76088166239999999" alpha="0.059610445210000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="xJv-7R-u5m"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Af-9r-2SW">
-                                <rect key="frame" x="0.0" y="461" width="414" height="49.5"/>
+                                <rect key="frame" x="0.0" y="451" width="414" height="49.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLF-io-lMY">
                                         <rect key="frame" x="22" y="8" width="160" height="34"/>
@@ -8001,13 +8001,13 @@ c3Rpb25zC25lYXIgeW91Lg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLF-BA-YpY">
-                                <rect key="frame" x="179" y="61.5" width="56.5" height="23.5"/>
+                                <rect key="frame" x="179" y="51.5" width="56.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GC-lg-Vfa">
-                                <rect key="frame" x="20" y="48.5" width="30" height="50"/>
+                                <rect key="frame" x="20" y="48.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="E02-A3-qFA"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="TmM-Xx-WfK"/>
@@ -8019,7 +8019,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="jjs-T3-Wvv" customClass="DezignableImageView" customModule="Dezignables">
-                                <rect key="frame" x="144.5" y="133.5" width="125" height="118.5"/>
+                                <rect key="frame" x="144.5" y="123.5" width="125" height="118.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jjs-T3-Wvv" secondAttribute="height" multiplier="141:134" id="Ij4-BE-2uQ"/>
                                     <constraint firstAttribute="width" constant="124.67" id="tQv-o2-NhL"/>
@@ -8031,19 +8031,19 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jayson Acevedo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bri-oW-VVU">
-                                <rect key="frame" x="125.5" y="273" width="163" height="26"/>
+                                <rect key="frame" x="125.5" y="263" width="163" height="26"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jayson.acevedo@gamil.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29k-Lh-Y6Q">
-                                <rect key="frame" x="121.5" y="305.5" width="171" height="16"/>
+                                <rect key="frame" x="121.5" y="295.5" width="171" height="16"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13.399999618530273"/>
                                 <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="nsT-W4-5a6">
-                                <rect key="frame" x="47.5" y="359" width="319" height="32"/>
+                                <rect key="frame" x="47.5" y="349" width="319" height="32"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6Cl-F7-yK6">
                                         <rect key="frame" x="0.0" y="0.0" width="53" height="32"/>
@@ -8121,7 +8121,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="JU6-9e-o2t">
-                                <rect key="frame" x="71" y="414.5" width="272" height="42"/>
+                                <rect key="frame" x="71" y="404.5" width="272" height="42"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qp-00-e2I" customClass="DezignableButton" customModule="Dezignables">
                                         <rect key="frame" x="0.0" y="0.0" width="126.5" height="42"/>
@@ -8187,7 +8187,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="266" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A50-cu-NDl">
-                                <rect key="frame" x="20" y="507.5" width="374" height="494"/>
+                                <rect key="frame" x="20" y="497.5" width="374" height="494"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="494" id="kD9-Ei-GfR"/>
@@ -8369,7 +8369,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="vwd-Q4-1fe" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="24" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="24" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -8377,7 +8377,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="nqd-Q5-mln" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="-10.5" y="-10.5" width="41" height="41"/>
+                                                                    <rect key="frame" x="10" y="0.0" width="20.5" height="20.5"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -8385,7 +8385,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="8r4-co-c0S" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="-23.5" y="-10.5" width="41" height="41"/>
+                                                                    <rect key="frame" x="-3" y="0.0" width="20.5" height="20.5"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -8471,7 +8471,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </prototypes>
                             </tableView>
                             <view alpha="0.15000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTn-FG-p58">
-                                <rect key="frame" x="0.0" y="480.5" width="414" height="5"/>
+                                <rect key="frame" x="0.0" y="470.5" width="414" height="5"/>
                                 <color key="backgroundColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="5" id="fLx-aT-7Bn"/>
@@ -8952,7 +8952,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                             <rect key="frame" x="305" y="201" width="60" height="20"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="mwT-di-Oxc" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="61" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="40.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -8960,7 +8960,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="4Tv-rI-tpt" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="7" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="27.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -8968,7 +8968,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="1xI-rg-BhT" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="16" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="16" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -8976,7 +8976,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="oHv-Fr-gO6" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="-38" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="3" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -8984,7 +8984,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" +2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5i-d0-4tm">
-                                                                    <rect key="frame" x="77" y="6" width="9.5" height="8"/>
+                                                                    <rect key="frame" x="46" y="6" width="9.5" height="8"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="6.5999999046325684"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -9200,14 +9200,14 @@ c3Rpb25zC25lYXIgeW91Lg
                                 <rect key="frame" x="50" y="240" width="314" height="47"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="geB-nn-tXT">
-                                        <rect key="frame" x="20.5" y="11" width="125.5" height="25"/>
+                                        <rect key="frame" x="20.5" y="11" width="136.5" height="25"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clF-pr-Mcp">
                                                 <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                 <state key="normal" image="Icon_Call_Button"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xit-U8-vl0">
-                                                <rect key="frame" x="41" y="0.0" width="84.5" height="25"/>
+                                                <rect key="frame" x="41" y="0.0" width="95.5" height="25"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="13.300000190734863"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -9215,14 +9215,14 @@ c3Rpb25zC25lYXIgeW91Lg
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="US3-7I-Nfv">
-                                        <rect key="frame" x="206" y="11" width="87.5" height="25"/>
+                                        <rect key="frame" x="199.5" y="11" width="94" height="25"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYf-lz-W1Z">
                                                 <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                 <state key="normal" image="Icon_Direction"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phf-5f-wCu">
-                                                <rect key="frame" x="41" y="0.0" width="46.5" height="25"/>
+                                                <rect key="frame" x="41" y="0.0" width="53" height="25"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="13.300000190734863"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -9246,25 +9246,25 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="394 Broome St, New York, NY 10013, USA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-QY-0Hq">
-                                <rect key="frame" x="20" y="350" width="213.5" height="12"/>
+                                <rect key="frame" x="20" y="350" width="229.5" height="14"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="tit-IY-jxJ">
-                                <rect key="frame" x="20" y="326" width="178" height="14"/>
+                                <rect key="frame" x="20" y="326" width="191.5" height="14"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Bones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhB-Qj-GLw">
-                                        <rect key="frame" x="0.0" y="0.0" width="90" height="14"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="14"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIh-2k-0pa" customClass="DezignableView" customModule="Dezignables">
-                                        <rect key="frame" x="97" y="0.0" width="37" height="14"/>
+                                        <rect key="frame" x="110.5" y="0.0" width="37" height="14"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUW-gp-fyW">
-                                                <rect key="frame" x="10" y="3.5" width="17.5" height="7.5"/>
+                                                <rect key="frame" x="9" y="2.5" width="19.5" height="9"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="7.3000001907348633"/>
                                                 <color key="textColor" red="0.51764705879999995" green="0.55294117649999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -9293,10 +9293,10 @@ c3Rpb25zC25lYXIgeW91Lg
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pUP-cP-61a" customClass="DezignableView" customModule="Dezignables">
-                                        <rect key="frame" x="141" y="0.0" width="37" height="14"/>
+                                        <rect key="frame" x="154.5" y="0.0" width="37" height="14"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.2 km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmd-ox-q5A">
-                                                <rect key="frame" x="9.5" y="3.5" width="18.5" height="7.5"/>
+                                                <rect key="frame" x="7.5" y="2.5" width="22.5" height="9"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="7.3000001907348633"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -9330,7 +9330,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                 <rect key="frame" x="357" y="325" width="37" height="16"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSS-KS-dWp">
-                                        <rect key="frame" x="16" y="1" width="20" height="12"/>
+                                        <rect key="frame" x="16" y="1" width="20" height="14"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="faJ-qi-dKI"/>
                                         </constraints>
@@ -9365,47 +9365,47 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Skm-pb-hDS">
-                                <rect key="frame" x="20" y="371" width="213" height="22"/>
+                                <rect key="frame" x="20" y="373" width="227" height="22"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lo-0O-l4o">
-                                        <rect key="frame" x="0.0" y="0.0" width="56.5" height="22"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="57.5" height="22"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="12"/>
                                         <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="daily time " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIm-gr-pgH">
-                                        <rect key="frame" x="58.5" y="0.0" width="51.5" height="22"/>
+                                        <rect key="frame" x="59.5" y="0.0" width="55" height="22"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="12"/>
                                         <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:30 am 11:00 pm " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgS-XK-8BY">
-                                        <rect key="frame" x="112" y="0.0" width="91.5" height="22"/>
+                                        <rect key="frame" x="116.5" y="0.0" width="101" height="22"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="12"/>
                                         <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hw8-kt-Rb9">
-                                        <rect key="frame" x="205.5" y="0.0" width="7.5" height="22"/>
+                                        <rect key="frame" x="219.5" y="0.0" width="7.5" height="22"/>
                                         <state key="normal" image="Icon_Expand-Collapse"/>
                                     </button>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu &amp; Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYq-wq-idb">
-                                <rect key="frame" x="20" y="420" width="108" height="17"/>
+                                <rect key="frame" x="20" y="422" width="117" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYZ-qg-AsX">
-                                <rect key="frame" x="328" y="415.5" width="64" height="26"/>
+                                <rect key="frame" x="326" y="418" width="66" height="28"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13.300000190734863"/>
                                 <state key="normal" title="See all (32)">
                                     <color key="titleColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MFf-RA-KKl">
-                                <rect key="frame" x="20" y="459.5" width="394" height="113"/>
+                                <rect key="frame" x="20" y="464" width="394" height="113"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="113" id="2fs-ak-mng"/>
@@ -9438,20 +9438,20 @@ c3Rpb25zC25lYXIgeW91Lg
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating &amp; Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNp-hk-nxC">
-                                <rect key="frame" x="20" y="603.5" width="112.5" height="17"/>
+                                <rect key="frame" x="20" y="608" width="124.5" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAP-ks-gSD">
-                                <rect key="frame" x="328" y="599" width="64" height="26"/>
+                                <rect key="frame" x="326" y="604" width="66" height="28"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13.300000190734863"/>
                                 <state key="normal" title="See all (32)">
                                     <color key="titleColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oi-Jd-Edn">
-                                <rect key="frame" x="20" y="644" width="372" height="260"/>
+                                <rect key="frame" x="20" y="651" width="372" height="260"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="7Sh-53-gg7"/>
@@ -9478,22 +9478,22 @@ c3Rpb25zC25lYXIgeW91Lg
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet consectetur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEQ-h3-Ujn">
-                                                    <rect key="frame" x="58" y="51" width="274" height="13"/>
+                                                    <rect key="frame" x="58" y="54" width="274" height="15.5"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13"/>
                                                     <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRj-hj-ryf" customClass="DezignableView" customModule="Dezignables">
-                                                    <rect key="frame" x="324" y="19" width="40" height="23"/>
+                                                    <rect key="frame" x="324" y="19" width="40" height="26"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tL1-UP-cvP">
-                                                            <rect key="frame" x="16" y="5.5" width="23" height="12"/>
+                                                            <rect key="frame" x="16" y="6" width="23" height="14"/>
                                                             <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="12"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Star_Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="SFX-43-MAr">
-                                                            <rect key="frame" x="3" y="6" width="10" height="11"/>
+                                                            <rect key="frame" x="3" y="7.5" width="10" height="11"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="11" id="AYq-SA-FlK"/>
                                                                 <constraint firstAttribute="width" constant="10" id="Hdb-ei-6CR"/>
@@ -9519,7 +9519,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collin Fields" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEH-sx-Zu2">
-                                                    <rect key="frame" x="58" y="22" width="82" height="17"/>
+                                                    <rect key="frame" x="58" y="22" width="93" height="20"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -10077,7 +10077,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Circle_White" translatesAutoresizingMaskIntoConstraints="NO" id="Q1i-0X-Wq1" customClass="DezignableImageView" customModule="Dezignables">
-                                                    <rect key="frame" x="372" y="11.5" width="22" height="44"/>
+                                                    <rect key="frame" x="372" y="22.5" width="22" height="22"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="22" id="Ydp-B8-ssB"/>

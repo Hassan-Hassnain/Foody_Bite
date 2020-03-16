@@ -38,12 +38,46 @@ class CreateAccountVC: UIViewController {
     @IBAction func imageUploadButtonTapped(_ sender: Any) {
     }
     @IBAction func registerButtonTapped(_ sender: Any) {
+        if  let name = nameTextField.text,
+            let email = emailTextField.text,
+            let password = passwordTextField.text {
+            if password == confirmPasswordTextField.text {
+                registerNewUser(withName: name, withEmail: email, andPassword: password) { (success) in
+                    if success {
+                        print("User Register Successfully")
+                        let vc = self.storyboard?.instantiateViewController(identifier: "LoginVC") as? LoginVC
+                        vc?.email = email
+                        vc?.password = password
+                        self.goTo(toVC: "LoginVC", animate: true)
+                    } else {
+                        print("User can not be Registered ")
+                    }
+                }
+            }
+        }
     }
     @IBAction func loginButtonTapped(_ sender: Any) {
-        self.dismissDetail()
+        goTo(toVC: "LoginVC", animate: true)
     }
 }
 
 extension CreateAccountVC : UITextFieldDelegate {
+    
+}
+
+
+extension CreateAccountVC {
+    
+    func registerNewUser(withName name: String, withEmail email: String, andPassword password: String, onCompletion: @escaping (_ success: Bool) -> ()){
+        AuthService.instance.registerUser(withName: name, andEmail: email, andPassword: password) { (success, registerationError) in
+            if success {
+                print("User registered successfully")
+                onCompletion(true)
+            } else {
+                debugPrint(registerationError!)
+                onCompletion(false)
+            }
+        }
+    }
     
 }

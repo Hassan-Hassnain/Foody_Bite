@@ -29,7 +29,7 @@ class FilterVC: UIViewController {
     @IBOutlet weak var ratingStar5: UIButton!
     
     var selected: [Bool] = [false, false, false, false, false]
-    let categories = DataServic.instance.categores
+    let categories = DataService.instance.categores
     
     override func viewDidLoad() {
         super.viewDidLoad()
