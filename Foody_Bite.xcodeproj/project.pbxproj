@@ -11,6 +11,10 @@
 		3C201B702412C3B300C5927C /* TrendingRestaurantItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B6F2412C3B300C5927C /* TrendingRestaurantItemDetailsVC.swift */; };
 		3C201B722412C55400C5927C /* FriendsRatingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B712412C55400C5927C /* FriendsRatingTableCell.swift */; };
 		3C201B742412C58900C5927C /* FoodtypeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B732412C58900C5927C /* FoodtypeCollectionCell.swift */; };
+		3C4CEAAB24154424000B20FF /* FollowersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4CEAAA24154424000B20FF /* FollowersVC.swift */; };
+		3C4CEAAD241545A4000B20FF /* FollowingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4CEAAC241545A4000B20FF /* FollowingVC.swift */; };
+		3C4CEAAF24154751000B20FF /* ReviewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4CEAAE24154751000B20FF /* ReviewsVC.swift */; };
+		3C4CEAB124155337000B20FF /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4CEAB024155337000B20FF /* SettingsVC.swift */; };
 		3C56C173240C51CD00A56AAB /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C172240C51CD00A56AAB /* CreateAccountVC.swift */; };
 		3C56C175240C520700A56AAB /* GPS_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C174240C520700A56AAB /* GPS_VC.swift */; };
 		3C56C178240C57B300A56AAB /* UIViewControllerEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C177240C57B300A56AAB /* UIViewControllerEXT.swift */; };
@@ -24,6 +28,13 @@
 		3C584BA42413B6660003CB9E /* CategorVCTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584BA32413B6660003CB9E /* CategorVCTableCell.swift */; };
 		3C584BA62413B7E30003CB9E /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584BA52413B7E30003CB9E /* CategoriesVC.swift */; };
 		3C584BA82413D1C60003CB9E /* CategoryDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584BA72413D1C60003CB9E /* CategoryDetailsVC.swift */; };
+		3C5F540D241E9997001C46E0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F540C241E9996001C46E0 /* DataService.swift */; };
+		3C5F540F241EA208001C46E0 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F540E241EA208001C46E0 /* Restaurant.swift */; };
+		3C6112002419281900E7FF76 /* CustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6111FF2419281900E7FF76 /* CustomAlertView.xib */; };
+		3C6112032419312600E7FF76 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6112022419312600E7FF76 /* CustomAlertView.swift */; };
+		3C61120524193EA600E7FF76 /* CustomAlertOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C61120424193EA600E7FF76 /* CustomAlertOptions.xib */; };
+		3C61120724193EC200E7FF76 /* CustomAlertOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C61120624193EC200E7FF76 /* CustomAlertOptions.swift */; };
+		3C6112092419450900E7FF76 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6112082419450900E7FF76 /* Protocols.swift */; };
 		3C6327182413DBDD007C4F29 /* OtherUserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6327172413DBDD007C4F29 /* OtherUserProfileVC.swift */; };
 		3C6F19EE240A500B00CA095A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F19ED240A500B00CA095A /* LoginVC.swift */; };
 		3C6F19F2240A5B7100CA095A /* DesignableTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */; };
@@ -43,9 +54,23 @@
 		3C89AD40240992E400CF970C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD3E240992E400CF970C /* LaunchScreen.storyboard */; };
 		3C89AD4C2409966D00CF970C /* Josefin_Sans_Font in Resources */ = {isa = PBXBuildFile; fileRef = 3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */; };
 		3C89AD4E24099E2C00CF970C /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89AD4D24099E2C00CF970C /* StartVC.swift */; };
+		3C9D2D682416842B00CD5120 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D2D672416842B00CD5120 /* ChangePasswordVC.swift */; };
+		3C9D2D6A2416984800CD5120 /* ChangeLanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D2D692416984800CD5120 /* ChangeLanguageVC.swift */; };
+		3C9D2D6C24169A2500CD5120 /* ChangeLanguageVCTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D2D6B24169A2500CD5120 /* ChangeLanguageVCTableCell.swift */; };
 		3CB173642413881700C7159F /* RatingAndReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB173632413881700C7159F /* RatingAndReviewVC.swift */; };
+		3CBD6C452414C94B00CC501D /* MyFavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD6C442414C94B00CC501D /* MyFavoriteVC.swift */; };
+		3CBD6C472414CC9500CC501D /* MyFavoriteDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD6C462414CC9500CC501D /* MyFavoriteDetailsVC.swift */; };
+		3CBD6C4A2414CEE500CC501D /* NewReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD6C492414CEE500CC501D /* NewReviewVC.swift */; };
+		3CBD6C4C2414D6D700CC501D /* NewReview_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD6C4B2414D6D700CC501D /* NewReview_2.swift */; };
+		3CBD6C4E2414FD2E00CC501D /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD6C4D2414FD2E00CC501D /* NotificationVC.swift */; };
+		3CBD6C512414FDCB00CC501D /* NotificationVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD6C502414FDCB00CC501D /* NotificationVCTableViewCell.swift */; };
+		3CD7B18D24181A2400028284 /* ProfileVC_TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD7B18C24181A2400028284 /* ProfileVC_TableCell.swift */; };
 		3CDFCBD4240AFE4900571F8B /* UIView_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */; };
 		3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */; };
+		3CE951D9241531D9007139A6 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE951D8241531D9007139A6 /* ProfileVC.swift */; };
+		3CFC8A65241AA0A200B75EB9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC8A64241AA0A200B75EB9 /* Helper.swift */; };
+		3CFC8A67241AB8FF00B75EB9 /* EditReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC8A66241AB8FF00B75EB9 /* EditReviewVC.swift */; };
+		3CFC8A69241AC59D00B75EB9 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC8A68241AC59D00B75EB9 /* EditProfileVC.swift */; };
 		CD81B79FB16AADDA26B965F0 /* Pods_Foody_Bite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F07655E5232ACD127942DC3 /* Pods_Foody_Bite.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +79,10 @@
 		3C201B6F2412C3B300C5927C /* TrendingRestaurantItemDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRestaurantItemDetailsVC.swift; sourceTree = "<group>"; };
 		3C201B712412C55400C5927C /* FriendsRatingTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsRatingTableCell.swift; sourceTree = "<group>"; };
 		3C201B732412C58900C5927C /* FoodtypeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodtypeCollectionCell.swift; sourceTree = "<group>"; };
+		3C4CEAAA24154424000B20FF /* FollowersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersVC.swift; sourceTree = "<group>"; };
+		3C4CEAAC241545A4000B20FF /* FollowingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingVC.swift; sourceTree = "<group>"; };
+		3C4CEAAE24154751000B20FF /* ReviewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsVC.swift; sourceTree = "<group>"; };
+		3C4CEAB024155337000B20FF /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		3C56C172240C51CD00A56AAB /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		3C56C174240C520700A56AAB /* GPS_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPS_VC.swift; sourceTree = "<group>"; };
 		3C56C177240C57B300A56AAB /* UIViewControllerEXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerEXT.swift; sourceTree = "<group>"; };
@@ -67,6 +96,13 @@
 		3C584BA32413B6660003CB9E /* CategorVCTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorVCTableCell.swift; sourceTree = "<group>"; };
 		3C584BA52413B7E30003CB9E /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		3C584BA72413D1C60003CB9E /* CategoryDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsVC.swift; sourceTree = "<group>"; };
+		3C5F540C241E9996001C46E0 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		3C5F540E241EA208001C46E0 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		3C6111FF2419281900E7FF76 /* CustomAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertView.xib; sourceTree = "<group>"; };
+		3C6112022419312600E7FF76 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		3C61120424193EA600E7FF76 /* CustomAlertOptions.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertOptions.xib; sourceTree = "<group>"; };
+		3C61120624193EC200E7FF76 /* CustomAlertOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertOptions.swift; sourceTree = "<group>"; };
+		3C6112082419450900E7FF76 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		3C6327172413DBDD007C4F29 /* OtherUserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserProfileVC.swift; sourceTree = "<group>"; };
 		3C6F19ED240A500B00CA095A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextFiled.swift; sourceTree = "<group>"; };
@@ -89,9 +125,24 @@
 		3C89AD41240992E400CF970C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Josefin_Sans_Font; sourceTree = "<group>"; };
 		3C89AD4D24099E2C00CF970C /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		3C9D2D672416842B00CD5120 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		3C9D2D692416984800CD5120 /* ChangeLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageVC.swift; sourceTree = "<group>"; };
+		3C9D2D6B24169A2500CD5120 /* ChangeLanguageVCTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageVCTableCell.swift; sourceTree = "<group>"; };
 		3CB173632413881700C7159F /* RatingAndReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingAndReviewVC.swift; sourceTree = "<group>"; };
+		3CBD6C442414C94B00CC501D /* MyFavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteVC.swift; sourceTree = "<group>"; };
+		3CBD6C462414CC9500CC501D /* MyFavoriteDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteDetailsVC.swift; sourceTree = "<group>"; };
+		3CBD6C492414CEE500CC501D /* NewReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReviewVC.swift; sourceTree = "<group>"; };
+		3CBD6C4B2414D6D700CC501D /* NewReview_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReview_2.swift; sourceTree = "<group>"; };
+		3CBD6C4D2414FD2E00CC501D /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		3CBD6C502414FDCB00CC501D /* NotificationVCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVCTableViewCell.swift; sourceTree = "<group>"; };
+		3CD7B18C24181A2400028284 /* ProfileVC_TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC_TableCell.swift; sourceTree = "<group>"; };
+		3CDD9230241ACE1C00187D2A /* Foody_Bite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Foody_Bite.entitlements; sourceTree = "<group>"; };
 		3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Ext.swift; sourceTree = "<group>"; };
 		3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		3CE951D8241531D9007139A6 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		3CFC8A64241AA0A200B75EB9 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		3CFC8A66241AB8FF00B75EB9 /* EditReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReviewVC.swift; sourceTree = "<group>"; };
+		3CFC8A68241AC59D00B75EB9 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		4F07655E5232ACD127942DC3 /* Pods_Foody_Bite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foody_Bite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9D49BA28E51D9C590F466A /* Pods-Foody_Bite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foody_Bite.debug.xcconfig"; path = "Target Support Files/Pods-Foody_Bite/Pods-Foody_Bite.debug.xcconfig"; sourceTree = "<group>"; };
 		AD2E9738C28AAF457E4718F3 /* Pods-Foody_Bite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foody_Bite.release.xcconfig"; path = "Target Support Files/Pods-Foody_Bite/Pods-Foody_Bite.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +192,25 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		3C5F540B241E9978001C46E0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3C5F540C241E9996001C46E0 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3C6112012419281F00E7FF76 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				3C6111FF2419281900E7FF76 /* CustomAlertView.xib */,
+				3C6112022419312600E7FF76 /* CustomAlertView.swift */,
+				3C61120424193EA600E7FF76 /* CustomAlertOptions.xib */,
+				3C61120624193EC200E7FF76 /* CustomAlertOptions.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		3C6327192413E395007C4F29 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,7 +250,9 @@
 		3C89AD32240992DE00CF970C /* Foody_Bite */ = {
 			isa = PBXGroup;
 			children = (
+				3CDD9230241ACE1C00187D2A /* Foody_Bite.entitlements */,
 				3C7F148924142D1D0027BBF2 /* README.md */,
+				3C5F540B241E9978001C46E0 /* Services */,
 				3CDFCBD2240AFE1000571F8B /* Extensions */,
 				3C89AD4B2409966D00CF970C /* Josefin_Sans_Font */,
 				3C89AD492409934C00CF970C /* Model */,
@@ -201,6 +273,10 @@
 			children = (
 				3C56C176240C54EB00A56AAB /* Authentication */,
 				3C56C17D240C78CC00A56AAB /* Home */,
+				3CBD6C482414CEAE00CC501D /* NewReview */,
+				3CBD6C432414C91F00CC501D /* MyFavorite */,
+				3CBD6C4F2414FD3500CC501D /* Notification */,
+				3CE951DA241531E0007139A6 /* Profile */,
 			);
 			name = Controller;
 			path = "New Group";
@@ -212,6 +288,10 @@
 				3C56C179240C5F8F00A56AAB /* UITextFieldX.swift */,
 				3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */,
 				3C6327192413E395007C4F29 /* Home */,
+				3CBD6C502414FDCB00CC501D /* NotificationVCTableViewCell.swift */,
+				3C9D2D6B24169A2500CD5120 /* ChangeLanguageVCTableCell.swift */,
+				3CD7B18C24181A2400028284 /* ProfileVC_TableCell.swift */,
+				3C6112012419281F00E7FF76 /* Alert */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,8 +299,35 @@
 		3C89AD492409934C00CF970C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3C5F540E241EA208001C46E0 /* Restaurant.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3CBD6C432414C91F00CC501D /* MyFavorite */ = {
+			isa = PBXGroup;
+			children = (
+				3CBD6C442414C94B00CC501D /* MyFavoriteVC.swift */,
+				3CBD6C462414CC9500CC501D /* MyFavoriteDetailsVC.swift */,
+			);
+			path = MyFavorite;
+			sourceTree = "<group>";
+		};
+		3CBD6C482414CEAE00CC501D /* NewReview */ = {
+			isa = PBXGroup;
+			children = (
+				3CBD6C492414CEE500CC501D /* NewReviewVC.swift */,
+				3CBD6C4B2414D6D700CC501D /* NewReview_2.swift */,
+			);
+			path = NewReview;
+			sourceTree = "<group>";
+		};
+		3CBD6C4F2414FD3500CC501D /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				3CBD6C4D2414FD2E00CC501D /* NotificationVC.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		3CDFCBD2240AFE1000571F8B /* Extensions */ = {
@@ -228,8 +335,26 @@
 			children = (
 				3C56C177240C57B300A56AAB /* UIViewControllerEXT.swift */,
 				3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */,
+				3C6112082419450900E7FF76 /* Protocols.swift */,
+				3CFC8A64241AA0A200B75EB9 /* Helper.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3CE951DA241531E0007139A6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3CE951D8241531D9007139A6 /* ProfileVC.swift */,
+				3CFC8A66241AB8FF00B75EB9 /* EditReviewVC.swift */,
+				3C4CEAAA24154424000B20FF /* FollowersVC.swift */,
+				3C4CEAAC241545A4000B20FF /* FollowingVC.swift */,
+				3C4CEAAE24154751000B20FF /* ReviewsVC.swift */,
+				3C4CEAB024155337000B20FF /* SettingsVC.swift */,
+				3C9D2D672416842B00CD5120 /* ChangePasswordVC.swift */,
+				3C9D2D692416984800CD5120 /* ChangeLanguageVC.swift */,
+				3CFC8A68241AC59D00B75EB9 /* EditProfileVC.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		ACA558A41044F2A8F6D40D0D /* Frameworks */ = {
@@ -309,6 +434,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C61120524193EA600E7FF76 /* CustomAlertOptions.xib in Resources */,
+				3C6112002419281900E7FF76 /* CustomAlertView.xib in Resources */,
 				3C89AD40240992E400CF970C /* LaunchScreen.storyboard in Resources */,
 				3C89AD4C2409966D00CF970C /* Josefin_Sans_Font in Resources */,
 				3C89AD3D240992E400CF970C /* Assets.xcassets in Resources */,
@@ -365,39 +492,62 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5F540F241EA208001C46E0 /* Restaurant.swift in Sources */,
+				3C6112032419312600E7FF76 /* CustomAlertView.swift in Sources */,
 				3CDFCBD4240AFE4900571F8B /* UIView_Ext.swift in Sources */,
 				3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */,
 				3C56C173240C51CD00A56AAB /* CreateAccountVC.swift in Sources */,
 				3C584BA42413B6660003CB9E /* CategorVCTableCell.swift in Sources */,
+				3CFC8A65241AA0A200B75EB9 /* Helper.swift in Sources */,
+				3C5F540D241E9997001C46E0 /* DataService.swift in Sources */,
 				3C584BA22413AA2B0003CB9E /* FilterResultsVC.swift in Sources */,
+				3C6112092419450900E7FF76 /* Protocols.swift in Sources */,
+				3CFC8A67241AB8FF00B75EB9 /* EditReviewVC.swift in Sources */,
 				3C769A73240D152900E041FB /* CategoryCell.swift in Sources */,
 				3C56C175240C520700A56AAB /* GPS_VC.swift in Sources */,
 				3C584B9A2413952F0003CB9E /* FindFriendsVC.swift in Sources */,
 				3C7F148224140BC60027BBF2 /* MenuAndPhotosVCCollectionCell.swift in Sources */,
+				3C61120724193EC200E7FF76 /* CustomAlertOptions.swift in Sources */,
 				3C56C17F240C78ED00A56AAB /* HomeVC.swift in Sources */,
 				3C769A77240D19CB00E041FB /* VisitorsCell.swift in Sources */,
 				3C7F1488241426B90027BBF2 /* AllReviewAndRatingVCTableCell.swift in Sources */,
+				3CBD6C452414C94B00CC501D /* MyFavoriteVC.swift in Sources */,
 				3C584BA024139EF90003CB9E /* FindFriendCell_Suggestions.swift in Sources */,
 				3C89AD34240992DE00CF970C /* AppDelegate.swift in Sources */,
 				3C7F1486241425510027BBF2 /* AllReviewAndRatingVC.swift in Sources */,
+				3CBD6C4C2414D6D700CC501D /* NewReview_2.swift in Sources */,
+				3CD7B18D24181A2400028284 /* ProfileVC_TableCell.swift in Sources */,
 				3C89AD36240992DE00CF970C /* SceneDelegate.swift in Sources */,
+				3C4CEAAD241545A4000B20FF /* FollowingVC.swift in Sources */,
 				3CB173642413881700C7159F /* RatingAndReviewVC.swift in Sources */,
 				3C56C178240C57B300A56AAB /* UIViewControllerEXT.swift in Sources */,
 				3C7F1484241421740027BBF2 /* PreviewVC.swift in Sources */,
 				3C6F19EE240A500B00CA095A /* LoginVC.swift in Sources */,
 				3C201B6E24129EA600C5927C /* FilterVC.swift in Sources */,
+				3C9D2D682416842B00CD5120 /* ChangePasswordVC.swift in Sources */,
 				3C7F1480241408D80027BBF2 /* MenuAndPhotosVC.swift in Sources */,
+				3C4CEAAB24154424000B20FF /* FollowersVC.swift in Sources */,
 				3C584BA82413D1C60003CB9E /* CategoryDetailsVC.swift in Sources */,
+				3CBD6C512414FDCB00CC501D /* NotificationVCTableViewCell.swift in Sources */,
 				3C56C17A240C5F8F00A56AAB /* UITextFieldX.swift in Sources */,
 				3C201B742412C58900C5927C /* FoodtypeCollectionCell.swift in Sources */,
 				3C769A79240D377600E041FB /* TrendingRestaurantsTabelCell.swift in Sources */,
 				3C584BA62413B7E30003CB9E /* CategoriesVC.swift in Sources */,
+				3CE951D9241531D9007139A6 /* ProfileVC.swift in Sources */,
+				3CBD6C472414CC9500CC501D /* MyFavoriteDetailsVC.swift in Sources */,
+				3CBD6C4A2414CEE500CC501D /* NewReviewVC.swift in Sources */,
+				3C9D2D6A2416984800CD5120 /* ChangeLanguageVC.swift in Sources */,
+				3CBD6C4E2414FD2E00CC501D /* NotificationVC.swift in Sources */,
 				3C769A7B240D37B800E041FB /* TrendingRestaurantsVC.swift in Sources */,
 				3C89AD4E24099E2C00CF970C /* StartVC.swift in Sources */,
+				3CFC8A69241AC59D00B75EB9 /* EditProfileVC.swift in Sources */,
 				3C201B702412C3B300C5927C /* TrendingRestaurantItemDetailsVC.swift in Sources */,
 				3C6F19F2240A5B7100CA095A /* DesignableTextFiled.swift in Sources */,
 				3C584B9E24139EE40003CB9E /* FindFriendCell_Contacts.swift in Sources */,
+				3C4CEAAF24154751000B20FF /* ReviewsVC.swift in Sources */,
+				3C9D2D6C24169A2500CD5120 /* ChangeLanguageVCTableCell.swift in Sources */,
 				3C56C17C240C70E000A56AAB /* TrendingRestaurantsCell.swift in Sources */,
+				3C4CEAB124155337000B20FF /* SettingsVC.swift in Sources */,
 				3C6327182413DBDD007C4F29 /* OtherUserProfileVC.swift in Sources */,
 				3C201B722412C55400C5927C /* FriendsRatingTableCell.swift in Sources */,
 			);
@@ -544,7 +694,9 @@
 			baseConfigurationReference = 8E9D49BA28E51D9C590F466A /* Pods-Foody_Bite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Foody_Bite/Foody_Bite.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = T898NTACMU;
 				INFOPLIST_FILE = Foody_Bite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -553,6 +705,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devoders.ahh.Foody-Bite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -563,7 +716,9 @@
 			baseConfigurationReference = AD2E9738C28AAF457E4718F3 /* Pods-Foody_Bite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Foody_Bite/Foody_Bite.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = T898NTACMU;
 				INFOPLIST_FILE = Foody_Bite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -572,6 +727,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devoders.ahh.Foody-Bite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

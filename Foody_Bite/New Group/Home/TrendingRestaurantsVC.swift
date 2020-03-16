@@ -22,9 +22,7 @@ class TrendingRestaurantsVC: UIViewController {
     }
     
     @IBAction func closeButtonTapped(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        self.goTo(toVC:"HomeVC", animate: true)
     }
     //MARK: - SEARCH FIELD RIGHT BUTTON
     func setSearchFieldRightButton() {
@@ -61,7 +59,11 @@ extension TrendingRestaurantsVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "TrendingRestaurantsTabelCell") as? TrendingRestaurantsTabelCell else {return TrendingRestaurantsTabelCell()}
+        cell.optionsButton.isHidden = true
         
+        let restaurant = Restaurant(openingStatus: "Open", rating: "4.5", restaurantsImage: nil, restaurantName: "KFC", foodType: "Custom", distance: "3.2", visitorImages: nil, totalVisitors: "25", address: "Lahore")
+        
+        cell.configure(restaurant: restaurant)
         return cell
     }
     

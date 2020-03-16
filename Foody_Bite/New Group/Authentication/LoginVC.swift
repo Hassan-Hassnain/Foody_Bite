@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Dezignables
+import IQKeyboardManagerSwift
 
 class LoginVC: UIViewController {
 
@@ -14,30 +16,22 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var passwordTextField: DesignableUITextField!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var loginButton: DezignableButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        emailTextField.delegate = self
-        passwordTextField.delegate = self
-        
-//        containerView.bindToKeyboard()
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 300
         
     }
     @IBAction func forgorPasswordButtonTapped(_ sender: Any) {
-        guard let forgotPasswordVC = storyboard?.instantiateViewController(identifier: "ForgotPasswordVC") else {return}
-        forgotPasswordVC.modalPresentationStyle = .fullScreen
-//        present(forgotPasswordVC!, animated: true, completion: nil)
-        self.presentDetail(forgotPasswordVC)
+        goTo(toVC: "ForgotPasswordVC", animate: true)
     }
     @IBAction func createNewAccoundButtonTapped(_ sender: Any) {
-        guard let createAccountVC = storyboard?.instantiateViewController(identifier: "CreateAccountVC") else {return}
-        createAccountVC.modalPresentationStyle = .fullScreen
-//        present(createAccountVC, animated: true, completion: nil)
-         self.presentDetail(createAccountVC)
+        goTo(toVC: "CreateAccountVC", animate: true)
     }
     @IBAction func loginButtonTapped(_ sender: Any) {
+        goTo(toVC: "HomeVC", animate: false)
     }
     
 

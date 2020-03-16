@@ -10,16 +10,23 @@ import UIKit
 
 class PreviewVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var image: UIImage?
 
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var imageView: UIImageView!
+    
+    override func viewDidLoad() {
+       
+        imageView.image  = image
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
         dismissDetail()
     }
     
+  func passString(string: String) {
+      print(string)
+  }
   
+
 
 }

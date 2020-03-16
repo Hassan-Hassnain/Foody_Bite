@@ -12,7 +12,8 @@ class CategoriesVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var categories = ["Italian","Chinese","Maxican","Thai","Arabian","Indian","American","Korean","European" ]
+    var categories = DataServic.instance.categores + DataServic.instance.categores
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +22,9 @@ class CategoriesVC: UIViewController {
         
     }
     
+    @IBAction func backButtonTapped(_ sender: Any) {
+        dismissDetail()
+    }
     
     
 }
@@ -39,16 +43,29 @@ extension CategoriesVC: UITableViewDataSource, UITableViewDelegate {
         print(colorID)
         switch colorID {
         case 0:
+            cell0.categoryTitle?.text = categories[indexPath.row]
             return cell0
         case 1:
+            cell1.categoryTitle?.text = categories[indexPath.row]
             return cell1
         case 2:
+            cell2.categoryTitle?.text = categories[indexPath.row]
             return cell2
         case 3:
+            cell3.categoryTitle?.text = categories[indexPath.row]
             return cell3
             
         default:
             return CategorVCTableCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let animation = CATransform3DMakeTranslation(UIScreen.main.bounds.size.width, 0, 0)
+        cell.layer.transform = animation
+        
+        UIView.animate(withDuration: 0.8){
+            cell.layer.transform = CATransform3DIdentity
         }
     }
     

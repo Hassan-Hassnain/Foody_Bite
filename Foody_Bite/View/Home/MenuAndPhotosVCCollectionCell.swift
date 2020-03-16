@@ -11,6 +11,11 @@ import UIKit
 class MenuAndPhotosVCCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var foodImageView: UIImageView!
+        
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+    }
     
     func configure(foodImage image: UIImage) {
         self.foodImageView.image = image

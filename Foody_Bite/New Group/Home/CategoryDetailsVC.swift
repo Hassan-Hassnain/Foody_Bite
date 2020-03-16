@@ -18,6 +18,9 @@ class CategoryDetailsVC: UIViewController {
         tableView.delegate = self
     }
     
+    @IBAction func backButtonTapped(_ sender: Any) {
+        dismissDetail()
+    }
 
 
 }

@@ -43,7 +43,7 @@ class TrendingRestaurantItemDetailsVC: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         presentDetail(vc)
     }
-    
+
     
 }
 
