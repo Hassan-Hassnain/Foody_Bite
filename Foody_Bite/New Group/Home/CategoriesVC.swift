@@ -12,7 +12,7 @@ class CategoriesVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var categories = DataServic.instance.categores + DataServic.instance.categores
+    var categories = DataService.instance.categores + DataService.instance.categores
     
     override func viewDidLoad() {
         super.viewDidLoad()
