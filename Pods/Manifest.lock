@@ -92,6 +92,7 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - ProgressHUD (2.51)
   - PromisesObjC (1.2.8)
 
 DEPENDENCIES:
@@ -101,6 +102,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - IQKeyboardManagerSwift
+  - ProgressHUD
 
 SPEC REPOS:
   trunk:
@@ -123,6 +125,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - leveldb-library
     - nanopb
+    - ProgressHUD
     - PromisesObjC
 
 SPEC CHECKSUMS:
@@ -145,8 +148,9 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  ProgressHUD: 54b4c2fa202bf3da7dddc1c698ae4e6376333bd9
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
 
-PODFILE CHECKSUM: 6166f2ca2a5f61044766fdf72bee81a0e2ca685f
+PODFILE CHECKSUM: 9872c458327db40d9fa734ffba9826a66f6c1c44
 
 COCOAPODS: 1.8.4

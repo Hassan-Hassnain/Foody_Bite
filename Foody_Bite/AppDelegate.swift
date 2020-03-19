@@ -18,10 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
-        
         IQKeyboardManager.shared.keyboardDistanceFromTextField = 200
         IQKeyboardManager.shared.shouldShowToolbarPlaceholder = true
-        IQKeyboardManager.shared.enableAutoToolbar = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         
         FirebaseApp.configure()

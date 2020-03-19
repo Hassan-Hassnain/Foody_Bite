@@ -10,9 +10,11 @@ import UIKit
 import Dezignables
 import IQKeyboardManagerSwift
 import Firebase
+import ProgressHUD
+
 
 class LoginVC: UIViewController {
-
+    
     @IBOutlet weak var emailTextField: DesignableUITextField!
     
     @IBOutlet weak var passwordTextField: DesignableUITextField!
@@ -46,39 +48,24 @@ class LoginVC: UIViewController {
         goTo(toVC: "CreateAccountVC", animate: true)
     }
     @IBAction func loginButtonTapped(_ sender: Any) {
-        guard let email = emailTextField.text, let password = passwordTextField.text else { return }
-        loginUser(withEmail: email, andPassword: password) { (success) in
-            if success {
-                print("User signed in successfully")
-                self.goTo(toVC: "HomeVC", animate: true)
+      validateFields()
+        ProgressHUD.show()
+        AuthService.instance.loginUser(withEmail: emailTextField.text!, andPassword: passwordTextField.text!) { (success, error) in
+            if !success {
+                ProgressHUD.showError(error?.localizedDescription)
             } else {
-                print("User login failed")
+                ProgressHUD.dismiss()
+                self.goTo(toVC: "HomeVC", animate: false)
             }
         }
     }
     
-
+    func validateFields() {
+        emailTextField.validateField(withMessage: EMAIL_TEXT_FIELD_MESSAGE)
+        passwordTextField.validateField(withMessage: PASSWORD_TEXT_FIELD_MESSAGE)
+    }
 }
 
 extension LoginVC: UITextFieldDelegate {
-    
-}
-
-extension LoginVC {
-  
-    
-    func loginUser(withEmail email: String, andPassword password: String, onCompletion: @escaping (_ success: Bool) -> ()) {
-        AuthService.instance.loginUser(withEmail: email, andPassword: password) { (success, loginError) in
-            if success {
-                print("User signed in successfully with email \(Auth.auth().currentUser!)")
-                onCompletion(true)
-            }else{
-                print("No user exist with email \(email)")
-                onCompletion(false)
-            }
-            
-        }
-    }
-    
     
 }

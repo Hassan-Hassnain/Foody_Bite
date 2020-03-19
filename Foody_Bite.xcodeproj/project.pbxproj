@@ -70,6 +70,9 @@
 		3CDFCBD4240AFE4900571F8B /* UIView_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */; };
 		3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */; };
 		3CE951D9241531D9007139A6 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE951D8241531D9007139A6 /* ProfileVC.swift */; };
+		3CF199BB2423B391000C271C /* StorageServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF199BA2423B391000C271C /* StorageServices.swift */; };
+		3CF846672423F42D007EFEFA /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF846662423F42D007EFEFA /* UITextFieldExt.swift */; };
+		3CF846692423FA5D007EFEFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF846682423FA5D007EFEFA /* Constants.swift */; };
 		3CFC8A65241AA0A200B75EB9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC8A64241AA0A200B75EB9 /* Helper.swift */; };
 		3CFC8A67241AB8FF00B75EB9 /* EditReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC8A66241AB8FF00B75EB9 /* EditReviewVC.swift */; };
 		3CFC8A69241AC59D00B75EB9 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC8A68241AC59D00B75EB9 /* EditProfileVC.swift */; };
@@ -144,6 +147,9 @@
 		3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Ext.swift; sourceTree = "<group>"; };
 		3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		3CE951D8241531D9007139A6 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		3CF199BA2423B391000C271C /* StorageServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServices.swift; sourceTree = "<group>"; };
+		3CF846662423F42D007EFEFA /* UITextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExt.swift; sourceTree = "<group>"; };
+		3CF846682423FA5D007EFEFA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3CFC8A64241AA0A200B75EB9 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		3CFC8A66241AB8FF00B75EB9 /* EditReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReviewVC.swift; sourceTree = "<group>"; };
 		3CFC8A68241AC59D00B75EB9 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
@@ -201,6 +207,8 @@
 			children = (
 				3C5F540C241E9996001C46E0 /* DataService.swift */,
 				3C9B7B24241FF1B600646A92 /* AuthService.swift */,
+				3CF199BA2423B391000C271C /* StorageServices.swift */,
+				3CF846682423FA5D007EFEFA /* Constants.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -343,6 +351,7 @@
 				3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */,
 				3C6112082419450900E7FF76 /* Protocols.swift */,
 				3CFC8A64241AA0A200B75EB9 /* Helper.swift */,
+				3CF846662423F42D007EFEFA /* UITextFieldExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -517,9 +526,11 @@
 				3C7F148224140BC60027BBF2 /* MenuAndPhotosVCCollectionCell.swift in Sources */,
 				3C61120724193EC200E7FF76 /* CustomAlertOptions.swift in Sources */,
 				3C56C17F240C78ED00A56AAB /* HomeVC.swift in Sources */,
+				3CF846672423F42D007EFEFA /* UITextFieldExt.swift in Sources */,
 				3C769A77240D19CB00E041FB /* VisitorsCell.swift in Sources */,
 				3C7F1488241426B90027BBF2 /* AllReviewAndRatingVCTableCell.swift in Sources */,
 				3CBD6C452414C94B00CC501D /* MyFavoriteVC.swift in Sources */,
+				3CF199BB2423B391000C271C /* StorageServices.swift in Sources */,
 				3C584BA024139EF90003CB9E /* FindFriendCell_Suggestions.swift in Sources */,
 				3C89AD34240992DE00CF970C /* AppDelegate.swift in Sources */,
 				3C7F1486241425510027BBF2 /* AllReviewAndRatingVC.swift in Sources */,
@@ -536,6 +547,7 @@
 				3C7F1480241408D80027BBF2 /* MenuAndPhotosVC.swift in Sources */,
 				3C4CEAAB24154424000B20FF /* FollowersVC.swift in Sources */,
 				3C584BA82413D1C60003CB9E /* CategoryDetailsVC.swift in Sources */,
+				3CF846692423FA5D007EFEFA /* Constants.swift in Sources */,
 				3CBD6C512414FDCB00CC501D /* NotificationVCTableViewCell.swift in Sources */,
 				3C56C17A240C5F8F00A56AAB /* UITextFieldX.swift in Sources */,
 				3C201B742412C58900C5927C /* FoodtypeCollectionCell.swift in Sources */,
@@ -704,7 +716,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Foody_Bite/Foody_Bite.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = T898NTACMU;
 				INFOPLIST_FILE = Foody_Bite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -713,7 +724,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devoders.ahh.Foody-Bite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -726,7 +737,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Foody_Bite/Foody_Bite.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = T898NTACMU;
 				INFOPLIST_FILE = Foody_Bite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -735,7 +745,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devoders.ahh.Foody-Bite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

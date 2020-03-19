@@ -11,6 +11,7 @@ import Dezignables
 import IQKeyboardManagerSwift
 import Firebase
 import FirebaseStorage
+import ProgressHUD
 
 class CreateAccountVC: UIViewController {
     
@@ -32,74 +33,46 @@ class CreateAccountVC: UIViewController {
         emailTextField.delegate = self
         passwordTextField.delegate = self
         confirmPasswordTextField.delegate = self
-        
         IQKeyboardManager.shared.keyboardDistanceFromTextField = 200
         
     }
     
     @IBAction func imageUploadButtonTapped(_ sender: Any) {
         presentImagePicker()
-        
     }
+    
     @IBAction func registerButtonTapped(_ sender: Any) {
-        guard let imageData = profileImage?.jpegData(compressionQuality: 0.4) else {return }
-        guard let name = nameTextField.text else {return }
-        guard let email = emailTextField.text else {return }
-        guard let password = passwordTextField.text  else {return }
-        
-        if password == confirmPasswordTextField.text {
-            Auth.auth().createUser(withEmail: email, password: password) { (AuthResult, error) in
-                
-                guard let authData = AuthResult?.user, error == nil else { return  }
-                
-                
-                var dict = [
-                    "name": name,
-                    "provider": authData.providerID,
-                    "email": authData.email,
-                    "profileImageUrl": "",
-                    "status": "Welcome to FoodyBite"
-                ]
-                let REF_STORAGE = Storage.storage().reference(forURL: "gs://foody-bite.appspot.com")
-                let storageProfileRef = REF_STORAGE.child("profile").child(authData.uid)
-                
-                let metaData = StorageMetadata()
-                metaData.contentType = "image/jpg"
-                storageProfileRef.putData(imageData, metadata: metaData, completion:{
-                    (storateMetaData, error) in
-                    if error != nil {
-                        print(error?.localizedDescription)
-                        return
-                    }
-                    
-                    storageProfileRef.downloadURL { (url, error) in
-                        if let metaImageUrl = url?.absoluteString{
-                            print(metaImageUrl)
-                            dict["profileImageUrl"] = metaImageUrl
-                             DataService.instance.REF_USERS.child(authData.uid).updateChildValues(dict, withCompletionBlock: {
-                                (error, ref) in
-                                if error == nil {
-                                    print("Done")
-                                }
-                            })
-                            
-                        }
-                    }
-                })
-                
-                
-            }
-        }
-        
+        signUp()
     }
+    
     @IBAction func loginButtonTapped(_ sender: Any) {
         goTo(toVC: "LoginVC", animate: true)
     }
-}
-
-extension CreateAccountVC : UITextFieldDelegate {
     
 }
+
+
+//MARK: - EXTENSIONS
+extension CreateAccountVC : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+        return false
+    }
+    //FOR TESTING PURPOSE ONLY
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.tag == 0 {
+            emailTextField.text = "\(String(describing: nameTextField.text!))@test.com"
+        }
+    }
+}
+
+
+
 extension CreateAccountVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -121,12 +94,8 @@ extension CreateAccountVC: UIImagePickerControllerDelegate, UINavigationControll
     }
 }
 
-
+//MARK: - FUNCTIONS
 extension CreateAccountVC {
-    
-    func registerNewUser(withName name: String, Email email: String, andPassword password: String, profileImage image: UIImage?, onCompletion: @escaping (_ success: Bool) -> ()){
-        
-    }
     
     func presentImagePicker() {
         let imagePicker = UIImagePickerController()
@@ -136,8 +105,50 @@ extension CreateAccountVC {
         self.present(imagePicker,animated: true, completion: nil)
     }
     
-    
-    
+    func validateTextFields() {
+        confirmPasswordTextField.validateField(withMessage: CONFIRM_PASSWORD_TEXT_FIELD_MESSAGE)
+        passwordTextField.validateField(withMessage: PASSWORD_TEXT_FIELD_MESSAGE)
+        emailTextField.validateField(withMessage: EMAIL_TEXT_FIELD_MESSAGE)
+        nameTextField.validateField(withMessage: USER_NAME_TEXT_FIELD_MESSAGE)
+        
+        if passwordTextField.text! != confirmPasswordTextField.text! {
+            ProgressHUD.showError(PASSWORD_NOT_MATCH_MESSAGE)
+        }
+        
+        guard profileImage != nil else {
+            ProgressHUD.showError(PROFILE_IMAGE_MESSAGE)
+            return
+        }
+    }
+    func signUp() {
+        ProgressHUD.show()
+        self.validateTextFields()
+        AuthService.instance.createUser(withEmail:emailTextField.text!, andPassword: passwordTextField.text!) { (user) in
+            guard let user = user else {return}
+            var dict = [
+                USER_NAME: self.nameTextField.text!,
+                PROVIDER: user.providerID,
+                UESR_EMAIL: self.emailTextField.text!,
+                PROFILE_IMAGE_URL: ""
+            ]
+            
+            StorageServices.instance.uploadImage(withUID: user.uid, andImage: self.profileImageView.image!) { (url) in
+                if let url = url {
+                    dict[PROFILE_IMAGE_URL] = url
+                    DataService.instance.createDBUser(uid: user.uid, userData: dict) {(success) in
+                        if success {
+                            ProgressHUD.showSuccess(USER_DATA_SAVED_MESSAGE)
+                            ProgressHUD.dismiss()
+                            self.goTo(toVC: "LoginVC", animate: true)
+                        } else {
+                            ProgressHUD.showError(REGISTRATION_FAILED_MESSAGE)
+                            ProgressHUD.dismiss()
+                        }
+                    }
+                }
+            }
+        }
+    }
     
 }
 

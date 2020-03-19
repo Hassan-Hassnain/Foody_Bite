@@ -13,6 +13,8 @@ target 'Foody_Bite' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
+  
+  pod 'ProgressHUD'
 
   
 end
