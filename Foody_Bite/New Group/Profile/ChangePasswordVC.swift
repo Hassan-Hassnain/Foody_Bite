@@ -8,6 +8,8 @@
 
 import UIKit
 import Dezignables
+import Firebase
+import ProgressHUD
 
 class ChangePasswordVC: UIViewController {
     
@@ -34,10 +36,38 @@ class ChangePasswordVC: UIViewController {
         dismissDetail()
     }
     @IBAction func updateButtonTapped(_ sender: Any) {
+        //Testing pending
+        currentPasswordTextField.validateField(withMessage: EMPTY_CURRENT_PASSWORD)
+        newPasswordTextField.validateField(withMessage: EMPTY_NEW_PASSWORD)
+        confirmPasswordTextField.validateField(withMessage: EMPTY_CONFIRM_PASSWORD_MESSAGE)
+        let email = Auth.auth().currentUser?.email
+        if newPasswordTextField.text == confirmPasswordTextField.text {
+            AuthService.instance.changePassword(email: email!, currentPassword: currentPasswordTextField.text!, newPassword: newPasswordTextField.text!) { (success, message) in
+                if success {
+                    ProgressHUD.showSuccess(message)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
+                        self.dismissDetail()
+                    })
+                } else {
+                    ProgressHUD.showError(message)
+                }
+            }
+        } else {
+            ProgressHUD.showError(PASSWORD_NOT_MATCH_MESSAGE)
+        }
+        
+        
         goTo(toVC: "LoginVC", animate: true)
         
     }
     
+    
+    
+    
+}
+extension ChangePasswordVC: UITextFieldDelegate {}
+
+extension ChangePasswordVC {
     func bindToKeyboardForBottomConstraint () {
         NotificationCenter.default.addObserver(self, selector: #selector(changeViewBottomConstraint(_:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
@@ -55,18 +85,5 @@ class ChangePasswordVC: UIViewController {
             self.view.layoutIfNeeded()
         }, completion: nil)
     }
-    
-    
 }
-extension ChangePasswordVC: UITextFieldDelegate {
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        
-    }
-    
-    
-}
+

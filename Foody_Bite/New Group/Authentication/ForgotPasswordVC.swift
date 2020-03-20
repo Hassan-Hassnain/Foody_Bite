@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class ForgotPasswordVC: UIViewController {
 
@@ -18,9 +19,20 @@ class ForgotPasswordVC: UIViewController {
     }
     
     @IBAction func sendButtonTapped(_ sender: Any) {
+        emailTextField.validateField(withMessage: EMPTY_EMAIL_MESSAGE)
+        AuthService.instance.resetPassword(withEmail: emailTextField.text!) { (success, message) in
+            if success {
+                ProgressHUD.showSuccess(message)
+                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
+                    self.goTo(toVC: "LoginVC", animate: true)
+                })
+                
+            } else {
+                ProgressHUD.showError(message)
+            }
+        }
     }
     @IBAction func backButtonTapped(_ sender: Any) {
-//        dismiss(animated: true, completion: nil)
         self.dismissDetail()
     }
     

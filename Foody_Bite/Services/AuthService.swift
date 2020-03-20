@@ -12,7 +12,7 @@ import FirebaseStorage
 
 class AuthService {
     static let instance = AuthService()
-
+    
     func createUser(withEmail email: String, andPassword passowrd: String, registrationCompletion: @escaping (_ user: User?) -> ()) {
         Auth.auth().createUser(withEmail: email, password: passowrd) { (authResult, error) in
             guard let user = authResult?.user , error == nil else { registrationCompletion(nil); return}
@@ -30,6 +30,32 @@ class AuthService {
         }
     }
     
+    func resetPassword(withEmail email: String, onCompletion: @escaping (_ success: Bool, _ error: String?)-> ()){
+        Auth.auth().sendPasswordReset(withEmail: email) { (error) in
+            if error == nil {
+                onCompletion(true, PASSWORD_CHANGE_SUCCESSFUL_MESSAGE)
+            } else {
+                onCompletion(false, error?.localizedDescription)
+            }
+        }
+    }
+    
+    func changePassword(email: String, currentPassword: String, newPassword: String, onCompletion: @escaping (Bool, String?) -> Void) {
+        let credential = EmailAuthProvider.credential(withEmail: email, password: currentPassword)
+        Auth.auth().currentUser?.reauthenticate(with: credential, completion: { (result, error) in
+            if let error = error {
+                onCompletion(false, error.localizedDescription)
+            } else {
+                Auth.auth().currentUser?.updatePassword(to: newPassword, completion: { (error) in
+                    if error != nil {
+                        onCompletion(false, error?.localizedDescription)
+                    } else {
+                        onCompletion(true, PASSWORD_CHANGE_SUCCESSFUL_MESSAGE)
+                    }
+                })
+            }
+        })
+    }
     
 }
 

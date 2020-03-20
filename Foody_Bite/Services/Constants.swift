@@ -10,18 +10,28 @@ import Foundation
 
 //MARK: - AUTHENTICATION GROUP
 
+//User Data
 let USER_NAME = "userName"
 let PROVIDER = "provider"
 let UESR_EMAIL = "email"
 let PROFILE_IMAGE_URL = "profileImageURL"
-let USER_NAME_TEXT_FIELD_MESSAGE = "Please enter username"
-let EMAIL_TEXT_FIELD_MESSAGE = "Please enter email address"
-let PASSWORD_TEXT_FIELD_MESSAGE = "Please enter password"
-let CONFIRM_PASSWORD_TEXT_FIELD_MESSAGE = "Please confirm your password"
-let PROFILE_IMAGE_MESSAGE = "Please chose your photo"
+
+//Text Field Validation
+let EMPTY_USERNAME_MESSAGE = "Please enter username"
+let EMPTY_EMAIL_MESSAGE = "Please enter email address"
+let EMPTY_PASSWORD_MESSAGE = "Please enter password"
+let EMPTY_CONFIRM_PASSWORD_MESSAGE = "Please confirm your password"
+let EMPTY_PHOTO_MESSAGE = "Please chose your photo"
+let EMPTY_CURRENT_PASSWORD = "Please enter your current password"
+let EMPTY_NEW_PASSWORD = "Please enter new password"
 let PASSWORD_NOT_MATCH_MESSAGE = "Password does not matach"
+
+//Firebase Messages
 let USER_DATA_SAVED_MESSAGE = "User data saved successfully"
 let REGISTRATION_FAILED_MESSAGE = "User registration failed"
 let USER_LOGIN_FAIL_MESSAGE = "Login failed: Check your email and password and try again"
+let PASSWORD_CHANGE_SUCCESSFUL_MESSAGE = "Password reset link sent to your email,\nreset your passowrd and try agian"
+let USER_ALREADY_SIGNED_IN = "user allready signed in with"
+
 
 

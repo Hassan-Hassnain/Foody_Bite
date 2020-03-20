@@ -36,7 +36,7 @@ class LoginVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if let email = Auth.auth().currentUser?.email {
-            print("user allready signed in with \(email)")
+            print("\(USER_ALREADY_SIGNED_IN) \(email)")
         } else {
             print("No user signed in")
         }
@@ -61,8 +61,8 @@ class LoginVC: UIViewController {
     }
     
     func validateFields() {
-        emailTextField.validateField(withMessage: EMAIL_TEXT_FIELD_MESSAGE)
-        passwordTextField.validateField(withMessage: PASSWORD_TEXT_FIELD_MESSAGE)
+        emailTextField.validateField(withMessage: EMPTY_EMAIL_MESSAGE)
+        passwordTextField.validateField(withMessage: EMPTY_PASSWORD_MESSAGE)
     }
 }
 

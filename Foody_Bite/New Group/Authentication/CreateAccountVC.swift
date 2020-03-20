@@ -106,17 +106,17 @@ extension CreateAccountVC {
     }
     
     func validateTextFields() {
-        confirmPasswordTextField.validateField(withMessage: CONFIRM_PASSWORD_TEXT_FIELD_MESSAGE)
-        passwordTextField.validateField(withMessage: PASSWORD_TEXT_FIELD_MESSAGE)
-        emailTextField.validateField(withMessage: EMAIL_TEXT_FIELD_MESSAGE)
-        nameTextField.validateField(withMessage: USER_NAME_TEXT_FIELD_MESSAGE)
+        confirmPasswordTextField.validateField(withMessage: EMPTY_CONFIRM_PASSWORD_MESSAGE)
+        passwordTextField.validateField(withMessage: EMPTY_PASSWORD_MESSAGE)
+        emailTextField.validateField(withMessage: EMPTY_EMAIL_MESSAGE)
+        nameTextField.validateField(withMessage: EMPTY_USERNAME_MESSAGE)
         
         if passwordTextField.text! != confirmPasswordTextField.text! {
             ProgressHUD.showError(PASSWORD_NOT_MATCH_MESSAGE)
         }
         
         guard profileImage != nil else {
-            ProgressHUD.showError(PROFILE_IMAGE_MESSAGE)
+            ProgressHUD.showError(EMPTY_PHOTO_MESSAGE)
             return
         }
     }
@@ -138,8 +138,9 @@ extension CreateAccountVC {
                     DataService.instance.createDBUser(uid: user.uid, userData: dict) {(success) in
                         if success {
                             ProgressHUD.showSuccess(USER_DATA_SAVED_MESSAGE)
-                            ProgressHUD.dismiss()
-                            self.goTo(toVC: "LoginVC", animate: true)
+                            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
+                                self.goTo(toVC: "LoginVC", animate: true)
+                            })
                         } else {
                             ProgressHUD.showError(REGISTRATION_FAILED_MESSAGE)
                             ProgressHUD.dismiss()
