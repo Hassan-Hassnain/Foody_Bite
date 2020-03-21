@@ -22,7 +22,7 @@ class MenuAndPhotosVC: UIViewController {
     }
     
     @IBAction func backButtonWasTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     
 }
@@ -34,14 +34,14 @@ extension MenuAndPhotosVC: UICollectionViewDelegate, UICollectionViewDataSource
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuAndPhotosVCCollectionCell", for: indexPath) as? MenuAndPhotosVCCollectionCell else {return MenuAndPhotosVCCollectionCell()}
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MenuAndPhotosVCCollectionCell.className, for: indexPath) as? MenuAndPhotosVCCollectionCell else {return MenuAndPhotosVCCollectionCell()}
         cell.configure(foodImage: images[indexPath.row])
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        goTo(fromStoryboar: Storyboards.home, toVC: "PreviewVC", animate: true)
+        navigationController?.customPush(PreviewVC.className, animate: true)
     }
     
     

@@ -15,6 +15,7 @@ class FilterResultsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.regCell(cellName: RestaurantCellTableViewCell.className)
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -27,7 +28,7 @@ class FilterResultsVC: UIViewController {
         
         var view: UIView
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-        button.setImage(UIImage(named: "Icon_Close_Grey.png"), for: .normal)
+        button.setImage(Icons.CLOSE_GREY, for: .normal)
         // Note: In order for your image to use the tint color, you have to select the image in the Assets.xcassets and change the "Render As" property to "Template Image".
         button.tintColor = searchBar.tintColor
         
@@ -42,7 +43,7 @@ class FilterResultsVC: UIViewController {
         searchBar.rightView = view
     }
     @objc func filterButtonAction() {
-        dismissDetail()
+       navigationController?.popViewController(animated: true)
     }
     
     
@@ -54,7 +55,7 @@ extension FilterResultsVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TrendingRestaurantsTabelCell") as? TrendingRestaurantsTabelCell else {return TrendingRestaurantsTabelCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RestaurantCellTableViewCell.className) as? RestaurantCellTableViewCell else {return RestaurantCellTableViewCell()}
         
         return cell
     }

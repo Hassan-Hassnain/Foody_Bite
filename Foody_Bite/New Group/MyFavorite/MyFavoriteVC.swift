@@ -15,6 +15,7 @@ class MyFavoriteVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.regCell(cellName: RestaurantCellTableViewCell.className)
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -30,13 +31,13 @@ extension MyFavoriteVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TrendingRestaurantsTabelCell") as? TrendingRestaurantsTabelCell else {return TrendingRestaurantsTabelCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RestaurantCellTableViewCell.className) as? RestaurantCellTableViewCell else {return RestaurantCellTableViewCell()}
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        goTo(fromStoryboar: Storyboards.favorite, toVC: "MyFavoriteDetailsVC", animate: true)
+        navigationController?.customPush(MyFavoriteDetailsVC.className, animate: true)
     }
     
 }

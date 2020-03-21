@@ -23,7 +23,7 @@ class CategoriesVC: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     
     
@@ -70,6 +70,6 @@ extension CategoriesVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        goTo(fromStoryboar: Storyboards.home, toVC: "CategoryDetailsVC", animate: true)
+        navigationController?.customPush(CategoryDetailsVC.className, animate: true)
     }
 }

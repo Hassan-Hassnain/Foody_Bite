@@ -15,30 +15,35 @@ import UIKit
 //MARK: - AUTHENTICATION GROUP
 
 //User Data
-let USER_NAME = "userName"
-let PROVIDER = "provider"
-let UESR_EMAIL = "email"
-let PROFILE_IMAGE_URL = "profileImageURL"
+struct UserData {
+    static let USER_NAME = "userName"
+    static let PROVIDER = "provider"
+    static let UESR_EMAIL = "email"
+    static let PROFILE_IMAGE_URL = "profileImageURL"
+}
 
 //Text Field Validation
-let EMPTY_USERNAME_MESSAGE = "Please enter username"
-let EMPTY_EMAIL_MESSAGE = "Please enter email address"
-let EMPTY_PASSWORD_MESSAGE = "Please enter password"
-let EMPTY_CONFIRM_PASSWORD_MESSAGE = "Please confirm your password"
-let EMPTY_PHOTO_MESSAGE = "Please chose your photo"
-let EMPTY_CURRENT_PASSWORD = "Please enter your current password"
-let EMPTY_NEW_PASSWORD = "Please enter new password"
-let PASSWORD_NOT_MATCH_MESSAGE = "Password does not matach"
+struct FieldValid {
+    static let EMPTY_USERNAME = "Please enter username"
+    static let EMPTY_EMAIL = "Please enter email address"
+    static let EMPTY_PASSWORD = "Please enter password"
+    static let EMPTY_CONFIRM_PASSWORD = "Please confirm your password"
+    static let EMPTY_PHOTO = "Please chose your photo"
+    static let EMPTY_CURRENT_PASSWORD = "Please enter your current password"
+    static let EMPTY_NEW_PASSWORD = "Please enter new password"
+    static let PASSWORD_NOT_MATCH = "Password does not matach"
+}
 
 //Firebase Messages
-let USER_DATA_SAVED_MESSAGE = "User data saved successfully"
-let REGISTRATION_FAILED_MESSAGE = "User registration failed"
-let USER_LOGIN_FAIL_MESSAGE = "Login failed: Check your email and password and try again"
-let PASSWORD_CHANGE_SUCCESSFUL_MESSAGE = "Password reset link sent to your email,\nreset your passowrd and try agian"
-let USER_ALREADY_SIGNED_IN = "user allready signed in with"
+struct FireMessages {
+    static let USER_DATA_SAVED = "User data saved successfully"
+    static let REGISTRATION_FAILED = "User registration failed"
+    static let USER_LOGIN_FAIL = "Login failed: Check your email and password and try again"
+    static let PASSWORD_CHANGE_SUCCESSFUL = "Password reset link sent to your email,\nreset your passowrd and try agian"
+    static let USER_ALREADY_SIGNED_IN = "user allready signed in with"
+}
 
-
-
+//StoryBoards
 struct Storyboards {
     static let main = UIStoryboard(name: "Main", bundle: Bundle.main)           //1
     static let signUp = UIStoryboard(name: "SignUp", bundle: Bundle.main)       //2
@@ -46,4 +51,14 @@ struct Storyboards {
     static let favorite = UIStoryboard(name: "Favorite", bundle: Bundle.main)   //4
     static let profile = UIStoryboard(name: "Profile", bundle: Bundle.main)     //5
     static let review = UIStoryboard(name: "Review", bundle: Bundle.main)       //6
+}
+
+struct Icons {
+    static let FILTER = UIImage(named: "Icon_Filter.png")
+    static let STAR_YELLOW = UIImage(named: "Icon_Star_Yellow.png")
+    static let STAR_GREY = UIImage(named: "Icon_Star_Grey.png")
+    static let CLOSE_GREY = UIImage(named: "Icon_Close_Grey.png")
+    static let SEARCH = UIImage(named: "Icon_Search_grey.png")
+    static let OK = UIImage(named: "Icon_Ok_Blue.png")
+    static let WHITE_CIRCLE = UIImage(named: "Icon_Circle_White.png")
 }

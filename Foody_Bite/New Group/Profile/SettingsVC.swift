@@ -22,13 +22,13 @@ class SettingsVC: UIViewController {
         
     }
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func changePasswordButtonTaped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.profile, toVC: "ChangePasswordVC", animate: true)
+        navigationController?.customPush(ChangePasswordVC.className, animate: true)
     }
     @IBAction func ChangeLanguageButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.profile, toVC: "ChangeLanguageVC", animate: true)
+       navigationController?.customPush(ChangeLanguageVC.className, animate: true)
     }
     
     @IBAction func privacyAndPolicyButtonTapped(_ sender: Any) {
@@ -41,12 +41,12 @@ class SettingsVC: UIViewController {
     }
  @IBAction func noButtonTapped(_ sender: Any) {
         hideAlert()
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func yesButtonTapped(_ sender: Any) {
         try! Auth.auth().signOut()
         hideAlert()
-        goTo(fromStoryboar: Storyboards.signUp, toVC: "LoginVC", animate: true)
+        navigationController?.customPush(LoginVC.className, animate: true)
     }
     //MARK: - Alert functions
     

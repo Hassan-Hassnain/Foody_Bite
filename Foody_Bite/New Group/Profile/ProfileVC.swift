@@ -28,6 +28,8 @@ class ProfileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.regCell(cellName: RestaurantCellTableViewCell.className)
+        
         editButton.layer.cornerRadius = 10
         tableView.dataSource = self
         tableView.delegate = self
@@ -42,26 +44,25 @@ class ProfileVC: UIViewController {
     }
  
     @IBAction func reviewsButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.profile, toVC: "ReviewsVC", animate: true)
+        navigationController?.customPush(ReviewsVC.className, animate: true)
     }
     @IBAction func followersButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.profile, toVC: "FollowersVC", animate: true)
+        navigationController?.customPush(FollowersVC.className, animate: true)
     }
     @IBAction func followingButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.profile, toVC: "FollowingVC", animate: true)
+        navigationController?.customPush(FollowingVC.className, animate: true)
     }
     @IBAction func EditProfileButtonTapped(_ sender: Any) {
-       
-        goTo(fromStoryboar: Storyboards.profile, toVC: "EditProfileVC", animate: true)
+       navigationController?.customPush(EditProfileVC.className, animate: true)
     }
     @IBAction func settingsButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.profile, toVC: "SettingsVC", animate: true)
+        navigationController?.customPush(SettingsVC.className, animate: true)
     }
     
     //MARK: - Alert functions and Actions
     @IBAction func editButtonTapped(_ sender: Any) {
 //        hideAlert1()
-        goTo(fromStoryboar: Storyboards.profile, toVC: "EditReviewVC", animate: true)
+       navigationController?.customPush(EditReviewVC.className, animate: true)
     }
     @IBAction func deletButtonTapped(_ sender: Any) {
         hideAlert1()
@@ -130,8 +131,8 @@ extension ProfileVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileVC_TableCell") as? ProfileVC_TableCell else {return TrendingRestaurantsTabelCell()}
-        cell.optionButtonDelegate = self
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RestaurantCellTableViewCell.className) as? RestaurantCellTableViewCell else {return RestaurantCellTableViewCell()}
+//        cell.optionButtonDelegate = self
         return cell
     }
     

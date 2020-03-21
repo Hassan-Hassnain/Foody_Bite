@@ -30,31 +30,29 @@ class NewReview_2: UIViewController {
         setSearchFieldLeftButton()
     }
     @IBAction func addButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        MainTabBarController().selectedIndex = 2
-        dismissDetail()
-//        goTo(fromStoryboar: Storyboards.main, toVC: "MainTabBarController", animate: false)
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func postButtonTapped(_ sender: Any) {
     }
     @IBAction func homeButtonTapped(_ sender: Any) {
-       goTo(fromStoryboar: Storyboards.main, toVC: "MainTabBarController", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: MainTabBarController.className, animate: false)
     }
     @IBAction func favoriteButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.main, toVC: "MyFavoriteVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: MyFavoriteVC.className, animate: false)
     }
     @IBAction func notificationButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.main, toVC: "NotificationVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: NotificationVC.className, animate: false)
     }
     @IBAction func profileButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.main, toVC: "ProfileVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: ProfileVC.className, animate: false)
     }
     @IBAction func closeButtonTapped(_ sender: Any) {
-        dismissDetail()
+       navigationController?.popViewController(animated: true)
     }
     
     @IBAction func ratingStarTapped1(_ sender: UIButton) {
@@ -63,8 +61,8 @@ class NewReview_2: UIViewController {
     
     func updateRating(sender: UIButton) {
            
-           let yellowStar = UIImage(named: "Icon_Star_Yellow.png") as UIImage?
-           let greyStar = UIImage(named: "Icon_Star_Grey.png") as UIImage?
+        let yellowStar = Icons.STAR_YELLOW as UIImage?
+        let greyStar = Icons.STAR_GREY as UIImage?
            
            if sender == ratingStar1 {
                
@@ -164,7 +162,7 @@ class NewReview_2: UIViewController {
         
         var view: UIView
         let button = UIButton(frame: CGRect(x: 20, y: 0, width: 20, height: 20))
-        button.setImage(UIImage(named: "Icon_Search_grey.png"), for: .normal)
+        button.setImage(Icons.SEARCH, for: .normal)
         // Note: In order for your image to use the tint color, you have to select the image in the Assets.xcassets and change the "Render As" property to "Template Image".
         button.tintColor = searchField.tintColor
         

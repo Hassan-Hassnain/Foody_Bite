@@ -29,7 +29,7 @@ class EditProfileVC: UIViewController {
     }
     
     @IBAction func dismissButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func imageEditButtonTapped(_ sender: Any) {
         presentImagePicker()
@@ -37,10 +37,10 @@ class EditProfileVC: UIViewController {
     
     @IBAction func updateButtonTApped(_ sender: Any) {
         validateTextFields()
-        let userData: Dictionary = [ USER_NAME: nameTextField.text!, UESR_EMAIL: emailTextField.text!]
+        let userData: Dictionary = [ UserData.USER_NAME: nameTextField.text!, UserData.UESR_EMAIL: emailTextField.text!]
         DataService.instance.updateDBUser(uid: Auth.auth().currentUser!.uid, userData: userData) { (success) in
             if success{
-                self.dismissDetail()
+                self.navigationController?.popViewController(animated: true)
             }
         }
     }
@@ -81,12 +81,12 @@ extension EditProfileVC {
     
     private func validateTextFields() {
    
-        emailTextField.validateField(withMessage: EMPTY_EMAIL_MESSAGE)
-        nameTextField.validateField(withMessage: EMPTY_USERNAME_MESSAGE)
+        emailTextField.validateField(withMessage: FieldValid.EMPTY_EMAIL)
+        nameTextField.validateField(withMessage: FieldValid.EMPTY_USERNAME)
 
         
         guard profileImage != nil else {
-            ProgressHUD.showError(EMPTY_PHOTO_MESSAGE)
+            ProgressHUD.showError(FieldValid.EMPTY_PHOTO)
             return
         }
     }

@@ -27,8 +27,6 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         IQKeyboardManager.shared.keyboardDistanceFromTextField = 300
-        
-        
         emailTextField.text = email
         passwordTextField.text = password
         
@@ -36,16 +34,14 @@ class LoginVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if let email = Auth.auth().currentUser?.email {
-            print("\(USER_ALREADY_SIGNED_IN) \(email)")
-        } else {
-            print("No user signed in")
+            print("\(FireMessages.USER_ALREADY_SIGNED_IN) \(email)")
         }
     }
     @IBAction func forgorPasswordButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.signUp, toVC: "ForgotPasswordVC", animate: true)
+        navigationController?.customPush(ForgotPasswordVC.className, animate: true)
     }
     @IBAction func createNewAccoundButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.signUp, toVC: "CreateAccountVC", animate: true)
+        navigationController?.customPush(CreateAccountVC.className, animate: true)
     }
     @IBAction func loginButtonTapped(_ sender: Any) {
       validateFields()
@@ -55,14 +51,14 @@ class LoginVC: UIViewController {
                 ProgressHUD.showError(error?.localizedDescription)
             } else {
                 ProgressHUD.dismiss()
-                self.goTo(fromStoryboar: Storyboards.main, toVC: "HomeVC", animate: false)
+                self.navigationController?.customPush(HomeVC.className, animate: false)
             }
         }
     }
     
     func validateFields() {
-        emailTextField.validateField(withMessage: EMPTY_EMAIL_MESSAGE)
-        passwordTextField.validateField(withMessage: EMPTY_PASSWORD_MESSAGE)
+        emailTextField.validateField(withMessage: FieldValid.EMPTY_EMAIL)
+        passwordTextField.validateField(withMessage: FieldValid.EMPTY_PASSWORD)
     }
 }
 

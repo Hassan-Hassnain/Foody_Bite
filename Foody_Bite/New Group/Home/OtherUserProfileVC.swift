@@ -14,13 +14,14 @@ class OtherUserProfileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.regCell(cellName: RestaurantCellTableViewCell.className)
         
         tableView.dataSource = self
         tableView.delegate = self
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     
     
@@ -32,13 +33,13 @@ extension OtherUserProfileVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TrendingRestaurantsTabelCell") as? TrendingRestaurantsTabelCell else {return TrendingRestaurantsTabelCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RestaurantCellTableViewCell.className) as? RestaurantCellTableViewCell else {return RestaurantCellTableViewCell()}
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        goTo(fromStoryboar: Storyboards.home, toVC: "TrendingRestaurantItemDetailsVC", animate: true)
+        navigationController?.customPush(TrendingRestaurantItemDetailsVC.className, animate: true)
     }
     
     

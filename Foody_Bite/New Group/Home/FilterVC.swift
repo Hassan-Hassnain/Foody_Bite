@@ -38,8 +38,7 @@ class FilterVC: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.home, toVC: "TrendingRestaurantsVC", animate: true)
-        
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func categoryButtonTappped(_ sender: UIButton ) {
         updateButtonAppearance(sender: sender)
@@ -52,8 +51,8 @@ class FilterVC: UIViewController {
     
     func updateRating(sender: UIButton) {
         
-        let yellowStar = UIImage(named: "Icon_Star_Yellow.png") as UIImage?
-        let greyStar = UIImage(named: "Icon_Star_Grey.png") as UIImage?
+        let yellowStar = Icons.STAR_YELLOW as UIImage?
+        let greyStar = Icons.STAR_GREY as UIImage?
         
         if sender == ratingStar1 {
             

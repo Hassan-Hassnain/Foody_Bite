@@ -19,7 +19,7 @@ class FollowersVC: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     
     
@@ -34,7 +34,7 @@ extension FollowersVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FindFriendCell_Suggestions") as? FindFriendCell_Suggestions else {return FindFriendCell_Suggestions()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FindFriendCell_Suggestions.className) as? FindFriendCell_Suggestions else {return FindFriendCell_Suggestions()}
         cell.friendName.text = "Muhammad Hassan"
         cell.buttonColorView.backgroundFillColor = UIColor.red
        

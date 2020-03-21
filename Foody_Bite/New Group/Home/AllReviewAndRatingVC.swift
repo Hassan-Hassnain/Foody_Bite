@@ -18,7 +18,7 @@ class AllReviewAndRatingVC: UIViewController {
         tableView.delegate = self
     }
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     
 
@@ -32,7 +32,7 @@ extension AllReviewAndRatingVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AllReviewAndRatingVCTableCell") as? AllReviewAndRatingVCTableCell else { return AllReviewAndRatingVCTableCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AllReviewAndRatingVCTableCell.className) as? AllReviewAndRatingVCTableCell else { return AllReviewAndRatingVCTableCell()}
         if indexPath.row == 2 {
             let text = cell.comments.text
             cell.comments.text = "\(String(describing: text)),\(String(describing: text)),\(String(describing: text)),\(String(describing: text))"

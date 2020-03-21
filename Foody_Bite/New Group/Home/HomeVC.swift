@@ -38,34 +38,33 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func addButtonWasTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.review, toVC: "NewReviewVC", animate: false)
+        navigationController?.customPush(NewReviewVC.className, animate: false)
     }
     
     @IBAction func homeButtonWasTapped(_ sender: Any) {
     }
     
     @IBAction func favoriteButtonWasTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.main, toVC: "MyFavoriteVC", animate: false)
+        navigationController?.customPush(MyFavoriteVC.className, animate: false)
     }
     @IBAction func notificationButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.main, toVC: "NotificationVC", animate: false)
+        navigationController?.customPush(NotificationVC.className, animate: false)
     }
     
     @IBAction func profileButtonWasTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.main, toVC: "ProfileVC", animate: false)
+        navigationController?.customPush(ProfileVC.className, animate: false)
     }
     
     //MARK: - LABEL GESTURES
     
     @IBAction func seeAllRestaurantsButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.home, toVC: "TrendingRestaurantsVC", animate: true)
-//        goTo(toVC: "TrendingRestaurantsVC", animate: true)
+        navigationController?.customPush(TrendingRestaurantsVC.className, animate: true)
     }
     @IBAction func seeAllCatagoriesButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.home, toVC: "CategoriesVC", animate: true)
+        navigationController?.customPush(CategoriesVC.className, animate: true)
     }
     @IBAction func seeAllFriendsButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.home, toVC: "FindFriendsVC", animate: true)
+        navigationController?.customPush(FindFriendsVC.className, animate: true)
     }
     
     //MARK: - SEARCH FIELD RIGHT BUTTON
@@ -73,7 +72,7 @@ class HomeVC: UIViewController {
         
         var view: UIView
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-        button.setImage(UIImage(named: "Icon_Filter.png"), for: .normal)
+        button.setImage(Icons.FILTER, for: .normal)
         // Note: In order for your image to use the tint color, you have to select the image in the Assets.xcassets and change the "Render As" property to "Template Image".
         button.tintColor = searchField.tintColor
         
@@ -88,7 +87,7 @@ class HomeVC: UIViewController {
         searchField.rightView = view
     }
     @objc func filterButtonAction() {
-        goTo(fromStoryboar: Storyboards.home, toVC: "FilterResultsVC", animate: true)
+        navigationController?.customPush(FilterResultsVC.className, animate: true)
     }
 }
 
@@ -106,24 +105,24 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if collectionView == restaurantCollectionView {
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TrendingRestaurantsCell", for: indexPath) as? TrendingRestaurantsCell else {return TrendingRestaurantsCell()}
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrendingRestaurantsCell.className, for: indexPath) as? TrendingRestaurantsCell else {return TrendingRestaurantsCell()}
             
             return cell
         } else if collectionView == categoryCollectionView {
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as? CategoryCell else {return CategoryCell()}
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCell.className, for: indexPath) as? CategoryCell else {return CategoryCell()}
             
             return cell
         } else {
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VisitorsCell", for: indexPath) as? VisitorsCell else {return VisitorsCell()}
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VisitorsCell.className, for: indexPath) as? VisitorsCell else {return VisitorsCell()}
             return cell
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         if collectionView == restaurantCollectionView {
-            goTo(fromStoryboar: Storyboards.home, toVC: "TrendingRestaurantItemDetailsVC", animate: true)
+          navigationController?.customPush(TrendingRestaurantItemDetailsVC.className, animate: true)
         } else if collectionView == categoryCollectionView {
-            self.goTo(fromStoryboar: Storyboards.home, toVC: "CategoresVC", animate: true)
+           navigationController?.customPush(CategoriesVC.className, animate: true)
         } else {
             
         }

@@ -23,7 +23,7 @@ class FindFriendsVC: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     
     
@@ -64,7 +64,7 @@ extension FindFriendsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FindFriendCell_Contacts") as? FindFriendCell_Contacts else {return FindFriendCell_Contacts()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FindFriendCell_Contacts.className) as? FindFriendCell_Contacts else {return FindFriendCell_Contacts()}
         
         if indexPath.section == 0 {
             //            cell.configure(firendImage: <#T##UIImage#>, friendName: <#T##String#>, totalReview: <#T##String#>)
@@ -76,7 +76,7 @@ extension FindFriendsVC: UITableViewDelegate, UITableViewDataSource {
         
         
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            goTo(fromStoryboar: Storyboards.home, toVC: "OtherUserProfileVC", animate: true)
+            navigationController?.customPush(OtherUserProfileVC.className, animate: true)
         }
         
     }

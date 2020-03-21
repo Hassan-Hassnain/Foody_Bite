@@ -19,12 +19,12 @@ class ForgotPasswordVC: UIViewController {
     }
     
     @IBAction func sendButtonTapped(_ sender: Any) {
-        emailTextField.validateField(withMessage: EMPTY_EMAIL_MESSAGE)
+        emailTextField.validateField(withMessage: FieldValid.EMPTY_EMAIL)
         AuthService.instance.resetPassword(withEmail: emailTextField.text!) { (success, message) in
             if success {
                 ProgressHUD.showSuccess(message)
                 DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
-                    self.goTo(fromStoryboar: Storyboards.signUp, toVC: "LoginVC", animate: true)
+                    self.navigationController?.customPush(LoginVC.className, animate: true)
                 })
                 
             } else {
@@ -33,7 +33,7 @@ class ForgotPasswordVC: UIViewController {
         }
     }
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     
 

@@ -13,7 +13,7 @@ class ChangeLanguageVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var currentIndex = 0
-    var languages = ["English", "Chinese", "Spanish","Urdu", "Hindu", "Arabic","Portuguese","Russian","Japanese","French","German"]
+    var languages = DataService.instance.categores
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,10 +21,10 @@ class ChangeLanguageVC: UIViewController {
         tableView.dataSource = self
     }
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func updateButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     
 
@@ -37,12 +37,13 @@ extension ChangeLanguageVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ChangeLanguageVCTableCell") as? ChangeLanguageVCTableCell else {return ChangeLanguageVCTableCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ChangeLanguageVCTableCell.className
+            ) as? ChangeLanguageVCTableCell else {return ChangeLanguageVCTableCell()}
         
         if currentIndex == indexPath.row {
-            cell.configure(languageTitle: languages[indexPath.row], buttonImage: UIImage(named: "Icon_Ok_Blue.png"))
+            cell.configure(languageTitle: languages[indexPath.row], buttonImage: Icons.OK)
         } else {
-            cell.configure(languageTitle: languages[indexPath.row], buttonImage: UIImage(named: "Icon_Circle_White.png"))
+            cell.configure(languageTitle: languages[indexPath.row], buttonImage: Icons.WHITE_CIRCLE)
         }
         
         return cell

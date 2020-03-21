@@ -36,7 +36,7 @@ class StartVC: UIViewController {
             self.bgImage.transform = rotation
             
         }) { (finnished) in
-            self.appTitle.frame = CGRect(x: 100, y: 415.5 * 1.5, width: self.finalFrame.width * 10 , height: self.finalFrame.height * 10)
+            self.appTitle.frame = CGRect(x: 100, y: 415.5 * 1.5, width: self.finalFrame.width * 10, height: self.finalFrame.height * 10)
             
             UIView.animate(withDuration: 0.75, delay: 0.0, animations:  {
                 self.appTitle.alpha = 1.0

@@ -20,7 +20,7 @@ class FollowingVC: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     
     

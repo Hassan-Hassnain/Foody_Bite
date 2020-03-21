@@ -26,13 +26,13 @@ class EditReviewVC: UIViewController {
     
 
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func backButtonTapped(_ sender: Any) {
-         dismissDetail()
+         navigationController?.popViewController(animated: true)
     }
     @IBAction func updateButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func ratingStarTapped1(_ sender: UIButton) {
         updateRating(sender: sender)
@@ -40,8 +40,8 @@ class EditReviewVC: UIViewController {
 
     func updateRating(sender: UIButton) {
            
-           let yellowStar = UIImage(named: "Icon_Star_Yellow.png") as UIImage?
-           let greyStar = UIImage(named: "Icon_Star_Grey.png") as UIImage?
+        let yellowStar = Icons.STAR_YELLOW as UIImage?
+        let greyStar = Icons.STAR_GREY as UIImage?
            
            if sender == ratingStar1 {
                

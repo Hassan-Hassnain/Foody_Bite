@@ -22,7 +22,7 @@ class MyFavoriteDetailsVC: UIViewController {
         
     }
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
 }
 
@@ -36,7 +36,7 @@ extension MyFavoriteDetailsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FriendsRatingTableCell") as? FriendsRatingTableCell else {return FriendsRatingTableCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendsRatingTableCell.className) as? FriendsRatingTableCell else {return FriendsRatingTableCell()}
         print("Cell return \(indexPath.row)")
         return cell
     }
@@ -51,7 +51,7 @@ extension MyFavoriteDetailsVC: UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodtypeCollectionCell", for: indexPath) as? FoodtypeCollectionCell else { return FoodtypeCollectionCell()}
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodtypeCollectionCell.className, for: indexPath) as? FoodtypeCollectionCell else { return FoodtypeCollectionCell()}
         
         
         return cell

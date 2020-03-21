@@ -33,7 +33,7 @@ class NewReviewVC: UIViewController {
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
-      goTo(fromStoryboar: Storyboards.main, toVC: "MainTabBarController", animate: true)
+        navigationController?.customPush(MainTabBarController.className, animate: true)
     }
     
     @IBAction func ratingStarTapped1(_ sender: UIButton) {
@@ -42,8 +42,8 @@ class NewReviewVC: UIViewController {
     
     func updateRating(sender: UIButton) {
            
-           let yellowStar = UIImage(named: "Icon_Star_Yellow.png") as UIImage?
-           let greyStar = UIImage(named: "Icon_Star_Grey.png") as UIImage?
+        let yellowStar = Icons.STAR_YELLOW as UIImage?
+        let greyStar = Icons.STAR_GREY as UIImage?
            
            if sender == ratingStar1 {
                
@@ -160,7 +160,7 @@ extension NewReviewVC: UITextFieldDelegate {
         searchField.leftView = view
     }
     @objc func filterButtonAction() {
-        goTo(fromStoryboar: Storyboards.review, toVC: "NewReview_2", animate: true)
+        navigationController?.customPush(NewReview_2.className, animate: true)
     }
 }
 

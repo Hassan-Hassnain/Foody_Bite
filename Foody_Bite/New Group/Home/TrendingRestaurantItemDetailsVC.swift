@@ -26,14 +26,14 @@ class TrendingRestaurantItemDetailsVC: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.main, toVC: "MainTabBarController", animate: true)
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func rateYourExpierience(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.home, toVC: "RatingAndReviewVC", animate: true)
+        navigationController?.customPush(RatingAndReviewVC.className, animate: true)
     }
     
     @IBAction func seeAllPhotosButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.home, toVC: "MenuAndPhotosVC", animate: true)
+        navigationController?.customPush(MenuAndPhotosVC.className, animate: true)
     }
 
     
@@ -45,7 +45,7 @@ extension TrendingRestaurantItemDetailsVC: UICollectionViewDataSource, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodtypeCollectionCell", for: indexPath) as? FoodtypeCollectionCell else { return FoodtypeCollectionCell()}
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodtypeCollectionCell.className, for: indexPath) as? FoodtypeCollectionCell else { return FoodtypeCollectionCell()}
         
         
         return cell
@@ -60,14 +60,14 @@ extension TrendingRestaurantItemDetailsVC: UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FriendsRatingTableCell") as? FriendsRatingTableCell else { return FriendsRatingTableCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendsRatingTableCell.className) as? FriendsRatingTableCell else { return FriendsRatingTableCell()}
         
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        goTo(fromStoryboar: Storyboards.home, toVC: "AllReviewAndRatingVC", animate: true)
+        navigationController?.customPush(AllReviewAndRatingVC.className, animate: true)
     }
     
     

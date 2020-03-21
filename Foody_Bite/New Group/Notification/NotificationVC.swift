@@ -19,15 +19,15 @@ class NotificationVC: UIViewController {
         tableView.delegate = self
     }
     @IBAction func homeButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.main, toVC: "HomeVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: HomeVC.className, animate: false)
     }
     @IBAction func favoriteButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.main, toVC: "MyFavoriteVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: MyFavoriteVC.className, animate: false)
     }
     @IBAction func notificationButtonTapped(_ sender: Any) {
     }
     @IBAction func profileButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.main, toVC: "ProfileVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: ProfileVC.className, animate: false)
     }
 
 
@@ -38,7 +38,7 @@ extension NotificationVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationVCTableViewCell") as? NotificationVCTableViewCell else { return NotificationVCTableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: NotificationVCTableViewCell.className) as? NotificationVCTableViewCell else { return NotificationVCTableViewCell()}
         
         
         return cell

@@ -33,31 +33,31 @@ class ChangePasswordVC: UIViewController {
     
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func updateButtonTapped(_ sender: Any) {
         //Testing pending
-        currentPasswordTextField.validateField(withMessage: EMPTY_CURRENT_PASSWORD)
-        newPasswordTextField.validateField(withMessage: EMPTY_NEW_PASSWORD)
-        confirmPasswordTextField.validateField(withMessage: EMPTY_CONFIRM_PASSWORD_MESSAGE)
+        currentPasswordTextField.validateField(withMessage: FieldValid.EMPTY_PASSWORD)
+        newPasswordTextField.validateField(withMessage: FieldValid.EMPTY_NEW_PASSWORD)
+        confirmPasswordTextField.validateField(withMessage: FieldValid.EMPTY_CONFIRM_PASSWORD)
         let email = Auth.auth().currentUser?.email
         if newPasswordTextField.text == confirmPasswordTextField.text {
             AuthService.instance.changePassword(email: email!, currentPassword: currentPasswordTextField.text!, newPassword: newPasswordTextField.text!) { (success, message) in
                 if success {
                     ProgressHUD.showSuccess(message)
                     DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
-                        self.dismissDetail()
+                        self.navigationController?.popViewController(animated: true)
                     })
                 } else {
                     ProgressHUD.showError(message)
                 }
             }
         } else {
-            ProgressHUD.showError(PASSWORD_NOT_MATCH_MESSAGE)
+            ProgressHUD.showError(FieldValid.PASSWORD_NOT_MATCH)
         }
         
         
-        goTo(fromStoryboar: Storyboards.signUp, toVC: "LoginVC", animate: true)
+        navigationController?.customPush(LoginVC.className, animate: true)
         
     }
     

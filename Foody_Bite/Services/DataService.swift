@@ -48,9 +48,9 @@ class DataService {
             
             for user in FirebaseUser {
                 if user.key == uid {
-                    let name = user.childSnapshot(forPath: USER_NAME).value as! String
-                    let email = user.childSnapshot(forPath: UESR_EMAIL).value as! String
-                    let imageUrl  = user.childSnapshot(forPath: PROFILE_IMAGE_URL).value as! String
+                    let name = user.childSnapshot(forPath: UserData.USER_NAME).value as! String
+                    let email = user.childSnapshot(forPath: UserData.UESR_EMAIL).value as! String
+                    let imageUrl  = user.childSnapshot(forPath: UserData.PROFILE_IMAGE_URL).value as! String
                     
                     let user = LocalUser(name: name, email: email, imageUrl: imageUrl)
                     handler(user)

@@ -33,7 +33,7 @@ class AuthService {
     func resetPassword(withEmail email: String, onCompletion: @escaping (_ success: Bool, _ error: String?)-> ()){
         Auth.auth().sendPasswordReset(withEmail: email) { (error) in
             if error == nil {
-                onCompletion(true, PASSWORD_CHANGE_SUCCESSFUL_MESSAGE)
+                onCompletion(true, FireMessages.PASSWORD_CHANGE_SUCCESSFUL)
             } else {
                 onCompletion(false, error?.localizedDescription)
             }
@@ -50,7 +50,7 @@ class AuthService {
                     if error != nil {
                         onCompletion(false, error?.localizedDescription)
                     } else {
-                        onCompletion(true, PASSWORD_CHANGE_SUCCESSFUL_MESSAGE)
+                        onCompletion(true, FireMessages.PASSWORD_CHANGE_SUCCESSFUL)
                     }
                 })
             }

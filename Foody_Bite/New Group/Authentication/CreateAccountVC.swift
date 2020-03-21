@@ -46,7 +46,7 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func loginButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.signUp, toVC: "LoginVC", animate: true)
+        navigationController?.customPush(LoginVC.className, animate: true)
     }
     
 }
@@ -106,17 +106,17 @@ extension CreateAccountVC {
     }
     
     private func validateTextFields() {
-        confirmPasswordTextField.validateField(withMessage: EMPTY_CONFIRM_PASSWORD_MESSAGE)
-        passwordTextField.validateField(withMessage: EMPTY_PASSWORD_MESSAGE)
-        emailTextField.validateField(withMessage: EMPTY_EMAIL_MESSAGE)
-        nameTextField.validateField(withMessage: EMPTY_USERNAME_MESSAGE)
+        confirmPasswordTextField.validateField(withMessage: FieldValid.EMPTY_CONFIRM_PASSWORD)
+        passwordTextField.validateField(withMessage: FieldValid.EMPTY_PASSWORD)
+        emailTextField.validateField(withMessage: FieldValid.EMPTY_EMAIL)
+        nameTextField.validateField(withMessage: FieldValid.EMPTY_USERNAME)
         
         if passwordTextField.text! != confirmPasswordTextField.text! {
-            ProgressHUD.showError(PASSWORD_NOT_MATCH_MESSAGE)
+            ProgressHUD.showError(FieldValid.PASSWORD_NOT_MATCH)
         }
         
         guard profileImage != nil else {
-            ProgressHUD.showError(EMPTY_PHOTO_MESSAGE)
+            ProgressHUD.showError(FieldValid.EMPTY_PHOTO)
             return
         }
     }
@@ -126,23 +126,23 @@ extension CreateAccountVC {
         AuthService.instance.createUser(withEmail:emailTextField.text!, andPassword: passwordTextField.text!) { (user) in
             guard let user = user else {return}
             var dict = [
-                USER_NAME: self.nameTextField.text!,
-                PROVIDER: user.providerID,
-                UESR_EMAIL: self.emailTextField.text!,
-                PROFILE_IMAGE_URL: ""
+                UserData.USER_NAME: self.nameTextField.text!,
+                UserData.PROVIDER: user.providerID,
+                UserData.UESR_EMAIL: self.emailTextField.text!,
+                UserData.PROFILE_IMAGE_URL: ""
             ]
             
             StorageServices.instance.uploadImage(withUID: user.uid, andImage: self.profileImageView.image!) { (url) in
                 if let url = url {
-                    dict[PROFILE_IMAGE_URL] = url
+                    dict[UserData.PROFILE_IMAGE_URL] = url
                     DataService.instance.updateDBUser(uid: user.uid, userData: dict) {(success) in
                         if success {
-                            ProgressHUD.showSuccess(USER_DATA_SAVED_MESSAGE)
+                            ProgressHUD.showSuccess(FireMessages.USER_DATA_SAVED)
                             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
-                                self.goTo(fromStoryboar: Storyboards.signUp, toVC: "LoginVC", animate: true)
+                                self.navigationController?.customPush(LoginVC.className, animate: true)
                             })
                         } else {
-                            ProgressHUD.showError(REGISTRATION_FAILED_MESSAGE)
+                            ProgressHUD.showError(FireMessages.REGISTRATION_FAILED)
                             ProgressHUD.dismiss()
                         }
                     }

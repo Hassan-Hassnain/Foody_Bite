@@ -15,22 +15,21 @@ class TrendingRestaurantsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.regCell(cellName: RestaurantCellTableViewCell.className)
         tableView.delegate = self
         tableView.dataSource = self
         setSearchFieldRightButton()
     }
     
     @IBAction func closeButtonTapped(_ sender: Any) {
-        dismissDetail()
-//        self.goTo(fromStoryboar: Storyboards.main, toVC: "HomeVC", animate: true)
+        navigationController?.popViewController(animated: false)
     }
     //MARK: - SEARCH FIELD RIGHT BUTTON
     func setSearchFieldRightButton() {
         
         var view: UIView
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-        button.setImage(UIImage(named: "Icon_Filter.png"), for: .normal)
+        button.setImage(Icons.FILTER, for: .normal)
         // Note: In order for your image to use the tint color, you have to select the image in the Assets.xcassets and change the "Render As" property to "Template Image".
         button.tintColor = searchBar.tintColor
         
@@ -45,7 +44,7 @@ class TrendingRestaurantsVC: UIViewController {
         searchBar.rightView = view
     }
     @objc func filterButtonAction() {
-        goTo(fromStoryboar: Storyboards.home, toVC: "FilterResultsVC", animate: true)
+        navigationController?.customPush(FilterResultsVC.className, animate: true)
     }
     
     
@@ -57,7 +56,7 @@ extension TrendingRestaurantsVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TrendingRestaurantsTabelCell") as? TrendingRestaurantsTabelCell else {return TrendingRestaurantsTabelCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RestaurantCellTableViewCell.className) as? RestaurantCellTableViewCell else {return RestaurantCellTableViewCell()}
         cell.optionsButton.isHidden = true
         
         let restaurant = Restaurant(openingStatus: "Open", rating: "4.5", restaurantsImage: nil, restaurantName: "KFC", foodType: "Custom", distance: "3.2", visitorImages: nil, totalVisitors: "25", address: "Lahore")
@@ -67,7 +66,7 @@ extension TrendingRestaurantsVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        goTo(fromStoryboar: Storyboards.home, toVC: "TrendingRestaurantItemDetailsVC", animate: true)
+       navigationController?.customPush(TrendingRestaurantItemDetailsVC.className, animate: true)
     }
     
 }

@@ -20,7 +20,7 @@ class PreviewVC: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismissDetail()
+        navigationController?.popViewController(animated: true)
     }
     
   func passString(string: String) {
