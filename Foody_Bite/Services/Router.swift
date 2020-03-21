@@ -17,7 +17,7 @@ class Router {
         let control = Storyboards.signUp.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
         controller.show(control, sender: nil)
     }
-
+    
     
   
 }

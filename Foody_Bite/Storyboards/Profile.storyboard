@@ -2362,7 +2362,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="dismissButtonTapped:" destination="6XQ-IL-1uR" eventType="touchUpInside" id="Eea-wK-NFR"/>
+                                    <action selector="updateButtonTApped:" destination="6XQ-IL-1uR" eventType="touchUpInside" id="9sg-rj-G4Z"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Food_Image" translatesAutoresizingMaskIntoConstraints="NO" id="SdM-KE-0mE" customClass="DezignableImageView" customModule="Dezignables">
@@ -2390,6 +2390,9 @@
                                         <real key="value" value="21.5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="imageEditButtonTapped:" destination="6XQ-IL-1uR" eventType="touchUpInside" id="seO-ts-gNu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97252601390000004" green="0.97326189279999997" blue="0.97263997790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2431,6 +2434,11 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="9aa-wg-oLK" id="u0s-Mp-kk2"/>
+                        <outlet property="nameTextField" destination="vZk-74-nBu" id="ec9-Mo-7ZZ"/>
+                        <outlet property="profileImageView" destination="SdM-KE-0mE" id="h6I-uL-1mj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Lq-E2-ZgQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

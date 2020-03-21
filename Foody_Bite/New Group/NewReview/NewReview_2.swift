@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 class NewReview_2: UIViewController {
     
@@ -24,6 +25,7 @@ class NewReview_2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 200
         
         setSearchFieldLeftButton()
     }
@@ -32,7 +34,9 @@ class NewReview_2: UIViewController {
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.main, toVC: "MainTabBarController", animate: false)
+        MainTabBarController().selectedIndex = 2
+        dismissDetail()
+//        goTo(fromStoryboar: Storyboards.main, toVC: "MainTabBarController", animate: false)
     }
     
     @IBAction func postButtonTapped(_ sender: Any) {

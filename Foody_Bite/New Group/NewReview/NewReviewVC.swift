@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 class NewReviewVC: UIViewController {
     
@@ -25,15 +26,14 @@ class NewReviewVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabbarView.layer.cornerRadius = 25
-        tabbarItem.largeContentSizeImage = #imageLiteral(resourceName: "Icon_Close")
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 100
         
         searchField.delegate = self
         setSearchFieldLeftButton()
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        goTo(fromStoryboar: Storyboards.main, toVC: "HomeVC", animate: false)
+      goTo(fromStoryboar: Storyboards.main, toVC: "MainTabBarController", animate: true)
     }
     
     @IBAction func ratingStarTapped1(_ sender: UIButton) {

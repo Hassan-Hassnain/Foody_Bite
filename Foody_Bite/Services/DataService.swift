@@ -15,6 +15,8 @@ let DB_BASE = Database.database().reference()
 class DataService {
     static let instance = DataService()
     
+    private (set) var categores:[String] = ["Italian","Chinese","Maxican","Thai","Arabian","Indian","American","Korean","European"]
+    
     private var _REF_BASE = DB_BASE
     private var _REF_USERS = DB_BASE.child("users")
     
@@ -29,7 +31,7 @@ class DataService {
     
     
     
-    func createDBUser(uid: String, userData: Dictionary<String, Any>, onSuccess: @escaping (_ success: Bool)->()) {
+    func updateDBUser(uid: String, userData: Dictionary<String, Any>, onSuccess: @escaping (_ success: Bool)->()) {
         REF_USERS.child(uid).updateChildValues(userData, withCompletionBlock: {
             (error, ref) in
             if error == nil {
@@ -40,11 +42,38 @@ class DataService {
         })
     }
     
-
+    func getUserData(forUID uid: String, handler: @escaping (_ user: LocalUser) -> ()){
+        REF_USERS.observeSingleEvent(of: .value) { (userSnapShot) in
+            guard let FirebaseUser = userSnapShot .children.allObjects as? [DataSnapshot] else {return}
+            
+            for user in FirebaseUser {
+                if user.key == uid {
+                    let name = user.childSnapshot(forPath: USER_NAME).value as! String
+                    let email = user.childSnapshot(forPath: UESR_EMAIL).value as! String
+                    let imageUrl  = user.childSnapshot(forPath: PROFILE_IMAGE_URL).value as! String
+                    
+//                    let url = URL(fileURLWithPath: imageUrl)
+                    let user = LocalUser(name: name, email: email, imageUrl: imageUrl)
+                    handler(user)
+                }
+            }
+        }
+    }
     
-    private (set) var categores:[String] = ["Italian","Chinese","Maxican","Thai","Arabian","Indian","American","Korean","European"]
     
+    func setImage(from url: String, handler: @escaping (_ image: UIImage) -> ()){
+            guard let imageURL = URL(string: url) else { return}
     
+                // just not to cause a deadlock in UI!
+            DispatchQueue.global().async {
+                guard let imageData = try? Data(contentsOf: imageURL) else { return }
+    
+                if let image = UIImage(data: imageData){
+                     handler(image)
+                }
+            }
+        }
+       
     
     
     

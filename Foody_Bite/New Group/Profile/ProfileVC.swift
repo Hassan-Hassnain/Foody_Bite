@@ -8,6 +8,7 @@
 
 import UIKit
 import Dezignables
+import Firebase
 
 class ProfileVC: UIViewController {
     
@@ -19,10 +20,15 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var alertOption1CenterYConstraint: NSLayoutConstraint!
     @IBOutlet weak var alertOption2CenterYConstraint: NSLayoutConstraint!
     @IBOutlet weak var alertBGTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var profileImageView: DezignableImageView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        editButton.layer.cornerRadius = 10
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -30,10 +36,11 @@ class ProfileVC: UIViewController {
         hideAlert2()
         
     }
-    @IBAction func backButtonTapped(_ sender: Any) {
-        dismissDetail()
-        
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateFoodyUser()
     }
+ 
     @IBAction func reviewsButtonTapped(_ sender: Any) {
         goTo(fromStoryboar: Storyboards.profile, toVC: "ReviewsVC", animate: true)
     }
@@ -44,6 +51,7 @@ class ProfileVC: UIViewController {
         goTo(fromStoryboar: Storyboards.profile, toVC: "FollowingVC", animate: true)
     }
     @IBAction func EditProfileButtonTapped(_ sender: Any) {
+       
         goTo(fromStoryboar: Storyboards.profile, toVC: "EditProfileVC", animate: true)
     }
     @IBAction func settingsButtonTapped(_ sender: Any) {
@@ -99,7 +107,22 @@ class ProfileVC: UIViewController {
         alertBG.isHidden = false
         alertOptions_2.isHidden = false
     }
+    func updateFoodyUser() {
+        if let thisUser = DataService.instance.thisUser {
+            profileImageView.image = thisUser.image
+            nameLabel.text = thisUser.name
+            emailLabel.text = thisUser.email
+        } else {
+            DataService.instance.getUserData(forUID: Auth.auth().currentUser!.uid) { (user) in
+                self.nameLabel.text = user.name
+                self.emailLabel.text = user.email
+                print(user.imageUrl)
+                self.profileImageView.load(from: user.imageUrl)
+            }
+        }
+    }
     
+
     
     
     

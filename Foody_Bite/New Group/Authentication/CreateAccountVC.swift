@@ -135,7 +135,7 @@ extension CreateAccountVC {
             StorageServices.instance.uploadImage(withUID: user.uid, andImage: self.profileImageView.image!) { (url) in
                 if let url = url {
                     dict[PROFILE_IMAGE_URL] = url
-                    DataService.instance.createDBUser(uid: user.uid, userData: dict) {(success) in
+                    DataService.instance.updateDBUser(uid: user.uid, userData: dict) {(success) in
                         if success {
                             ProgressHUD.showSuccess(USER_DATA_SAVED_MESSAGE)
                             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {

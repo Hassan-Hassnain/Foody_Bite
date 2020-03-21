@@ -35,6 +35,7 @@ class HomeVC: UIViewController {
         searchField.delegate = self
         
         setSearchFieldRightButton()
+        DataService.instance.updateThisUser(handler: {_ in })
     }
     
     @IBAction func addButtonWasTapped(_ sender: Any) {
