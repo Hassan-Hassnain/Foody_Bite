@@ -27,9 +27,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             print("User not signed in")
         } else {
          print("User already signed in")
-            DataService.instance.updateThisUser { (a) in
-                
-            }
             window?.rootViewController?.present(Storyboards.main.instantiateViewController(identifier: "HomeVC"), animated: true, completion: nil)
         }
         guard let _ = (scene as? UIWindowScene) else { return }

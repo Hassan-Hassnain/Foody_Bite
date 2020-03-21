@@ -52,29 +52,12 @@ class DataService {
                     let email = user.childSnapshot(forPath: UESR_EMAIL).value as! String
                     let imageUrl  = user.childSnapshot(forPath: PROFILE_IMAGE_URL).value as! String
                     
-//                    let url = URL(fileURLWithPath: imageUrl)
                     let user = LocalUser(name: name, email: email, imageUrl: imageUrl)
                     handler(user)
                 }
             }
         }
     }
-    
-    
-    func setImage(from url: String, handler: @escaping (_ image: UIImage) -> ()){
-            guard let imageURL = URL(string: url) else { return}
-    
-                // just not to cause a deadlock in UI!
-            DispatchQueue.global().async {
-                guard let imageData = try? Data(contentsOf: imageURL) else { return }
-    
-                if let image = UIImage(data: imageData){
-                     handler(image)
-                }
-            }
-        }
-       
-    
     
     
 }

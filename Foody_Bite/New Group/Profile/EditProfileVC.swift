@@ -16,16 +16,15 @@ class EditProfileVC: UIViewController {
     @IBOutlet weak var nameTextField: DesignableUITextField!
     @IBOutlet weak var emailTextField: DesignableUITextField!
     
-    var thisUser = DataService.instance.thisUser
+   
     var profileImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.profileImageView.image = thisUser?.image
-        self.nameTextField.text = thisUser?.name
-        self.emailTextField.text = thisUser?.email
-
+        updateFoodyUser()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
     }
     
@@ -89,6 +88,16 @@ extension EditProfileVC {
         guard profileImage != nil else {
             ProgressHUD.showError(EMPTY_PHOTO_MESSAGE)
             return
+        }
+    }
+    
+    private func updateFoodyUser() {
+            DataService.instance.getUserData(forUID: Auth.auth().currentUser!.uid) { (user) in
+                self.nameTextField.text = user.name
+                self.emailTextField.text = user.email
+                print(user.imageUrl)
+                self.profileImageView.load(from: user.imageUrl)
+            
         }
     }
     

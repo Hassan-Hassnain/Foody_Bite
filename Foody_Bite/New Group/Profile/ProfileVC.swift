@@ -80,45 +80,40 @@ class ProfileVC: UIViewController {
     }
 
     
-    func hideAlert1() {
+    private func hideAlert1() {
         alertBG.isHidden = true
         alertOptions.isHidden = true
         alertOption1CenterYConstraint.constant = 600
          alertBGTopConstraint.constant = UIScreen.main.bounds.height
     }
     
-    func showAlert1() {
+    private func showAlert1() {
         alertOption1CenterYConstraint.constant = 0
         alertBGTopConstraint.constant = 0
         alertBG.isHidden = false
         alertOptions.isHidden = false
     }
     
-    func hideAlert2() {
+    private func hideAlert2() {
         alertBG.isHidden = true
         alertOptions_2.isHidden = true
         alertOption2CenterYConstraint.constant = 600
         alertBGTopConstraint.constant = UIScreen.main.bounds.height
     }
     
-    func showAlert2() {
+    private func showAlert2() {
         alertOption2CenterYConstraint.constant = 0
         alertBGTopConstraint.constant = 0
         alertBG.isHidden = false
         alertOptions_2.isHidden = false
     }
-    func updateFoodyUser() {
-        if let thisUser = DataService.instance.thisUser {
-            profileImageView.image = thisUser.image
-            nameLabel.text = thisUser.name
-            emailLabel.text = thisUser.email
-        } else {
+    private func updateFoodyUser() {
             DataService.instance.getUserData(forUID: Auth.auth().currentUser!.uid) { (user) in
                 self.nameLabel.text = user.name
                 self.emailLabel.text = user.email
                 print(user.imageUrl)
                 self.profileImageView.load(from: user.imageUrl)
-            }
+            
         }
     }
     
