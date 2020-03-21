@@ -44,8 +44,18 @@ extension UIViewController {
     }
     
     
-    func goTo( toVC to: String, animate: Bool) {
-        guard let vc = storyboard?.instantiateViewController(identifier: to) else {return}
+//    func goTo( toVC to: String, animate: Bool) {
+//        guard let vc = storyboard?.instantiateViewController(identifier: to) else {return}
+//        vc.modalPresentationStyle = .fullScreen
+//        if animate {
+//            presentDetail(vc)
+//        } else {
+//            self.present(vc, animated: false, completion: nil)
+//        }
+//    }
+    
+    func goTo(fromStoryboar sb: UIStoryboard, toVC to: String, animate: Bool) {
+       let vc = sb.instantiateViewController(identifier: to)
         vc.modalPresentationStyle = .fullScreen
         if animate {
             presentDetail(vc)
@@ -53,6 +63,7 @@ extension UIViewController {
             self.present(vc, animated: false, completion: nil)
         }
     }
+    
     
     
 }

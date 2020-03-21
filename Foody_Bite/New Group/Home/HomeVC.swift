@@ -38,33 +38,34 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func addButtonWasTapped(_ sender: Any) {
-        goTo(toVC: "NewReviewVC", animate: false)
+        goTo(fromStoryboar: Storyboards.review, toVC: "NewReviewVC", animate: false)
     }
     
     @IBAction func homeButtonWasTapped(_ sender: Any) {
     }
     
     @IBAction func favoriteButtonWasTapped(_ sender: Any) {
-        goTo(toVC: "MyFavoriteVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: "MyFavoriteVC", animate: false)
     }
     @IBAction func notificationButtonTapped(_ sender: Any) {
-        goTo(toVC: "NotificationVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: "NotificationVC", animate: false)
     }
     
     @IBAction func profileButtonWasTapped(_ sender: Any) {
-        goTo(toVC: "ProfileVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: "ProfileVC", animate: false)
     }
     
     //MARK: - LABEL GESTURES
     
     @IBAction func seeAllRestaurantsButtonTapped(_ sender: Any) {
-        goTo(toVC: "TrendingRestaurantsVC", animate: true)
+        goTo(fromStoryboar: Storyboards.home, toVC: "TrendingRestaurantsVC", animate: true)
+//        goTo(toVC: "TrendingRestaurantsVC", animate: true)
     }
     @IBAction func seeAllCatagoriesButtonTapped(_ sender: Any) {
-        goTo(toVC: "CategoriesVC", animate: true)
+        goTo(fromStoryboar: Storyboards.home, toVC: "CategoriesVC", animate: true)
     }
     @IBAction func seeAllFriendsButtonTapped(_ sender: Any) {
-        goTo(toVC: "FindFriendsVC", animate: true)
+        goTo(fromStoryboar: Storyboards.home, toVC: "FindFriendsVC", animate: true)
     }
     
     //MARK: - SEARCH FIELD RIGHT BUTTON
@@ -87,7 +88,7 @@ class HomeVC: UIViewController {
         searchField.rightView = view
     }
     @objc func filterButtonAction() {
-        goTo(toVC: "FilterResultsVC", animate: true)
+        goTo(fromStoryboar: Storyboards.home, toVC: "FilterResultsVC", animate: true)
     }
 }
 
@@ -120,11 +121,9 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         if collectionView == restaurantCollectionView {
-            goTo(toVC: "TrendingRestaurantItemDetailsVC", animate: true)
+            goTo(fromStoryboar: Storyboards.home, toVC: "TrendingRestaurantItemDetailsVC", animate: true)
         } else if collectionView == categoryCollectionView {
-            guard let trendingRestaurentsVC = storyboard?.instantiateViewController(identifier: "CategoresVC") as? FilterVC else {return}
-            trendingRestaurentsVC.modalPresentationStyle = .fullScreen
-            self.presentDetail(trendingRestaurentsVC)
+            self.goTo(fromStoryboar: Storyboards.home, toVC: "CategoresVC", animate: true)
         } else {
             
         }

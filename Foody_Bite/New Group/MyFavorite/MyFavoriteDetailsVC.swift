@@ -24,10 +24,11 @@ class MyFavoriteDetailsVC: UIViewController {
     @IBAction func backButtonTapped(_ sender: Any) {
         dismissDetail()
     }
-    
-    
-    
 }
+
+
+
+
 
 extension MyFavoriteDetailsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,12 +41,6 @@ extension MyFavoriteDetailsVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //
-    //        guard let vc = storyboard?.instantiateViewController(identifier: "TrendingRestaurantItemDetailsVC") as? TrendingRestaurantItemDetailsVC else {return}
-    //        vc.modalPresentationStyle = .fullScreen
-    //        presentDetail(vc)
-    //    }
     
     
 }

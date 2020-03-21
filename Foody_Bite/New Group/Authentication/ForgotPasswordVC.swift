@@ -24,7 +24,7 @@ class ForgotPasswordVC: UIViewController {
             if success {
                 ProgressHUD.showSuccess(message)
                 DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
-                    self.goTo(toVC: "LoginVC", animate: true)
+                    self.goTo(fromStoryboar: Storyboards.signUp, toVC: "LoginVC", animate: true)
                 })
                 
             } else {

@@ -70,8 +70,6 @@ extension CategoriesVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "CategoryDetailsVC") as? CategoryDetailsVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(fromStoryboar: Storyboards.home, toVC: "CategoryDetailsVC", animate: true)
     }
 }

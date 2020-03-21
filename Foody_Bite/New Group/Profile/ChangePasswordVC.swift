@@ -57,7 +57,7 @@ class ChangePasswordVC: UIViewController {
         }
         
         
-        goTo(toVC: "LoginVC", animate: true)
+        goTo(fromStoryboar: Storyboards.signUp, toVC: "LoginVC", animate: true)
         
     }
     

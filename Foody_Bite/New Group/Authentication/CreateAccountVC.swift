@@ -46,7 +46,7 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func loginButtonTapped(_ sender: Any) {
-        goTo(toVC: "LoginVC", animate: true)
+        goTo(fromStoryboar: Storyboards.signUp, toVC: "LoginVC", animate: true)
     }
     
 }
@@ -105,7 +105,7 @@ extension CreateAccountVC {
         self.present(imagePicker,animated: true, completion: nil)
     }
     
-    func validateTextFields() {
+    private func validateTextFields() {
         confirmPasswordTextField.validateField(withMessage: EMPTY_CONFIRM_PASSWORD_MESSAGE)
         passwordTextField.validateField(withMessage: EMPTY_PASSWORD_MESSAGE)
         emailTextField.validateField(withMessage: EMPTY_EMAIL_MESSAGE)
@@ -139,7 +139,7 @@ extension CreateAccountVC {
                         if success {
                             ProgressHUD.showSuccess(USER_DATA_SAVED_MESSAGE)
                             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
-                                self.goTo(toVC: "LoginVC", animate: true)
+                                self.goTo(fromStoryboar: Storyboards.signUp, toVC: "LoginVC", animate: true)
                             })
                         } else {
                             ProgressHUD.showError(REGISTRATION_FAILED_MESSAGE)

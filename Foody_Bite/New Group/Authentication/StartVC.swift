@@ -43,8 +43,7 @@ class StartVC: UIViewController {
                 self.appTitle.frame = self.finalFrame
             }){ (finnished) in
                 UIView.animate(withDuration: 2.0, delay: 6.0, animations: {
-                    self.goTo(toVC: "LoginVC", animate: true)
-                    
+                    Router.instance.openLoginVC(controller: self)
                 }, completion: nil)
             }
         }

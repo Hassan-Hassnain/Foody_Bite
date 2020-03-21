@@ -18,29 +18,22 @@ class NewReviewVC: UIViewController {
     @IBOutlet weak var ratingStar3: UIButton!
     @IBOutlet weak var ratingStar4: UIButton!
     @IBOutlet weak var ratingStar5: UIButton!
+    @IBOutlet weak var tabbarItem: UITabBarItem!
+    @IBOutlet var tabbarView: UIView!
     
    var selected: [Bool] = [false, false, false, false, false]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabbarView.layer.cornerRadius = 25
+        tabbarItem.largeContentSizeImage = #imageLiteral(resourceName: "Icon_Close")
         
         searchField.delegate = self
         setSearchFieldLeftButton()
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        goTo(toVC: "HomeVC", animate: false)
-    }
-    
-    @IBAction func favoritButtonTapped(_ sender: Any) {
-        goTo(toVC: "MyFavoriteVC", animate: false)
-    }
-    
-    @IBAction func notificationButtonTapped(_ sender: Any) {
-        goTo(toVC: "NotificationVC", animate: false)
-    }
-    @IBAction func profileButtonTapped(_ sender: Any) {
-        goTo(toVC: "ProfileVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: "HomeVC", animate: false)
     }
     
     @IBAction func ratingStarTapped1(_ sender: UIButton) {
@@ -125,7 +118,7 @@ extension NewReviewVC: UITextFieldDelegate {
         searchField.leftView = view
     }
     @objc func filterButtonAction() {
-        goTo(toVC: "NewReview_2", animate: true)
+        goTo(fromStoryboar: Storyboards.review, toVC: "NewReview_2", animate: true)
     }
 }
 

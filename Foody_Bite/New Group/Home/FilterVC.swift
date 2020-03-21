@@ -37,10 +37,7 @@ class FilterVC: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        
-        guard let vc = storyboard?.instantiateViewController(identifier: "TrendingRestaurantsVC") as? TrendingRestaurantsVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(fromStoryboar: Storyboards.home, toVC: "TrendingRestaurantsVC", animate: true)
         
     }
     @IBAction func categoryButtonTappped(_ sender: UIButton ) {

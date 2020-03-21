@@ -25,10 +25,10 @@ class SettingsVC: UIViewController {
         dismissDetail()
     }
     @IBAction func changePasswordButtonTaped(_ sender: Any) {
-        goTo(toVC: "ChangePasswordVC", animate: true)
+        goTo(fromStoryboar: Storyboards.profile, toVC: "ChangePasswordVC", animate: true)
     }
     @IBAction func ChangeLanguageButtonTapped(_ sender: Any) {
-        goTo(toVC: "ChangeLanguageVC", animate: true)
+        goTo(fromStoryboar: Storyboards.profile, toVC: "ChangeLanguageVC", animate: true)
     }
     
     @IBAction func privacyAndPolicyButtonTapped(_ sender: Any) {
@@ -46,7 +46,7 @@ class SettingsVC: UIViewController {
     @IBAction func yesButtonTapped(_ sender: Any) {
         try! Auth.auth().signOut()
         hideAlert()
-        goTo(toVC: "LoginVC", animate: true)
+        goTo(fromStoryboar: Storyboards.signUp, toVC: "LoginVC", animate: true)
     }
     //MARK: - Alert functions
     

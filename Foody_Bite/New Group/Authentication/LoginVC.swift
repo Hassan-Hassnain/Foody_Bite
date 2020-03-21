@@ -42,10 +42,10 @@ class LoginVC: UIViewController {
         }
     }
     @IBAction func forgorPasswordButtonTapped(_ sender: Any) {
-        goTo(toVC: "ForgotPasswordVC", animate: true)
+        goTo(fromStoryboar: Storyboards.signUp, toVC: "ForgotPasswordVC", animate: true)
     }
     @IBAction func createNewAccoundButtonTapped(_ sender: Any) {
-        goTo(toVC: "CreateAccountVC", animate: true)
+        goTo(fromStoryboar: Storyboards.signUp, toVC: "CreateAccountVC", animate: true)
     }
     @IBAction func loginButtonTapped(_ sender: Any) {
       validateFields()
@@ -55,7 +55,7 @@ class LoginVC: UIViewController {
                 ProgressHUD.showError(error?.localizedDescription)
             } else {
                 ProgressHUD.dismiss()
-                self.goTo(toVC: "HomeVC", animate: false)
+                self.goTo(fromStoryboar: Storyboards.main, toVC: "HomeVC", animate: false)
             }
         }
     }

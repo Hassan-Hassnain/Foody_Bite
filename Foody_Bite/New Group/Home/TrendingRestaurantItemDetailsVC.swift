@@ -26,22 +26,14 @@ class TrendingRestaurantItemDetailsVC: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        //        guard let vc = storyboard?.instantiateViewController(identifier: "TrendingRestaurantsVC") as? TrendingRestaurantsVC else {return}
-        //               vc.modalPresentationStyle = .fullScreen
-        //               presentDetail(vc)
-        dismissDetail()
+        goTo(fromStoryboar: Storyboards.main, toVC: "MainTabBarController", animate: true)
     }
     @IBAction func rateYourExpierience(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "RatingAndReviewVC") as? RatingAndReviewVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(fromStoryboar: Storyboards.home, toVC: "RatingAndReviewVC", animate: true)
     }
     
     @IBAction func seeAllPhotosButtonTapped(_ sender: Any) {
-        
-        guard let vc = storyboard?.instantiateViewController(identifier: "MenuAndPhotosVC") as? MenuAndPhotosVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(fromStoryboar: Storyboards.home, toVC: "MenuAndPhotosVC", animate: true)
     }
 
     
@@ -75,9 +67,7 @@ extension TrendingRestaurantItemDetailsVC: UITableViewDataSource, UITableViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "AllReviewAndRatingVC") as? AllReviewAndRatingVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(fromStoryboar: Storyboards.home, toVC: "AllReviewAndRatingVC", animate: true)
     }
     
     

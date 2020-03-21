@@ -23,20 +23,6 @@ class MyFavoriteVC: UIViewController {
     @IBAction func searchButtonTapped(_ sender: Any) {
         
     }
-    @IBAction func homeButtonTapped(_ sender: Any) {
-        self.goTo(toVC: "HomeVC", animate: false)
-    }
-    @IBAction func favoriteButtonTapped(_ sender: Any) {
-    }
-    @IBAction func notificationButtonTapped(_ sender: Any) {
-        goTo(toVC: "NotificationVC", animate: false)
-    }
-    @IBAction func profileButtonTapped(_ sender: Any) {
-        goTo(toVC: "ProfileVC", animate: false)
-    }
-    @IBAction func addButtonTapped(_ sender: Any) {
-        goTo(toVC: "NewReviewVC", animate: false)
-    }
 }
 extension MyFavoriteVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,7 +36,7 @@ extension MyFavoriteVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        goTo(toVC: "MyFavoriteDetailsVC", animate: true)
+        goTo(fromStoryboar: Storyboards.favorite, toVC: "MyFavoriteDetailsVC", animate: true)
     }
     
 }

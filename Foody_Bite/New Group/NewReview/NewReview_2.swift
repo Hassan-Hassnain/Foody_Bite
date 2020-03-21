@@ -1,7 +1,9 @@
 //
 //  NewReview_2.swift
 //  Foody_Bite
-//
+//3-    10402    -1200    31208
+//6-    5355                2135   32000
+//12- 2836.79 - 4042 - 700+FED 2%  34041.
 //  Created by Usama Sadiq on 3/8/20.
 //  Copyright © 2020 Usama Sadiq. All rights reserved.
 //
@@ -26,28 +28,29 @@ class NewReview_2: UIViewController {
         setSearchFieldLeftButton()
     }
     @IBAction func addButtonTapped(_ sender: Any) {
+        dismissDetail()
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        dismissDetail()
+        goTo(fromStoryboar: Storyboards.main, toVC: "MainTabBarController", animate: false)
     }
     
     @IBAction func postButtonTapped(_ sender: Any) {
     }
     @IBAction func homeButtonTapped(_ sender: Any) {
-        goTo(toVC: "HomeVC", animate: false)
+       goTo(fromStoryboar: Storyboards.main, toVC: "MainTabBarController", animate: false)
     }
     @IBAction func favoriteButtonTapped(_ sender: Any) {
-        goTo(toVC: "MyFavoriteVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: "MyFavoriteVC", animate: false)
     }
     @IBAction func notificationButtonTapped(_ sender: Any) {
-        goTo(toVC: "NotificationVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: "NotificationVC", animate: false)
     }
     @IBAction func profileButtonTapped(_ sender: Any) {
-        goTo(toVC: "ProfileVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: "ProfileVC", animate: false)
     }
     @IBAction func closeButtonTapped(_ sender: Any) {
-        goTo(toVC: "HomeVC", animate: false)
+        dismissDetail()
     }
     
     @IBAction func ratingStarTapped1(_ sender: UIButton) {

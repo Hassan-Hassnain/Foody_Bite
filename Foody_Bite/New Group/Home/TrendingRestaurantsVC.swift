@@ -22,7 +22,8 @@ class TrendingRestaurantsVC: UIViewController {
     }
     
     @IBAction func closeButtonTapped(_ sender: Any) {
-        self.goTo(toVC:"HomeVC", animate: true)
+        dismissDetail()
+//        self.goTo(fromStoryboar: Storyboards.main, toVC: "HomeVC", animate: true)
     }
     //MARK: - SEARCH FIELD RIGHT BUTTON
     func setSearchFieldRightButton() {
@@ -44,9 +45,7 @@ class TrendingRestaurantsVC: UIViewController {
         searchBar.rightView = view
     }
     @objc func filterButtonAction() {
-        guard let filter = storyboard?.instantiateViewController(identifier: "FilterResultsVC") as? FilterResultsVC else {return}
-        filter.modalPresentationStyle = .fullScreen
-        presentDetail(filter)
+        goTo(fromStoryboar: Storyboards.home, toVC: "FilterResultsVC", animate: true)
     }
     
     
@@ -68,10 +67,7 @@ extension TrendingRestaurantsVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        guard let vc = storyboard?.instantiateViewController(identifier: "TrendingRestaurantItemDetailsVC") as? TrendingRestaurantItemDetailsVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(fromStoryboar: Storyboards.home, toVC: "TrendingRestaurantItemDetailsVC", animate: true)
     }
     
 }

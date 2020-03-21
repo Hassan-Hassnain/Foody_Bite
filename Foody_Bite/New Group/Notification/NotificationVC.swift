@@ -19,15 +19,15 @@ class NotificationVC: UIViewController {
         tableView.delegate = self
     }
     @IBAction func homeButtonTapped(_ sender: Any) {
-        goTo(toVC: "HomeVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: "HomeVC", animate: false)
     }
     @IBAction func favoriteButtonTapped(_ sender: Any) {
-        goTo(toVC: "MyFavoriteVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: "MyFavoriteVC", animate: false)
     }
     @IBAction func notificationButtonTapped(_ sender: Any) {
     }
     @IBAction func profileButtonTapped(_ sender: Any) {
-        goTo(toVC: "ProfileVC", animate: false)
+        goTo(fromStoryboar: Storyboards.main, toVC: "ProfileVC", animate: false)
     }
 
 

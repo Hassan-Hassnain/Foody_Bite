@@ -34,41 +34,26 @@ class ProfileVC: UIViewController {
         dismissDetail()
         
     }
-    @IBAction func homeButtonTapped(_ sender: Any) {
-        goTo(toVC: "HomeVC", animate: false)
-    }
-    @IBAction func favoriteButtonTapped(_ sender: Any) {
-        goTo(toVC: "MyFavoriteVC", animate: false)
-    }
-    @IBAction func notificationButtonTapped(_ sender: Any) {
-        goTo(toVC: "NotificationVC", animate: false)
-    }
-    @IBAction func profileButtonTapped(_ sender: Any) {
-//        goTo(toVC: "ProfileVC", animate: false)
-    }
-    @IBAction func addButtonTapped(_ sender: Any) {
-        goTo(toVC: "NewReviewVC", animate: false)
-    }
     @IBAction func reviewsButtonTapped(_ sender: Any) {
-        goTo(toVC: "ReviewsVC", animate: true)
+        goTo(fromStoryboar: Storyboards.profile, toVC: "ReviewsVC", animate: true)
     }
     @IBAction func followersButtonTapped(_ sender: Any) {
-        goTo(toVC: "FollowersVC", animate: true)
+        goTo(fromStoryboar: Storyboards.profile, toVC: "FollowersVC", animate: true)
     }
     @IBAction func followingButtonTapped(_ sender: Any) {
-        goTo(toVC: "FollowingVC", animate: true)
+        goTo(fromStoryboar: Storyboards.profile, toVC: "FollowingVC", animate: true)
     }
     @IBAction func EditProfileButtonTapped(_ sender: Any) {
-        goTo(toVC: "EditProfileVC", animate: true)
+        goTo(fromStoryboar: Storyboards.profile, toVC: "EditProfileVC", animate: true)
     }
     @IBAction func settingsButtonTapped(_ sender: Any) {
-        goTo(toVC: "SettingsVC", animate: true)
+        goTo(fromStoryboar: Storyboards.profile, toVC: "SettingsVC", animate: true)
     }
     
     //MARK: - Alert functions and Actions
     @IBAction func editButtonTapped(_ sender: Any) {
 //        hideAlert1()
-        goTo(toVC: "EditReviewVC", animate: true)
+        goTo(fromStoryboar: Storyboards.profile, toVC: "EditReviewVC", animate: true)
     }
     @IBAction func deletButtonTapped(_ sender: Any) {
         hideAlert1()

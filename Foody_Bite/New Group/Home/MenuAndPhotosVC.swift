@@ -41,11 +41,7 @@ extension MenuAndPhotosVC: UICollectionViewDelegate, UICollectionViewDataSource
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "PreviewVC") as? PreviewVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        vc.image = images[indexPath.row]
-        presentDetail(vc)
-        
+        goTo(fromStoryboar: Storyboards.home, toVC: "PreviewVC", animate: true)
     }
     
     

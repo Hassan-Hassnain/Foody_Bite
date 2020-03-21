@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 //MARK: - AUTHENTICATION GROUP
 
@@ -35,3 +36,11 @@ let USER_ALREADY_SIGNED_IN = "user allready signed in with"
 
 
 
+struct Storyboards {
+    static let main = UIStoryboard(name: "Main", bundle: Bundle.main)           //1
+    static let signUp = UIStoryboard(name: "SignUp", bundle: Bundle.main)       //2
+    static let home = UIStoryboard(name: "Home", bundle: Bundle.main)           //3
+    static let favorite = UIStoryboard(name: "Favorite", bundle: Bundle.main)   //4
+    static let profile = UIStoryboard(name: "Profile", bundle: Bundle.main)     //5
+    static let review = UIStoryboard(name: "Review", bundle: Bundle.main)       //6
+}

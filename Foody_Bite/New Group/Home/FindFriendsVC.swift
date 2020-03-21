@@ -76,7 +76,7 @@ extension FindFriendsVC: UITableViewDelegate, UITableViewDataSource {
         
         
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            goTo(toVC: "OtherUserProfileVC", animate: true)
+            goTo(fromStoryboar: Storyboards.home, toVC: "OtherUserProfileVC", animate: true)
         }
         
     }

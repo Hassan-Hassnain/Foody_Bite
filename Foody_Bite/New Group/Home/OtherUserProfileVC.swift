@@ -38,10 +38,7 @@ extension OtherUserProfileVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        guard let vc = storyboard?.instantiateViewController(identifier: "TrendingRestaurantItemDetailsVC") as? TrendingRestaurantItemDetailsVC else {return}
-        vc.modalPresentationStyle = .fullScreen
-        presentDetail(vc)
+        goTo(fromStoryboar: Storyboards.home, toVC: "TrendingRestaurantItemDetailsVC", animate: true)
     }
     
     

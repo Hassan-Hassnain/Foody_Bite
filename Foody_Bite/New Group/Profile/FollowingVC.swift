@@ -39,10 +39,5 @@ extension FollowingVC: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
-    //          func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //              guard let vc = storyboard?.instantiateViewController(identifier: "OtherUserProfileVC") as? OtherUserProfileVC else {return}
-    //              vc.modalPresentationStyle = .fullScreen
-    //              presentDetail(vc)
-    //          }
     
 }
