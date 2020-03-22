@@ -103,13 +103,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending Resaurants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtI-Oq-PGG">
-                                <rect key="frame" x="22.5" y="125.5" width="183.5" height="23.5"/>
+                                <rect key="frame" x="22.5" y="125.5" width="159.5" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W9z-Po-TaX">
-                                <rect key="frame" x="22" y="171" width="392" height="238"/>
+                                <rect key="frame" x="22" y="167.5" width="392" height="238"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="238" id="ML1-hK-Dsb"/>
@@ -139,19 +139,19 @@
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="sGm-CW-8fa">
-                                                            <rect key="frame" x="13" y="179" width="191.5" height="14"/>
+                                                            <rect key="frame" x="13" y="179" width="178" height="14"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Bones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frI-gK-FJE">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="103.5" height="14"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="14"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcG-rG-H1X" customClass="DezignableView" customModule="Dezignables">
-                                                                    <rect key="frame" x="110.5" y="0.0" width="37" height="14"/>
+                                                                    <rect key="frame" x="97" y="0.0" width="37" height="14"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjs-Nl-Aoq">
-                                                                            <rect key="frame" x="9" y="2.5" width="19.5" height="9"/>
+                                                                            <rect key="frame" x="10" y="3.5" width="17.5" height="7.5"/>
                                                                             <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="7.3000001907348633"/>
                                                                             <color key="textColor" red="0.51764705879999995" green="0.55294117649999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -180,10 +180,10 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7d-jN-lbv" customClass="DezignableView" customModule="Dezignables">
-                                                                    <rect key="frame" x="154.5" y="0.0" width="37" height="14"/>
+                                                                    <rect key="frame" x="141" y="0.0" width="37" height="14"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.2 km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yw-yF-Hob">
-                                                                            <rect key="frame" x="7.5" y="2.5" width="22.5" height="9"/>
+                                                                            <rect key="frame" x="9.5" y="3.5" width="18.5" height="7.5"/>
                                                                             <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="7.3000001907348633"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
@@ -217,7 +217,7 @@
                                                             <rect key="frame" x="12" y="12" width="44" height="19.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OPEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWk-Xw-cKH">
-                                                                    <rect key="frame" x="11" y="5" width="22" height="9.5"/>
+                                                                    <rect key="frame" x="11" y="6" width="22" height="8"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="8"/>
                                                                     <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -242,7 +242,7 @@
                                                             <rect key="frame" x="274" y="12" width="39" height="19.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Yph-l0-tOp">
-                                                                    <rect key="frame" x="6.5" y="5.5" width="26" height="9"/>
+                                                                    <rect key="frame" x="7.5" y="5.5" width="24.5" height="9"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Star_Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="MRw-SH-o4S">
                                                                             <rect key="frame" x="0.0" y="0.0" width="9" height="9"/>
@@ -252,7 +252,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00r-Cs-RN3">
-                                                                            <rect key="frame" x="12" y="0.0" width="14" height="9"/>
+                                                                            <rect key="frame" x="12" y="0.0" width="12.5" height="9"/>
                                                                             <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="10"/>
                                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
@@ -276,7 +276,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="394 Broome St, New York, NY 10013, USA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjp-fC-yE8">
-                                                            <rect key="frame" x="13" y="203" width="229.5" height="14"/>
+                                                            <rect key="frame" x="13" y="203" width="213.5" height="12"/>
                                                             <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -285,7 +285,7 @@
                                                             <rect key="frame" x="252" y="176" width="60" height="20"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="cAb-6h-gED" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="61" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="40.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -293,7 +293,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="aZb-sR-BGM" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="7" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="27.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -301,7 +301,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="ExF-8e-rDk" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="16" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="16" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -309,7 +309,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="RML-ei-TQD" customClass="DezignableImageView" customModule="Dezignables">
-                                                                    <rect key="frame" x="-38" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="3" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -317,7 +317,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" +2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvX-e4-o9V">
-                                                                    <rect key="frame" x="77" y="6" width="9.5" height="8"/>
+                                                                    <rect key="frame" x="46.5" y="6.5" width="9" height="7"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="6.5999999046325684"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -395,7 +395,7 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoy-oK-ljG">
-                                <rect key="frame" x="323" y="121.5" width="66" height="31.5"/>
+                                <rect key="frame" x="325" y="121.5" width="64" height="28"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13.300000190734863"/>
                                 <state key="normal" title="See all (45)">
                                     <color key="titleColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -405,13 +405,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zr-os-57r">
-                                <rect key="frame" x="22" y="460" width="82" height="23.5"/>
+                                <rect key="frame" x="22" y="456.5" width="74.5" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrb-n2-9vq">
-                                <rect key="frame" x="334" y="457.5" width="58" height="28"/>
+                                <rect key="frame" x="335" y="453.5" width="57" height="26"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13.300000190734863"/>
                                 <state key="normal" title="See all (9)">
                                     <color key="titleColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -421,7 +421,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e9y-Ag-HYN">
-                                <rect key="frame" x="22" y="503.5" width="370" height="104"/>
+                                <rect key="frame" x="22" y="497.5" width="370" height="104"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="104" id="7Ap-dJ-esB"/>
@@ -461,7 +461,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUh-uR-lCl">
-                                                    <rect key="frame" x="27.5" y="40" width="45.5" height="20"/>
+                                                    <rect key="frame" x="29" y="41.5" width="42" height="17"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -489,13 +489,13 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXS-yu-QlP">
-                                <rect key="frame" x="22" y="654" width="66.5" height="23.5"/>
+                                <rect key="frame" x="22" y="648" width="59" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJZ-zf-bvO">
-                                <rect key="frame" x="326" y="652" width="66" height="28"/>
+                                <rect key="frame" x="328" y="645" width="64" height="26"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13.300000190734863"/>
                                 <state key="normal" title="See all (56)">
                                     <color key="titleColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -505,7 +505,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gXJ-4F-1Jw">
-                                <rect key="frame" x="22" y="705" width="369" height="44"/>
+                                <rect key="frame" x="22" y="696" width="369" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="bVF-PP-wWV"/>
@@ -793,19 +793,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWB-bv-Zft">
-                                <rect key="frame" x="185" y="51.5" width="44.5" height="23.5"/>
+                                <rect key="frame" x="186.5" y="53.5" width="41" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpQ-7r-3sx">
-                                <rect key="frame" x="135.5" y="130.5" width="143.5" height="23.5"/>
+                                <rect key="frame" x="143.5" y="128.5" width="127" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="KPH-n8-45L">
-                                <rect key="frame" x="23" y="175" width="368" height="156"/>
+                                <rect key="frame" x="23" y="169.5" width="368" height="156"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bmv-bh-YpE">
                                         <rect key="frame" x="0.0" y="0.0" width="368" height="44"/>
@@ -1410,81 +1410,22 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwU-yl-AoD">
-                                <rect key="frame" x="168" y="383.5" width="78.5" height="23.5"/>
+                                <rect key="frame" x="174" y="378.5" width="66" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1Y3-xz-f2X">
-                                <rect key="frame" x="20" y="464.5" width="374" height="2"/>
+                                <rect key="frame" x="20" y="456" width="374" height="2"/>
                             </progressView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UnH-Gp-ogs" customClass="DezignableView" customModule="Dezignables">
-                                <rect key="frame" x="58" y="576.5" width="298" height="69"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Awv-1J-dp9">
-                                        <rect key="frame" x="0.0" y="-2" width="298" height="73"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fl-X2-gFt">
-                                                <rect key="frame" x="0.0" y="0.0" width="47" height="73"/>
-                                                <state key="normal" image="Icon_Star_Yellow"/>
-                                                <connections>
-                                                    <action selector="ratingStarTapped1:" destination="klT-GH-6w2" eventType="touchUpInside" id="mz1-Em-IEL"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALc-Sa-O8A">
-                                                <rect key="frame" x="63" y="0.0" width="46.5" height="73"/>
-                                                <state key="normal" image="Icon_Star_Yellow"/>
-                                                <connections>
-                                                    <action selector="ratingStarTapped1:" destination="klT-GH-6w2" eventType="touchUpInside" id="PmA-Uh-vSX"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoJ-ix-C17">
-                                                <rect key="frame" x="125.5" y="0.0" width="47" height="73"/>
-                                                <state key="normal" image="Icon_Star_Yellow"/>
-                                                <connections>
-                                                    <action selector="ratingStarTapped1:" destination="klT-GH-6w2" eventType="touchUpInside" id="HmM-3Q-XLK"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqf-UR-iPs">
-                                                <rect key="frame" x="188.5" y="0.0" width="46.5" height="73"/>
-                                                <state key="normal" image="Icon_Star_Yellow"/>
-                                                <connections>
-                                                    <action selector="ratingStarTapped1:" destination="klT-GH-6w2" eventType="touchUpInside" id="XlS-Wm-eBo"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQx-52-Bfw">
-                                                <rect key="frame" x="251" y="0.0" width="47" height="73"/>
-                                                <state key="normal" image="Icon_Star_Grey"/>
-                                                <connections>
-                                                    <action selector="ratingStarTapped1:" destination="klT-GH-6w2" eventType="touchUpInside" id="Atc-Y4-165"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.9703357816" green="0.98672455550000004" blue="0.99987739320000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Awv-1J-dp9" firstAttribute="centerX" secondItem="UnH-Gp-ogs" secondAttribute="centerX" id="22l-WW-sIX"/>
-                                    <constraint firstAttribute="trailing" secondItem="Awv-1J-dp9" secondAttribute="trailing" id="FWH-oU-CPN"/>
-                                    <constraint firstAttribute="width" constant="298" id="mdz-7X-R1d"/>
-                                    <constraint firstItem="Awv-1J-dp9" firstAttribute="leading" secondItem="UnH-Gp-ogs" secondAttribute="leading" id="twb-h9-3it"/>
-                                    <constraint firstItem="Awv-1J-dp9" firstAttribute="centerY" secondItem="UnH-Gp-ogs" secondAttribute="centerY" id="v9e-Ml-Rtw"/>
-                                    <constraint firstAttribute="height" constant="69" id="xPR-z9-eD0"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="13"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7x-6h-SzU">
-                                <rect key="frame" x="178" y="522.5" width="58" height="23.5"/>
+                                <rect key="frame" x="182.5" y="514" width="49" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhX-f1-vXJ">
-                                <rect key="frame" x="23" y="474.5" width="9.5" height="20"/>
+                                <rect key="frame" x="23" y="466" width="10.5" height="17"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                 <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1539,18 +1480,26 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWY-vc-fjk">
-                                <rect key="frame" x="362.5" y="474.5" width="28.5" height="20"/>
+                                <rect key="frame" x="365.5" y="466" width="25.5" height="17"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                 <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSI-Fg-VkI">
-                                <rect key="frame" x="333" y="34.5" width="59" height="58"/>
+                                <rect key="frame" x="362.5" y="49" width="29.5" height="29"/>
                                 <state key="normal" image="Icon_Close"/>
                                 <connections>
                                     <action selector="backButtonTapped:" destination="klT-GH-6w2" eventType="touchUpInside" id="XKW-H8-sUl"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbr-ut-JHw" customClass="RatingStarsView" customModule="Foody_Bite" customModuleProvider="target">
+                                <rect key="frame" x="58" y="564.5" width="298" height="69"/>
+                                <color key="backgroundColor" red="0.99963921310000003" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="3mf-Hq-Bq6"/>
+                                    <constraint firstAttribute="width" constant="298" id="MES-JX-Dak"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -1562,16 +1511,16 @@
                             <constraint firstItem="DLB-Ey-pLc" firstAttribute="trailing" secondItem="nWY-vc-fjk" secondAttribute="trailing" constant="23" id="Ftf-8V-kAo"/>
                             <constraint firstItem="1Y3-xz-f2X" firstAttribute="leading" secondItem="at6-Rj-dON" secondAttribute="leadingMargin" id="H0E-xO-cLa"/>
                             <constraint firstItem="KPH-n8-45L" firstAttribute="centerX" secondItem="at6-Rj-dON" secondAttribute="centerX" id="H12-lY-xYp"/>
-                            <constraint firstItem="UnH-Gp-ogs" firstAttribute="top" secondItem="K7x-6h-SzU" secondAttribute="bottom" constant="30.600000000000001" id="Hqm-iz-NXS"/>
                             <constraint firstItem="K7x-6h-SzU" firstAttribute="centerX" secondItem="at6-Rj-dON" secondAttribute="centerX" id="KwF-LG-eSf"/>
                             <constraint firstItem="VhX-f1-vXJ" firstAttribute="leading" secondItem="DLB-Ey-pLc" secondAttribute="leading" constant="23" id="Mt6-mW-z2V"/>
                             <constraint firstItem="DLB-Ey-pLc" firstAttribute="trailing" secondItem="NSI-Fg-VkI" secondAttribute="trailing" constant="22" id="OFg-d0-ite"/>
                             <constraint firstItem="tpQ-7r-3sx" firstAttribute="centerX" secondItem="at6-Rj-dON" secondAttribute="centerX" id="T0O-yu-Oiw"/>
+                            <constraint firstItem="nbr-ut-JHw" firstAttribute="top" secondItem="K7x-6h-SzU" secondAttribute="bottom" constant="30.600000000000001" id="VXf-sB-5X9"/>
                             <constraint firstItem="K7x-6h-SzU" firstAttribute="top" secondItem="1Y3-xz-f2X" secondAttribute="bottom" constant="56" id="XFz-Ry-Gsz"/>
                             <constraint firstItem="UwU-yl-AoD" firstAttribute="top" secondItem="KPH-n8-45L" secondAttribute="bottom" constant="52.670000000000002" id="YGi-8u-MmR"/>
-                            <constraint firstItem="UnH-Gp-ogs" firstAttribute="centerX" secondItem="at6-Rj-dON" secondAttribute="centerX" id="ZPX-Zd-MAq"/>
                             <constraint firstItem="KPH-n8-45L" firstAttribute="top" secondItem="tpQ-7r-3sx" secondAttribute="bottom" constant="21" id="au8-ZW-POW"/>
                             <constraint firstItem="gQt-ZE-TKd" firstAttribute="leading" secondItem="DLB-Ey-pLc" secondAttribute="leading" constant="19" id="awB-gh-sBA"/>
+                            <constraint firstItem="nbr-ut-JHw" firstAttribute="centerX" secondItem="at6-Rj-dON" secondAttribute="centerX" id="dD2-Wb-ZEY"/>
                             <constraint firstAttribute="trailing" secondItem="KPH-n8-45L" secondAttribute="trailing" constant="23" id="eIP-zd-0eu"/>
                             <constraint firstItem="1Y3-xz-f2X" firstAttribute="top" secondItem="UwU-yl-AoD" secondAttribute="bottom" constant="57.5" id="f2R-95-rAf"/>
                             <constraint firstItem="nWY-vc-fjk" firstAttribute="top" secondItem="1Y3-xz-f2X" secondAttribute="bottom" constant="8" id="fwU-6b-Ma6"/>
@@ -1597,11 +1546,6 @@
                         <outlet property="koreanButton" destination="ABt-ax-DJm" id="I5c-Y1-yPB"/>
                         <outlet property="maxicanButton" destination="kFf-KH-1Ac" id="gU2-SI-QcW"/>
                         <outlet property="progressBar" destination="1Y3-xz-f2X" id="zGp-Rv-0Ua"/>
-                        <outlet property="ratingStar1" destination="5fl-X2-gFt" id="8Ra-98-JOt"/>
-                        <outlet property="ratingStar2" destination="ALc-Sa-O8A" id="kws-aR-0fN"/>
-                        <outlet property="ratingStar3" destination="zoJ-ix-C17" id="f0S-az-NB2"/>
-                        <outlet property="ratingStar4" destination="Uqf-UR-iPs" id="Olf-2S-yD3"/>
-                        <outlet property="ratingStar5" destination="eQx-52-Bfw" id="woc-06-vXD"/>
                         <outlet property="thaiButton" destination="i81-6V-cfz" id="t6v-Go-3wR"/>
                     </connections>
                 </viewController>
@@ -1661,14 +1605,14 @@
                                 <rect key="frame" x="50" y="240" width="314" height="47"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jDc-OZ-nKP">
-                                        <rect key="frame" x="20.5" y="11" width="161.5" height="50"/>
+                                        <rect key="frame" x="20.5" y="11" width="125.5" height="25"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSw-z9-Zqy">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                 <state key="normal" image="Icon_Call_Button"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rV1-Qo-Ghj">
-                                                <rect key="frame" x="66" y="0.0" width="95.5" height="50"/>
+                                                <rect key="frame" x="41" y="0.0" width="84.5" height="25"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="13.300000190734863"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1676,14 +1620,14 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="OdT-oN-jGq">
-                                        <rect key="frame" x="174.5" y="11" width="119" height="25"/>
+                                        <rect key="frame" x="206" y="11" width="87.5" height="25"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMg-I9-Mvw">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                 <state key="normal" image="Icon_Direction"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNG-8M-TeJ">
-                                                <rect key="frame" x="66" y="0.0" width="53" height="25"/>
+                                                <rect key="frame" x="41" y="0.0" width="46.5" height="25"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="13.300000190734863"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1708,25 +1652,25 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="394 Broome St, New York, NY 10013, USA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iva-aK-b6O">
-                                <rect key="frame" x="20" y="350" width="229.5" height="14"/>
+                                <rect key="frame" x="20" y="350" width="213.5" height="12"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="TXm-bj-lbY">
-                                <rect key="frame" x="20" y="326" width="191.5" height="14"/>
+                                <rect key="frame" x="20" y="326" width="178" height="14"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Bones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLG-eO-uTJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="14"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="14"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amx-EG-92S" customClass="DezignableView" customModule="Dezignables">
-                                        <rect key="frame" x="110.5" y="0.0" width="37" height="14"/>
+                                        <rect key="frame" x="97" y="0.0" width="37" height="14"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Au-fO-0zy">
-                                                <rect key="frame" x="9" y="2.5" width="19.5" height="9"/>
+                                                <rect key="frame" x="10" y="3.5" width="17.5" height="7.5"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="7.3000001907348633"/>
                                                 <color key="textColor" red="0.51764705879999995" green="0.55294117649999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1755,10 +1699,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MnQ-wY-jPg" customClass="DezignableView" customModule="Dezignables">
-                                        <rect key="frame" x="154.5" y="0.0" width="37" height="14"/>
+                                        <rect key="frame" x="141" y="0.0" width="37" height="14"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.2 km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rtq-jQ-0VL">
-                                                <rect key="frame" x="7.5" y="2.5" width="22.5" height="9"/>
+                                                <rect key="frame" x="9.5" y="3.5" width="18.5" height="7.5"/>
                                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="7.3000001907348633"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1792,7 +1736,7 @@
                                 <rect key="frame" x="361" y="325" width="33" height="16"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXK-XK-hJO">
-                                        <rect key="frame" x="16" y="1" width="16" height="14"/>
+                                        <rect key="frame" x="16" y="1" width="16" height="12"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="12"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1825,40 +1769,40 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="j4S-u9-fmT">
-                                <rect key="frame" x="20" y="373" width="234.5" height="22"/>
+                                <rect key="frame" x="20" y="371" width="213" height="22"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H46-gK-Nax">
-                                        <rect key="frame" x="0.0" y="0.0" width="57.5" height="22"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="56.5" height="22"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="12"/>
                                         <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="daily time " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yr1-OM-leX">
-                                        <rect key="frame" x="59.5" y="0.0" width="55" height="22"/>
+                                        <rect key="frame" x="58.5" y="0.0" width="51.5" height="22"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="12"/>
                                         <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:30 am 11:00 pm " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnh-bd-OcR">
-                                        <rect key="frame" x="116.5" y="0.0" width="101" height="22"/>
+                                        <rect key="frame" x="112" y="0.0" width="91.5" height="22"/>
                                         <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="12"/>
                                         <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr5-7O-aJk">
-                                        <rect key="frame" x="219.5" y="0.0" width="15" height="22"/>
+                                        <rect key="frame" x="205.5" y="0.0" width="7.5" height="22"/>
                                         <state key="normal" image="Icon_Expand-Collapse"/>
                                     </button>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu &amp; Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wu1-qG-8t2">
-                                <rect key="frame" x="20" y="422" width="117" height="20"/>
+                                <rect key="frame" x="20" y="420" width="108" height="17"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D28-Jb-Mql">
-                                <rect key="frame" x="326" y="418" width="66" height="28"/>
+                                <rect key="frame" x="328" y="415.5" width="64" height="26"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13.300000190734863"/>
                                 <state key="normal" title="See all (32)">
                                     <color key="titleColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1868,7 +1812,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8mU-ab-kRT">
-                                <rect key="frame" x="20" y="464" width="394" height="113"/>
+                                <rect key="frame" x="20" y="459.5" width="394" height="113"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="113" id="0vy-XW-K8E"/>
@@ -1901,115 +1845,25 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu &amp; Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMQ-s5-kTn">
-                                <rect key="frame" x="20" y="608" width="117" height="20"/>
+                                <rect key="frame" x="20" y="603.5" width="108" height="17"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkN-kv-dpN">
-                                <rect key="frame" x="326" y="604" width="66" height="28"/>
+                                <rect key="frame" x="328" y="599" width="64" height="26"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13.300000190734863"/>
                                 <state key="normal" title="See all (32)">
                                     <color key="titleColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIg-qf-DXb">
-                                <rect key="frame" x="20" y="651" width="372" height="260"/>
+                                <rect key="frame" x="20" y="644" width="372" height="260"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="ZjE-qa-Hrw"/>
                                 </constraints>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="30" maxX="0.0" maxY="30"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FriendsRatingTableCell" rowHeight="88" id="0Pn-g5-0QW" customClass="FriendsRatingTableCell" customModule="Foody_Bite" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="372" height="88"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Pn-g5-0QW" id="xeF-i7-PeI">
-                                            <rect key="frame" x="0.0" y="0.0" width="372" height="88"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="cO7-vG-92W" customClass="DezignableImageView" customModule="Dezignables">
-                                                    <rect key="frame" x="4" y="22" width="44" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="44" id="PjO-uE-Zh5"/>
-                                                        <constraint firstAttribute="height" constant="44" id="ls4-91-j4K"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="22"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet consectetur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xg-Th-AzW">
-                                                    <rect key="frame" x="58" y="54" width="274" height="15.5"/>
-                                                    <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13"/>
-                                                    <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kgd-SX-VDk" customClass="DezignableView" customModule="Dezignables">
-                                                    <rect key="frame" x="324" y="19" width="40" height="26"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpm-FH-K3K">
-                                                            <rect key="frame" x="16" y="6" width="23" height="14"/>
-                                                            <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="12"/>
-                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Star_Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="f1M-sJ-VCr">
-                                                            <rect key="frame" x="3" y="7.5" width="10" height="11"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="11" id="SiV-A0-FuF"/>
-                                                                <constraint firstAttribute="width" constant="10" id="gZH-GO-3dB"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="40" id="Asn-8N-08Q"/>
-                                                        <constraint firstItem="f1M-sJ-VCr" firstAttribute="centerY" secondItem="Kgd-SX-VDk" secondAttribute="centerY" id="AvH-VF-kCS"/>
-                                                        <constraint firstItem="f1M-sJ-VCr" firstAttribute="leading" secondItem="Kgd-SX-VDk" secondAttribute="leading" constant="3" id="Dbz-mK-KHC"/>
-                                                        <constraint firstItem="lpm-FH-K3K" firstAttribute="centerY" secondItem="Kgd-SX-VDk" secondAttribute="centerY" id="NVu-pV-VAk"/>
-                                                        <constraint firstAttribute="trailing" secondItem="lpm-FH-K3K" secondAttribute="trailing" constant="1" id="WKs-DE-97l"/>
-                                                        <constraint firstItem="lpm-FH-K3K" firstAttribute="leading" secondItem="f1M-sJ-VCr" secondAttribute="trailing" constant="3" id="fVX-wS-JYG"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="4"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundFillColor">
-                                                            <color key="value" red="0.96966475249999995" green="0.97359448670000004" blue="0.99994188549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collin Fields" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqo-cl-8C8">
-                                                    <rect key="frame" x="58" y="22" width="93" height="20"/>
-                                                    <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="aqo-cl-8C8" firstAttribute="leading" secondItem="cO7-vG-92W" secondAttribute="trailing" constant="10" id="3AI-Qb-bZX"/>
-                                                <constraint firstItem="2xg-Th-AzW" firstAttribute="top" secondItem="aqo-cl-8C8" secondAttribute="bottom" constant="12" id="FBk-pL-VRe"/>
-                                                <constraint firstItem="Kgd-SX-VDk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aqo-cl-8C8" secondAttribute="trailing" constant="8" symbolic="YES" id="L6t-Db-cqf"/>
-                                                <constraint firstItem="2xg-Th-AzW" firstAttribute="leading" secondItem="aqo-cl-8C8" secondAttribute="leading" id="MQ4-2c-NFL"/>
-                                                <constraint firstItem="2xg-Th-AzW" firstAttribute="top" secondItem="Kgd-SX-VDk" secondAttribute="bottom" constant="9" id="NFu-Se-dbM"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="2xg-Th-AzW" secondAttribute="trailing" constant="20" id="Ngx-xV-0N2"/>
-                                                <constraint firstItem="cO7-vG-92W" firstAttribute="centerY" secondItem="xeF-i7-PeI" secondAttribute="centerY" id="Rc0-MH-Fzn"/>
-                                                <constraint firstAttribute="trailing" secondItem="Kgd-SX-VDk" secondAttribute="trailing" constant="8" id="Unb-wc-QdB"/>
-                                                <constraint firstItem="cO7-vG-92W" firstAttribute="leading" secondItem="xeF-i7-PeI" secondAttribute="leading" constant="4" id="p9F-NV-FPh"/>
-                                                <constraint firstItem="Kgd-SX-VDk" firstAttribute="centerY" secondItem="aqo-cl-8C8" secondAttribute="centerY" id="ve8-4v-yV8"/>
-                                                <constraint firstItem="aqo-cl-8C8" firstAttribute="top" secondItem="xeF-i7-PeI" secondAttribute="topMargin" constant="11" id="w8A-km-XKD"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="commentsLabel" destination="2xg-Th-AzW" id="NNE-0q-8Hl"/>
-                                            <outlet property="friendImageView" destination="cO7-vG-92W" id="DJ4-4f-Ixl"/>
-                                            <outlet property="friendNameLabel" destination="aqo-cl-8C8" id="hTZ-kz-6W4"/>
-                                            <outlet property="ratingLabel" destination="lpm-FH-K3K" id="PvB-nC-iV5"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="asT-f8-ZgW" userLabel="Botton View">
                                 <rect key="frame" x="0.0" y="830" width="414" height="66"/>
@@ -2127,85 +1981,26 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review &amp; Ratings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noC-fR-dQO">
-                                <rect key="frame" x="129" y="51.5" width="156.5" height="23.5"/>
+                                <rect key="frame" x="138" y="53.5" width="138" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOg-6H-DZI">
-                                <rect key="frame" x="334.5" y="34.5" width="59" height="58"/>
+                                <rect key="frame" x="364" y="49" width="29.5" height="29"/>
                                 <state key="normal" image="Icon_Close"/>
                                 <connections>
                                     <action selector="escapeButtonTapped:" destination="hQY-PG-lx6" eventType="touchUpInside" id="IO6-lv-68x"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ftb-On-URS" customClass="DezignableView" customModule="Dezignables">
-                                <rect key="frame" x="58" y="127.5" width="298" height="69"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eem-q3-Mwy">
-                                        <rect key="frame" x="0.0" y="-2" width="298" height="73"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeW-wv-OmY">
-                                                <rect key="frame" x="0.0" y="0.0" width="47" height="73"/>
-                                                <state key="normal" image="Icon_Star_Yellow"/>
-                                                <connections>
-                                                    <action selector="ratingStarTapped1:" destination="hQY-PG-lx6" eventType="touchUpInside" id="b9L-Rl-OoW"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56D-gC-Of9">
-                                                <rect key="frame" x="63" y="0.0" width="46.5" height="73"/>
-                                                <state key="normal" image="Icon_Star_Yellow"/>
-                                                <connections>
-                                                    <action selector="ratingStarTapped1:" destination="hQY-PG-lx6" eventType="touchUpInside" id="1Tc-ef-Bcn"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oaa-X7-Umm">
-                                                <rect key="frame" x="125.5" y="0.0" width="47" height="73"/>
-                                                <state key="normal" image="Icon_Star_Yellow"/>
-                                                <connections>
-                                                    <action selector="ratingStarTapped1:" destination="hQY-PG-lx6" eventType="touchUpInside" id="rJe-z7-NJr"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7k-Oh-WN1">
-                                                <rect key="frame" x="188.5" y="0.0" width="46.5" height="73"/>
-                                                <state key="normal" image="Icon_Star_Yellow"/>
-                                                <connections>
-                                                    <action selector="ratingStarTapped1:" destination="hQY-PG-lx6" eventType="touchUpInside" id="amX-Kj-fb0"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Up7-dQ-cGD">
-                                                <rect key="frame" x="251" y="0.0" width="47" height="73"/>
-                                                <state key="normal" image="Icon_Star_Grey"/>
-                                                <connections>
-                                                    <action selector="ratingStarTapped1:" destination="hQY-PG-lx6" eventType="touchUpInside" id="xNk-kD-nEo"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.9703357816" green="0.98672455550000004" blue="0.99987739320000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="eem-q3-Mwy" secondAttribute="trailing" id="KYn-dl-aqh"/>
-                                    <constraint firstAttribute="height" constant="69" id="KmE-QQ-GTg"/>
-                                    <constraint firstItem="eem-q3-Mwy" firstAttribute="leading" secondItem="Ftb-On-URS" secondAttribute="leading" id="NqO-YU-0cQ"/>
-                                    <constraint firstItem="eem-q3-Mwy" firstAttribute="centerY" secondItem="Ftb-On-URS" secondAttribute="centerY" id="hsl-wq-V1E"/>
-                                    <constraint firstAttribute="width" constant="298" id="l4X-mX-gM8"/>
-                                    <constraint firstItem="eem-q3-Mwy" firstAttribute="centerX" secondItem="Ftb-On-URS" secondAttribute="centerX" id="mrK-1u-Utc"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="13"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate Your Experience" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aS9-qh-bV2">
-                                <rect key="frame" x="135" y="212.5" width="144.5" height="17.5"/>
+                                <rect key="frame" x="143" y="212.5" width="128" height="15"/>
                                 <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="15"/>
                                 <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXm-YX-eFq" customClass="DezignableView" customModule="Dezignables">
-                                <rect key="frame" x="50" y="281" width="315" height="193"/>
+                                <rect key="frame" x="50" y="278.5" width="315" height="193"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Rate your experience" translatesAutoresizingMaskIntoConstraints="NO" id="fGB-Zt-Xxa">
                                         <rect key="frame" x="8" y="8" width="298" height="177.5"/>
@@ -2287,35 +2082,36 @@
                                     <constraint firstAttribute="height" constant="66" id="tB0-uB-orz"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1k-FJ-mZX" customClass="RatingStarsView" customModule="Foody_Bite" customModuleProvider="target">
+                                <rect key="frame" x="58" y="122.5" width="298" height="69"/>
+                                <color key="backgroundColor" red="0.99963921310000003" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="298" id="1y6-bf-nbt"/>
+                                    <constraint firstAttribute="height" constant="69" id="xvz-UJ-odG"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="noC-fR-dQO" firstAttribute="centerX" secondItem="k6e-Gp-Doy" secondAttribute="centerX" id="2Q2-RO-MYf"/>
-                            <constraint firstItem="aS9-qh-bV2" firstAttribute="top" secondItem="Ftb-On-URS" secondAttribute="bottom" constant="16" id="3Os-ll-Sc2"/>
                             <constraint firstItem="2hj-i7-lmB" firstAttribute="trailing" secondItem="a9t-Kf-nhu" secondAttribute="trailing" id="9iq-nK-y86"/>
                             <constraint firstItem="aS9-qh-bV2" firstAttribute="centerX" secondItem="k6e-Gp-Doy" secondAttribute="centerX" id="BHy-zy-sOe"/>
-                            <constraint firstItem="Ftb-On-URS" firstAttribute="centerX" secondItem="k6e-Gp-Doy" secondAttribute="centerX" id="FOp-PZ-G7d"/>
                             <constraint firstItem="a9t-Kf-nhu" firstAttribute="trailing" secondItem="NOg-6H-DZI" secondAttribute="trailing" constant="20.5" id="H8m-Ub-rel"/>
                             <constraint firstItem="aXm-YX-eFq" firstAttribute="top" secondItem="aS9-qh-bV2" secondAttribute="bottom" constant="51" id="IBW-0Q-2Kt"/>
+                            <constraint firstItem="aS9-qh-bV2" firstAttribute="top" secondItem="u1k-FJ-mZX" secondAttribute="bottom" constant="21" id="KrX-mJ-d7G"/>
                             <constraint firstAttribute="bottom" secondItem="2hj-i7-lmB" secondAttribute="bottom" id="PUs-cH-Om4"/>
                             <constraint firstItem="4Km-rI-DpH" firstAttribute="top" secondItem="k6e-Gp-Doy" secondAttribute="top" constant="48.299999999999997" id="URW-cd-y9P"/>
                             <constraint firstItem="4Km-rI-DpH" firstAttribute="leading" secondItem="a9t-Kf-nhu" secondAttribute="leading" constant="19" id="Vlk-MD-cB9"/>
+                            <constraint firstItem="u1k-FJ-mZX" firstAttribute="top" secondItem="noC-fR-dQO" secondAttribute="bottom" constant="49" id="Y2d-Pf-DMb"/>
+                            <constraint firstItem="u1k-FJ-mZX" firstAttribute="centerX" secondItem="k6e-Gp-Doy" secondAttribute="centerX" id="gZp-1m-CKV"/>
                             <constraint firstItem="a9t-Kf-nhu" firstAttribute="trailing" secondItem="aXm-YX-eFq" secondAttribute="trailing" constant="49" id="jiM-Rf-gnm"/>
                             <constraint firstItem="2hj-i7-lmB" firstAttribute="leading" secondItem="a9t-Kf-nhu" secondAttribute="leading" id="pC8-Qo-NzQ"/>
-                            <constraint firstItem="Ftb-On-URS" firstAttribute="top" secondItem="4Km-rI-DpH" secondAttribute="bottom" constant="49" id="tqf-3m-aJz"/>
                             <constraint firstItem="NOg-6H-DZI" firstAttribute="centerY" secondItem="noC-fR-dQO" secondAttribute="centerY" id="uqT-cg-diO"/>
                             <constraint firstItem="aXm-YX-eFq" firstAttribute="leading" secondItem="a9t-Kf-nhu" secondAttribute="leading" constant="50" id="vtg-ZI-1eA"/>
                             <constraint firstItem="noC-fR-dQO" firstAttribute="centerY" secondItem="4Km-rI-DpH" secondAttribute="centerY" id="yVg-bL-YxG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a9t-Kf-nhu"/>
                     </view>
-                    <connections>
-                        <outlet property="ratingStar1" destination="xeW-wv-OmY" id="HMz-hY-19O"/>
-                        <outlet property="ratingStar2" destination="56D-gC-Of9" id="sBK-nB-dXS"/>
-                        <outlet property="ratingStar3" destination="Oaa-X7-Umm" id="tVZ-uU-BEv"/>
-                        <outlet property="ratingStar4" destination="d7k-Oh-WN1" id="mMz-V8-vIT"/>
-                        <outlet property="ratingStar5" destination="Up7-dQ-cGD" id="UZc-FX-IXg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLD-bg-Ydj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2343,13 +2139,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdt-6e-biC">
-                                <rect key="frame" x="151.5" y="51.5" width="111" height="23.5"/>
+                                <rect key="frame" x="156.5" y="53.5" width="101" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfN-JB-twl">
-                                <rect key="frame" x="350.5" y="42" width="43" height="43"/>
+                                <rect key="frame" x="372" y="52.5" width="21.5" height="22"/>
                                 <state key="normal" image="Icon_Search_Black"/>
                                 <connections>
                                     <action selector="escapeButtonTapped:" destination="hQY-PG-lx6" eventType="touchUpInside" id="NwL-f2-2gl"/>
@@ -2362,105 +2158,8 @@
                                     <constraint firstAttribute="height" constant="744" id="hH9-vy-xLM"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FindFriendCell_Contacts" rowHeight="63" id="UGV-6L-5e0" customClass="FindFriendCell_Contacts" customModule="Foody_Bite" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="63"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UGV-6L-5e0" id="0R8-Gr-pMR">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="Abz-z6-0eC" customClass="DezignableImageView" customModule="Dezignables">
-                                                    <rect key="frame" x="20" y="9.5" width="44" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="iwY-jc-xZZ"/>
-                                                        <constraint firstAttribute="width" constant="44" id="tWL-ua-BEF"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="22"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zxt-sx-Nn9">
-                                                    <rect key="frame" x="72" y="10" width="205" height="43.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collin Fields" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltR-3g-UHW">
-                                                            <rect key="frame" x="0.0" y="0.0" width="204.5" height="20"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="204" id="M5H-vk-f1l"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpK-9B-OFm">
-                                                            <rect key="frame" x="0.0" y="28" width="204.5" height="15.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="204.5" id="BNz-9t-edt"/>
-                                                                <constraint firstAttribute="height" constant="15.5" id="IHf-qQ-Lhe"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13"/>
-                                                            <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="ltR-3g-UHW" secondAttribute="trailing" constant="0.5" id="Bxn-fO-q2D"/>
-                                                        <constraint firstItem="ltR-3g-UHW" firstAttribute="centerX" secondItem="zpK-9B-OFm" secondAttribute="centerX" id="t1y-4U-j5L"/>
-                                                    </constraints>
-                                                </stackView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7R-pV-HRB" customClass="DezignableView" customModule="Dezignables">
-                                                    <rect key="frame" x="315.5" y="16.5" width="78.5" height="30"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXx-R5-wj8">
-                                                            <rect key="frame" x="0.0" y="0.0" width="78.5" height="30"/>
-                                                            <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13"/>
-                                                            <state key="normal" title="Follow">
-                                                                <color key="titleColor" red="0.96966475249999995" green="0.97359448670000004" blue="0.99994188549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            </state>
-                                                            <connections>
-                                                                <action selector="followButtonWasPressed:" destination="UGV-6L-5e0" eventType="touchUpInside" id="Yxb-QL-vR1"/>
-                                                            </connections>
-                                                        </button>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="78.299999999999997" id="29a-lk-vjk"/>
-                                                        <constraint firstAttribute="trailing" secondItem="OXx-R5-wj8" secondAttribute="trailing" id="3oH-Xh-DEt"/>
-                                                        <constraint firstItem="OXx-R5-wj8" firstAttribute="leading" secondItem="T7R-pV-HRB" secondAttribute="leading" id="DBb-YF-PCX"/>
-                                                        <constraint firstAttribute="bottom" secondItem="OXx-R5-wj8" secondAttribute="bottom" id="Df6-G1-000"/>
-                                                        <constraint firstItem="OXx-R5-wj8" firstAttribute="top" secondItem="T7R-pV-HRB" secondAttribute="top" id="h67-EL-mvW"/>
-                                                        <constraint firstAttribute="height" constant="30" id="p2g-Va-Tk7"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundFillColor">
-                                                            <color key="value" red="0.39724946020000002" green="0.44666510819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="10"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="zxt-sx-Nn9" firstAttribute="leading" secondItem="Abz-z6-0eC" secondAttribute="trailing" constant="8" id="2cm-Ih-zfI"/>
-                                                <constraint firstItem="T7R-pV-HRB" firstAttribute="centerY" secondItem="0R8-Gr-pMR" secondAttribute="centerY" id="Apq-ez-Ib5"/>
-                                                <constraint firstItem="Abz-z6-0eC" firstAttribute="centerY" secondItem="0R8-Gr-pMR" secondAttribute="centerY" id="ByS-1l-gPU"/>
-                                                <constraint firstItem="Abz-z6-0eC" firstAttribute="leading" secondItem="0R8-Gr-pMR" secondAttribute="leadingMargin" id="GgT-iy-Abv"/>
-                                                <constraint firstItem="T7R-pV-HRB" firstAttribute="trailing" secondItem="0R8-Gr-pMR" secondAttribute="trailingMargin" id="Ogr-Ai-gvb"/>
-                                                <constraint firstItem="zxt-sx-Nn9" firstAttribute="centerY" secondItem="0R8-Gr-pMR" secondAttribute="centerY" id="dAX-nj-4QE"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="buttonColorView" destination="T7R-pV-HRB" id="mOc-1C-jgD"/>
-                                            <outlet property="followButton" destination="OXx-R5-wj8" id="jmL-Wb-qcX"/>
-                                            <outlet property="friendImageView" destination="Abz-z6-0eC" id="B7e-go-Njr"/>
-                                            <outlet property="friendName" destination="ltR-3g-UHW" id="sJK-hq-y5y"/>
-                                            <outlet property="reviewLabel" destination="zpK-9B-OFm" id="gsX-DE-dnD"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Contacts" rowHeight="49" id="3C5-uE-90t" customClass="FindFriendCell_Contacts" customModule="Foody_Bite" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="91" width="414" height="49"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Contacts" rowHeight="49" id="3C5-uE-90t" customClass="PeopleTableViewCell" customModule="Foody_Bite" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3C5-uE-90t" id="k1S-1v-YnH">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -2470,7 +2169,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEe-oS-PHg">
-                                                            <rect key="frame" x="22" y="13" width="81.5" height="23.5"/>
+                                                            <rect key="frame" x="22" y="14.5" width="68" height="20"/>
                                                             <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                                             <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -2493,8 +2192,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Suggestions" rowHeight="49" id="EiG-0N-jSG" customClass="FindFriendCell_Contacts" customModule="Foody_Bite" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="140" width="414" height="49"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Suggestions" rowHeight="49" id="EiG-0N-jSG" customClass="PeopleTableViewCell" customModule="Foody_Bite" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="77" width="414" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EiG-0N-jSG" id="KSL-LR-Ika">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -2504,7 +2203,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bO-mQ-dNk">
-                                                            <rect key="frame" x="22" y="13" width="111.5" height="23.5"/>
+                                                            <rect key="frame" x="22" y="14.5" width="93" height="20"/>
                                                             <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                                             <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -2643,20 +2342,20 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOZ-qs-6hI">
-                                <rect key="frame" x="166" y="67.5" width="82" height="23.5"/>
+                                <rect key="frame" x="170" y="69" width="74.5" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hO-QG-KK6">
-                                <rect key="frame" x="349" y="57.5" width="43" height="43"/>
+                                <rect key="frame" x="370.5" y="68" width="21.5" height="22"/>
                                 <state key="normal" image="Icon_Search_Black"/>
                                 <connections>
                                     <action selector="escapeButtonTapped:" destination="hQY-PG-lx6" eventType="touchUpInside" id="22F-Xu-rFq"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="97" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jhN-Or-DX1">
-                                <rect key="frame" x="20" y="130.5" width="374" height="811"/>
+                                <rect key="frame" x="20" y="128.5" width="374" height="811"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="811" id="39E-f3-gOq"/>
@@ -2715,7 +2414,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ra-c7-Y9C">
-                                                    <rect key="frame" x="155" y="34.5" width="64.5" height="28.5"/>
+                                                    <rect key="frame" x="157.5" y="36.5" width="59" height="24.5"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="24.299999237060547"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2795,7 +2494,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUe-VJ-Hys">
-                                                    <rect key="frame" x="155" y="34.5" width="64.5" height="28.5"/>
+                                                    <rect key="frame" x="157.5" y="36.5" width="59" height="24.5"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="24.299999237060547"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2868,7 +2567,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoL-NT-rjB">
-                                                    <rect key="frame" x="155" y="34.5" width="64.5" height="28.5"/>
+                                                    <rect key="frame" x="157.5" y="36.5" width="59" height="24.5"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="24.299999237060547"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2941,7 +2640,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWV-qu-r5s">
-                                                    <rect key="frame" x="155" y="34.5" width="64.5" height="28.5"/>
+                                                    <rect key="frame" x="157.5" y="36.5" width="59" height="24.5"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="24.299999237060547"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -3715,7 +3414,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jY1-5q-rAb">
-                                <rect key="frame" x="172" y="51.5" width="70.5" height="23.5"/>
+                                <rect key="frame" x="176" y="53.5" width="62.5" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3938,8 +3637,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu &amp; Photos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qd2-qj-pV2">
-                                <rect key="frame" x="138.5" y="51.5" width="137.5" height="23.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating &amp; Review" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qd2-qj-pV2">
+                                <rect key="frame" x="141.5" y="53.5" width="131.5" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -3961,99 +3660,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a6d-P4-oCk">
                                 <rect key="frame" x="20" y="114" width="374" height="748"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AllReviewAndRatingVCTableCell" rowHeight="96" id="rbd-Zn-vNB" customClass="AllReviewAndRatingVCTableCell" customModule="Foody_Bite" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="96"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rbd-Zn-vNB" id="7cQ-Wh-XWe">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="96"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="Gea-IA-l2a" customClass="DezignableImageView" customModule="Dezignables">
-                                                    <rect key="frame" x="20" y="21" width="43.5" height="43.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="43.399999999999999" id="aRy-Tf-Dud"/>
-                                                        <constraint firstAttribute="width" constant="43.399999999999999" id="wx4-kM-22P"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="21.66667"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheesy Does It" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8r-BG-tGZ">
-                                                    <rect key="frame" x="73.5" y="21" width="116" height="14"/>
-                                                    <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2F-Jg-BJO">
-                                                    <rect key="frame" x="73.5" y="40" width="290.5" height="42"/>
-                                                    <string key="text">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmo temp cididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam quis.</string>
-                                                    <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" id="Sjo-Ru-Ixn" customClass="DezignableView" customModule="Dezignables">
-                                                    <rect key="frame" x="321" y="18" width="38" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="bcs-gf-TPI">
-                                                            <rect key="frame" x="6" y="5.5" width="26" height="9"/>
-                                                            <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Star_Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="37l-2u-JVZ">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="9" height="9"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="9" id="63W-Eu-2Mr"/>
-                                                                        <constraint firstAttribute="width" constant="9" id="ldQ-6v-uAU"/>
-                                                                    </constraints>
-                                                                </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtu-pz-N5f">
-                                                                    <rect key="frame" x="12" y="0.0" width="14" height="9"/>
-                                                                    <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="10"/>
-                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </stackView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19.5" id="8hw-HH-265"/>
-                                                        <constraint firstItem="bcs-gf-TPI" firstAttribute="centerX" secondItem="Sjo-Ru-Ixn" secondAttribute="centerX" id="NDe-tV-WXR"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="39" id="YvW-Ob-42J"/>
-                                                        <constraint firstAttribute="height" constant="19.5" id="cbh-Ft-GJ8"/>
-                                                        <constraint firstAttribute="width" constant="39" id="ecX-VL-O2p"/>
-                                                        <constraint firstItem="bcs-gf-TPI" firstAttribute="centerY" secondItem="Sjo-Ru-Ixn" secondAttribute="centerY" id="uwW-Vx-BIN"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="4"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Sjo-Ru-Ixn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="S8r-BG-tGZ" secondAttribute="trailing" constant="8" symbolic="YES" id="0hj-CM-Anf"/>
-                                                <constraint firstItem="Gea-IA-l2a" firstAttribute="leading" secondItem="7cQ-Wh-XWe" secondAttribute="leading" constant="20" symbolic="YES" id="6TE-fU-EVU"/>
-                                                <constraint firstAttribute="bottom" secondItem="m2F-Jg-BJO" secondAttribute="bottom" constant="14" id="6fW-di-dzS"/>
-                                                <constraint firstItem="m2F-Jg-BJO" firstAttribute="leading" secondItem="S8r-BG-tGZ" secondAttribute="leading" id="H74-QS-KSX"/>
-                                                <constraint firstItem="m2F-Jg-BJO" firstAttribute="top" secondItem="S8r-BG-tGZ" secondAttribute="bottom" constant="5" id="Kew-8j-jsc"/>
-                                                <constraint firstItem="S8r-BG-tGZ" firstAttribute="leading" secondItem="Gea-IA-l2a" secondAttribute="trailing" constant="10" id="MSK-Zx-dAq"/>
-                                                <constraint firstItem="Gea-IA-l2a" firstAttribute="top" secondItem="7cQ-Wh-XWe" secondAttribute="topMargin" constant="10" id="Ult-9T-BaL"/>
-                                                <constraint firstItem="Sjo-Ru-Ixn" firstAttribute="centerY" secondItem="S8r-BG-tGZ" secondAttribute="centerY" id="bCu-MY-7a8"/>
-                                                <constraint firstItem="S8r-BG-tGZ" firstAttribute="top" secondItem="7cQ-Wh-XWe" secondAttribute="topMargin" constant="10" id="jrq-UJ-y5K"/>
-                                                <constraint firstAttribute="trailing" secondItem="m2F-Jg-BJO" secondAttribute="trailing" constant="10" id="t5g-fJ-PLA"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="comments" destination="m2F-Jg-BJO" id="MJI-Vi-Zqy"/>
-                                            <outlet property="friendImage" destination="Gea-IA-l2a" id="kob-Pf-owe"/>
-                                            <outlet property="friendName" destination="S8r-BG-tGZ" id="sl5-ne-gED"/>
-                                            <outlet property="rating" destination="Vtu-pz-N5f" id="urM-aq-saw"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -4086,13 +3692,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ec-xq-wHp">
-                                <rect key="frame" x="151" y="48.5" width="112" height="23.5"/>
+                                <rect key="frame" x="157" y="48.5" width="100" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="and-2N-vix">
-                                <rect key="frame" x="20" y="112.5" width="374" height="783.5"/>
+                                <rect key="frame" x="20" y="109" width="374" height="787"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NotificationVCTableViewCell" rowHeight="80" id="v2y-yj-8mb" customClass="NotificationVCTableViewCell" customModule="Foody_Bite" customModuleProvider="target">
@@ -4115,19 +3721,19 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheesy Does It" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3w-gN-6is">
-                                                    <rect key="frame" x="73.5" y="21" width="116" height="20"/>
+                                                    <rect key="frame" x="73.5" y="21" width="101" height="17"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We found 10 new restaurant near you" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7i-3a-P2X">
-                                                    <rect key="frame" x="73.5" y="46" width="290.5" height="15.5"/>
+                                                    <rect key="frame" x="73.5" y="43" width="290.5" height="13"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmG-Hx-YdI">
-                                                    <rect key="frame" x="297" y="23.5" width="57" height="15.5"/>
+                                                    <rect key="frame" x="302" y="23" width="52" height="13"/>
                                                     <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
@@ -4303,7 +3909,6 @@
         <image name="Icon_Search_Black" width="21.5" height="21.5"/>
         <image name="Icon_Search_grey" width="17" height="17"/>
         <image name="Icon_Share_White" width="30.5" height="34.5"/>
-        <image name="Icon_Star_Grey" width="38.5" height="36.5"/>
         <image name="Icon_Star_Yellow" width="38.5" height="36.5"/>
         <image name="Icon_plus_Sign" width="23.5" height="23.5"/>
         <image name="dummy_Food_Image" width="375" height="303"/>

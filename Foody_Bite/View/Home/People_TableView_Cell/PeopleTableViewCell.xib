@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="JosefinSans-Regular.ttf">
+            <string>JosefinSans</string>
+        </array>
+        <array key="JosefinSans-SemiBold.ttf">
+            <string>JosefinSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PeopleTableViewCell" rowHeight="63" id="ed3-zd-EUe" customClass="PeopleTableViewCell" customModule="Foody_Bite" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ed3-zd-EUe" id="9o4-Ha-Pbl">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="AlE-pr-Qd4" customClass="DezignableImageView" customModule="Dezignables">
+                        <rect key="frame" x="20" y="9.5" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="5Y5-ST-fX0"/>
+                            <constraint firstAttribute="width" constant="44" id="5nt-eo-QWZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ovw-zq-SWG">
+                        <rect key="frame" x="72" y="11.5" width="205" height="40.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collin Fields" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9E-fo-hHd">
+                                <rect key="frame" x="0.0" y="0.0" width="204.5" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="204" id="czs-CD-35p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4m-LW-jCg">
+                                <rect key="frame" x="0.0" y="25" width="204.5" height="15.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15.5" id="8xl-kf-0mq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="204.5" id="og9-xZ-94p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13"/>
+                                <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="B9E-fo-hHd" secondAttribute="trailing" constant="0.5" id="1Dn-K2-pbx"/>
+                            <constraint firstItem="B9E-fo-hHd" firstAttribute="centerX" secondItem="t4m-LW-jCg" secondAttribute="centerX" id="qe4-SQ-CJA"/>
+                        </constraints>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1j-XD-c4f" customClass="DezignableView" customModule="Dezignables">
+                        <rect key="frame" x="315.5" y="16.5" width="78.5" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qA-UL-B1U">
+                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="30"/>
+                                <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13"/>
+                                <state key="normal" title="Follow">
+                                    <color key="titleColor" red="0.96966475249999995" green="0.97359448670000004" blue="0.99994188549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="followButtonWasPressed:" destination="ed3-zd-EUe" eventType="touchUpInside" id="SVj-xS-eXt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3qA-UL-B1U" firstAttribute="top" secondItem="A1j-XD-c4f" secondAttribute="top" id="Icz-nP-v4R"/>
+                            <constraint firstAttribute="trailing" secondItem="3qA-UL-B1U" secondAttribute="trailing" id="IsS-BX-YJa"/>
+                            <constraint firstAttribute="height" constant="30" id="NYT-FF-59t"/>
+                            <constraint firstItem="3qA-UL-B1U" firstAttribute="leading" secondItem="A1j-XD-c4f" secondAttribute="leading" id="RiJ-3X-x2l"/>
+                            <constraint firstAttribute="bottom" secondItem="3qA-UL-B1U" secondAttribute="bottom" id="fDN-OB-Hj3"/>
+                            <constraint firstAttribute="width" constant="78.299999999999997" id="yWc-6E-LoW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundFillColor">
+                                <color key="value" red="0.39724946020000002" green="0.44666510819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ovw-zq-SWG" firstAttribute="leading" secondItem="AlE-pr-Qd4" secondAttribute="trailing" constant="8" id="25c-MZ-heX"/>
+                    <constraint firstItem="AlE-pr-Qd4" firstAttribute="centerY" secondItem="9o4-Ha-Pbl" secondAttribute="centerY" id="65l-sC-p94"/>
+                    <constraint firstItem="Ovw-zq-SWG" firstAttribute="centerY" secondItem="9o4-Ha-Pbl" secondAttribute="centerY" id="7WD-Xg-gJy"/>
+                    <constraint firstItem="A1j-XD-c4f" firstAttribute="trailing" secondItem="9o4-Ha-Pbl" secondAttribute="trailingMargin" id="UEs-6S-SB5"/>
+                    <constraint firstItem="A1j-XD-c4f" firstAttribute="centerY" secondItem="9o4-Ha-Pbl" secondAttribute="centerY" id="YJg-VL-GtB"/>
+                    <constraint firstItem="AlE-pr-Qd4" firstAttribute="leading" secondItem="9o4-Ha-Pbl" secondAttribute="leadingMargin" id="bZE-01-rPA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buttonColorView" destination="A1j-XD-c4f" id="s8z-on-aV0"/>
+                <outlet property="followButton" destination="3qA-UL-B1U" id="CQK-RY-fHH"/>
+                <outlet property="friendImageView" destination="AlE-pr-Qd4" id="zDJ-Kr-Ut9"/>
+                <outlet property="friendName" destination="B9E-fo-hHd" id="71u-pB-cqp"/>
+                <outlet property="reviewLabel" destination="t4m-LW-jCg" id="KVo-nA-Erm"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="74"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dummy_Profile_image" width="20.5" height="20.5"/>
+    </resources>
+</document>

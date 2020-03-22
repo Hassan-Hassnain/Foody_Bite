@@ -18,7 +18,7 @@ class TrendingRestaurantItemDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.regCell(cellName: AllReviewAndRatingVCTableCell.className)
         collectionView.dataSource = self
         collectionView.delegate = self
         tableView.dataSource = self
@@ -60,7 +60,7 @@ extension TrendingRestaurantItemDetailsVC: UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendsRatingTableCell.className) as? FriendsRatingTableCell else { return FriendsRatingTableCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AllReviewAndRatingVCTableCell.className) as? AllReviewAndRatingVCTableCell else { return AllReviewAndRatingVCTableCell()}
         
         
         return cell

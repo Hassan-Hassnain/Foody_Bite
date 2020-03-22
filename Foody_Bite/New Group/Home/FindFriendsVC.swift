@@ -17,7 +17,7 @@ class FindFriendsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.regCell(cellName: PeopleTableViewCell.className)
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -38,8 +38,8 @@ extension FindFriendsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let contactView = tableView.dequeueReusableCell(withIdentifier: "Contacts")
-        let suggestionView = tableView.dequeueReusableCell(withIdentifier: "Suggestions")
+        let contactView = tableView.dequeueReusableCell(withIdentifier: PeopleTableViewCell.className)
+        let suggestionView = tableView.dequeueReusableCell(withIdentifier: PeopleTableViewCell.className)
         
         if section == 0 {
             return contactView
@@ -64,7 +64,7 @@ extension FindFriendsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: FindFriendCell_Contacts.className) as? FindFriendCell_Contacts else {return FindFriendCell_Contacts()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PeopleTableViewCell.className) as? PeopleTableViewCell else {return PeopleTableViewCell()}
         
         if indexPath.section == 0 {
             //            cell.configure(firendImage: <#T##UIImage#>, friendName: <#T##String#>, totalReview: <#T##String#>)

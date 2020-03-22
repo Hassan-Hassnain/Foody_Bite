@@ -13,7 +13,7 @@ class FollowersVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+         tableView.regCell(cellName: PeopleTableViewCell.className)
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -34,7 +34,7 @@ extension FollowersVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: FindFriendCell_Suggestions.className) as? FindFriendCell_Suggestions else {return FindFriendCell_Suggestions()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PeopleTableViewCell.className) as? PeopleTableViewCell else {return PeopleTableViewCell()}
         cell.friendName.text = "Muhammad Hassan"
         cell.buttonColorView.backgroundFillColor = UIColor.red
        

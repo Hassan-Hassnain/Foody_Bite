@@ -13,7 +13,7 @@ class AllReviewAndRatingVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.regCell(cellName: AllReviewAndRatingVCTableCell.className)
         tableView.dataSource = self
         tableView.delegate = self
     }

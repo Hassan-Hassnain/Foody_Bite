@@ -14,6 +14,7 @@ class MyFavoriteDetailsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.regCell(cellName: AllReviewAndRatingVCTableCell.className)
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -36,8 +37,8 @@ extension MyFavoriteDetailsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendsRatingTableCell.className) as? FriendsRatingTableCell else {return FriendsRatingTableCell()}
-        print("Cell return \(indexPath.row)")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AllReviewAndRatingVCTableCell.className) as? AllReviewAndRatingVCTableCell else {return AllReviewAndRatingVCTableCell()}
+       
         return cell
     }
     

@@ -474,96 +474,6 @@
                                     <constraint firstAttribute="height" constant="260" id="fon-ck-Pbi"/>
                                 </constraints>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="30" maxX="0.0" maxY="30"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FriendsRatingTableCell" rowHeight="88" id="HaQ-Jk-Bsl" customClass="FriendsRatingTableCell" customModule="Foody_Bite" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="372" height="88"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HaQ-Jk-Bsl" id="6UI-Oz-lI9">
-                                            <rect key="frame" x="0.0" y="0.0" width="372" height="88"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="IpL-su-Q4e" customClass="DezignableImageView" customModule="Dezignables">
-                                                    <rect key="frame" x="4" y="22" width="44" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="e3I-7l-i34"/>
-                                                        <constraint firstAttribute="width" constant="44" id="hbC-cu-yNv"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="22"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet consectetur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czQ-jJ-shj">
-                                                    <rect key="frame" x="58" y="51" width="274" height="13"/>
-                                                    <fontDescription key="fontDescription" name="JosefinSans" family="Josefin Sans" pointSize="13"/>
-                                                    <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xf-pf-hfg" customClass="DezignableView" customModule="Dezignables">
-                                                    <rect key="frame" x="324" y="19" width="40" height="23"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJt-9s-ab1">
-                                                            <rect key="frame" x="16" y="5.5" width="23" height="12"/>
-                                                            <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="12"/>
-                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Star_Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="Irw-5g-Jh0">
-                                                            <rect key="frame" x="3" y="6" width="10" height="11"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="10" id="82F-47-kR7"/>
-                                                                <constraint firstAttribute="height" constant="11" id="pIq-LO-19E"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <constraints>
-                                                        <constraint firstItem="uJt-9s-ab1" firstAttribute="leading" secondItem="Irw-5g-Jh0" secondAttribute="trailing" constant="3" id="CRe-zy-bly"/>
-                                                        <constraint firstAttribute="width" constant="40" id="GBB-E3-5zG"/>
-                                                        <constraint firstItem="Irw-5g-Jh0" firstAttribute="centerY" secondItem="8xf-pf-hfg" secondAttribute="centerY" id="I4C-qK-gKZ"/>
-                                                        <constraint firstItem="uJt-9s-ab1" firstAttribute="centerY" secondItem="8xf-pf-hfg" secondAttribute="centerY" id="Mee-pj-NhF"/>
-                                                        <constraint firstItem="Irw-5g-Jh0" firstAttribute="leading" secondItem="8xf-pf-hfg" secondAttribute="leading" constant="3" id="ZPL-lk-x8h"/>
-                                                        <constraint firstAttribute="trailing" secondItem="uJt-9s-ab1" secondAttribute="trailing" constant="1" id="nO3-oI-nhu"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="4"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundFillColor">
-                                                            <color key="value" red="0.96966475249999995" green="0.97359448670000004" blue="0.99994188549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collin Fields" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N92-qS-BP9">
-                                                    <rect key="frame" x="58" y="22" width="82" height="17"/>
-                                                    <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="8xf-pf-hfg" firstAttribute="centerY" secondItem="N92-qS-BP9" secondAttribute="centerY" id="1gd-Mf-u6R"/>
-                                                <constraint firstItem="N92-qS-BP9" firstAttribute="leading" secondItem="IpL-su-Q4e" secondAttribute="trailing" constant="10" id="4bx-Sf-qJU"/>
-                                                <constraint firstItem="IpL-su-Q4e" firstAttribute="centerY" secondItem="6UI-Oz-lI9" secondAttribute="centerY" id="CzL-qw-dA9"/>
-                                                <constraint firstItem="N92-qS-BP9" firstAttribute="top" secondItem="6UI-Oz-lI9" secondAttribute="topMargin" constant="11" id="FoW-jG-REm"/>
-                                                <constraint firstItem="8xf-pf-hfg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="N92-qS-BP9" secondAttribute="trailing" constant="8" symbolic="YES" id="IFW-1o-ewl"/>
-                                                <constraint firstItem="czQ-jJ-shj" firstAttribute="leading" secondItem="N92-qS-BP9" secondAttribute="leading" id="J1M-oO-Yjd"/>
-                                                <constraint firstItem="IpL-su-Q4e" firstAttribute="leading" secondItem="6UI-Oz-lI9" secondAttribute="leading" constant="4" id="MCJ-6Z-mup"/>
-                                                <constraint firstItem="czQ-jJ-shj" firstAttribute="top" secondItem="8xf-pf-hfg" secondAttribute="bottom" constant="9" id="PnS-ja-Lvs"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="czQ-jJ-shj" secondAttribute="trailing" constant="20" id="Rk5-Il-YTV"/>
-                                                <constraint firstAttribute="trailing" secondItem="8xf-pf-hfg" secondAttribute="trailing" constant="8" id="Vnf-4q-2Fu"/>
-                                                <constraint firstItem="czQ-jJ-shj" firstAttribute="top" secondItem="N92-qS-BP9" secondAttribute="bottom" constant="12" id="X2J-iZ-Nma"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="commentsLabel" destination="czQ-jJ-shj" id="VAi-lU-skr"/>
-                                            <outlet property="friendImageView" destination="IpL-su-Q4e" id="q01-K2-8MM"/>
-                                            <outlet property="friendNameLabel" destination="N92-qS-BP9" id="rnI-9G-N65"/>
-                                            <outlet property="ratingLabel" destination="uJt-9s-ab1" id="P7b-vv-hL2"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -633,6 +543,5 @@
         <image name="Icon_Star_Yellow" width="38.5" height="36.5"/>
         <image name="Icon_plus_Sign" width="23.5" height="23.5"/>
         <image name="dummy_Food_Image" width="375" height="303"/>
-        <image name="dummy_Profile_image" width="20.5" height="20.5"/>
     </resources>
 </document>

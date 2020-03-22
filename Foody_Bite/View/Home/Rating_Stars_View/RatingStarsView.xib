@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingStarsView" customModule="Foody_Bite" customModuleProvider="target">
+            <connections>
+                <outlet property="ratingStar1" destination="Vs7-jG-mFo" id="bsQ-HS-A7j"/>
+                <outlet property="ratingStar2" destination="dXh-MX-beh" id="oDP-Bg-lqG"/>
+                <outlet property="ratingStar3" destination="ftf-53-XhP" id="mdW-qM-k7J"/>
+                <outlet property="ratingStar4" destination="iFG-Ir-kbh" id="xcj-aC-Diu"/>
+                <outlet property="ratingStar5" destination="b2E-2T-wTS" id="gRM-fK-Lu6"/>
+                <outlet property="ratingStarView" destination="l9S-os-rZz" id="79J-WP-Xl4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9S-os-rZz" customClass="DezignableView" customModule="Dezignables">
+            <rect key="frame" x="0.0" y="0.0" width="298" height="69"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Gqs-NI-BQN">
+                    <rect key="frame" x="0.0" y="16.5" width="298" height="36.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vs7-jG-mFo">
+                            <rect key="frame" x="0.0" y="0.0" width="47" height="36.5"/>
+                            <state key="normal" image="Icon_Star_Grey"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXh-MX-beh">
+                            <rect key="frame" x="63" y="0.0" width="46.5" height="36.5"/>
+                            <state key="normal" image="Icon_Star_Grey"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftf-53-XhP">
+                            <rect key="frame" x="125.5" y="0.0" width="47" height="36.5"/>
+                            <state key="normal" image="Icon_Star_Grey"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFG-Ir-kbh">
+                            <rect key="frame" x="188.5" y="0.0" width="46.5" height="36.5"/>
+                            <state key="normal" image="Icon_Star_Grey"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2E-2T-wTS">
+                            <rect key="frame" x="251" y="0.0" width="47" height="36.5"/>
+                            <state key="normal" image="Icon_Star_Grey"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.9703357816" green="0.98672455550000004" blue="0.99987739320000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="width" constant="298" id="46W-Jk-B2S"/>
+                <constraint firstAttribute="trailing" secondItem="Gqs-NI-BQN" secondAttribute="trailing" id="F0p-Sh-iqw"/>
+                <constraint firstItem="Gqs-NI-BQN" firstAttribute="leading" secondItem="l9S-os-rZz" secondAttribute="leading" id="MQN-Nz-UIj"/>
+                <constraint firstItem="Gqs-NI-BQN" firstAttribute="centerY" secondItem="l9S-os-rZz" secondAttribute="centerY" id="Tot-hK-XQr"/>
+                <constraint firstAttribute="height" constant="69" id="aXt-Xn-EsM"/>
+                <constraint firstItem="Gqs-NI-BQN" firstAttribute="centerX" secondItem="l9S-os-rZz" secondAttribute="centerX" id="s9P-Ot-Xbw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="T2X-YP-zjk"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="13"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-960.14492753623199" y="-547.43303571428567"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon_Star_Grey" width="38.5" height="36.5"/>
+    </resources>
+</document>

@@ -10,9 +10,12 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
 
+    var controllerIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.selectedIndex = controllerIndex
 
         print("View Controllers- \(String(describing: viewControllers))")
         print("Selected Controllers- \(String(describing: selectedViewController))")

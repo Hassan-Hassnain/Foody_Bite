@@ -15,7 +15,7 @@ class ReviewsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.regCell(cellName: AllReviewAndRatingVCTableCell.className)
         tableView.dataSource = self
         tableView.delegate = self
     }

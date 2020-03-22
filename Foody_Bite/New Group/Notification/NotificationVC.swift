@@ -14,7 +14,7 @@ class NotificationVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.regCell(cellName: NotificationVCTableViewCell.className)
         tableView.dataSource = self
         tableView.delegate = self
     }
