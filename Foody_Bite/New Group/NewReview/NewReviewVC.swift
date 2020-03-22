@@ -10,15 +10,8 @@ import UIKit
 import IQKeyboardManagerSwift
 
 class NewReviewVC: UIViewController {
-    
-    
+   
     @IBOutlet weak var searchField: UITextFieldX!
-    
-    @IBOutlet weak var ratingStar1: UIButton!
-    @IBOutlet weak var ratingStar2: UIButton!
-    @IBOutlet weak var ratingStar3: UIButton!
-    @IBOutlet weak var ratingStar4: UIButton!
-    @IBOutlet weak var ratingStar5: UIButton!
     @IBOutlet weak var tabbarItem: UITabBarItem!
     @IBOutlet var tabbarView: UIView!
     
@@ -34,10 +27,7 @@ class NewReviewVC: UIViewController {
         navigationController?.customPush(HomeVC.className, animate: false)
     }
     
-    @IBAction func ratingStarTapped1(_ sender: UIButton) {
-        
-        
-    }
+
 }
 
 extension NewReviewVC: UITextFieldDelegate {
@@ -46,7 +36,7 @@ extension NewReviewVC: UITextFieldDelegate {
         
         var view: UIView
         let button = UIButton(frame: CGRect(x: 20, y: 0, width: 20, height: 20))
-        button.setImage(UIImage(named: "Icon_Search_grey.png"), for: .normal)
+        button.setImage(Icons.SEARCH, for: .normal)
         // Note: In order for your image to use the tint color, you have to select the image in the Assets.xcassets and change the "Render As" property to "Template Image".
         button.tintColor = searchField.tintColor
         

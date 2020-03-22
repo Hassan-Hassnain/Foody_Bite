@@ -1260,34 +1260,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft3-eI-NmF" customClass="DezignableButton" customModule="Dezignables">
-                                <rect key="frame" x="178" y="788" width="58" height="59"/>
-                                <color key="backgroundColor" red="0.39724946020000002" green="0.44666510819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="58" id="IbD-ya-gNy"/>
-                                    <constraint firstAttribute="height" constant="59" id="vr3-5R-C95"/>
-                                </constraints>
-                                <color key="tintColor" red="0.98271209000000004" green="0.98345524070000001" blue="0.98282712699999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="Icon_Cross">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="29"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="homeButtonTapped:" destination="Pfu-0i-HEn" eventType="touchUpInside" id="0ST-1r-Pgf"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.9658892751" green="0.96974557640000003" blue="0.96581941839999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Xkx-gr-h28" firstAttribute="top" secondItem="Ft3-eI-NmF" secondAttribute="bottom" constant="-29" id="1SV-fp-kuh"/>
                             <constraint firstItem="Xkx-gr-h28" firstAttribute="trailing" secondItem="SFJ-Fn-5Rg" secondAttribute="trailing" id="2fT-aG-Voi"/>
                             <constraint firstItem="lAo-SP-pgk" firstAttribute="leading" secondItem="SFJ-Fn-5Rg" secondAttribute="leading" constant="20" id="6RH-kP-Uf4"/>
                             <constraint firstItem="VQm-LE-Q5t" firstAttribute="top" secondItem="G0N-Y8-m1A" secondAttribute="top" constant="48.299999999999997" id="IFf-Ga-eSb"/>
-                            <constraint firstItem="Ft3-eI-NmF" firstAttribute="centerX" secondItem="G0N-Y8-m1A" secondAttribute="centerX" id="LCj-5O-zWS"/>
                             <constraint firstItem="SFJ-Fn-5Rg" firstAttribute="trailing" secondItem="lAo-SP-pgk" secondAttribute="trailing" constant="20" id="WMA-HK-cnb"/>
                             <constraint firstAttribute="bottom" secondItem="Xkx-gr-h28" secondAttribute="bottom" id="c52-Ag-nEv"/>
                             <constraint firstItem="lAo-SP-pgk" firstAttribute="top" secondItem="VQm-LE-Q5t" secondAttribute="bottom" constant="40.5" id="hPh-ec-gRr"/>
@@ -1407,7 +1385,6 @@
         <image name="Icon_Add_Blue" width="26" height="26"/>
         <image name="Icon_Bell_Blue" width="14.5" height="17"/>
         <image name="Icon_Bell_Grey" width="15" height="17"/>
-        <image name="Icon_Cross" width="18.5" height="18.5"/>
         <image name="Icon_Favorite_Blue" width="14.5" height="19"/>
         <image name="Icon_Favorite_Grey" width="14.5" height="19"/>
         <image name="Icon_Filter" width="18" height="19"/>

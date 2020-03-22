@@ -10,12 +10,6 @@ import UIKit
 
 class EditReviewVC: UIViewController {
     
-    @IBOutlet weak var ratingStar1: UIButton!
-    @IBOutlet weak var ratingStar2: UIButton!
-    @IBOutlet weak var ratingStar3: UIButton!
-    @IBOutlet weak var ratingStar4: UIButton!
-    @IBOutlet weak var ratingStar5: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

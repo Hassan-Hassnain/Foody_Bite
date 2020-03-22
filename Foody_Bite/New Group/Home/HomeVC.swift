@@ -37,24 +37,6 @@ class HomeVC: UIViewController {
         setSearchFieldRightButton()
     }
     
-    @IBAction func addButtonWasTapped(_ sender: Any) {
-        navigationController?.customPush(NewReviewVC.className, animate: false)
-    }
-    
-    @IBAction func homeButtonWasTapped(_ sender: Any) {
-    }
-    
-    @IBAction func favoriteButtonWasTapped(_ sender: Any) {
-        navigationController?.customPush(MyFavoriteVC.className, animate: false)
-    }
-    @IBAction func notificationButtonTapped(_ sender: Any) {
-        navigationController?.customPush(NotificationVC.className, animate: false)
-    }
-    
-    @IBAction func profileButtonWasTapped(_ sender: Any) {
-        navigationController?.customPush(ProfileVC.className, animate: false)
-    }
-    
     //MARK: - LABEL GESTURES
     
     @IBAction func seeAllRestaurantsButtonTapped(_ sender: Any) {
