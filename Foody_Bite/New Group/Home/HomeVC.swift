@@ -43,7 +43,7 @@ class HomeVC: UIViewController {
         navigationController?.customPush(TrendingRestaurantsVC.className, animate: true)
     }
     @IBAction func seeAllCatagoriesButtonTapped(_ sender: Any) {
-        navigationController?.customPush(CategoriesVC.className, animate: true)
+        navigationController?.customPush(FilterVC.className, animate: true)
     }
     @IBAction func seeAllFriendsButtonTapped(_ sender: Any) {
         navigationController?.customPush(FindFriendsVC.className, animate: true)

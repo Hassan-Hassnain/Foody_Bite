@@ -88,6 +88,7 @@
 		3CDFCBD4240AFE4900571F8B /* UIView_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */; };
 		3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */; };
 		3CE951D9241531D9007139A6 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE951D8241531D9007139A6 /* ProfileVC.swift */; };
+		3CF11FDA2429250F0043EB40 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF11FD92429250E0043EB40 /* CustomUIButton.swift */; };
 		3CF199BB2423B391000C271C /* StorageServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF199BA2423B391000C271C /* StorageServices.swift */; };
 		3CF846672423F42D007EFEFA /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF846662423F42D007EFEFA /* UITextFieldExt.swift */; };
 		3CF846692423FA5D007EFEFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF846682423FA5D007EFEFA /* Constants.swift */; };
@@ -183,6 +184,7 @@
 		3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Ext.swift; sourceTree = "<group>"; };
 		3CDFCBD5240B07D100571F8B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		3CE951D8241531D9007139A6 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		3CF11FD92429250E0043EB40 /* CustomUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
 		3CF199BA2423B391000C271C /* StorageServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServices.swift; sourceTree = "<group>"; };
 		3CF846662423F42D007EFEFA /* UITextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExt.swift; sourceTree = "<group>"; };
 		3CF846682423FA5D007EFEFA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -453,6 +455,7 @@
 		3CDFCBD2240AFE1000571F8B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3CF11FD92429250E0043EB40 /* CustomUIButton.swift */,
 				3C56C177240C57B300A56AAB /* UIViewControllerEXT.swift */,
 				3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */,
 				3C6112082419450900E7FF76 /* Protocols.swift */,
@@ -660,6 +663,7 @@
 				3C89AD34240992DE00CF970C /* AppDelegate.swift in Sources */,
 				3C7F1486241425510027BBF2 /* AllReviewAndRatingVC.swift in Sources */,
 				3C108B3C24269F7F00805629 /* NavigationConrollerEXT.swift in Sources */,
+				3CF11FDA2429250F0043EB40 /* CustomUIButton.swift in Sources */,
 				3CBD6C4C2414D6D700CC501D /* NewReview_2.swift in Sources */,
 				3CD7B18D24181A2400028284 /* ProfileVC_TableCell.swift in Sources */,
 				3C2813A324275A8E001FA13E /* RatingStarsView.swift in Sources */,

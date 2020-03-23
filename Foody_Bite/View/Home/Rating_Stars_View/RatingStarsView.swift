@@ -19,7 +19,7 @@ class RatingStarsView: UIView {
     @IBOutlet weak var ratingStar4: UIButton!
     @IBOutlet weak var ratingStar5: UIButton!
     
-    var selected: [Bool] = [false, false, false, false, false]
+     var selected: [Bool] = [false, false, false, false, false]
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -28,7 +28,10 @@ class RatingStarsView: UIView {
         self.addSubview(self.ratingStarView)
     }
     
-    func updateRating(sender: UIButton) {
+    func getRatedValue(rating: @escaping (_ ratedValue: [Bool])->()){
+        rating(self.selected)
+    }
+    @IBAction func updateRating(sender: UIButton)  {
         
         let yellowStar = Icons.STAR_YELLOW as UIImage?
         let greyStar = Icons.STAR_GREY as UIImage?

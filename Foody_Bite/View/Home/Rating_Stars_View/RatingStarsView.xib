@@ -27,22 +27,37 @@
                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vs7-jG-mFo">
                             <rect key="frame" x="0.0" y="0.0" width="47" height="36.5"/>
                             <state key="normal" image="Icon_Star_Grey"/>
+                            <connections>
+                                <action selector="updateRatingWithSender:" destination="-1" eventType="touchUpInside" id="cTm-Fe-r5H"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXh-MX-beh">
                             <rect key="frame" x="63" y="0.0" width="46.5" height="36.5"/>
                             <state key="normal" image="Icon_Star_Grey"/>
+                            <connections>
+                                <action selector="updateRatingWithSender:" destination="-1" eventType="touchUpInside" id="c7f-xI-Ley"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftf-53-XhP">
                             <rect key="frame" x="125.5" y="0.0" width="47" height="36.5"/>
                             <state key="normal" image="Icon_Star_Grey"/>
+                            <connections>
+                                <action selector="updateRatingWithSender:" destination="-1" eventType="touchUpInside" id="kiP-0W-PvH"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFG-Ir-kbh">
                             <rect key="frame" x="188.5" y="0.0" width="46.5" height="36.5"/>
                             <state key="normal" image="Icon_Star_Grey"/>
+                            <connections>
+                                <action selector="updateRatingWithSender:" destination="-1" eventType="touchUpInside" id="JnL-2B-Rxv"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2E-2T-wTS">
                             <rect key="frame" x="251" y="0.0" width="47" height="36.5"/>
                             <state key="normal" image="Icon_Star_Grey"/>
+                            <connections>
+                                <action selector="updateRatingWithSender:" destination="-1" eventType="touchUpInside" id="Bf6-ZF-q6B"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

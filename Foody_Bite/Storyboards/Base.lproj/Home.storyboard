@@ -28,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-Splash-Screen1" translatesAutoresizingMaskIntoConstraints="NO" id="cTe-7x-KVC">
-                                <rect key="frame" x="-181.5" y="-14.5" width="672" height="1033.5"/>
+                                <rect key="frame" x="-181.5" y="-14.5" width="672" height="1033.5000000000002"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foodybite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69R-QL-9Iw">
                                 <rect key="frame" x="94.5" y="424" width="225" height="48"/>
@@ -155,7 +155,7 @@
         <!--FilterVC-->
         <scene sceneID="mYZ-TG-hDz">
             <objects>
-                <viewController storyboardIdentifier="CategoresVC" id="klT-GH-6w2" customClass="FilterVC" customModule="Foody_Bite" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FilterVC" id="klT-GH-6w2" customClass="FilterVC" customModule="Foody_Bite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="at6-Rj-dON">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,19 +173,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWB-bv-Zft">
-                                <rect key="frame" x="186.5" y="53.5" width="41" height="20"/>
+                                <rect key="frame" x="185" y="51.5" width="44.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpQ-7r-3sx">
-                                <rect key="frame" x="143.5" y="128.5" width="127" height="20"/>
+                                <rect key="frame" x="135.5" y="130.5" width="143.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="KPH-n8-45L">
-                                <rect key="frame" x="23" y="169.5" width="368" height="156"/>
+                                <rect key="frame" x="23" y="175" width="368" height="156"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bmv-bh-YpE">
                                         <rect key="frame" x="0.0" y="0.0" width="368" height="44"/>
@@ -193,7 +193,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vh9-gC-Znw">
                                                 <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qU-hG-fzB" customClass="DezignableButton" customModule="Dezignables">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qU-hG-fzB" customClass="Custom_UIButton" customModule="Foody_Bite" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                                         <state key="normal" title="Italian">
@@ -258,7 +258,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZvX-aB-pXC">
                                                 <rect key="frame" x="126" y="0.0" width="116" height="44"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLX-HT-Wly" customClass="DezignableButton" customModule="Dezignables">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLX-HT-Wly" customClass="Custom_UIButton" customModule="Foody_Bite" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                                         <state key="normal" title="Chines">
@@ -323,7 +323,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCc-f7-Ulo">
                                                 <rect key="frame" x="252" y="0.0" width="116" height="44"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFf-KH-1Ac" customClass="DezignableButton" customModule="Dezignables">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFf-KH-1Ac" customClass="Custom_UIButton" customModule="Foody_Bite" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                                         <state key="normal" title="Maxican">
@@ -393,7 +393,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NhY-Fs-9Qk">
                                                 <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i81-6V-cfz" customClass="DezignableButton" customModule="Dezignables">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i81-6V-cfz" customClass="Custom_UIButton" customModule="Foody_Bite" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                                         <state key="normal" title="Thai">
@@ -458,7 +458,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmf-bZ-Iy6">
                                                 <rect key="frame" x="126" y="0.0" width="116" height="44"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zp1-b4-DhG" customClass="DezignableButton" customModule="Dezignables">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zp1-b4-DhG" customClass="Custom_UIButton" customModule="Foody_Bite" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                                         <state key="normal" title="Arabian">
@@ -523,7 +523,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vf0-40-v0n">
                                                 <rect key="frame" x="252" y="0.0" width="116" height="44"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ou-lk-RhE" customClass="DezignableButton" customModule="Dezignables">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ou-lk-RhE" customClass="Custom_UIButton" customModule="Foody_Bite" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                                         <state key="normal" title="Indian">
@@ -593,7 +593,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VjN-M7-OXP">
                                                 <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqG-EF-iH4" customClass="DezignableButton" customModule="Dezignables">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqG-EF-iH4" customClass="Custom_UIButton" customModule="Foody_Bite" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                                         <state key="normal" title="American">
@@ -658,7 +658,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZhI-pk-YAi">
                                                 <rect key="frame" x="126" y="0.0" width="116" height="44"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABt-ax-DJm" customClass="DezignableButton" customModule="Dezignables">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABt-ax-DJm" customClass="Custom_UIButton" customModule="Foody_Bite" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                                         <state key="normal" title="Korean">
@@ -723,7 +723,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBa-2k-L4K">
                                                 <rect key="frame" x="252" y="0.0" width="116" height="44"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUv-mo-M0X" customClass="DezignableButton" customModule="Dezignables">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUv-mo-M0X" customClass="Custom_UIButton" customModule="Foody_Bite" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="44"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                                         <state key="normal" title="European">
@@ -790,22 +790,22 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwU-yl-AoD">
-                                <rect key="frame" x="174" y="378.5" width="66" height="20"/>
+                                <rect key="frame" x="168" y="383.5" width="78.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1Y3-xz-f2X">
-                                <rect key="frame" x="20" y="456" width="374" height="2"/>
+                                <rect key="frame" x="20" y="464.5" width="374" height="2"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7x-6h-SzU">
-                                <rect key="frame" x="182.5" y="514" width="49" height="20"/>
+                                <rect key="frame" x="178" y="522.5" width="58" height="23.5"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhX-f1-vXJ">
-                                <rect key="frame" x="23" y="466" width="10.5" height="17"/>
+                                <rect key="frame" x="23" y="474.5" width="9.5" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                 <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -860,7 +860,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWY-vc-fjk">
-                                <rect key="frame" x="365.5" y="466" width="25.5" height="17"/>
+                                <rect key="frame" x="362.5" y="474.5" width="28.5" height="20"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="17"/>
                                 <color key="textColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -873,7 +873,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbr-ut-JHw" customClass="RatingStarsView" customModule="Foody_Bite" customModuleProvider="target">
-                                <rect key="frame" x="58" y="564.5" width="298" height="69"/>
+                                <rect key="frame" x="58" y="571" width="298" height="69"/>
                                 <color key="backgroundColor" red="0.99963921310000003" green="1" blue="0.99975615740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="3mf-Hq-Bq6"/>
@@ -895,7 +895,7 @@
                             <constraint firstItem="VhX-f1-vXJ" firstAttribute="leading" secondItem="DLB-Ey-pLc" secondAttribute="leading" constant="23" id="Mt6-mW-z2V"/>
                             <constraint firstItem="DLB-Ey-pLc" firstAttribute="trailing" secondItem="NSI-Fg-VkI" secondAttribute="trailing" constant="22" id="OFg-d0-ite"/>
                             <constraint firstItem="tpQ-7r-3sx" firstAttribute="centerX" secondItem="at6-Rj-dON" secondAttribute="centerX" id="T0O-yu-Oiw"/>
-                            <constraint firstItem="nbr-ut-JHw" firstAttribute="top" secondItem="K7x-6h-SzU" secondAttribute="bottom" constant="30.600000000000001" id="VXf-sB-5X9"/>
+                            <constraint firstItem="nbr-ut-JHw" firstAttribute="top" secondItem="K7x-6h-SzU" secondAttribute="bottom" constant="25" id="VXf-sB-5X9"/>
                             <constraint firstItem="K7x-6h-SzU" firstAttribute="top" secondItem="1Y3-xz-f2X" secondAttribute="bottom" constant="56" id="XFz-Ry-Gsz"/>
                             <constraint firstItem="UwU-yl-AoD" firstAttribute="top" secondItem="KPH-n8-45L" secondAttribute="bottom" constant="52.670000000000002" id="YGi-8u-MmR"/>
                             <constraint firstItem="KPH-n8-45L" firstAttribute="top" secondItem="tpQ-7r-3sx" secondAttribute="bottom" constant="21" id="au8-ZW-POW"/>
@@ -926,6 +926,7 @@
                         <outlet property="koreanButton" destination="ABt-ax-DJm" id="I5c-Y1-yPB"/>
                         <outlet property="maxicanButton" destination="kFf-KH-1Ac" id="gU2-SI-QcW"/>
                         <outlet property="progressBar" destination="1Y3-xz-f2X" id="zGp-Rv-0Ua"/>
+                        <outlet property="ratingStarView" destination="nbr-ut-JHw" id="yz3-YF-PtA"/>
                         <outlet property="thaiButton" destination="i81-6V-cfz" id="t6v-Go-3wR"/>
                     </connections>
                 </viewController>
@@ -1987,25 +1988,6 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <view alpha="0.85000002384185791" contentMode="scaleToFill" id="yGe-TE-fiW" customClass="DezignableView" customModule="Dezignables">
-                                                    <rect key="frame" x="0.0" y="9.5" width="374" height="77"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStartColor">
-                                                            <color key="value" red="0.34386616949999999" green="0.87771731620000004" blue="0.66114896540000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStopColor">
-                                                            <color key="value" red="0.24113458400000001" green="0.68436831239999996" blue="0.80393105750000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStartPoint">
-                                                            <point key="value" x="1" y="0.0"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="10"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0r8-Fg-njV" customClass="DezignableView" customModule="Dezignables">
                                                     <rect key="frame" x="349" y="34.5" width="5" height="28"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -2025,6 +2007,25 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view alpha="0.85000002384185791" contentMode="scaleToFill" id="yGe-TE-fiW" customClass="DezignableView" customModule="Dezignables">
+                                                    <rect key="frame" x="0.0" y="9" width="374" height="77"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStartColor">
+                                                            <color key="value" red="0.34386616949999999" green="0.87771731620000004" blue="0.66114896540000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStopColor">
+                                                            <color key="value" red="0.24113458400000001" green="0.68436831239999996" blue="0.80393105750000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStartPoint">
+                                                            <point key="value" x="1" y="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="yjh-yp-sdo" firstAttribute="top" secondItem="QHf-Z6-hBu" secondAttribute="top" constant="10" id="7dM-9X-0yN"/>
@@ -2085,6 +2086,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="805" id="U3c-mU-rFF"/>
                                     <constraint firstAttribute="height" constant="805" id="vi9-Q8-9XS"/>
                                 </constraints>
+                                <color key="separatorColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2e-kG-KEe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
