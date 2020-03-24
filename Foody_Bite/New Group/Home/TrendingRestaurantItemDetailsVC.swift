@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Dezignables
 
 class TrendingRestaurantItemDetailsVC: UIViewController {
     
@@ -24,6 +23,12 @@ class TrendingRestaurantItemDetailsVC: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+    
     
     @IBAction func backButtonTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)

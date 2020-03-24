@@ -21,10 +21,19 @@ class MyFavoriteVC: UIViewController {
         tableView.dataSource = self
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = false
+    }
+    
+    
     @IBAction func searchButtonTapped(_ sender: Any) {
         
     }
 }
+
+
 extension MyFavoriteVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10

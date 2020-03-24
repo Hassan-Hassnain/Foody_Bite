@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Dezignables
 import IQKeyboardManagerSwift
 import Firebase
 import FirebaseStorage
@@ -15,14 +14,14 @@ import ProgressHUD
 
 class CreateAccountVC: UIViewController {
     
-    @IBOutlet weak var profileImageView: DezignableImageView!
+    @IBOutlet weak var profileImageView: Custom_UIImageView!
     @IBOutlet weak var profileAvatorImageView: UIImageView!
     @IBOutlet weak var imageUploadButton: UIButton!
-    @IBOutlet weak var nameTextField: DesignableUITextField!
-    @IBOutlet weak var emailTextField: DesignableUITextField!
-    @IBOutlet weak var passwordTextField: DesignableUITextField!
-    @IBOutlet weak var confirmPasswordTextField: DesignableUITextField!
-    @IBOutlet weak var registerButton: DezignableButton!
+    @IBOutlet weak var nameTextField: Custom_UITextField!
+    @IBOutlet weak var emailTextField: Custom_UITextField!
+    @IBOutlet weak var passwordTextField: Custom_UITextField!
+    @IBOutlet weak var confirmPasswordTextField: Custom_UITextField!
+    @IBOutlet weak var registerButton: Custom_UIImageView!
     
     var profileImage: UIImage?
     
@@ -46,7 +45,7 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func loginButtonTapped(_ sender: Any) {
-        navigationController?.customPush(LoginVC.className, animate: true)
+        navigationController?.popViewController(animated: true)
     }
     
 }

@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import Dezignables
 
 class GPS_VC: UIViewController {
 
-    @IBOutlet weak var turnOnGpsButtonTapped: DezignableButton!
+    @IBOutlet weak var turnOnGpsButtonTapped: Custom_UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

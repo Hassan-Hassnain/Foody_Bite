@@ -11,6 +11,7 @@ import UIKit
 class CategorVCTableCell: UITableViewCell {
 
     @IBOutlet weak var categoryTitle: UILabel!
+    @IBOutlet weak var gradientLayer: Custom_UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

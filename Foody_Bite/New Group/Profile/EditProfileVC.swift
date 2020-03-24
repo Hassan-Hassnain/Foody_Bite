@@ -8,13 +8,12 @@
 
 import UIKit
 import ProgressHUD
-import Dezignables
 import Firebase
 
 class EditProfileVC: UIViewController {
-    @IBOutlet weak var profileImageView: DezignableImageView!
-    @IBOutlet weak var nameTextField: DesignableUITextField!
-    @IBOutlet weak var emailTextField: DesignableUITextField!
+    @IBOutlet weak var profileImageView: Custom_UIImageView!
+    @IBOutlet weak var nameTextField: Custom_UITextField!
+    @IBOutlet weak var emailTextField: Custom_UITextField!
     
    
     var profileImage: UIImage?
@@ -23,10 +22,17 @@ class EditProfileVC: UIViewController {
         super.viewDidLoad()
         updateFoodyUser()
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+    
     
     @IBAction func dismissButtonTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)

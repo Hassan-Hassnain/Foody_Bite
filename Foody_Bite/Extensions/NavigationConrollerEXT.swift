@@ -39,6 +39,7 @@ extension UINavigationController {
             FindFriendsVC.className,
             FilterResultsVC.className,
             CategoriesVC.className,
+            CategoryDetailsVC.className,
             OtherUserProfileVC.className,
             MenuAndPhotosVC.className,
             PreviewVC.className,

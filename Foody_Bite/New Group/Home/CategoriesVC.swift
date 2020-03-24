@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class CategoriesVC: UIViewController {
     
@@ -22,6 +23,12 @@ class CategoriesVC: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+    
+    
     @IBAction func backButtonTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
@@ -36,28 +43,11 @@ extension CategoriesVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell0 = tableView.dequeueReusableCell(withIdentifier: "CategorVCTableCell0") as? CategorVCTableCell else {return CategorVCTableCell()}
-        guard let cell1 = tableView.dequeueReusableCell(withIdentifier: "CategorVCTableCell1") as? CategorVCTableCell else {return CategorVCTableCell()}
-        guard let cell2 = tableView.dequeueReusableCell(withIdentifier: "CategorVCTableCell2") as? CategorVCTableCell else {return CategorVCTableCell()}
-        guard let cell3 = tableView.dequeueReusableCell(withIdentifier: "CategorVCTableCell3") as? CategorVCTableCell else {return CategorVCTableCell()}
-        let colorID = indexPath.row % 4
-        print(colorID)
-        switch colorID {
-        case 0:
-            cell0.categoryTitle?.text = categories[indexPath.row]
-            return cell0
-        case 1:
-            cell1.categoryTitle?.text = categories[indexPath.row]
-            return cell1
-        case 2:
-            cell2.categoryTitle?.text = categories[indexPath.row]
-            return cell2
-        case 3:
-            cell3.categoryTitle?.text = categories[indexPath.row]
-            return cell3
-            
-        default:
-            return CategorVCTableCell()
-        }
+
+        cell0.gradientLayer.topColor = RandomFlatColor().lighten(byPercentage: 50)
+        cell0.gradientLayer.bottomColor = RandomFlatColor().lighten(byPercentage: 50)
+        
+        return cell0
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

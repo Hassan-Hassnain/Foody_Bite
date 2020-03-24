@@ -18,7 +18,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var totalCategoryLabel: UIButton!
     @IBOutlet weak var totalFriendLabel: UIButton!
     
-    @IBOutlet weak var searchField: UITextFieldX!
+    @IBOutlet weak var searchField: Custom_UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,13 @@ class HomeVC: UIViewController {
         
         searchField.delegate = self
         
-        setSearchFieldRightButton()
+//        setSearchFieldRightButton()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = false
     }
     
     //MARK: - LABEL GESTURES

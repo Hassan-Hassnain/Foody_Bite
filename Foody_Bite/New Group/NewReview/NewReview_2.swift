@@ -13,7 +13,7 @@ import IQKeyboardManagerSwift
 
 class NewReview_2: UIViewController {
     
-    @IBOutlet weak var searchField: UITextFieldX!
+    @IBOutlet weak var searchField: Custom_UITextField!
     
     @IBOutlet weak var ratingStar1: UIButton!
     @IBOutlet weak var ratingStar2: UIButton!
@@ -27,6 +27,11 @@ class NewReview_2: UIViewController {
         
         setSearchFieldLeftButton()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+    
     @IBAction func addButtonTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }

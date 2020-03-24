@@ -23,8 +23,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //            let storyBoad = UIStoryboard(name: "Main", bundle: Bundle.main)
 //            let authVC = storyBoad.instantiateViewController(identifier: "AuthVC")
             window?.makeKeyAndVisible()
-            window?.rootViewController?.present(Storyboards.signUp.instantiateViewController(identifier: "LoginVC"), animated: true, completion: nil)
-            print("User not signed in")
+             print("User not signed in")
+            window?.rootViewController?.present(Storyboards.signUp.instantiateViewController(identifier: "SignUpNavigationController"), animated: true, completion: nil)
+           
         } else {
          print("User already signed in")
             window?.rootViewController?.present(Storyboards.main.instantiateViewController(identifier: "HomeVC"), animated: true, completion: nil)

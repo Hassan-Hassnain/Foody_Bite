@@ -10,8 +10,6 @@ import Foundation
 import UIKit
 
 
-
-
 //MARK: - AUTHENTICATION GROUP
 
 //User Data
@@ -61,4 +59,9 @@ struct Icons {
     static let SEARCH = UIImage(named: "Icon_Search_grey.png")
     static let OK = UIImage(named: "Icon_Ok_Blue.png")
     static let WHITE_CIRCLE = UIImage(named: "Icon_Circle_White.png")
+}
+
+struct Header {
+    static let CONTACTS = "Contacts"
+    static let SUGGESTIONS = "Suggestions"
 }

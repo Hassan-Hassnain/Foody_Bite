@@ -23,18 +23,22 @@ class FilterVC: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var ratingStarView: RatingStarsView!
     
+    var selectedStars: [Bool] { get { return ratingStarView.selected }}
+    
     var ratingsStar: [UIImage] = []
     let categories = DataService.instance.categores
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateAllUI()
-        
-        //
-        ratingStarView.getRatedValue { (value) in
-            print(value)
-        }
+       
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+    
     
     @IBAction func backButtonTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)

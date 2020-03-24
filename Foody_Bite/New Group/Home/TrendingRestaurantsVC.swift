@@ -11,15 +11,22 @@ import UIKit
 class TrendingRestaurantsVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchBar: UITextFieldX!
+    @IBOutlet weak var searchBar: Custom_UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.regCell(cellName: RestaurantCellTableViewCell.className)
         tableView.delegate = self
         tableView.dataSource = self
-        setSearchFieldRightButton()
+//        setSearchFieldRightButton()
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+    
     
     @IBAction func closeButtonTapped(_ sender: Any) {
         navigationController?.popViewController(animated: false)

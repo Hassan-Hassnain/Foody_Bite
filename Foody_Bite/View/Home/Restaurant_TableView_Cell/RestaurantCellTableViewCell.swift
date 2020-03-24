@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Dezignables
 
 class RestaurantCellTableViewCell: UITableViewCell {
 
@@ -18,10 +17,10 @@ class RestaurantCellTableViewCell: UITableViewCell {
       @IBOutlet weak var restaurantName: UILabel!
       @IBOutlet weak var foodTypeLabel: UILabel!
       @IBOutlet weak var distanceLabel: UILabel!
-      @IBOutlet weak var visitorImage1: DezignableImageView!
-      @IBOutlet weak var visitorImage2: DezignableImageView!
-      @IBOutlet weak var visitorImage3: DezignableImageView!
-      @IBOutlet weak var visitorImage4: DezignableImageView!
+      @IBOutlet weak var visitorImage1: Custom_UIImageView!
+      @IBOutlet weak var visitorImage2: Custom_UIImageView!
+      @IBOutlet weak var visitorImage3: Custom_UIImageView!
+      @IBOutlet weak var visitorImage4: Custom_UIImageView!
       @IBOutlet weak var totalVisitorsLabel: UILabel!
       @IBOutlet weak var addressLabel: UILabel!
       @IBOutlet weak var optionsButton: UIButton!

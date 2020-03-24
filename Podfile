@@ -6,7 +6,7 @@ target 'Foody_Bite' do
   use_frameworks!
 
   # Pods for Foody_Bite
-  pod "Dezignables"
+  #pod "Dezignables"
   pod 'IQKeyboardManagerSwift'
 
   pod 'Firebase/Analytics'
@@ -15,6 +15,7 @@ target 'Foody_Bite' do
   pod 'Firebase/Storage'
   
   pod 'ProgressHUD'
+  pod 'ChameleonFramework/Swift'
 
   
 end

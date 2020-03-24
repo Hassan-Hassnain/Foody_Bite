@@ -11,7 +11,7 @@ import ProgressHUD
 
 class ForgotPasswordVC: UIViewController {
 
-    @IBOutlet weak var emailTextField: DesignableUITextField!
+    @IBOutlet weak var emailTextField: Custom_UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 

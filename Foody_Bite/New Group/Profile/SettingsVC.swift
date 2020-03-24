@@ -7,20 +7,24 @@
 //
 
 import UIKit
-import Dezignables
 import Firebase
 
 class SettingsVC: UIViewController {
 
     @IBOutlet weak var alertBG: UIView!
-    @IBOutlet weak var alertOptions: DezignableView!
+    @IBOutlet weak var alertOptions: Custom_UIView!
     @IBOutlet weak var alertOption2CenterYConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+      //  alertOptions.cornerRadius = 25
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+    
     @IBAction func backButtonTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }

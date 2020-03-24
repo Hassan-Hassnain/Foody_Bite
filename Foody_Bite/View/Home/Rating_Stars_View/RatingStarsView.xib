@@ -18,7 +18,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9S-os-rZz" customClass="DezignableView" customModule="Dezignables">
+        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9S-os-rZz" customClass="Custom_UIView" customModule="Foody_Bite" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="298" height="69"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Gqs-NI-BQN">

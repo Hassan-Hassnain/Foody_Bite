@@ -21,6 +21,12 @@ class MenuAndPhotosVC: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+    
+    
     @IBAction func backButtonWasTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }

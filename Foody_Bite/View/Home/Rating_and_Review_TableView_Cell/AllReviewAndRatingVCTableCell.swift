@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import Dezignables
 
 class AllReviewAndRatingVCTableCell: UITableViewCell {
 
-    @IBOutlet weak var friendImage: DezignableImageView!
+    @IBOutlet weak var friendImage: UIImageView!
     @IBOutlet weak var friendName: UILabel!
     @IBOutlet weak var comments: UILabel!
     @IBOutlet weak var rating: UILabel!
@@ -19,7 +18,7 @@ class AllReviewAndRatingVCTableCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -34,4 +33,8 @@ class AllReviewAndRatingVCTableCell: UITableViewCell {
         self.comments.text = comments
         self.rating.text = rating
     }
+    
+    
+    
+    
 }

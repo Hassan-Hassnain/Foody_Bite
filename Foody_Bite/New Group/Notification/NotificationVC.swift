@@ -18,6 +18,12 @@ class NotificationVC: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = false
+    }
+    
     @IBAction func homeButtonTapped(_ sender: Any) {
         goTo(fromStoryboar: Storyboards.main, toVC: HomeVC.className, animate: false)
     }

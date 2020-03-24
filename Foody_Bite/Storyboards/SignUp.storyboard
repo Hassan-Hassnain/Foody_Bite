@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uwR-Lh-aAA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oht-jH-cvH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -36,7 +36,7 @@
                                 <rect key="frame" x="-102" y="0.0" width="617" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygn-Zb-k69" customClass="DezignableButton" customModule="Dezignables">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygn-Zb-k69" customClass="Custom_UIButton" customModule="Foody_Bite" customModuleProvider="target">
                                 <rect key="frame" x="59" y="709.5" width="296" height="58.5"/>
                                 <color key="backgroundColor" red="0.39724946020000002" green="0.44666510819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -49,7 +49,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -79,7 +79,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="dgw-oI-vLi">
                                 <rect key="frame" x="39" y="415" width="336" height="136"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RM1-zx-AOV" customClass="DesignableUITextField" customModule="Foody_Bite" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RM1-zx-AOV" customClass="Custom_UITextField" customModule="Foody_Bite" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="336" height="58.5"/>
                                         <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.3046607449" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -111,7 +111,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPw-n8-IKe" customClass="DesignableUITextField" customModule="Foody_Bite" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPw-n8-IKe" customClass="Custom_UITextField" customModule="Foody_Bite" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="77.5" width="336" height="58.5"/>
                                         <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.3046607449" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -183,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fx5-uW-ToD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-172" y="-6159"/>
+            <point key="canvasLocation" x="737.68115942028987" y="-6159.375"/>
         </scene>
         <!--Forgot PasswordVC-->
         <scene sceneID="7fI-yG-TK0">
@@ -193,13 +193,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-Dark-Layer" translatesAutoresizingMaskIntoConstraints="NO" id="XVn-40-MKK">
+                                <rect key="frame" x="-101" y="0.0" width="617" height="896"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-Login" translatesAutoresizingMaskIntoConstraints="NO" id="mPU-iA-j3e">
                                 <rect key="frame" x="-157.5" y="0.0" width="617" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-Dark-Layer" translatesAutoresizingMaskIntoConstraints="NO" id="XVn-40-MKK">
-                                <rect key="frame" x="-102" y="0.0" width="617" height="896"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3E-BT-XuK" customClass="DezignableButton" customModule="Dezignables">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3E-BT-XuK" customClass="Custom_UIButton" customModule="Foody_Bite" customModuleProvider="target">
                                 <rect key="frame" x="59" y="501.5" width="296" height="58.5"/>
                                 <color key="backgroundColor" red="0.39724946020000002" green="0.44666510819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -212,7 +212,10 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -220,7 +223,7 @@
                                     <action selector="sendButtonTapped:" destination="6A6-IF-4YI" eventType="touchUpInside" id="Rfs-cD-VGT"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JDs-MF-L8j" customClass="DesignableUITextField" customModule="Foody_Bite" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JDs-MF-L8j" customClass="Custom_UITextField" customModule="Foody_Bite" customModuleProvider="target">
                                 <rect key="frame" x="59" y="247" width="296" height="59"/>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.3046607449" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -284,7 +287,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Y0V-SZ-H8j" firstAttribute="centerX" secondItem="6g6-A9-BTV" secondAttribute="centerX" id="20Z-uh-8Wi"/>
-                            <constraint firstItem="XVn-40-MKK" firstAttribute="leading" secondItem="6g6-A9-BTV" secondAttribute="leading" constant="-102" id="2i2-qo-eHt"/>
+                            <constraint firstItem="XVn-40-MKK" firstAttribute="leading" secondItem="6g6-A9-BTV" secondAttribute="leading" constant="-101" id="2i2-qo-eHt"/>
                             <constraint firstItem="JDs-MF-L8j" firstAttribute="leading" secondItem="Y32-hh-mVu" secondAttribute="leading" constant="59" id="3c4-0G-oqa"/>
                             <constraint firstItem="mPU-iA-j3e" firstAttribute="leading" secondItem="6g6-A9-BTV" secondAttribute="leading" constant="-157.66999999999999" id="5Qc-Y7-O57"/>
                             <constraint firstAttribute="bottom" secondItem="mPU-iA-j3e" secondAttribute="bottom" id="9Ib-n7-csO"/>
@@ -302,7 +305,7 @@
                             <constraint firstAttribute="trailing" secondItem="mPU-iA-j3e" secondAttribute="trailing" constant="-45.5" id="ii0-Tw-y4w"/>
                             <constraint firstItem="S3E-BT-XuK" firstAttribute="centerX" secondItem="6g6-A9-BTV" secondAttribute="centerX" id="mDp-df-5fF"/>
                             <constraint firstItem="XVn-40-MKK" firstAttribute="top" secondItem="6g6-A9-BTV" secondAttribute="top" id="mxd-Zf-yok"/>
-                            <constraint firstAttribute="trailing" secondItem="XVn-40-MKK" secondAttribute="trailing" constant="-101" id="nj2-aW-euN"/>
+                            <constraint firstAttribute="trailing" secondItem="XVn-40-MKK" secondAttribute="trailing" constant="-102" id="nj2-aW-euN"/>
                             <constraint firstItem="Y32-hh-mVu" firstAttribute="trailing" secondItem="JDs-MF-L8j" secondAttribute="trailing" constant="59" id="tDP-Sc-pK0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y32-hh-mVu"/>
@@ -313,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yiT-4E-iHY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="-6160"/>
+            <point key="canvasLocation" x="1550.7246376811595" y="-6160.0446428571422"/>
         </scene>
         <!--Create AccountVC-->
         <scene sceneID="3ha-uS-YGg">
@@ -341,7 +344,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVL-o4-Tsp" customClass="DezignableButton" customModule="Dezignables">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVL-o4-Tsp" customClass="Custom_UIButton" customModule="Foody_Bite" customModuleProvider="target">
                                 <rect key="frame" x="59" y="641" width="296" height="58.5"/>
                                 <color key="backgroundColor" red="0.39724946020000002" green="0.44666510819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -354,7 +357,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -405,7 +408,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@test.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1AA-5s-d3v" customClass="DesignableUITextField" customModule="Foody_Bite" customModuleProvider="target">
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@test.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1AA-5s-d3v" customClass="Custom_UITextField" customModule="Foody_Bite" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="71.5" width="296" height="58.5"/>
                                         <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.3046607449" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -437,7 +440,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yoy-tC-9f8" customClass="DesignableUITextField" customModule="Foody_Bite" customModuleProvider="target">
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yoy-tC-9f8" customClass="Custom_UITextField" customModule="Foody_Bite" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="143" width="296" height="59"/>
                                         <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.3046607449" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -469,7 +472,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbC-qa-NtB" customClass="DesignableUITextField" customModule="Foody_Bite" customModuleProvider="target">
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbC-qa-NtB" customClass="Custom_UITextField" customModule="Foody_Bite" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="215" width="296" height="58.5"/>
                                         <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="0.3046607449" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -580,7 +583,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lv4-ys-LqD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1399" y="-6160"/>
+            <point key="canvasLocation" x="2308.695652173913" y="-6160.0446428571422"/>
         </scene>
         <!--GPS_VC-->
         <scene sceneID="ym0-B0-Asd">
@@ -630,7 +633,7 @@ c3Rpb25zC25lYXIgeW91Lg
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5G-lG-xu5" customClass="DezignableButton" customModule="Dezignables">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5G-lG-xu5" customClass="Custom_UIButton" customModule="Foody_Bite" customModuleProvider="target">
                                 <rect key="frame" x="59" y="800.5" width="296" height="59"/>
                                 <color key="backgroundColor" red="0.39724946020000002" green="0.44666510819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -674,7 +677,24 @@ c3Rpb25zC25lYXIgeW91Lg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jf6-qg-Hj5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2112" y="-6160"/>
+            <point key="canvasLocation" x="3021.739130434783" y="-6160.0446428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DN2-q0-cew">
+            <objects>
+                <navigationController storyboardIdentifier="SignUpNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="oht-jH-cvH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rn9-nK-eZi">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uwR-Lh-aAA" kind="relationship" relationship="rootViewController" id="05k-F8-XQm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zmf-qM-QyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="-6159"/>
         </scene>
     </scenes>
     <resources>

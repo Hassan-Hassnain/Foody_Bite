@@ -7,16 +7,15 @@
 //
 
 import UIKit
-import Dezignables
 import Firebase
 import ProgressHUD
 
 class ChangePasswordVC: UIViewController {
     
-    @IBOutlet weak var currentPasswordTextField: DesignableUITextField!
-    @IBOutlet weak var newPasswordTextField: DesignableUITextField!
-    @IBOutlet weak var confirmPasswordTextField: DesignableUITextField!
-    @IBOutlet weak var updateButton: DezignableButton!
+    @IBOutlet weak var currentPasswordTextField: Custom_UITextField!
+    @IBOutlet weak var newPasswordTextField: Custom_UITextField!
+    @IBOutlet weak var confirmPasswordTextField: Custom_UITextField!
+    @IBOutlet weak var updateButton: Custom_UIButton!
     @IBOutlet weak var updateButtonBottonConstraint: NSLayoutConstraint!
     
     var keyboardIsUp = false
@@ -30,6 +29,12 @@ class ChangePasswordVC: UIViewController {
         
         bindToKeyboardForBottomConstraint()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+    
     
     
     @IBAction func backButtonTapped(_ sender: Any) {

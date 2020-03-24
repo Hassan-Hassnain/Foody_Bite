@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Dezignables
 import IQKeyboardManagerSwift
 import Firebase
 import ProgressHUD
@@ -15,11 +14,10 @@ import ProgressHUD
 
 class LoginVC: UIViewController {
     
-    @IBOutlet weak var emailTextField: DesignableUITextField!
+    @IBOutlet weak var emailTextField: Custom_UITextField!
     
-    @IBOutlet weak var passwordTextField: DesignableUITextField!
-    @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var loginButton: DezignableButton!
+    @IBOutlet weak var passwordTextField: Custom_UITextField!
+    @IBOutlet weak var loginButton: Custom_UIButton!
     
     var email = ""
     var password = ""
@@ -29,7 +27,13 @@ class LoginVC: UIViewController {
         IQKeyboardManager.shared.keyboardDistanceFromTextField = 300
         emailTextField.text = email
         passwordTextField.text = password
+        self.tabBarController?.tabBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -49,9 +53,13 @@ class LoginVC: UIViewController {
         AuthService.instance.loginUser(withEmail: emailTextField.text!, andPassword: passwordTextField.text!) { (success, error) in
             if !success {
                 ProgressHUD.showError(error?.localizedDescription)
+                print("Login Failed!")
             } else {
                 ProgressHUD.dismiss()
-                self.navigationController?.customPush(HomeVC.className, animate: false)
+                let homeVC = Storyboards.main.instantiateViewController(identifier: HomeVC.className)
+                self.navigationController?.pushViewController(homeVC, animated:  true)
+//                self.navigationController?.customPush(HomeVC.className, animate: false)
+                print("Login Success!")
             }
         }
     }

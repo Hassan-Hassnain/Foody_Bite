@@ -7,13 +7,23 @@
 //
 
 import UIKit
-import Dezignables
 
 class VisitorsCell: UICollectionViewCell {
     
-    @IBOutlet weak var visitorImage: DezignableImageView!
+    @IBOutlet weak var visitorImage: UIImageView!
     
     func configure(visitorImage image: UIImage){
         self.visitorImage.image = image
+        
     }
+    
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//        visitorImage.round()
+//    }
+//
+//    required init?(coder: NSCoder) {
+//        super.init(coder: coder)
+//        visitorImage.round()
+//    }
 }

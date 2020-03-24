@@ -29,7 +29,7 @@
 		3C56C173240C51CD00A56AAB /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C172240C51CD00A56AAB /* CreateAccountVC.swift */; };
 		3C56C175240C520700A56AAB /* GPS_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C174240C520700A56AAB /* GPS_VC.swift */; };
 		3C56C178240C57B300A56AAB /* UIViewControllerEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C177240C57B300A56AAB /* UIViewControllerEXT.swift */; };
-		3C56C17A240C5F8F00A56AAB /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C179240C5F8F00A56AAB /* UITextFieldX.swift */; };
+		3C56C17A240C5F8F00A56AAB /* Custom_UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C179240C5F8F00A56AAB /* Custom_UITextField.swift */; };
 		3C56C17C240C70E000A56AAB /* TrendingRestaurantsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C17B240C70E000A56AAB /* TrendingRestaurantsCell.swift */; };
 		3C56C17F240C78ED00A56AAB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56C17E240C78ED00A56AAB /* HomeVC.swift */; };
 		3C584B9A2413952F0003CB9E /* FindFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584B992413952F0003CB9E /* FindFriendsVC.swift */; };
@@ -37,6 +37,8 @@
 		3C584BA42413B6660003CB9E /* CategorVCTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584BA32413B6660003CB9E /* CategorVCTableCell.swift */; };
 		3C584BA62413B7E30003CB9E /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584BA52413B7E30003CB9E /* CategoriesVC.swift */; };
 		3C584BA82413D1C60003CB9E /* CategoryDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C584BA72413D1C60003CB9E /* CategoryDetailsVC.swift */; };
+		3C5B426E242A606A0030F551 /* Custom_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B426D242A606A0030F551 /* Custom_UIView.swift */; };
+		3C5B4270242A66540030F551 /* Custom_UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B426F242A66540030F551 /* Custom_UIImageView.swift */; };
 		3C5F540D241E9997001C46E0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F540C241E9996001C46E0 /* DataService.swift */; };
 		3C5F540F241EA208001C46E0 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F540E241EA208001C46E0 /* Restaurant.swift */; };
 		3C6112002419281900E7FF76 /* CustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6111FF2419281900E7FF76 /* CustomAlertView.xib */; };
@@ -46,7 +48,6 @@
 		3C6112092419450900E7FF76 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6112082419450900E7FF76 /* Protocols.swift */; };
 		3C6327182413DBDD007C4F29 /* OtherUserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6327172413DBDD007C4F29 /* OtherUserProfileVC.swift */; };
 		3C6F19EE240A500B00CA095A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F19ED240A500B00CA095A /* LoginVC.swift */; };
-		3C6F19F2240A5B7100CA095A /* DesignableTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */; };
 		3C769A73240D152900E041FB /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C769A72240D152900E041FB /* CategoryCell.swift */; };
 		3C769A77240D19CB00E041FB /* VisitorsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C769A76240D19CB00E041FB /* VisitorsCell.swift */; };
 		3C769A7B240D37B800E041FB /* TrendingRestaurantsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C769A7A240D37B800E041FB /* TrendingRestaurantsVC.swift */; };
@@ -92,7 +93,6 @@
 		3CF199BB2423B391000C271C /* StorageServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF199BA2423B391000C271C /* StorageServices.swift */; };
 		3CF846672423F42D007EFEFA /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF846662423F42D007EFEFA /* UITextFieldExt.swift */; };
 		3CF846692423FA5D007EFEFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF846682423FA5D007EFEFA /* Constants.swift */; };
-		3CFC8A65241AA0A200B75EB9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC8A64241AA0A200B75EB9 /* Helper.swift */; };
 		3CFC8A67241AB8FF00B75EB9 /* EditReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC8A66241AB8FF00B75EB9 /* EditReviewVC.swift */; };
 		3CFC8A69241AC59D00B75EB9 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC8A68241AC59D00B75EB9 /* EditProfileVC.swift */; };
 		CD81B79FB16AADDA26B965F0 /* Pods_Foody_Bite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F07655E5232ACD127942DC3 /* Pods_Foody_Bite.framework */; };
@@ -121,7 +121,7 @@
 		3C56C172240C51CD00A56AAB /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		3C56C174240C520700A56AAB /* GPS_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPS_VC.swift; sourceTree = "<group>"; };
 		3C56C177240C57B300A56AAB /* UIViewControllerEXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerEXT.swift; sourceTree = "<group>"; };
-		3C56C179240C5F8F00A56AAB /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
+		3C56C179240C5F8F00A56AAB /* Custom_UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Custom_UITextField.swift; sourceTree = "<group>"; };
 		3C56C17B240C70E000A56AAB /* TrendingRestaurantsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRestaurantsCell.swift; sourceTree = "<group>"; };
 		3C56C17E240C78ED00A56AAB /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		3C584B992413952F0003CB9E /* FindFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsVC.swift; sourceTree = "<group>"; };
@@ -129,6 +129,8 @@
 		3C584BA32413B6660003CB9E /* CategorVCTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorVCTableCell.swift; sourceTree = "<group>"; };
 		3C584BA52413B7E30003CB9E /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		3C584BA72413D1C60003CB9E /* CategoryDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsVC.swift; sourceTree = "<group>"; };
+		3C5B426D242A606A0030F551 /* Custom_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_UIView.swift; sourceTree = "<group>"; };
+		3C5B426F242A66540030F551 /* Custom_UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_UIImageView.swift; sourceTree = "<group>"; };
 		3C5F540C241E9996001C46E0 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		3C5F540E241EA208001C46E0 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		3C6111FF2419281900E7FF76 /* CustomAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertView.xib; sourceTree = "<group>"; };
@@ -138,7 +140,6 @@
 		3C6112082419450900E7FF76 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		3C6327172413DBDD007C4F29 /* OtherUserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserProfileVC.swift; sourceTree = "<group>"; };
 		3C6F19ED240A500B00CA095A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextFiled.swift; sourceTree = "<group>"; };
 		3C769A72240D152900E041FB /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		3C769A76240D19CB00E041FB /* VisitorsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorsCell.swift; sourceTree = "<group>"; };
 		3C769A7A240D37B800E041FB /* TrendingRestaurantsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRestaurantsVC.swift; sourceTree = "<group>"; };
@@ -188,7 +189,6 @@
 		3CF199BA2423B391000C271C /* StorageServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServices.swift; sourceTree = "<group>"; };
 		3CF846662423F42D007EFEFA /* UITextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExt.swift; sourceTree = "<group>"; };
 		3CF846682423FA5D007EFEFA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		3CFC8A64241AA0A200B75EB9 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		3CFC8A66241AB8FF00B75EB9 /* EditReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReviewVC.swift; sourceTree = "<group>"; };
 		3CFC8A68241AC59D00B75EB9 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		4F07655E5232ACD127942DC3 /* Pods_Foody_Bite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foody_Bite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -381,8 +381,10 @@
 		3C89AD482409933F00CF970C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3C56C179240C5F8F00A56AAB /* UITextFieldX.swift */,
-				3C6F19F1240A5B7100CA095A /* DesignableTextFiled.swift */,
+				3C5B426D242A606A0030F551 /* Custom_UIView.swift */,
+				3CF11FD92429250E0043EB40 /* CustomUIButton.swift */,
+				3C56C179240C5F8F00A56AAB /* Custom_UITextField.swift */,
+				3C5B426F242A66540030F551 /* Custom_UIImageView.swift */,
 				3C6327192413E395007C4F29 /* Home */,
 				3C2813AC242772EE001FA13E /* Notification_TableView_Cell */,
 				3C9D2D6B24169A2500CD5120 /* ChangeLanguageVCTableCell.swift */,
@@ -455,11 +457,9 @@
 		3CDFCBD2240AFE1000571F8B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3CF11FD92429250E0043EB40 /* CustomUIButton.swift */,
 				3C56C177240C57B300A56AAB /* UIViewControllerEXT.swift */,
 				3CDFCBD3240AFE4900571F8B /* UIView_Ext.swift */,
 				3C6112082419450900E7FF76 /* Protocols.swift */,
-				3CFC8A64241AA0A200B75EB9 /* Helper.swift */,
 				3CF846662423F42D007EFEFA /* UITextFieldExt.swift */,
 				3CBC79EE24262BCF0006F2AB /* UIImageViewEXT.swift */,
 				3C108B3524267F6A00805629 /* UITableViewEXT.swift */,
@@ -637,10 +637,10 @@
 				3CBC79EF24262BCF0006F2AB /* UIImageViewEXT.swift in Sources */,
 				3CDFCBD4240AFE4900571F8B /* UIView_Ext.swift in Sources */,
 				3CDFCBD6240B07D100571F8B /* ForgotPasswordVC.swift in Sources */,
+				3C5B426E242A606A0030F551 /* Custom_UIView.swift in Sources */,
 				3C108B3624267F6A00805629 /* UITableViewEXT.swift in Sources */,
 				3C56C173240C51CD00A56AAB /* CreateAccountVC.swift in Sources */,
 				3C584BA42413B6660003CB9E /* CategorVCTableCell.swift in Sources */,
-				3CFC8A65241AA0A200B75EB9 /* Helper.swift in Sources */,
 				3C5F540D241E9997001C46E0 /* DataService.swift in Sources */,
 				3C584BA22413AA2B0003CB9E /* FilterResultsVC.swift in Sources */,
 				3C6112092419450900E7FF76 /* Protocols.swift in Sources */,
@@ -664,6 +664,7 @@
 				3C7F1486241425510027BBF2 /* AllReviewAndRatingVC.swift in Sources */,
 				3C108B3C24269F7F00805629 /* NavigationConrollerEXT.swift in Sources */,
 				3CF11FDA2429250F0043EB40 /* CustomUIButton.swift in Sources */,
+				3C5B4270242A66540030F551 /* Custom_UIImageView.swift in Sources */,
 				3CBD6C4C2414D6D700CC501D /* NewReview_2.swift in Sources */,
 				3CD7B18D24181A2400028284 /* ProfileVC_TableCell.swift in Sources */,
 				3C2813A324275A8E001FA13E /* RatingStarsView.swift in Sources */,
@@ -682,7 +683,7 @@
 				3CF846692423FA5D007EFEFA /* Constants.swift in Sources */,
 				3CBD6C512414FDCB00CC501D /* NotificationVCTableViewCell.swift in Sources */,
 				3C108B38242681B500805629 /* NSObjectEXT.swift in Sources */,
-				3C56C17A240C5F8F00A56AAB /* UITextFieldX.swift in Sources */,
+				3C56C17A240C5F8F00A56AAB /* Custom_UITextField.swift in Sources */,
 				3C201B742412C58900C5927C /* FoodtypeCollectionCell.swift in Sources */,
 				3C584BA62413B7E30003CB9E /* CategoriesVC.swift in Sources */,
 				3CE951D9241531D9007139A6 /* ProfileVC.swift in Sources */,
@@ -695,7 +696,6 @@
 				3C89AD4E24099E2C00CF970C /* StartVC.swift in Sources */,
 				3CFC8A69241AC59D00B75EB9 /* EditProfileVC.swift in Sources */,
 				3C201B702412C3B300C5927C /* TrendingRestaurantItemDetailsVC.swift in Sources */,
-				3C6F19F2240A5B7100CA095A /* DesignableTextFiled.swift in Sources */,
 				3C108B3324267A7F00805629 /* RestaurantCellTableViewCell.swift in Sources */,
 				3C4CEAAF24154751000B20FF /* ReviewsVC.swift in Sources */,
 				3C9D2D6C24169A2500CD5120 /* ChangeLanguageVCTableCell.swift in Sources */,

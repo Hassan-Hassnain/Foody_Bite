@@ -1,5 +1,7 @@
 PODS:
-  - Dezignables (3.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
   - Firebase/Analytics (6.19.0):
     - Firebase/Core
   - Firebase/Auth (6.19.0):
@@ -96,7 +98,7 @@ PODS:
   - PromisesObjC (1.2.8)
 
 DEPENDENCIES:
-  - Dezignables
+  - ChameleonFramework/Swift
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Database
@@ -106,7 +108,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Dezignables
+    - ChameleonFramework
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -129,7 +131,7 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
-  Dezignables: 7e5e51c9f09f8dab02a85c7b308299105c5ac059
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Firebase: d55ddb0e0bb3207166cddc028647833d8a1b5b6f
   FirebaseAnalytics: 572e467f3d977825266e8ccd52674aa3e6f47eac
   FirebaseAuth: 5ce2b03a3d7fe56b7a6e4c5ec7ff1522890b1d6f
@@ -151,6 +153,6 @@ SPEC CHECKSUMS:
   ProgressHUD: 54b4c2fa202bf3da7dddc1c698ae4e6376333bd9
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
 
-PODFILE CHECKSUM: 9872c458327db40d9fa734ffba9826a66f6c1c44
+PODFILE CHECKSUM: f583675f030c6a5158261c6890e526c4937e2a62
 
 COCOAPODS: 1.8.4

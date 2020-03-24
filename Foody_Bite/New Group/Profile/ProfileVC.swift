@@ -7,27 +7,30 @@
 //
 
 import UIKit
-import Dezignables
 import Firebase
 
 class ProfileVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var alertBG: UIView!
-    @IBOutlet weak var alertOptions: DezignableView!
-    @IBOutlet weak var alertOptions_2: DezignableView!
-    @IBOutlet weak var editButton: UIButton!
+    @IBOutlet weak var alertOptions: Custom_UIView!
+    @IBOutlet weak var alertOptions_2: Custom_UIView!
+    @IBOutlet weak var editButton: Custom_UIButton!
+    @IBOutlet weak var settingButton: Custom_UIButton!
     @IBOutlet weak var alertOption1CenterYConstraint: NSLayoutConstraint!
     @IBOutlet weak var alertOption2CenterYConstraint: NSLayoutConstraint!
     @IBOutlet weak var alertBGTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var profileImageView: DezignableImageView!
+    @IBOutlet weak var profileImageView: UIImageView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        profileImageView.round()
+        alertOptions.cornerRadius = 25
+        alertOptions_2.cornerRadius = 25
         tableView.regCell(cellName: RestaurantCellTableViewCell.className)
         
         editButton.layer.cornerRadius = 10
@@ -36,8 +39,16 @@ class ProfileVC: UIViewController {
         
         hideAlert1()
         hideAlert2()
+        editButton.updateUI()
+        settingButton.updateUI()
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = false
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateFoodyUser()

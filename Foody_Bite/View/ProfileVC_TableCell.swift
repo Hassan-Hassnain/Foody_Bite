@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Dezignables
 
 
 
@@ -19,10 +18,10 @@ class ProfileVC_TableCell: UITableViewCell {
     @IBOutlet weak var restaurantName: UILabel!
     @IBOutlet weak var foodTypeLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
-    @IBOutlet weak var visitorImage1: DezignableImageView!
-    @IBOutlet weak var visitorImage2: DezignableImageView!
-    @IBOutlet weak var visitorImage3: DezignableImageView!
-    @IBOutlet weak var visitorImage4: DezignableImageView!
+    @IBOutlet weak var visitorImage1: UIImageView!
+    @IBOutlet weak var visitorImage2: UIImageView!
+    @IBOutlet weak var visitorImage3: UIImageView!
+    @IBOutlet weak var visitorImage4: UIImageView!
     @IBOutlet weak var totalVisitorsLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var optionsButton: UIButton!
@@ -63,6 +62,13 @@ class ProfileVC_TableCell: UITableViewCell {
     
     
     
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        visitorImage1.round()
+        visitorImage2.round()
+        visitorImage3.round()
+        visitorImage4.round()
+    }
     
     
 }

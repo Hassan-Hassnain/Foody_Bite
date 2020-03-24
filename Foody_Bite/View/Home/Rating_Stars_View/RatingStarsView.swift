@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import Dezignables
 
 class RatingStarsView: UIView {
 
-    @IBOutlet var ratingStarView: DezignableView!
+    @IBOutlet var ratingStarView: UIView!
     
     @IBOutlet weak var ratingStar1: UIButton!
     @IBOutlet weak var ratingStar2: UIButton!

@@ -11,7 +11,7 @@ import IQKeyboardManagerSwift
 
 class NewReviewVC: UIViewController {
    
-    @IBOutlet weak var searchField: UITextFieldX!
+    @IBOutlet weak var searchField: Custom_UITextField!
     @IBOutlet weak var tabbarItem: UITabBarItem!
     @IBOutlet var tabbarView: UIView!
     
@@ -21,6 +21,11 @@ class NewReviewVC: UIViewController {
         
         searchField.delegate = self
         setSearchFieldLeftButton()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = false
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {

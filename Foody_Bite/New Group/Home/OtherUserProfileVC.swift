@@ -11,6 +11,9 @@ import UIKit
 class OtherUserProfileVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var followBtn: Custom_UIButton!
+    @IBOutlet weak var blockBtn: Custom_UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +21,20 @@ class OtherUserProfileVC: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
+        
+        followBtn.updateUI()
+        blockBtn.updateUI()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+    
     
     @IBAction func backButtonTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+        
     }
     
     

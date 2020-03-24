@@ -11,7 +11,7 @@ import UIKit
 class FilterResultsVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchBar: UITextFieldX!
+    @IBOutlet weak var searchBar: Custom_UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +19,14 @@ class FilterResultsVC: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        setSearchFieldRightButton()
+//        setSearchFieldRightButton()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+    
     
     
     //MARK: - SEARCH FIELD RIGHT BUTTON

@@ -22,6 +22,12 @@ class FindFriendsVC: UIViewController {
         tableView.dataSource = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+    
+    
     @IBAction func backButtonTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
@@ -38,8 +44,8 @@ extension FindFriendsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let contactView = tableView.dequeueReusableCell(withIdentifier: PeopleTableViewCell.className)
-        let suggestionView = tableView.dequeueReusableCell(withIdentifier: PeopleTableViewCell.className)
+        let contactView = tableView.dequeueReusableCell(withIdentifier: Header.CONTACTS)
+        let suggestionView = tableView.dequeueReusableCell(withIdentifier: Header.SUGGESTIONS)
         
         if section == 0 {
             return contactView
@@ -67,18 +73,17 @@ extension FindFriendsVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PeopleTableViewCell.className) as? PeopleTableViewCell else {return PeopleTableViewCell()}
         
         if indexPath.section == 0 {
-            //            cell.configure(firendImage: <#T##UIImage#>, friendName: <#T##String#>, totalReview: <#T##String#>)
+            
             return cell
         } else {
             //            cell.configure(firendImage: <#T##UIImage#>, friendName: <#T##String#>, totalReview: <#T##String#>)
             return cell
         }
         
-        
+    }
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             navigationController?.customPush(OtherUserProfileVC.className, animate: true)
         }
-        
-    }
+      
     
 }
