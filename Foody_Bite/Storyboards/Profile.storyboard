@@ -83,11 +83,7 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
+                                    
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
@@ -171,15 +167,7 @@
                                                     <constraint firstItem="mMB-if-P5o" firstAttribute="centerY" secondItem="Igl-Zq-XJT" secondAttribute="centerY" id="zfw-MC-jHT"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStartColor">
-                                                        <color key="value" red="1" green="0.33725490200000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStopColor">
-                                                        <color key="value" red="1" green="0.54901960780000003" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStartPoint">
-                                                        <point key="value" x="1" y="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
+                                                   
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
@@ -203,15 +191,7 @@
                                                     <constraint firstAttribute="width" constant="37" id="oGl-Hv-O1e"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStartColor">
-                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStopColor">
-                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStartPoint">
-                                                        <point key="value" x="1" y="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
+                                                    
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
@@ -1079,20 +1059,7 @@
                             <constraint firstItem="9Pm-Er-IEz" firstAttribute="top" secondItem="oyB-G2-gZ8" secondAttribute="bottom" constant="37" id="vSa-Xc-B9a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yBi-X7-z08"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStartColor">
-                                <color key="value" red="0.97592383620000001" green="0.97666221860000002" blue="0.97603827710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStopColor">
-                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStartPoint">
-                                <point key="value" x="0.0" y="0.0"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStopPoint">
-                                <point key="value" x="1" y="1"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
+                       
                     </view>
                     <connections>
                         <outlet property="confirmPasswordTextField" destination="bgi-aR-tmw" id="vuZ-d8-JYf"/>
@@ -1283,20 +1250,7 @@
                             <constraint firstItem="DK3-ch-dIZ" firstAttribute="centerY" secondItem="Bp7-2I-XvP" secondAttribute="centerY" id="yHg-H8-LyL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CiC-b3-DqX"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStartColor">
-                                <color key="value" red="0.97592383620000001" green="0.97666221860000002" blue="0.97603827710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStopColor">
-                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStartPoint">
-                                <point key="value" x="0.0" y="0.0"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStopPoint">
-                                <point key="value" x="1" y="1"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
+                        
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="9aa-wg-oLK" id="u0s-Mp-kk2"/>
@@ -1395,11 +1349,7 @@
                                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                             <color key="value" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
+                                                        
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                             <real key="value" value="11"/>
                                                         </userDefinedRuntimeAttribute>
@@ -1440,20 +1390,7 @@
                             <constraint firstItem="qEc-dH-I8z" firstAttribute="centerX" secondItem="A1C-tX-IL3" secondAttribute="centerX" id="zTk-SX-ZO6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z0I-4d-nUs"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStartColor">
-                                <color key="value" red="0.97592383620000001" green="0.97666221860000002" blue="0.97603827710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStopColor">
-                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStartPoint">
-                                <point key="value" x="0.0" y="0.0"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStopPoint">
-                                <point key="value" x="1" y="1"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
+                        
                     </view>
                     <connections>
                         <outlet property="tableView" destination="j7s-eh-Pep" id="xrg-v7-nzF"/>

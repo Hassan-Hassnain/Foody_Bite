@@ -22,3 +22,7 @@ struct LocalUser {
     var imageUrl: String
     var image: UIImage?
 }
+
+
+
+

@@ -47,6 +47,8 @@ extension MenuAndPhotosVC: UICollectionViewDelegate, UICollectionViewDataSource
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = Storyboards.home.instantiateViewController(identifier: PreviewVC.className) as! PreviewVC
+        vc.image = images[indexPath.row]
         navigationController?.customPush(PreviewVC.className, animate: true)
     }
     
