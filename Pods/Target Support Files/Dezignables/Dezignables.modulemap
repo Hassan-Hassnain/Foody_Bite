@@ -1,6 +1,0 @@
-framework module Dezignables {
-  umbrella header "Dezignables-umbrella.h"
-
-  export *
-  module * { export * }
-}
