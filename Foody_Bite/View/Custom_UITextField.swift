@@ -133,10 +133,7 @@ class Custom_UITextField: UITextField {
         
         rightView = view
     }
-    
-    
-    
-    
+
     //MARK: - PLACE HOLDER AND  EDITING PADDING
     var padding = UIEdgeInsets()
     
@@ -152,8 +149,7 @@ class Custom_UITextField: UITextField {
             
         }
     }
-    
-    
+
     func updatePadding() {
         let textLeftPadding = leftPadding + L_textPadding
         padding = UIEdgeInsets(top: 0, left: textLeftPadding, bottom: 0, right: 5)
