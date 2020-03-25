@@ -134,27 +134,7 @@ class Custom_UITextField: UITextField {
         rightView = view
     }
     
-       //MARK: - SEARCH FIELD RIGHT BUTTON
-        func setRightButton() {
-    
-            var view: UIView
-            let button = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-            button.setImage(Icons.FILTER, for: .normal)
-            // Note: In order for your image to use the tint color, you have to select the image in the Assets.xcassets and change the "Render As" property to "Template Image".
-            button.tintColor = self.tintColor
-    
-            var width = button.frame.width + 20
-    
-            if self.borderStyle == UITextField.BorderStyle.none || self.borderStyle == UITextField.BorderStyle.line {
-                width += 5
-            }
-            view = UIView(frame: CGRect(x: 0, y: 0, width: width, height: 20))
-//            button.addTarget(self, action: #selector(filterButtonAction), for: .touchUpInside)
-            view.addSubview(button)
-            self.rightView = view
-        }
-    
-    
+      
  
     
     //MARK: - PLACE HOLDER AND  EDITING PADDING
