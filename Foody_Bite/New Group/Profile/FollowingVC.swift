@@ -14,7 +14,7 @@ class FollowingVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         tableView.regCell(cellName: PeopleTableViewCell.className)
+        tableView.regCell(cellName: PeopleTableViewCell.className)
         tableView.delegate = self
         tableView.dataSource = self
     }

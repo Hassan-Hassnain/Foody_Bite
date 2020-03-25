@@ -13,7 +13,7 @@ class FollowersVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         tableView.regCell(cellName: PeopleTableViewCell.className)
+        tableView.regCell(cellName: PeopleTableViewCell.className)
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -43,7 +43,7 @@ extension FollowersVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PeopleTableViewCell.className) as? PeopleTableViewCell else {return PeopleTableViewCell()}
         cell.friendName.text = "Muhammad Hassan"
         
-       
+        
         return cell
     }
     

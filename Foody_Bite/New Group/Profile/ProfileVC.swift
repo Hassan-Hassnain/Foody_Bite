@@ -53,7 +53,7 @@ class ProfileVC: UIViewController {
         super.viewWillAppear(animated)
         updateFoodyUser()
     }
- 
+    
     @IBAction func reviewsButtonTapped(_ sender: Any) {
         navigationController?.customPush(ReviewsVC.className, animate: true)
     }
@@ -64,7 +64,7 @@ class ProfileVC: UIViewController {
         navigationController?.customPush(FollowingVC.className, animate: true)
     }
     @IBAction func EditProfileButtonTapped(_ sender: Any) {
-       navigationController?.customPush(EditProfileVC.className, animate: true)
+        navigationController?.customPush(EditProfileVC.className, animate: true)
     }
     @IBAction func settingsButtonTapped(_ sender: Any) {
         navigationController?.customPush(SettingsVC.className, animate: true)
@@ -72,8 +72,8 @@ class ProfileVC: UIViewController {
     
     //MARK: - Alert functions and Actions
     @IBAction func editButtonTapped(_ sender: Any) {
-//        hideAlert1()
-       navigationController?.customPush(EditReviewVC.className, animate: true)
+        //        hideAlert1()
+        navigationController?.customPush(EditReviewVC.className, animate: true)
     }
     @IBAction func deletButtonTapped(_ sender: Any) {
         hideAlert1()
@@ -90,13 +90,13 @@ class ProfileVC: UIViewController {
         print("Yes Button Clicked")
         hideAlert2()
     }
-
+    
     
     private func hideAlert1() {
         alertBG.isHidden = true
         alertOptions.isHidden = true
         alertOption1CenterYConstraint.constant = 600
-         alertBGTopConstraint.constant = UIScreen.main.bounds.height
+        alertBGTopConstraint.constant = UIScreen.main.bounds.height
     }
     
     private func showAlert1() {
@@ -120,16 +120,16 @@ class ProfileVC: UIViewController {
         alertOptions_2.isHidden = false
     }
     private func updateFoodyUser() {
-            DataService.instance.getUserData(forUID: Auth.auth().currentUser!.uid) { (user) in
-                self.nameLabel.text = user.name
-                self.emailLabel.text = user.email
-                print(user.imageUrl)
-                self.profileImageView.load(from: user.imageUrl)
+        DataService.instance.getUserData(forUID: Auth.auth().currentUser!.uid) { (user) in
+            self.nameLabel.text = user.name
+            self.emailLabel.text = user.email
+            print(user.imageUrl)
+            self.profileImageView.load(from: user.imageUrl)
             
         }
     }
     
-
+    
     
     
     
@@ -143,7 +143,7 @@ extension ProfileVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: RestaurantCellTableViewCell.className) as? RestaurantCellTableViewCell else {return RestaurantCellTableViewCell()}
-//        cell.optionButtonDelegate = self
+        //        cell.optionButtonDelegate = self
         return cell
     }
     

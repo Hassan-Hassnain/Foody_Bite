@@ -9,7 +9,7 @@
 import UIKit
 
 
-class Custom_UITextField: UITextField {
+class Custom_TextField_Type2: UITextField {
 
 // MARK: - Border
     @IBInspectable var borderWidth: CGFloat = 0 {
@@ -73,8 +73,8 @@ class Custom_UITextField: UITextField {
 
     private func updateView() {
         setLeftImage()
-        setRightImage()
-//        setRightButton()
+//        setRightImage()
+        setRightButton()
         
         // Placeholder text color
         attributedPlaceholder = NSAttributedString(string: placeholder != nil ?

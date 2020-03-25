@@ -45,7 +45,7 @@ extension UINavigationController {
             PreviewVC.className,
             AllReviewAndRatingVC.className,
         ]
-        let REVIEW: [String] = [NewReviewVC.className]
+        let REVIEW: [String] = [NewReview_2.className]
         let FAVORITE: [String] = [MyFavoriteDetailsVC.className]
         let PROFILE: [String] = [
             EditReviewVC.className,

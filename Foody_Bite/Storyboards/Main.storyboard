@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZID-83-aag">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZID-83-aag">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -146,8 +146,6 @@
                                                                         <constraint firstAttribute="width" constant="37" id="zgp-c7-mbi"/>
                                                                     </constraints>
                                                                     <userDefinedRuntimeAttributes>
-                                                                       
-                                                                      
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="7"/>
                                                                         </userDefinedRuntimeAttribute>
@@ -183,8 +181,6 @@
                                                                         <constraint firstAttribute="width" constant="37" id="ibK-vb-roK"/>
                                                                     </constraints>
                                                                     <userDefinedRuntimeAttributes>
-                                                                     
-                                                                        
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="7"/>
                                                                         </userDefinedRuntimeAttribute>
@@ -264,7 +260,7 @@
                                                             <rect key="frame" x="252" y="176" width="60" height="20"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="Cs9-E8-uem" customClass="Custom_UIImageView" customModule="Foody_Bite" customModuleProvider="target">
-                                                                    <rect key="frame" x="61" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="40.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -272,7 +268,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="KXm-IY-xdk" customClass="Custom_UIImageView" customModule="Foody_Bite" customModuleProvider="target">
-                                                                    <rect key="frame" x="7" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="27.5" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -280,7 +276,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="aDZ-7b-L6D" customClass="Custom_UIImageView" customModule="Foody_Bite" customModuleProvider="target">
-                                                                    <rect key="frame" x="16" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="16" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -288,7 +284,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_Profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="UEo-Te-Mhf" customClass="Custom_UIImageView" customModule="Foody_Bite" customModuleProvider="target">
-                                                                    <rect key="frame" x="-38" y="0.0" width="41" height="20"/>
+                                                                    <rect key="frame" x="3" y="0.0" width="20.5" height="20"/>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="10"/>
@@ -296,7 +292,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" +2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFO-GN-zsi">
-                                                                    <rect key="frame" x="77" y="6" width="9.5" height="8"/>
+                                                                    <rect key="frame" x="46" y="6" width="9.5" height="8"/>
                                                                     <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="6.5999999046325684"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>

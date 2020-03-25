@@ -19,7 +19,7 @@ class FilterResultsVC: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-//        setSearchFieldRightButton()
+        setSearchFieldRightButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {

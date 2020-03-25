@@ -25,8 +25,16 @@ class NewReview_2: UIViewController {
         super.viewDidLoad()
         IQKeyboardManager.shared.keyboardDistanceFromTextField = 200
         
-        setSearchFieldLeftButton()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(filterButtonAction))
+        searchField.delegate = self
+        searchField.rightView?.addGestureRecognizer(tapGesture)
+        
     }
+    //MARK: - SEARCH FIELD RIGHT BUTTON
+    @objc func filterButtonAction() {
+        navigationController?.popViewController(animated: true)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tabBarController?.tabBar.isHidden = true
@@ -55,36 +63,14 @@ class NewReview_2: UIViewController {
         goTo(fromStoryboar: Storyboards.main, toVC: ProfileVC.className, animate: false)
     }
     @IBAction func closeButtonTapped(_ sender: Any) {
-       navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func ratingStarTapped1(_ sender: UIButton) {
-       
+        
     }
     
-    //MARK: - SEARCH FIELD RIGHT BUTTON
-    func setSearchFieldLeftButton() {
-        
-        var view: UIView
-        let button = UIButton(frame: CGRect(x: 20, y: 0, width: 20, height: 20))
-        button.setImage(Icons.SEARCH, for: .normal)
-        // Note: In order for your image to use the tint color, you have to select the image in the Assets.xcassets and change the "Render As" property to "Template Image".
-        button.tintColor = searchField.tintColor
-        
-        var width = button.frame.width + 20
-        
-        if searchField.borderStyle == UITextField.BorderStyle.none || searchField.borderStyle == UITextField.BorderStyle.line {
-            width += 5
-        }
-        view = UIView(frame: CGRect(x: 0, y: 0, width: width, height: 20))
-        button.addTarget(self, action: #selector(filterButtonAction), for: .touchUpInside)
-        view.addSubview(button)
-        searchField.leftView = view
-    }
-    @objc func filterButtonAction() {
-        // code for search field leftview button
-        print("SearchField search button tapped")
-    }
+    
     
 }
 

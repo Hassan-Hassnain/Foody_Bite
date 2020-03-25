@@ -10,10 +10,18 @@ import UIKit
 
 class EditReviewVC: UIViewController {
     
+    @IBOutlet weak var searchField: Custom_UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(filterButtonAction))
+        searchField.delegate = self
+        searchField.rightView?.addGestureRecognizer(tapGesture)
+        
+    }
+    //MARK: - SEARCH FIELD RIGHT BUTTON
+    @objc func filterButtonAction() {
+        navigationController?.popViewController(animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,12 +33,15 @@ class EditReviewVC: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func backButtonTapped(_ sender: Any) {
-         navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func updateButtonTapped(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func ratingStarTapped1(_ sender: UIButton) {
     }
-
+    
+    
+    
 }
+extension EditReviewVC: UITextFieldDelegate{}

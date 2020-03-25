@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZXn-xR-ts8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZXn-xR-ts8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -83,7 +83,6 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
@@ -92,7 +91,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Find Restaurants" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lbP-pX-wA6" customClass="UITextFieldX" customModule="Foody_Bite" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Find Restaurants" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lbP-pX-wA6" customClass="Custom_UITextField" customModule="Foody_Bite" customModuleProvider="target">
                                 <rect key="frame" x="23" y="119" width="368" height="51"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -121,6 +120,7 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" white="0.92418486020000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="Icon_Close_Grey"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvb-3H-ddF">
@@ -167,7 +167,6 @@
                                                     <constraint firstItem="mMB-if-P5o" firstAttribute="centerY" secondItem="Igl-Zq-XJT" secondAttribute="centerY" id="zfw-MC-jHT"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                   
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
@@ -191,7 +190,6 @@
                                                     <constraint firstAttribute="width" constant="37" id="oGl-Hv-O1e"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
@@ -358,6 +356,9 @@
                         <viewLayoutGuide key="safeArea" id="w4r-7W-L5D"/>
                     </view>
                     <navigationItem key="navigationItem" id="YVc-yG-Pzp"/>
+                    <connections>
+                        <outlet property="searchField" destination="lbP-pX-wA6" id="isU-qu-oE1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ShC-OW-UEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1059,7 +1060,6 @@
                             <constraint firstItem="9Pm-Er-IEz" firstAttribute="top" secondItem="oyB-G2-gZ8" secondAttribute="bottom" constant="37" id="vSa-Xc-B9a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yBi-X7-z08"/>
-                       
                     </view>
                     <connections>
                         <outlet property="confirmPasswordTextField" destination="bgi-aR-tmw" id="vuZ-d8-JYf"/>
@@ -1250,7 +1250,6 @@
                             <constraint firstItem="DK3-ch-dIZ" firstAttribute="centerY" secondItem="Bp7-2I-XvP" secondAttribute="centerY" id="yHg-H8-LyL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CiC-b3-DqX"/>
-                        
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="9aa-wg-oLK" id="u0s-Mp-kk2"/>
@@ -1349,7 +1348,6 @@
                                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                             <color key="value" red="0.54117647059999996" green="0.59607843140000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                             <real key="value" value="11"/>
                                                         </userDefinedRuntimeAttribute>
@@ -1390,7 +1388,6 @@
                             <constraint firstItem="qEc-dH-I8z" firstAttribute="centerX" secondItem="A1C-tX-IL3" secondAttribute="centerX" id="zTk-SX-ZO6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z0I-4d-nUs"/>
-                        
                     </view>
                     <connections>
                         <outlet property="tableView" destination="j7s-eh-Pep" id="xrg-v7-nzF"/>
@@ -1423,6 +1420,7 @@
         <image name="Icon_Add_Blue" width="26" height="26"/>
         <image name="Icon_Back_Large" width="14" height="25"/>
         <image name="Icon_Circle_White" width="22" height="22"/>
+        <image name="Icon_Close_Grey" width="25.5" height="25.5"/>
         <image name="Icon_Edit_Pencil" width="21.5" height="20.5"/>
         <image name="Icon_Email_White" width="20" height="16.5"/>
         <image name="Icon_Forward" width="6.5" height="11.5"/>

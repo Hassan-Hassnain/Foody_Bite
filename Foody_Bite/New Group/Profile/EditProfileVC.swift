@@ -15,12 +15,14 @@ class EditProfileVC: UIViewController {
     @IBOutlet weak var nameTextField: Custom_UITextField!
     @IBOutlet weak var emailTextField: Custom_UITextField!
     
-   
+    
     var profileImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateFoodyUser()
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -86,10 +88,10 @@ extension EditProfileVC {
     }
     
     private func validateTextFields() {
-   
+        
         emailTextField.validateField(withMessage: FieldValid.EMPTY_EMAIL)
         nameTextField.validateField(withMessage: FieldValid.EMPTY_USERNAME)
-
+        
         
         guard profileImage != nil else {
             ProgressHUD.showError(FieldValid.EMPTY_PHOTO)
@@ -98,11 +100,11 @@ extension EditProfileVC {
     }
     
     private func updateFoodyUser() {
-            DataService.instance.getUserData(forUID: Auth.auth().currentUser!.uid) { (user) in
-                self.nameTextField.text = user.name
-                self.emailTextField.text = user.email
-                print(user.imageUrl)
-                self.profileImageView.load(from: user.imageUrl)
+        DataService.instance.getUserData(forUID: Auth.auth().currentUser!.uid) { (user) in
+            self.nameTextField.text = user.name
+            self.emailTextField.text = user.email
+            print(user.imageUrl)
+            self.profileImageView.load(from: user.imageUrl)
             
         }
     }
