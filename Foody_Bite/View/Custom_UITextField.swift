@@ -10,29 +10,29 @@ import UIKit
 
 
 class Custom_UITextField: UITextField {
-
-// MARK: - Border
+    
+    // MARK: - Border
     @IBInspectable var borderWidth: CGFloat = 0 {
-                didSet {
-                    layer.borderWidth = borderWidth
-                }
-            }
-      
-      @IBInspectable var borderColor: UIColor = UIColor.lightGray {
-          didSet {
-              layer.borderColor = borderColor.cgColor
-          }
-      }
+        didSet {
+            layer.borderWidth = borderWidth
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor = UIColor.lightGray {
+        didSet {
+            layer.borderColor = borderColor.cgColor
+        }
+    }
     
     
-// MARK: - Corner Radius
-     @IBInspectable var cornerRadius: CGFloat = 0 {
-         didSet {
-             self.layer.cornerRadius = cornerRadius
-         }
-     }
+    // MARK: - Corner Radius
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
+            self.layer.cornerRadius = cornerRadius
+        }
+    }
     
-// MARK: - TextField Left View
+    // MARK: - TextField Left View
     
     @IBInspectable var leftImage: UIImage? {
         didSet {
@@ -45,7 +45,7 @@ class Custom_UITextField: UITextField {
             updateView()
         }
     }
-// MARK: - TextField Right View
+    // MARK: - TextField Right View
     @IBInspectable var rightImage: UIImage? {
         didSet {
             updateView()
@@ -70,11 +70,11 @@ class Custom_UITextField: UITextField {
         }
     }
     
-
+    
     private func updateView() {
         setLeftImage()
         setRightImage()
-//        setRightButton()
+        //        setRightButton()
         
         // Placeholder text color
         attributedPlaceholder = NSAttributedString(string: placeholder != nil ?
@@ -134,8 +134,8 @@ class Custom_UITextField: UITextField {
         rightView = view
     }
     
-      
- 
+    
+    
     
     //MARK: - PLACE HOLDER AND  EDITING PADDING
     var padding = UIEdgeInsets()
@@ -158,15 +158,15 @@ class Custom_UITextField: UITextField {
         let textLeftPadding = leftPadding + L_textPadding
         padding = UIEdgeInsets(top: 0, left: textLeftPadding, bottom: 0, right: 5)
     }
-
+    
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: padding)
     }
-
+    
     override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: padding)
     }
-
+    
     override open func editingRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: padding)
     }
