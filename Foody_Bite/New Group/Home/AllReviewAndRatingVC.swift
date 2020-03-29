@@ -27,9 +27,6 @@ class AllReviewAndRatingVC: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-
-  
-
 }
 
 extension AllReviewAndRatingVC: UITableViewDelegate, UITableViewDataSource {

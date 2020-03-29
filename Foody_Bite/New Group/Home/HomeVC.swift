@@ -32,10 +32,8 @@ class HomeVC: UIViewController {
         friendsCollectionView.dataSource = self
         friendsCollectionView.delegate = self
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(filterButtonAction))
         searchField.delegate = self
-        searchField.rightView?.addGestureRecognizer(tapGesture)
-        
+        searchField.rightButton?.addTarget(self, action: #selector(filterButtonAction), for: .touchUpInside)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,6 +56,7 @@ class HomeVC: UIViewController {
     @objc func filterButtonAction() {
         navigationController?.customPush(FilterResultsVC.className, animate: true)
     }
+    
 }
 
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {

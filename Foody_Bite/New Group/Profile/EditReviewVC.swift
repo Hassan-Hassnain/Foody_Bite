@@ -14,9 +14,8 @@ class EditReviewVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(filterButtonAction))
         searchField.delegate = self
-        searchField.rightView?.addGestureRecognizer(tapGesture)
+        searchField.rightButton?.addTarget(self, action: #selector(filterButtonAction), for: .touchUpInside)
         
     }
     //MARK: - SEARCH FIELD RIGHT BUTTON

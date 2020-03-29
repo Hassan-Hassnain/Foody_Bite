@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class Custom_UITextField: UITextField {
     
     // MARK: - Border
@@ -34,6 +33,9 @@ class Custom_UITextField: UITextField {
     
     // MARK: - TextField Left View
     
+    var rightButton: UIButton?
+    var leftButton: UIButton?
+    
     @IBInspectable var leftImage: UIImage? {
         didSet {
             updateView()
@@ -45,7 +47,7 @@ class Custom_UITextField: UITextField {
             updateView()
         }
     }
-    // MARK: - TextField Right View
+    
     @IBInspectable var rightImage: UIImage? {
         didSet {
             updateView()
@@ -87,19 +89,20 @@ class Custom_UITextField: UITextField {
         var view: UIView
         
         if let image = leftImage {
-            let imageView = UIImageView(frame: CGRect(x: leftPadding, y: 0, width: 20, height: 20))
-            imageView.image = image
+            let button = UIButton(frame: CGRect(x: leftPadding, y: 0, width: 20, height: 20))
+            button.setImage(image, for: .normal)
             // Note: In order for your image to use the tint color, you have to select the image in the Assets.xcassets and change the "Render As" property to "Template Image".
-            imageView.tintColor = tintColor
+            button.tintColor = tintColor
             
-            var width = imageView.frame.width + leftPadding
+            var width = button.frame.width + leftPadding
             
             if borderStyle == UITextField.BorderStyle.none || borderStyle == UITextField.BorderStyle.line {
                 width += 5
             }
             
+            leftButton = button
             view = UIView(frame: CGRect(x: 0, y: 0, width: width, height: 20))
-            view.addSubview(imageView)
+            view.addSubview(button)
         } else {
             view = UIView(frame: CGRect(x: 0, y: 0, width: leftPadding, height: 20))
         }
@@ -113,19 +116,21 @@ class Custom_UITextField: UITextField {
         var view: UIView
         
         if let image = rightImage, isRightViewVisible {
-            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-            imageView.image = image
+            let button = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+            button.setImage(image, for: .normal)
             // Note: In order for your image to use the tint color, you have to select the image in the Assets.xcassets and change the "Render As" property to "Template Image".
-            imageView.tintColor = tintColor
+            button.tintColor = tintColor
             
-            var width = imageView.frame.width + rightPadding
+            var width = button.frame.width + rightPadding
             
             if borderStyle == UITextField.BorderStyle.none || borderStyle == UITextField.BorderStyle.line {
                 width += 5
             }
             
+            rightButton = button
             view = UIView(frame: CGRect(x: 0, y: 0, width: width, height: 20))
-            view.addSubview(imageView)
+            view.addSubview(button)
+            print("Right button Set")
             
         } else {
             view = UIView(frame: CGRect(x: 0, y: 0, width: rightPadding, height: 20))
@@ -133,7 +138,7 @@ class Custom_UITextField: UITextField {
         
         rightView = view
     }
-
+    
     //MARK: - PLACE HOLDER AND  EDITING PADDING
     var padding = UIEdgeInsets()
     

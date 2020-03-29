@@ -18,7 +18,8 @@ class TrendingRestaurantsVC: UIViewController {
         tableView.regCell(cellName: RestaurantCellTableViewCell.className)
         tableView.delegate = self
         tableView.dataSource = self
-//        setSearchFieldRightButton()
+        
+        searchBar.rightButton?.addTarget(self, action: #selector(textFieldRightButtonAction), for: .touchUpInside)
     }
     
     
@@ -31,26 +32,8 @@ class TrendingRestaurantsVC: UIViewController {
     @IBAction func closeButtonTapped(_ sender: Any) {
         navigationController?.popViewController(animated: false)
     }
-    //MARK: - SEARCH FIELD RIGHT BUTTON
-    func setSearchFieldRightButton() {
-        
-        var view: UIView
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-        button.setImage(Icons.FILTER, for: .normal)
-        // Note: In order for your image to use the tint color, you have to select the image in the Assets.xcassets and change the "Render As" property to "Template Image".
-        button.tintColor = searchBar.tintColor
-        
-        var width = button.frame.width + 20
-        
-        if searchBar.borderStyle == UITextField.BorderStyle.none || searchBar.borderStyle == UITextField.BorderStyle.line {
-            width += 5
-        }
-        view = UIView(frame: CGRect(x: 0, y: 0, width: width, height: 20))
-        button.addTarget(self, action: #selector(filterButtonAction), for: .touchUpInside)
-        view.addSubview(button)
-        searchBar.rightView = view
-    }
-    @objc func filterButtonAction() {
+    
+    @objc func textFieldRightButtonAction() {
         navigationController?.customPush(FilterResultsVC.className, animate: true)
     }
     

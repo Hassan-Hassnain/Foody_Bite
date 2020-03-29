@@ -34,10 +34,6 @@ class MyFavoriteDetailsVC: UIViewController {
     }
 }
 
-
-
-
-
 extension MyFavoriteDetailsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         15
@@ -48,9 +44,6 @@ extension MyFavoriteDetailsVC: UITableViewDelegate, UITableViewDataSource {
        
         return cell
     }
-    
-    
-    
 }
 
 extension MyFavoriteDetailsVC: UICollectionViewDataSource, UICollectionViewDelegate {

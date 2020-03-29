@@ -69,17 +69,8 @@ extension FindFriendsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PeopleTableViewCell.className) as? PeopleTableViewCell else {return PeopleTableViewCell()}
-        
-        if indexPath.section == 0 {
-            
-            return cell
-        } else {
-            //            cell.configure(firendImage: <#T##UIImage#>, friendName: <#T##String#>, totalReview: <#T##String#>)
-            return cell
-        }
-        
+        return cell
     }
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             navigationController?.customPush(OtherUserProfileVC.className, animate: true)
